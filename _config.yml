@@ -1,12 +1,61 @@
+# Zachary Cohen Portfolio — Jekyll Config
+
+# Site metadata
 title: "Zachary Cohen Portfolio"
 description: "Systems & Mechatronics Engineering"
 author:
-  # ───────────────────────────────────────────────
-  #  Zachary Cohen Portfolio — Jekyll Site Config
-  # ───────────────────────────────────────────────
-
   name: "Zachary Cohen"
   email: "zcohen-nerd@gmail.com"
   github: "https://github.com/zcohen-nerd"
-  title: "Zachary Cohen Portfolio"
+  linkedin: "https://www.linkedin.com/in/zachary-cohen-nerd/"
+
+# Theme & URLs
+theme: jekyll-theme-cayman
+url: "https://zcohen-nerd.github.io"
+baseurl: "/Portfolio"  # repository name
+repository: "zcohen-nerd/Portfolio"
+permalink: pretty
+
+# Navigation
+navigation:
+  - name: "Projects"
+    link: "/projects/"
+  - name: "Teaching"
+    link: "/teaching/"
+  - name: "Documentation"
+    link: "/documentation/"
+
+# Plugins (GitHub Pages supported)
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Social metadata
+twitter:
+  username: "zcohen_nerd"
+social:
+  name: "Zachary Cohen"
+  links:
+    - "https://github.com/zcohen-nerd"
+    - "https://www.linkedin.com/in/zachary-cohen-nerd/"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+sass:
+  style: compressed
+
+# SEO defaults
+seo:
+  type: "Portfolio"
+  locale: "en_US"
+  image: "/assets/images/zachary-cohen-headshot.jpg"
+
+# Exclusions
+exclude:
+  - README-local.md
+  - node_modules
+  - vendor
+  - scripts
 
