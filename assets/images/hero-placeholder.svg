@@ -1,0 +1,14 @@
+<!-- Placeholder SVG for hero images (1200x675) -->
+<svg width="1200" height="675" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="heroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A1F44;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00B8D9;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#heroGrad)"/>
+  <rect x="50" y="50" width="1100" height="575" fill="none" stroke="#F5C542" stroke-width="2" stroke-dasharray="10,5"/>
+  <text x="600" y="300" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="#E5E5E5">Portfolio Hero Image</text>
+  <text x="600" y="360" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#F5C542">1200 × 675 pixels</text>
+  <text x="600" y="420" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#E5E5E5">Replace with: Professional headshot, lab setup, or project composite</text>
+</svg>

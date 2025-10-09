@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  {% seo %}
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="{{ '/assets/images/favicon.ico' | relative_url }}">
+  
+  <!-- Custom styles with color scheme -->
+  <style>
+    :root {
+      --primary-dark: #0A1F44;
+      --primary-bright: #00B8D9;
+      --accent-yellow: #F5C542;
+      --neutral-light: #E5E5E5;
+      --white: #ffffff;
+    }
+    
+    body { 
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; 
+      line-height: 1.6;
+      background-color: var(--white);
+      color: var(--primary-dark);
+    }
+    
+    .page-header { 
+      background: linear-gradient(120deg, var(--primary-dark), var(--primary-bright)); 
+      color: var(--white);
+    }
+    
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+    
+    .project-card {
+      border: 1px solid var(--neutral-light);
+      border-radius: 12px;
+      padding: 1.5rem;
+      background: var(--white);
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 8px rgba(10, 31, 68, 0.1);
+    }
+    
+    .project-card:hover {
+      box-shadow: 0 8px 24px rgba(10, 31, 68, 0.2);
+      transform: translateY(-2px);
+      border-color: var(--primary-bright);
+    }
+    
+    .placeholder-img {
+      background: linear-gradient(135deg, var(--neutral-light), var(--white));
+      border: 2px dashed var(--primary-bright);
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary-dark);
+      font-style: italic;
+      min-height: 200px;
+      margin: 1rem 0;
+      text-align: center;
+      padding: 1rem;
+    }
+    
+    .placeholder-img small {
+      color: var(--primary-bright);
+      margin-top: 0.5rem;
+      font-size: 0.85em;
+    }
+    
+    h1, h2, h3, h4 {
+      color: var(--primary-dark);
+    }
+    
+    a {
+      color: var(--primary-bright);
+      text-decoration: none;
+    }
+    
+    a:hover {
+      color: var(--primary-dark);
+      text-decoration: underline;
+    }
+    
+    .btn-primary {
+      background: var(--primary-bright);
+      color: var(--white);
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      border: none;
+      font-weight: 500;
+      transition: background 0.2s;
+    }
+    
+    .btn-primary:hover {
+      background: var(--primary-dark);
+    }
+    
+    .highlight-box {
+      background: linear-gradient(135deg, var(--accent-yellow), #f8e71c);
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin: 1.5rem 0;
+      border-left: 4px solid var(--primary-dark);
+    }
+    
+    .status-badge {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      border-radius: 12px;
+      font-size: 0.85em;
+      font-weight: 500;
+      background: var(--primary-bright);
+      color: var(--white);
+    }
+    
+    .hero-section {
+      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-bright) 100%);
+      color: var(--white);
+      padding: 4rem 2rem;
+      text-align: center;
+      margin: -2rem -2rem 3rem -2rem;
+      border-radius: 0 0 20px 20px;
+    }
+    
+    .hero-section h1 {
+      color: var(--white);
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    .hero-section p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+
+<body>
+  {% include navigation.html %}
+  
+  <div class="container-lg px-3 my-5 markdown-body">
+    {% if page.title %}
+      <h1><a href="{{ site.url }}{{ site.baseurl }}">{{ page.title }}</a></h1>
+    {% endif %}
+
+    {{ content }}
+  </div>
+
+  <footer style="background: #f6f8fa; padding: 2rem 0; margin-top: 4rem; text-align: center; color: #586069;">
+    <div class="container-lg px-3">
+      <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author.name }}. Built with Jekyll and GitHub Pages.</p>
+      <p>
+        <a href="{{ site.author.github }}" target="_blank" rel="noopener">GitHub</a> •
+        <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a> •
+        <a href="mailto:{{ site.author.email }}">Email</a>
+      </p>
+    </div>
+  </footer>
+
+  {% if site.google_analytics %}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '{{ site.google_analytics }}');
+    </script>
+  {% endif %}
+</body>
+</html>

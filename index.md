@@ -3,39 +3,124 @@ title: Zachary Cohen — Engineering Portfolio
 layout: default
 ---
 
-# Systems & Mechatronics Engineering Portfolio
+---
+title: Zachary Cohen — Engineering Portfolio
+description: "Electromechanical technologist focusing on systems-level mechatronics, PCB design, and integration."
+layout: default
+---
 
-> Systems that launch, lessons that compound, documentation that endures.
+---
+title: Zachary Cohen — Engineering Portfolio
+description: "Electromechanical technologist focusing on systems-level mechatronics, PCB design, and integration."
+layout: default
+---
 
-<!-- Hero/banner placeholder (16:9). Swap with composite project photo or render. -->
-![Portfolio hero placeholder](/assets/images/placeholder.png)
+<div class="hero-section">
+  <h1>Systems & Mechatronics Engineering</h1>
+  <p><em>Systems that launch, lessons that compound, documentation that endures.</em></p>
+</div>
 
-<!-- Optional secondary imagery (e.g., lab, rigs, PCB closeups). -->
-![Secondary feature placeholder](/assets/images/placeholder.png)
+<!-- Hero/banner placeholder -->
+<img src="{{ '/assets/images/hero-placeholder.svg' | relative_url }}" alt="Portfolio Hero" style="width: 100%; max-width: 1200px; height: auto; border-radius: 8px; margin-bottom: 2rem;">
 
-## Portfolio Overview
+## About Me
 
-_Replace with a 2–3 paragraph overview summarizing core disciplines, industry verticals served, and how the showcased work connects mechanical, electrical, firmware, and systems documentation._
+![Zachary Cohen Professional Headshot](/assets/images/zachary-cohen-headshot.jpg)
+
+*I am a passionate [Your Professional Title] with expertise in [Your Key Areas]. Replace this with your actual professional bio - 2-3 paragraphs highlighting your experience, achievements, and what drives your engineering approach.*
+
+<div class="project-grid">
+  <div class="project-card">
+    <h3>🔧 Systems Integration</h3>
+    <p>Multi-domain coordination, verification planning, and release management across mechanical, electrical, and software systems. Experience with safety-critical applications and regulatory compliance.</p>
+  </div>
+  <div class="project-card">
+    <h3>⚡ Mechatronics & PCB Design</h3>
+    <p>Rapid prototyping, design for manufacturing, and test automation for embedded control systems. Mixed-signal design with focus on noise, thermal, and reliability considerations.</p>
+  </div>
+  <div class="project-card">
+    <h3>📚 Technical Enablement</h3>
+    <p>Curriculum development, lab creation, and documentation suites that accelerate team learning. Instructional design focused on hands-on learning and assessment innovation.</p>
+  </div>
+</div>
 
 ## Featured Projects
 
-| Project | Focus | Status | Link |
-| --- | --- | --- | --- |
-| Sentry V3 | Embedded actuation, ruggedization, production handoff | In production | [Read more](projects/sentry-v3) |
-| Autonomous Surfer Fleet | Fleet autonomy, power systems, maritime integration | Pilot deployments | [Read more](projects/surfer-fleet) |
-| ST-Link V3 Mods | Developer experience, hardware tooling | Internal release | [Read more](projects/stlink-v3mods) |
-| PID Trainer & Lab | Instructional hardware, control systems education | Academic rollout | [Read more](projects/pid-trainer) |
-| Smart Home System | Safety-first IoT architecture, automation | Residential deployment | [Read more](projects/smart-home-system) |
+<div class="project-grid">
+  <div class="project-card">
+    <img src="{{ '/assets/images/project-placeholder.svg' | relative_url }}" alt="Sentry V3 Project" style="width: 100%; height: 200px; object-fit: cover; border-radius: 6px;">
+    <h3><a href="{{ '/projects/sentry-v3' | relative_url }}">Sentry V3</a></h3>
+    <p>Production-ready embedded actuation system designed for harsh industrial environments. Features ruggedized enclosure, redundant safety systems, and sub-10ms response times.</p>
+    <p><span class="status-badge">In Production</span></p>
+  </div>
+  
+  <div class="project-card">
+    <img src="{{ '/assets/images/project-placeholder.svg' | relative_url }}" alt="Autonomous Surfer Fleet Project" style="width: 100%; height: 200px; object-fit: cover; border-radius: 6px;">
+    <h3><a href="{{ '/projects/surfer-fleet' | relative_url }}">Autonomous Surfer Fleet</a></h3>
+    <p>Maritime autonomous vehicle platform with advanced power management, satellite communications, and environmental monitoring. Currently deployed in pilot programs across multiple ocean sites.</p>
+    <p><span class="status-badge">Pilot Deployment</span></p>
+  </div>
+  
+  <div class="project-card">
+    <img src="{{ '/assets/images/project-placeholder.svg' | relative_url }}" alt="PID Trainer Project" style="width: 100%; height: 200px; object-fit: cover; border-radius: 6px;">
+    <h3><a href="{{ '/projects/pid-trainer' | relative_url }}">PID Trainer & Lab</a></h3>
+    <p>Hands-on control systems education platform combining hardware, simulation, and curriculum. Enables students to experience PID tuning with real actuators and measurable performance metrics.</p>
+    <p><span class="status-badge">Academic Rollout</span></p>
+  </div>
+  
+  <div class="project-card">
+    <img src="{{ '/assets/images/project-placeholder.svg' | relative_url }}" alt="Smart Home System Project" style="width: 100%; height: 200px; object-fit: cover; border-radius: 6px;">
+    <h3><a href="{{ '/projects/smart-home-system' | relative_url }}">Smart Home System</a></h3>
+    <p>Safety-first IoT architecture with segmented networks, edge processing, and fail-safe automation. Emphasizes security, reliability, and user privacy in residential deployment.</p>
+    <p><span class="status-badge">Residential Deployment</span></p>
+  </div>
+</div>
 
-_Insert short blurbs beneath the table if needed (e.g., KPIs, certification highlights)._ 
+<div style="text-align: center; margin: 2rem 0;">
+  <a href="{{ '/projects/' | relative_url }}" class="btn-primary">View All Projects →</a>
+</div>
 
-## Expertise Matrix
+## Core Competencies
 
-| Discipline | Strengths | Evidence |
-| --- | --- | --- |
-| Systems Integration | Multi-domain coordination, verification planning, release management | Link to `documentation/systems-methods.md` |
-| Mechatronics & PCB Design | Rapid prototyping, DFM, test automation | Cross-reference Sentry V3 and Surfer Fleet |
-| Technical Enablement | Lab creation, curriculum, documentation suites | Reference Teaching section and documentation artifacts |
+<div class="highlight-box">
+  <h3>Technical Domains</h3>
+  <div class="project-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+    <div>
+      <strong>Embedded Systems:</strong> Real-time control, firmware architecture, sensor integration, actuator control
+    </div>
+    <div>
+      <strong>PCB Design:</strong> Mixed-signal layout, EMI/EMC, thermal management, DFM optimization
+    </div>
+    <div>
+      <strong>Systems Engineering:</strong> Requirements management, verification planning, risk assessment, documentation
+    </div>
+    <div>
+      <strong>Manufacturing:</strong> Production readiness, test automation, quality systems, supplier management
+    </div>
+  </div>
+</div>
+
+## Quick Links
+
+<div class="project-grid">
+  <div class="project-card" style="text-align: center;">
+    <h3>📋 [Teaching Portfolio]({{ '/teaching/' | relative_url }})</h3>
+    <p>Course modules, lab development, and instructional design methodology</p>
+  </div>
+  <div class="project-card" style="text-align: center;">
+    <h3>📚 [Documentation Hub]({{ '/documentation/' | relative_url }})</h3>
+    <p>Technical methods, publications, and knowledge sharing resources</p>
+  </div>
+</div>
+
+## Connect & Collaborate
+
+**Currently available for:** Technical consulting, product development partnerships, curriculum design, and speaking engagements.
+
+- 📧 **Email:** [zcohen-nerd@gmail.com](mailto:zcohen-nerd@gmail.com)
+- 💼 **LinkedIn:** [zachary-cohen-nerd](https://www.linkedin.com/in/zachary-cohen-nerd/)
+- 🔧 **GitHub:** [zcohen-nerd](https://github.com/zcohen-nerd)
+- 📊 **Portfolio Repository:** [github.com/zcohen-nerd/Portfolio](https://github.com/zcohen-nerd/Portfolio)
 
 ## Teaching Highlights
 

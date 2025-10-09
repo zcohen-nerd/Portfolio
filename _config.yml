@@ -12,11 +12,11 @@ theme: jekyll-theme-cayman
 # Clean URLs
 permalink: pretty
 
-# Site URL configuration (set these when publishing)
-# url: "https://your-username-here.github.io"
-# baseurl: "/portfolio" # if the site is hosted at /portfolio
+# Site URL configuration
+url: "https://zcohen-nerd.github.io"
+baseurl: "/Portfolio" # GitHub repository name
 
-# Optional: custom navigation metadata (theme may not auto-render; content pages include links)
+# Custom navigation metadata
 navigation:
   - name: "Projects"
     link: "/projects/"
@@ -25,9 +25,20 @@ navigation:
   - name: "Documentation"
     link: "/documentation/"
 
-# SEO and social (add plugin in Pages settings if desired)
-# plugins:
-#   - jekyll-seo-tag
+# SEO and social plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Social and SEO metadata
+twitter:
+  username: zcohen_nerd # Update if you have Twitter
+social:
+  name: Zachary Cohen
+  links:
+    - https://github.com/zcohen-nerd
+    - https://www.linkedin.com/in/zachary-cohen-nerd/
 
 # Exclude build artifacts
 exclude:
