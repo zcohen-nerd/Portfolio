@@ -1,5 +1,14 @@
 /* Custom Portfolio Styles */
 
+:root {
+  --primary-dark: #0A1F44;
+  --primary-bright: #00B8D9;
+  --accent-yellow: #F5C542;
+  --neutral-light: #E5E5E5;
+  --white: #ffffff;
+  --light-gray: #e5e5e5;
+}
+
 /* Header and Footer Enhancements */
 .site-header, .site-footer {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
