@@ -5,6 +5,24 @@
 
 /* Custom Portfolio Styles */
 
+/* Hero banner styling */
+.hero-banner {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+/* Project image styling */
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
 /* Project status styling */
 .project-status {
   color: var(--primary-dark);

@@ -1,10 +1,10 @@
 ---
-title: ST-Link V3 Modifications
-description: "Developer experience improvements and hardware tooling enhancements for embedded development."
+title: STLINK-V3MODS Programmer Board
+description: "Custom development tool providing breakout access to JTAG/SWD, UART, SPI, I²C, and CAN interfaces."
 layout: default
 permalink: /projects/stlink-v3mods/
 tags: [developer-tools, hardware, embedded, productivity]
-status: "Internal Release"
+status: "Production Prototype"
 timeline: "2022-2023"
 ---
 

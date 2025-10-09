@@ -1,13 +1,9 @@
 ---
-title: Sentry V3
+title: SENTRY Autonomous Turret
+description: "Integrated electromechanical system combining embedded control, computer vision, and custom PCB design."
 layout: default
 permalink: /projects/sentry-v3/
 ---
-
----
-title: Sentry V3
-description: "Embedded actuation system designed for ruggedized environments and production deployment."
-layout: default
 permalink: /projects/sentry-v3/
 tags: [embedded, production, mechatronics]
 status: "In Production"
