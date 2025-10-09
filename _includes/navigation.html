@@ -1,6 +1,9 @@
 <nav class="site-nav">
   <div class="nav-container">
-    <a href="{{ '/' | relative_url }}" class="nav-brand">{{ site.author.name }}</a>
+    <a href="{{ '/' | relative_url }}" class="nav-brand">
+      <img src="{{ '/assets/images/zcohen-nerd-logo.png' | relative_url }}" alt="ZCohen Nerd Logo" class="nav-logo">
+      <span class="nav-brand-text">{{ site.author.name }}</span>
+    </a>
     <div class="nav-links">
       {% for nav_item in site.navigation %}
         <a href="{{ nav_item.link | relative_url }}" 
@@ -33,6 +36,9 @@
 }
 
 .nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
   font-weight: 700;
   font-size: 1.5rem;
   color: var(--primary-dark);
@@ -40,7 +46,21 @@
   letter-spacing: -0.02em;
 }
 
-.nav-brand:hover {
+.nav-logo {
+  height: 2.5rem;
+  width: auto;
+  transition: transform 0.2s ease;
+}
+
+.nav-brand:hover .nav-logo {
+  transform: scale(1.05);
+}
+
+.nav-brand-text {
+  color: var(--primary-dark);
+}
+
+.nav-brand:hover .nav-brand-text {
   color: var(--primary-bright);
 }
 

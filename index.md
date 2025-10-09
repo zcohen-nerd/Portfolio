@@ -1,23 +1,17 @@
 ---
 title: Zachary Cohen — Engineering Portfolio
-layout: default
----
-
----
-title: Zachary Cohen — Engineering Portfolio
-description: "Electromechanical technologist focusing on systems-level mechatronics, PCB design, and integration."
-layout: default
----
-
----
-title: Zachary Cohen — Engineering Portfolio
 description: "Electromechanical technologist focusing on systems-level mechatronics, PCB design, and integration."
 layout: default
 ---
 
 <div class="hero-section">
-  <h1>Systems & Mechatronics Engineering</h1>
-  <p><em>Systems that launch, lessons that compound, documentation that endures.</em></p>
+  <div class="hero-brand">
+    <img src="/assets/images/zcohen-nerd-logo.png" alt="ZCohen Nerd Logo" class="hero-logo">
+    <div class="hero-text">
+      <h1>Systems & Mechatronics Engineering</h1>
+      <p><em>Systems that launch, lessons that compound, documentation that endures.</em></p>
+    </div>
+  </div>
 </div>
 
 <!-- Hero/banner placeholder -->
