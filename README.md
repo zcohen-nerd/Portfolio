@@ -3,7 +3,7 @@
 **Electromechanical Technologist | Systems & Mechatronics Design**
 
 [![Website](https://img.shields.io/badge/Website-Live-brightgreen)](https://zcohen-nerd.github.io/Portfolio/)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE.md)
+[![License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-blue.svg)](LICENSE.md)
 
 ## About This Portfolio
 
@@ -55,4 +55,4 @@ bundle exec jekyll serve
 
 ## License
 
-Code and configuration in this repository are available under the [MIT License](LICENSE.md). Content and images are © 2025 Zachary Cohen unless otherwise noted.
+All repository content (text, images, documentation, educational materials) is licensed under the [Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)](LICENSE.md). Code/configuration snippets may reference upstream open-source projects under their respective licenses.
