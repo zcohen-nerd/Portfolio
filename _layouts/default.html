@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
 <head>
+    {% include head.html %}
+  </head>
+  <body>
+    {% include header.html %}
+    <main class="page-content" aria-label="Content">
+      {{ content }}
+    </main>
+    {% include footer.html %}
+  </body>
+</html>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -304,16 +314,6 @@
     {{ content }}
   </div>
 
-  <footer style="background: #f6f8fa; padding: 2rem 0; margin-top: 4rem; text-align: center; color: #586069;">
-    <div class="container-lg px-3">
-      <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author.name }}. Built with Jekyll and GitHub Pages.</p>
-      <p>
-        <a href="{{ site.author.github }}" target="_blank" rel="noopener">GitHub</a> •
-        <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a> •
-        <a href="mailto:{{ site.author.email }}">Email</a>
-      </p>
-    </div>
-  </footer>
 
   {% if site.google_analytics %}
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>

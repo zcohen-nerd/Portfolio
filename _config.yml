@@ -1,6 +1,10 @@
 title: "Zachary Cohen Portfolio"
 description: "Systems & Mechatronics Engineering"
 author:
+  # ───────────────────────────────────────────────
+  #  Zachary Cohen Portfolio — Jekyll Site Config
+  # ───────────────────────────────────────────────
+
   name: "Zachary Cohen"
   email: "zcohen-nerd@gmail.com"
   github: "https://github.com/zcohen-nerd"
@@ -9,8 +13,21 @@ author:
 # GitHub Pages-supported theme
 theme: jekyll-theme-cayman
 
+  # ────────────────
+  # Theme & Layout
+  # ────────────────
+  theme: jekyll-theme-cayman
+
+  # Use clean URLs (no .html suffixes)
+
+
+  # Base URL and Site URL (for GitHub Pages)
 # Clean URLs
 permalink: pretty
+
+  # ────────────────
+  # Navigation Menu
+  # ────────────────
 
 # Site URL configuration
 url: "https://zcohen-nerd.github.io"
@@ -18,21 +35,38 @@ baseurl: "/Portfolio" # GitHub repository name
 
 # Custom navigation metadata
 navigation:
+
+  # ────────────────
+  # Plugins (supported by GitHub Pages)
+  # ────────────────
   - name: "Projects"
     link: "/projects/"
   - name: "Teaching"
     link: "/teaching/"
+
+  # ────────────────
+  # Social Metadata
+  # ────────────────
   - name: "Documentation"
     link: "/documentation/"
+
 
 # SEO and social plugins
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+
+  # ────────────────
+  # Optional: Default SEO tags
+  # ────────────────
   - jekyll-feed
 
 # Social and SEO metadata
 twitter:
+
+  # ────────────────
+  # Excluded Files (not published)
+  # ────────────────
   username: zcohen_nerd # Update if you have Twitter
 social:
   name: Zachary Cohen
@@ -41,8 +75,20 @@ social:
     - https://www.linkedin.com/in/zachary-cohen-nerd/
 
 # Exclude build artifacts
+
+  # ────────────────
+  # Build Settings
+  # ────────────────
 exclude:
   - README-local.md
+
+  # ────────────────
+  # Custom Styling (optional)
+  # ────────────────
   - node_modules
   - vendor
+
+  # Add this if you create /assets/css/style.css
+  # include:
+  #   - assets/css/style.css
   - scripts

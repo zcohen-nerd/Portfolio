@@ -1,7 +1,15 @@
+/* Custom Portfolio Styles */
+
+/* Header and Footer Enhancements */
+.site-header, .site-footer {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.site-nav a:hover, .site-footer a:hover {
+  text-decoration: underline;
+}
 ---
 ---
 
-@import url("https://pages-themes.github.io/cayman/assets/css/style.css");
 
 /* Custom Portfolio Styles */
 
