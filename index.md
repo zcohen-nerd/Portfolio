@@ -6,7 +6,7 @@ layout: default
 
 <div class="hero-section">
   <div class="hero-brand">
-    <img src="/assets/images/zcohen-nerd-logo.png" alt="ZCohen Nerd Logo" class="hero-logo">
+    <img src="{{ '/assets/images/zcohen-nerd-logo.png' | relative_url }}" alt="ZCohen Nerd Logo" class="hero-logo">
     <div class="hero-text">
       <h1>Systems & Mechatronics Engineering</h1>
       <p><em>Systems that launch, lessons that compound, documentation that endures.</em></p>
@@ -19,7 +19,7 @@ layout: default
 
 ## About Me
 
-![Zachary Cohen Professional Headshot](/assets/images/zachary-cohen-headshot.jpg)
+![Zachary Cohen Professional Headshot]({{ '/assets/images/zachary-cohen-headshot.jpg' | relative_url }})
 
 *I am a passionate [Your Professional Title] with expertise in [Your Key Areas]. Replace this with your actual professional bio - 2-3 paragraphs highlighting your experience, achievements, and what drives your engineering approach.*
 
