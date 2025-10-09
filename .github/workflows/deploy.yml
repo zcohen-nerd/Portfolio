@@ -53,11 +53,3 @@ jobs:
       if: github.ref == 'refs/heads/main'
       id: deployment
       uses: actions/deploy-pages@v4
-        
-    - name: Generate Lighthouse Report 📊
-      if: github.ref == 'refs/heads/main'
-      uses: treosh/lighthouse-ci-action@v12
-      with:
-        configPath: './lighthouserc.json'
-        uploadArtifacts: true
-        temporaryPublicStorage: true
