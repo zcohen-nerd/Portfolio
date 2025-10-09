@@ -1,0 +1,37 @@
+title: "Zachary Cohen — Engineering Portfolio"
+description: "Electromechanical technologist focusing on systems-level mechatronics, PCB design, and integration."
+author:
+  name: "Zachary Cohen"
+  email: "zcohen-nerd@gmail.com"
+  github: "https://github.com/zcohen-nerd"
+  linkedin: "https://www.linkedin.com/in/zachary-cohen-nerd/"
+
+# GitHub Pages-supported theme
+theme: jekyll-theme-cayman
+
+# Clean URLs
+permalink: pretty
+
+# Site URL configuration (set these when publishing)
+# url: "https://your-username-here.github.io"
+# baseurl: "/portfolio" # if the site is hosted at /portfolio
+
+# Optional: custom navigation metadata (theme may not auto-render; content pages include links)
+navigation:
+  - name: "Projects"
+    link: "/projects/"
+  - name: "Teaching"
+    link: "/teaching/"
+  - name: "Documentation"
+    link: "/documentation/"
+
+# SEO and social (add plugin in Pages settings if desired)
+# plugins:
+#   - jekyll-seo-tag
+
+# Exclude build artifacts
+exclude:
+  - README-local.md
+  - node_modules
+  - vendor
+  - scripts
