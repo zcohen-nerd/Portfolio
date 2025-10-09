@@ -1,0 +1,144 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Custom Portfolio Styles */
+
+/* Project status styling */
+.project-status {
+  color: var(--primary-dark);
+  font-size: 0.9em;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  font-style: italic;
+}
+
+.project-status strong {
+  color: var(--primary-bright);
+  font-weight: 600;
+}
+
+/* Enhanced project cards */
+.project-card {
+  background: var(--white);
+  border: 1px solid var(--light-gray);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(10, 31, 68, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(10, 31, 68, 0.15);
+}
+
+/* Improved visual rhythm */
+.project-card h3 {
+  margin-bottom: 0.75rem;
+  color: var(--primary-dark);
+}
+
+.project-card p {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+
+.project-card p:last-child {
+  margin-bottom: 0;
+}
+
+/* Enhanced horizontal dividers */
+hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--primary-bright), transparent);
+  margin: 2rem 0 !important;
+}
+
+/* Improved button styling */
+.btn-primary {
+  background: var(--primary-bright);
+  color: var(--white);
+  padding: 0.875rem 2rem;
+  border-radius: 6px;
+  border: none;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 184, 217, 0.3);
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 184, 217, 0.4);
+  text-decoration: none;
+  color: var(--white);
+}
+
+/* Professional headshot styling */
+img[alt*="Professional Headshot"] {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--primary-bright);
+  box-shadow: 0 4px 16px rgba(10, 31, 68, 0.2);
+  margin: 0 auto 1.5rem auto;
+  display: block;
+}
+
+/* Enhanced grid spacing */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  img[alt*="Professional Headshot"] {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .project-card {
+    padding: 1.25rem;
+  }
+}
+
+/* Link styling improvements */
+a {
+  color: var(--primary-bright);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--primary-dark);
+  text-decoration: underline;
+}
+
+/* Enhanced highlight box */
+.highlight-box {
+  background: linear-gradient(135deg, var(--accent-yellow), #f8e71c);
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 2rem 0;
+  border-left: 5px solid var(--primary-dark);
+  box-shadow: 0 4px 12px rgba(245, 197, 66, 0.3);
+}
+
+.highlight-box h3 {
+  color: var(--primary-dark);
+  margin-bottom: 1.5rem;
+}

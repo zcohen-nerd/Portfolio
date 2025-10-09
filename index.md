@@ -23,6 +23,8 @@ layout: default
 
 *I am a passionate [Your Professional Title] with expertise in [Your Key Areas]. Replace this with your actual professional bio - 2-3 paragraphs highlighting your experience, achievements, and what drives your engineering approach.*
 
+<hr style="margin: 2rem 0;">
+
 <div class="project-grid">
   <div class="project-card">
     <h3>🔧 Systems Integration</h3>
@@ -38,6 +40,8 @@ layout: default
   </div>
 </div>
 
+<hr style="margin: 2rem 0;">
+
 ## Featured Projects
 
 <div class="project-grid">
@@ -45,34 +49,36 @@ layout: default
     <img src="{{ '/assets/images/project-placeholder.svg' | relative_url }}" alt="Sentry V3 Project" style="width: 100%; height: 200px; object-fit: cover; border-radius: 6px;">
     <h3><a href="{{ '/projects/sentry-v3' | relative_url }}">Sentry V3</a></h3>
     <p>Production-ready embedded actuation system designed for harsh industrial environments. Features ruggedized enclosure, redundant safety systems, and sub-10ms response times.</p>
-    <p><span class="status-badge">In Production</span></p>
+    <p class="project-status"><strong>Status:</strong> In Production</p>
   </div>
   
   <div class="project-card">
     <img src="{{ '/assets/images/project-placeholder.svg' | relative_url }}" alt="Autonomous Surfer Fleet Project" style="width: 100%; height: 200px; object-fit: cover; border-radius: 6px;">
     <h3><a href="{{ '/projects/surfer-fleet' | relative_url }}">Autonomous Surfer Fleet</a></h3>
     <p>Maritime autonomous vehicle platform with advanced power management, satellite communications, and environmental monitoring. Currently deployed in pilot programs across multiple ocean sites.</p>
-    <p><span class="status-badge">Pilot Deployment</span></p>
+    <p class="project-status"><strong>Status:</strong> Pilot Deployment</p>
   </div>
   
   <div class="project-card">
     <img src="{{ '/assets/images/project-placeholder.svg' | relative_url }}" alt="PID Trainer Project" style="width: 100%; height: 200px; object-fit: cover; border-radius: 6px;">
     <h3><a href="{{ '/projects/pid-trainer' | relative_url }}">PID Trainer & Lab</a></h3>
     <p>Hands-on control systems education platform combining hardware, simulation, and curriculum. Enables students to experience PID tuning with real actuators and measurable performance metrics.</p>
-    <p><span class="status-badge">Academic Rollout</span></p>
+    <p class="project-status"><strong>Status:</strong> Academic Rollout</p>
   </div>
   
   <div class="project-card">
     <img src="{{ '/assets/images/project-placeholder.svg' | relative_url }}" alt="Smart Home System Project" style="width: 100%; height: 200px; object-fit: cover; border-radius: 6px;">
     <h3><a href="{{ '/projects/smart-home-system' | relative_url }}">Smart Home System</a></h3>
     <p>Safety-first IoT architecture with segmented networks, edge processing, and fail-safe automation. Emphasizes security, reliability, and user privacy in residential deployment.</p>
-    <p><span class="status-badge">Residential Deployment</span></p>
+    <p class="project-status"><strong>Status:</strong> Residential Deployment</p>
   </div>
 </div>
 
 <div style="text-align: center; margin: 2rem 0;">
   <a href="{{ '/projects/' | relative_url }}" class="btn-primary">View All Projects →</a>
 </div>
+
+<hr style="margin: 2rem 0;">
 
 ## Core Competencies
 
@@ -94,6 +100,8 @@ layout: default
   </div>
 </div>
 
+<hr style="margin: 2rem 0;">
+
 ## Quick Links
 
 <div class="project-grid">
@@ -107,6 +115,8 @@ layout: default
   </div>
 </div>
 
+<hr style="margin: 2rem 0;">
+
 ## Connect & Collaborate
 
 **Currently available for:** Technical consulting, product development partnerships, curriculum design, and speaking engagements.
@@ -115,28 +125,3 @@ layout: default
 - 💼 **LinkedIn:** [zachary-cohen-nerd](https://www.linkedin.com/in/zachary-cohen-nerd/)
 - 🔧 **GitHub:** [zcohen-nerd](https://github.com/zcohen-nerd)
 - 📊 **Portfolio Repository:** [github.com/zcohen-nerd/Portfolio](https://github.com/zcohen-nerd/Portfolio)
-
-## Teaching Highlights
-
-- ENT260 — SolidWorks: mechanical fundamentals, design for manufacturing.
-- PID Lab Module: control theory, instrumentation, analytics.
-- Instructional Design Strategy: backward design, inclusive pedagogy, tooling.
-
-_Add metrics such as learner counts, satisfaction scores, or certification outcomes._
-
-## Documentation & Publications
-
-- Systems Methods — frameworks, checklists, and templated workflows.
-- Publications — peer-reviewed articles, whitepapers, internal briefs.
-- Presentations — conference talks, workshops, and technical briefings.
-
-_Link directly to individual entries once populated._
-
-## Connect
-
-- LinkedIn: https://www.linkedin.com/in/zachary-cohen-nerd/
-- GitHub: https://github.com/zcohen-nerd
-- Email: zcohen-nerd@gmail.com
-- Repository: https://github.com/zcohen-nerd/Portfolio
-
-<!-- Include additional calls-to-action (e.g., book a consultation, download CV) if desired. -->
