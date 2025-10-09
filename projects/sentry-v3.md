@@ -6,37 +6,55 @@ permalink: /projects/sentry-v3/
 
 # Sentry V3
 
-<!-- Project hero image: replace with an actual photo/render. -->
-![Project image placeholder](/assets/images/placeholder.png)
+![Sentry V3 hero placeholder](/assets/images/placeholder.png)
+
+> _Insert a 2–3 sentence executive summary highlighting mission, deployment environment, and primary performance wins._
 
 ## Summary
 
-Concise description of system purpose, constraints, and deployment context.
+_Replace with a narrative describing the problem statement, operational constraints, stakeholders, and overall impact. Call out deployment scale, lifecycle considerations, and certification or compliance targets._
 
 ## Technical Overview
 
-- Architecture: controllers, actuators, sensors, power, comms.
-- Control: firmware structure, loops, timing, safety interlocks.
-- Hardware: PCB stackup, interfaces, mechanical integration.
-- Software: tooling, build, CI, diagnostics.
+### Architecture
+- _Document control topology, communications, safety interlocks, and redundancy._
+- _Reference block diagrams stored in `/assets/diagrams/`._
+
+### Hardware
+- _Summarize PCB stack-up, enclosure considerations, environmental sealing, and manufacturing handoff._
+- _Include BOM highlights or key component choices._
+
+### Firmware & Software
+- _Describe control loops, real-time scheduling, diagnostics, and release cadence._
+- _Note toolchains, CI/CD, and automated test coverage._
+
+### Systems Performance
+- _Capture KPIs (latency, power budget, MTBF) and verification methodology._
 
 ## Design Process
 
-1. Requirements and risks.
-2. Concept development and trade studies.
-3. Prototyping, DFM/DFA considerations.
-4. Verification, validation, and field testing.
+| Phase | Activities | Artifacts |
+| --- | --- | --- |
+| Discovery & Requirements | _User interviews, risk workshops, FMEA_ | _Requirements matrix, risk register_ |
+| Concept Development | _Trade studies, simulation, prototypes_ | _Concept deck, decision log_ |
+| Engineering & Build | _PCB layout, firmware iterations, mechanical integration_ | _CAD packages, firmware releases_ |
+| Verification & Launch | _Bench testing, field trials, manufacturing ramp_ | _Validation report, release checklist_ |
 
 ## Tools & Technologies
 
-- EDA, CAD, firmware toolchains, test instrumentation.
-- Libraries, frameworks, and analysis tools.
+- _EDA suites, mechanical CAD, firmware toolchains, scripting._
+- _Test and measurement equipment, lab automation frameworks._
+- _Vendor partnerships or manufacturing partners._
 
 ## Results & Lessons Learned
 
-- Quantitative results and benchmarks.
-- Reliability, maintainability, and manufacturability findings.
-- Future improvements.
+- _Quantify outcomes (e.g., production units shipped, uptime, certification passes)._ 
+- _Detail reliability and maintainability insights._
+- _List future roadmap items or next iteration goals._
 
-<!-- Diagrams go in /assets/diagrams; reference as needed. -->
+## Media & Diagrams
+
+![Exploded view placeholder](/assets/diagrams/placeholder.png)
+
+> _Embed system diagrams, architecture visuals, wiring harness drawings, or test rig photos here._
 

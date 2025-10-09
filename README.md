@@ -7,38 +7,52 @@ layout: default
 
 Electromechanical Technologist | Systems & Mechatronics Design
 
-I design, build, and integrate electromechanical systems with a focus on mechatronics, embedded hardware, and PCB design. I also develop curriculum and teach hands-on engineering with an emphasis on design for manufacturability and systems thinking. My work spans concept-to-production, documentation, and technical enablement for teams.
+## Executive Summary
 
-## Navigation
+> _Replace with a concise overview (3–4 sentences) highlighting industry focus, domain expertise, and systems-level impact._
 
-- [Projects](#projects)
-- [Teaching](#teaching)
-- [Documentation](#documentation)
+| Discipline | Focus Areas | Notes |
+| --- | --- | --- |
+| Systems Integration | Firmware, real-time control, automation platforms | Document cross-functional collaboration and release cadence |
+| Mechatronics & PCB Design | Mixed-signal design, rapid prototyping, manufacturability | Include key tools, fabrication partners, and verification approach |
+| Technical Enablement | Instruction, documentation, tooling | Reference curricula, documentation suites, and team outcomes |
 
-> Note: For the website, use the homepage (`index.md`) for a polished landing experience. This README is optimized for GitHub repository browsing.
+> For the public-facing website, see `index.md`. This README provides a repository-centric overview for GitHub viewers.
 
-<!-- Hero/representative image placeholder. Replace with a relevant banner image. -->
-<!-- Image: /assets/images/placeholder.png -->
+<!-- Hero/banner image placeholder. Swap with final graphic or headshot. -->
+![Repository hero placeholder](/assets/images/placeholder.png)
+
+## Portfolio Navigation
+
+- [Projects](#projects) — flagship systems and product development case studies.
+- [Teaching](#teaching) — coursework, lab modules, and instructional design strategy.
+- [Documentation](#documentation) — methods, publications, and presentation archives.
 
 ## Projects
 
-- `projects/sentry-v3.md` — Sentry V3
-- `projects/surfer-fleet.md` — Autonomous Surfer Fleet
-- `projects/stlink-v3mods.md` — ST-Link V3 Mods
-- `projects/pid-trainer.md` — PID Trainer & Lab
-- `projects/smart-home-system.md` — Smart Home System
+| File | Working Title | Content To Add |
+| --- | --- | --- |
+| `projects/sentry-v3.md` | Sentry V3 | System snapshot, KPIs, and manufacturing-readiness stories |
+| `projects/surfer-fleet.md` | Autonomous Surfer Fleet | Fleet operations, autonomy stack, and endurance metrics |
+| `projects/stlink-v3mods.md` | ST-Link V3 Mods | Engineering rationale, tooling upgrades, adoption outcomes |
+| `projects/pid-trainer.md` | PID Trainer & Lab | Curriculum integration, hardware diagrams, learner feedback |
+| `projects/smart-home-system.md` | Smart Home System | Safety-critical design, IoT architecture, lifecycle updates |
 
 ## Teaching
 
-- `teaching/ent260-solidworks.md` — ENT260: SolidWorks
-- `teaching/pid-lab-module.md` — PID Lab Module
-- `teaching/instructional-design.md` — Instructional Design
+| File | Module | Content To Add |
+| --- | --- | --- |
+| `teaching/ent260-solidworks.md` | ENT260: SolidWorks | Course description, lab cadence, assessment rubrics |
+| `teaching/pid-lab-module.md` | PID Lab Module | Learning path, tuning challenges, evaluation data |
+| `teaching/instructional-design.md` | Instructional Design | Design philosophy, artifacts, iteration history |
 
 ## Documentation
 
-- `documentation/systems-methods.md` — Systems Methods
-- `documentation/publications.md` — Publications
-- `documentation/presentations.md` — Presentations
+| File | Collection | Content To Add |
+| --- | --- | --- |
+| `documentation/systems-methods.md` | Systems Methods | Methodology overviews, checklists, templates |
+| `documentation/publications.md` | Publications | Citation list, abstracts, DOIs/links |
+| `documentation/presentations.md` | Presentations | Talks, recordings, and supplemental material |
 
 ## Repository Structure
 
@@ -55,5 +69,12 @@ I design, build, and integrate electromechanical systems with a focus on mechatr
     └── diagrams/
 ```
 
-<!-- Place images in /assets/images and diagrams in /assets/diagrams. Reference with absolute paths, e.g., ![Alt Text](/assets/images/placeholder.png) -->
+<!-- Store marketing/brand imagery in /assets/images and technical diagrams in /assets/diagrams. Use absolute paths when embedding (e.g., ![CAD exploded view](/assets/diagrams/sentry-v3-exploded.png)). -->
+
+## Contact & Publishing
+
+- LinkedIn: https://www.linkedin.com/in/zachary-cohen-nerd/
+- GitHub: https://github.com/zcohen-nerd
+- Email: zcohen-nerd@gmail.com
+- GitHub Pages: enable Pages on branch `main` with root `/` once content is finalized.
 
