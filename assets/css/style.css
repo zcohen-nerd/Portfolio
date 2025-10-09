@@ -1,9 +1,28 @@
 ---
 ---
 
-@import "{{ site.theme }}";
+@import url("https://pages-themes.github.io/cayman/assets/css/style.css");
 
 /* Custom Portfolio Styles */
+
+/* Content container improvements */
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: 0 1rem;
+  }
+}
+
+/* Better text spacing */
+p, ul, ol, dl, blockquote {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
 
 /* Hero banner styling */
 .hero-banner {

@@ -144,6 +144,48 @@
       font-weight: 600;
     }
     
+    /* Content container improvements */
+    .container-lg {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .px-3 {
+      padding-left: 2rem !important;
+      padding-right: 2rem !important;
+    }
+    
+    @media (max-width: 768px) {
+      .px-3 {
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .px-3 {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+      }
+    }
+    
+    /* Better content spacing */
+    .markdown-body {
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: none;
+      margin: 0;
+    }
+    
+    .markdown-body p,
+    .markdown-body ul,
+    .markdown-body ol,
+    .markdown-body dl,
+    .markdown-body blockquote {
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+    
     /* Enhanced horizontal dividers */
     hr {
       border: none;
@@ -176,8 +218,27 @@
       color: var(--white);
       padding: 4rem 2rem;
       text-align: center;
-      margin: -2rem -2rem 3rem -2rem;
+      margin-left: -2rem;
+      margin-right: -2rem;
+      margin-bottom: 3rem;
       border-radius: 0 0 20px 20px;
+      position: relative;
+    }
+    
+    @media (max-width: 768px) {
+      .hero-section {
+        margin-left: -1.5rem;
+        margin-right: -1.5rem;
+        padding: 3rem 1.5rem;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .hero-section {
+        margin-left: -1rem;
+        margin-right: -1rem;
+        padding: 3rem 1rem;
+      }
     }
     
     .hero-brand {
@@ -236,7 +297,7 @@
   {% include navigation.html %}
   
   <div class="container-lg px-3 my-5 markdown-body">
-    {% if page.title %}
+    {% if page.title and page.show_title != false %}
       <h1><a href="{{ site.url }}{{ site.baseurl }}">{{ page.title }}</a></h1>
     {% endif %}
 
