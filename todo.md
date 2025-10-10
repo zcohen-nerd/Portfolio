@@ -69,15 +69,11 @@
 - [ ] **Risk Matrix** → Visual risk assessment framework
 - [ ] **Template Examples** → Screenshots of documentation templates
 
-#### **Publications**
+#### **Scholarship & Speaking**
 - [ ] **Research Presentation** → Conference speaking photo
 - [ ] **Publication Graphics** → Charts/graphs from research papers
-- [ ] **Collaboration** → Team or conference networking photos
-
-#### **Presentations**
-- [ ] **Keynote Speaking** → Professional speaking engagement photo
-- [ ] **Workshop Facilitation** → Leading hands-on training session
-- [ ] **Conference Materials** → Slide examples or presentation setup
+- [ ] **Speaking Engagement** → Stage or workshop facilitation photo
+- [ ] **Presentation Materials** → Slide examples or presentation setup
 
 ---
 
@@ -172,20 +168,11 @@
 - [ ] **Standards References** (verify and update all standard numbers)
 - [ ] **Tool Integration** (actual software tools and platforms used)
 
-#### **Publications (`documentation/publications.md`)**
-- [ ] **Replace ALL Placeholder Publications** with real papers:
-  - *Journal names, publication years, DOI numbers*
-  - *Co-author names and affiliations*
-  - *Actual citation counts and h-index*
-  - *Real conference presentations and dates*
-- [ ] **Update Professional Recognition** (actual awards and service)
-- [ ] **Current Grant Information** (real NSF grant numbers and amounts)
-
-#### **Presentations (`documentation/presentations.md`)**
-- [ ] **Real Speaking Engagements** (actual conferences, dates, locations)
-- [ ] **Audience Numbers** (actual attendance figures)
-- [ ] **Presentation Materials** (create actual downloadable slides/resources)
-- [ ] **Professional Recognition** (real awards and speaking recognition)
+#### **Scholarship & Speaking (`documentation/scholarship.md`)**
+- [ ] **Verify Publication Metadata** (co-authors, journals, DOIs, years)
+- [ ] **Document Speaking Engagement Metrics** (dates, audience size, format)
+- [ ] **Add Downloadable Materials** (presentation slides or related resources)
+- [ ] **Capture Recognition & Grants** (awards, funding, institutional support)
 
 ---
 

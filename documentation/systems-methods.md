@@ -195,5 +195,5 @@ maturity: "Production-ready"
 
 **Framework Status:** <span class="status-badge">Production Deployment</span> | **Organizations Using:** 12+ engineering teams | **Years in Development:** 8+ years
 
-[← Back to Documentation]({{ '/documentation/' | relative_url }}) | [Next: Publications →]({{ '/documentation/publications' | relative_url }})
+[← Back to Documentation]({{ '/documentation/' | relative_url }}) | [Next: Scholarship & Speaking →]({{ '/documentation/scholarship' | relative_url }})
 
