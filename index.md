@@ -9,6 +9,8 @@ show_title: false
 # Zachary Cohen
 ## Electromechanical Engineer
 
+<img src="{{ '/assets/images/hero-image.png' | relative_url }}" alt="Zachary Cohen portfolio hero image" class="hero-banner" loading="lazy">
+
 I design and integrate electromechanical systems that combine mechanical assemblies, embedded electronics, firmware, and verification workflows. My work focuses on architecture definition, interface clarity, modular implementation, and documentation that supports repeatable builds. I work across prototyping, test setup, and technical communication to move systems from concept to reliable operation.
 
 ## Featured Systems {#featured-systems}
