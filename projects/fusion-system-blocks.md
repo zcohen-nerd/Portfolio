@@ -74,14 +74,10 @@ Fusion System Blocks is a documentation framework that leverages Autodesk Fusion
 ## Resources & Links
 
 ### Documentation
-- **Framework Guide:** [Coming Soon] - Complete implementation documentation
-- **Quick Start:** [Coming Soon] - Getting started templates
-- **Examples:** [Coming Soon] - Sample projects and use cases
+Content pending verification.
 
 ### Code Repository
-- **GitHub:** [Coming Soon] - Source code and templates
-- **Releases:** [Coming Soon] - Version history and downloads
-- **Issues:** [Coming Soon] - Community support and feedback
+Content pending verification.
 
 ---
 
