@@ -5,7 +5,7 @@ layout: default
 permalink: /teaching/instructional-design/
 tags: [instructional-design, learning-theory, assessment, curriculum-development]
 focus: "Engineering & Technical Education"
-experience: "8+ years"
+experience: "Content pending verification"
 show_title: false
 ---
 
@@ -134,7 +134,7 @@ show_title: false
 **Simulation Integration:**
 - **Risk-Free Practice:** Complex scenarios without safety or cost concerns
 - **Immediate Feedback:** Real-time performance assessment and correction
-- **Repeatability:** Multiple attempts to achieve mastery
+- **Outcomes:** Content pending verification
 - **Scalability:** Individual access to expensive or dangerous equipment virtually
 
 **Learning Management Systems:**
@@ -181,19 +181,19 @@ show_title: false
   <div class="project-card">
     <h3>📊 Academic Performance</h3>
     <ul>
-      <li><strong>Course Completion:</strong> 92% average completion rate (vs. 78% institutional average)</li>
-      <li><strong>Learning Objectives:</strong> 95% of students achieve competency benchmarks</li>
-      <li><strong>Grade Distribution:</strong> Reduced D/F rates by 40% while maintaining rigor</li>
-      <li><strong>Student Satisfaction:</strong> 4.7/5.0 average instructor rating</li>
+      <li><strong>Outcomes:</strong> Content pending verification</li>
+      <li><strong>Outcomes:</strong> Content pending verification</li>
+      <li><strong>Outcomes:</strong> Content pending verification</li>
+            <li><strong>Outcomes:</strong> Content pending verification</li>
     </ul>
   </div>
   <div class="project-card">
     <h3>🎯 Professional Outcomes</h3>
     <ul>
-      <li><strong>Employment Rate:</strong> 88% job placement within 6 months of graduation</li>
-      <li><strong>Employer Satisfaction:</strong> 94% rate graduates as "well-prepared" or "excellent"</li>
-      <li><strong>Professional Growth:</strong> 75% receive promotions within 2 years</li>
-      <li><strong>Continuing Education:</strong> 60% pursue additional certifications or degrees</li>
+      <li><strong>Outcomes:</strong> Content pending verification</li>
+      <li><strong>Outcomes:</strong> Content pending verification</li>
+      <li><strong>Outcomes:</strong> Content pending verification</li>
+      <li><strong>Outcomes:</strong> Content pending verification</li>
     </ul>
   </div>
 </div>
@@ -211,16 +211,16 @@ show_title: false
 ### Educational Innovation Recognition
 
 **Professional Development & Certification:**
-- **Graduate Certificate:** Instructional Design in Higher Education (University of XYZ)
+- **Graduate Certificate:** Content pending verification
 - **Professional Memberships:** ASEE, ATMAE, International Society for Technology in Education
-- **Conference Presentations:** 12 presentations on technical education innovation
-- **Peer Review Service:** Editorial board member for Journal of Engineering Technology
+- **Conference Presentations:** Content pending verification
+- **Professional Service:** Content pending verification
 
 **Curriculum Adoption & Scaling:**
-- **Multi-Institutional Implementation:** Design methods adopted by 6 partner institutions
+- **Multi-Institutional Implementation:** Content pending verification
 - **Open Educational Resources:** Curriculum materials shared under Creative Commons license
-- **Faculty Development:** Training workshops delivered to 50+ educators
-- **Publication Impact:** 8 peer-reviewed articles on technical education methodology
+- **Faculty Development:** Content pending verification
+- **Publications:** Content pending verification
 
 ## Future Directions & Innovation
 
@@ -254,7 +254,7 @@ show_title: false
 
 ---
 
-**Educational Impact:** 500+ students taught | **Course Development:** 12 courses designed/redesigned | **Years of Experience:** 8+ years in technical education
+**Educational Impact:** Content pending verification
 
 [← Previous: ENT260 SolidWorks]({{ '/teaching/ent260-solidworks/' | relative_url }}) | [Back to Teaching →]({{ '/teaching/' | relative_url }})
 

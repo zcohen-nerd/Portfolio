@@ -1,6 +1,6 @@
 ---
 title: Documentation & Scholarship
-description: "Engineering documentation frameworks, research publications, and speaking contributions."
+description: "Engineering documentation frameworks, technical documentation, and speaking contributions."
 layout: default
 permalink: /documentation/
 show_title: false
@@ -27,7 +27,7 @@ show_title: false
   <div class="project-card">
     <div class="placeholder-img">🎤 Scholarship & Speaking</div>
     <h3><a href="{{ '/documentation/scholarship/' | relative_url }}">Scholarship & Speaking</a></h3>
-    <p>Highlighted publications, conference sessions, and the philosophy behind sharing systems-level insights.</p>
+    <p>Highlighted technical writeups, conference sessions, and the philosophy behind sharing systems-level insights.</p>
     <p><a href="{{ '/documentation/scholarship/' | relative_url }}">View highlights →</a></p>
   </div>
 </div>

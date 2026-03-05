@@ -28,7 +28,7 @@ show_title: false
 
 **Duration:** 6-week intensive module (18 contact hours + independent work)
 **Class Size:** 25-30 students working in teams of 2-3
-**Assessment Weight:** 25% of overall course grade
+**Assessment Weight:** Content pending verification
 
 ## Learning Objectives & Outcomes
 
@@ -47,7 +47,7 @@ By completion of this module, students will demonstrate ability to:
   <div class="project-card">
     <h3>⚡ Practical Skills</h3>
     <ul>
-      <li><strong>Tuning Methods:</strong> Apply Ziegler-Nichols, pole placement, and optimization techniques</li>
+      <li><strong>Outcomes:</strong> Content pending verification</li>
       <li><strong>System Identification:</strong> Extract plant models from experimental step response data</li>
       <li><strong>Performance Optimization:</strong> Balance conflicting requirements (speed vs. stability)</li>
       <li><strong>Troubleshooting:</strong> Diagnose and resolve common control system problems</li>
@@ -175,10 +175,10 @@ By completion of this module, students will demonstrate ability to:
 ## Student Outcomes & Impact
 
 ### Quantitative Results
-- **Concept Mastery:** 95% of students achieve learning objectives on comprehensive assessment
-- **Engagement Metrics:** 40% increase in active participation compared to traditional lecture format
-- **Retention:** 85% successful completion rate with high satisfaction scores
-- **Long-term Impact:** Follow-up surveys show 90% of students feel well-prepared for advanced control courses
+- **Outcomes:** Content pending verification
+- **Outcomes:** Content pending verification
+- **Outcomes:** Content pending verification
+- **Outcomes:** Content pending verification
 
 ### Qualitative Feedback
 
@@ -193,10 +193,10 @@ By completion of this module, students will demonstrate ability to:
 - Enhanced enthusiasm for advanced control system topics
 
 ### Broader Educational Impact
-- **Curriculum Innovation:** Model adopted by 3 other universities with similar positive results
+- **Curriculum Innovation:** Content pending verification
 - **Research Integration:** Platform used for undergraduate research projects in adaptive control
 - **Industry Partnership:** Local companies provide guest speakers and internship opportunities
-- **Publication:** Educational methodology documented in ASEE conference proceedings
+- **Publications:** Content pending verification
 
 ## Continuous Improvement & Evolution
 
@@ -214,7 +214,7 @@ By completion of this module, students will demonstrate ability to:
 
 ---
 
-**Course Information:** Control Systems Engineering (ENGR 3340) | **Enrollment:** 25-30 students per semester | **Institution:** Multiple universities
+**Course Information:** Control Systems Engineering (ENGR 3340) | **Enrollment:** 25-30 students per semester | **Institution:** Content pending verification
 
 [← Back to Teaching]({{ '/teaching/' | relative_url }}) | [Next Module: ENT260 SolidWorks →]({{ '/teaching/ent260-solidworks/' | relative_url }})
 
