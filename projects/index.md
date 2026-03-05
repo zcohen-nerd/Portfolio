@@ -10,18 +10,20 @@ show_title: false
 
 Project pages are organized for quick scanning: Overview, Problem, System Architecture, Interfaces, Key Design Decisions, Implementation, Testing & Verification, and Lessons Learned.
 
-{% assign all_projects = site.pages | where_exp: "p", "p.path contains 'projects/' and p.path != 'projects/index.md'" | sort: "weight" %}
-{% assign flagship = all_projects | where: "featured", true %}
-{% assign additional = all_projects | where: "featured", false %}
+{% assign sorted_pages = site.pages | sort: "weight" %}
 
 ## Flagship Systems
 
-{% for project in flagship %}
+{% for project in sorted_pages %}
+{% if project.path contains 'projects/' and project.path != 'projects/index.md' and project.featured == true %}
 - [{{ project.title }}]({{ project.url | relative_url }})
+{% endif %}
 {% endfor %}
 
 ## Additional Projects
 
-{% for project in additional %}
+{% for project in sorted_pages %}
+{% if project.path contains 'projects/' and project.path != 'projects/index.md' and project.featured != true %}
 - [{{ project.title }}]({{ project.url | relative_url }})
+{% endif %}
 {% endfor %}
