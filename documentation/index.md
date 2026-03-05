@@ -8,7 +8,7 @@ show_title: false
 
 # Documentation & Scholarship
 
-<img src="{{ '/assets/images/Hero Image.png' | relative_url }}" alt="Documentation and Scholarship Overview" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;" loading="lazy">
+<img src="{{ '/assets/images/hero-image.png' | relative_url }}" alt="Documentation and Scholarship Overview" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;" loading="lazy">
 
 > **Purpose of This Library**  
 > Curated resources that capture how I document complex engineering systems, share research-backed methods, and present those findings to technical and educational audiences.
