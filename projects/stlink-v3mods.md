@@ -13,183 +13,61 @@ show_title: false
 
 <img src="{{ '/assets/images/project-placeholder.svg' | relative_url }}" alt="ST-Link V3 Modifications Overview" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;">
 
-> **Executive Summary:** Demonstrated functional prototype used in testing and development.
+## Overview
 
-## Project Overview
+This project extends ST-Link V3 hardware into a broader embedded development interface board. The design adds protocol breakout access, target power control, and integrated monitoring features while staying compatible with existing debug workflows. It is used as a practical bridge between standard debug probes and bench instrumentation.
 
-**Problem Statement:** Standard ST-Link V3 debug probes lacked several features critical for efficient embedded development: automatic target power management, integrated logic analysis, and enhanced debugging protocols. Development teams were using multiple expensive tools or suffering from inefficient workflows.
+## Problem
 
-**Solution Approach:** Designed hardware modifications and custom firmware to add missing functionality while maintaining compatibility with existing toolchains. Focused on enhancing developer experience without requiring changes to established development processes.
+The base debug probe did not provide all interfaces needed for day-to-day bring-up and protocol troubleshooting. Teams needed additional tools for power sequencing, bus inspection, and multi-interface debugging, which created setup overhead and context switching.
 
-**Impact:** Demonstrated functional prototype used in testing and development.
+## System Architecture
 
-<div class="project-grid">
-  <div class="project-card">
-    <h3>🎯 Enhancement Goals</h3>
-    <ul>
-      <li><strong>Power Management:</strong> Automatic target power cycling and measurement</li>
-      <li><strong>Status:</strong> Content pending verification</li>
-      <li><strong>Extended Protocols:</strong> UART bridge, I2C/SPI monitoring</li>
-      <li><strong>Workflow Integration:</strong> IDE plugins and automation support</li>
-      <li><strong>Multi-target Support:</strong> Simultaneous connection capabilities</li>
-    </ul>
-  </div>
-  <div class="project-card">
-    <h3>📊 Developer Impact</h3>
-    <ul>
-      <li><strong>Status:</strong> Content pending verification</li>
-      <li><strong>Status:</strong> Content pending verification</li>
-      <li><strong>Status:</strong> Content pending verification</li>
-      <li><strong>Status:</strong> Content pending verification</li>
-      <li><strong>Cost Savings:</strong> $15K avoided in additional test equipment</li>
-    </ul>
-  </div>
-</div>
-
-## Technical Modifications
-
-### Hardware Enhancements
 <img src="{{ '/assets/images/diagram-placeholder.svg' | relative_url }}" alt="ST-Link V3 Hardware Modifications" style="width: 100%; max-width: 1000px; height: auto; border-radius: 8px; margin: 1rem 0;">
 
-**Power Management Circuit:**
-- **Precision Current Measurement:** Added INA219 current sense amplifier for target power monitoring
-- **Status:** Content pending verification
-- **Power Cycling Control:** Automated target reset and power sequence management
-- **Protection Circuits:** Over-current and reverse polarity protection for target safety
+The architecture combines modified probe hardware, auxiliary interface circuitry, and extended firmware command handling.
 
-**Logic Analyzer Integration:**
-- **Additional GPIO:** 8 additional digital inputs with 100MHz sampling capability
-- **Trigger Logic:** Hardware-based trigger generation for protocol capture
-- **Buffer Memory:** Dedicated SRAM for waveform capture and storage
-- **Status:** Content pending verification
+**Main components**
+- ST-Link-based debug core with modified carrier circuitry
+- Power measurement and power-cycling control path
+- Protocol access for UART, I2C, SPI, and additional digital channels
+- Firmware extensions for command routing and data capture
+- Host-side integration with IDE and script workflows
 
-### Firmware Architecture
+**Hardware and software interfaces**
+- Debug transport remains compatible with existing toolchains
+- Added interfaces expose bus monitoring and control operations
+- Firmware APIs provide automation hooks for scripted development tasks
 
-<img src="{{ '/assets/images/project-placeholder.svg' | relative_url }}" alt="Firmware Architecture Diagram" style="width: 100%; max-width: 600px; height: auto; border-radius: 8px; float: right; margin: 0 0 1rem 1rem;">
+**Diagram references**
+- Hardware modification diagram: `assets/images/diagram-placeholder.svg`
+- Firmware overview image: `assets/images/project-placeholder.svg`
 
-**Extended Command Set:**
-- **Power Control API:** Software control of target power and measurement
-- **Logic Capture API:** Protocol-aware capture with automatic decode
-- **Multi-channel Support:** Simultaneous debug and analysis operations
-- **Automation Interface:** Scriptable commands for CI/CD integration
+## Key Design Decisions
 
-**Protocol Implementations:**
-- **UART Bridge:** High-speed serial communication with flow control
-- **I2C Monitor:** Non-intrusive bus monitoring with address filtering
-- **SPI Analyzer:** Protocol decode with configurable clock and data phases
-- **Custom Protocols:** Framework for adding domain-specific analysis
+- **Maintain ST-Link compatibility:** Kept existing debug workflow intact while adding new features.
+- **On-board power management path:** Added control/measurement to support bring-up and fault isolation.
+- **Protocol-aware firmware extensions:** Reduced dependence on external tools for common interface checks.
+- **Scriptable command interface:** Supported repeatable debug and validation steps in development workflows.
 
-**Real-time Features:**
-- **Live Monitoring:** Streaming data to development tools without interruption
-- **Trigger Actions:** Automated responses to specific protocol events
-- **Performance Profiling:** CPU usage and power consumption tracking
-- **Error Detection:** Automatic identification of protocol violations
+## Implementation
 
-### Software Integration
+Implementation included board-level modifications, firmware updates, and tooling integration.
 
-**IDE Plugin Development:**
-- **STM32CubeIDE Integration:** Native power management and analysis windows
-- **VS Code Extension:** Lightweight interface for protocol monitoring
-- **Command Line Tools:** Scriptable utilities for automation and CI/CD
-- **Status:** Content pending verification
+- Added current sensing, protection, and controlled power-cycling circuitry.
+- Implemented firmware command extensions for power control and protocol capture paths.
+- Integrated UART/I2C/SPI monitoring capabilities into the development toolchain.
+- Built command-line and IDE support patterns for repeatable use during debug sessions.
 
-**Development Workflow Enhancements:**
-- **Automated Testing:** Power cycling and stimulus generation for hardware tests
-- **Performance Monitoring:** Real-time current and timing analysis during development
-- **Protocol Validation:** Automatic verification of communication interfaces
-- **Debugging Assistance:** Enhanced breakpoint actions with power and protocol context
+## Lessons Learned
 
-## Implementation Process
-
-| Phase | Duration | Key Activities | Deliverables |
-|-------|----------|---------------|-------------|
-| **Analysis & Planning** | 4 weeks | Requirements gathering, feasibility study | Enhancement specification, component selection |
-| **Hardware Development** | 8 weeks | PCB design, prototype assembly, testing | Modified hardware, characterization data |
-| **Firmware Development** | 12 weeks | Protocol implementation, testing, optimization | Custom firmware, test procedures |
-| **Integration & Validation** | 6 weeks | IDE integration, developer testing, documentation | Complete toolchain, user guides |
-| **Deployment & Support** | 4 weeks | Team rollout, training, feedback collection | Production deployment, support procedures |
-
-### Design Challenges & Solutions
-
-**Maintaining ST-Link Compatibility:**
-- **Challenge:** Preserve original functionality while adding new features
-- **Solution:** Layered firmware architecture with conditional feature activation
-- **Status:** Content pending verification
-
-**Space and Thermal Constraints:**
-- **Challenge:** Add functionality within existing ST-Link V3 form factor
-- **Solution:** High-density PCB layout with efficient power management
-- **Outcome:** All enhancements fit within original enclosure with acceptable thermal performance
-
-**Tool Ecosystem Integration:**
-- **Challenge:** Work seamlessly with diverse development environments
-- **Solution:** Standard APIs and plugin architecture for major IDEs
-- **Outcome:** Adoption across multiple toolchains without workflow disruption
-
-## Tools & Technologies
-
-<div class="project-grid">
-  <div class="project-card">
-    <h3>🔧 Hardware Development</h3>
-    <ul>
-      <li><strong>PCB Design:</strong> Altium Designer, high-speed layout techniques</li>
-      <li><strong>Component Selection:</strong> Power management ICs, high-speed ADCs</li>
-      <li><strong>Testing:</strong> Oscilloscopes, logic analyzers, power supplies</li>
-      <li><strong>Assembly:</strong> SMT rework, precision soldering techniques</li>
-    </ul>
-  </div>
-  <div class="project-card">
-    <h3>⚡ Software Development</h3>
-    <ul>
-      <li><strong>Firmware:</strong> STM32CubeIDE, real-time system design</li>
-      <li><strong>Desktop Apps:</strong> Qt, Python GUI development</li>
-      <li><strong>IDE Plugins:</strong> Eclipse, VS Code extension APIs</li>
-      <li><strong>Testing:</strong> Automated test frameworks, continuous integration</li>
-    </ul>
-  </div>
-</div>
-
-### Development Environment
-- **Version Control:** Git with feature branch workflow and automated testing
-- **Documentation:** Technical specifications, user guides, API documentation
-- **Quality Assurance:** Code review process, hardware validation protocols
-- **Deployment:** Automated build system with version management
-
-## Results & Developer Adoption
-
-### Productivity Improvements
-- **Debug Session Efficiency:** Average debug time reduced from 45 minutes to 27 minutes
-- **Status:** Content pending verification
-- **Context Switching:** Eliminated need to switch between multiple tools during debugging
-- **Automation Capabilities:** Enabled automated testing scenarios previously requiring manual intervention
-
-### Technical Achievements
-- **Performance:** 100MHz logic capture with protocol decode in real-time
-- **Power Measurement:** µA-level current measurement accuracy for power profiling
-- **Multi-protocol Support:** Simultaneous monitoring of UART, I2C, and SPI interfaces
-- **Integration Quality:** Zero compatibility issues with existing ST development tools
-
-### Team Impact & Adoption
-- **Status:** Content pending verification
-- **Status:** Content pending verification
-- **Knowledge Transfer:** Internal training program created for advanced features
-- **Status:** Content pending verification
-
-### Cost-Benefit Analysis
-- **Development Cost:** $25K including engineering time and component costs
-- **Equipment Savings:** $15K avoided in additional test equipment purchases
-- **Productivity Gains:** Estimated $40K/year in reduced development time
-- **Status:** Content pending verification
-
-### Lessons Learned & Future Applications
-- **Open Source Potential:** Core enhancements could benefit broader embedded community
-- **Standardization Opportunities:** Features could influence future debug probe specifications
-- **Status:** Content pending verification
-- **Status:** Content pending verification
+- Preserving baseline tool compatibility is critical when extending established engineering workflows.
+- Power sequencing and bus visibility features remove major friction during board bring-up.
+- Firmware extensibility is easier to maintain when command APIs are kept modular.
+- A single integrated debug interface reduces setup variability across development stations.
 
 ---
 
-**Project Status:** <span class="status-badge">Internal Production</span> | **Timeline:** January 2022 - August 2023 | **Team Size:** 2 engineers
+**Project Status:** <span class="status-badge">Prototype Deployment</span> | **Timeline:** May 2022 - December 2023
 
-[← Previous: PID Trainer]({{ '/projects/pid-trainer/' | relative_url }}) | [Back to Projects →]({{ '/projects/' | relative_url }})
-
+[← Previous: PID Trainer]({{ '/projects/pid-trainer/' | relative_url }}) | [Next Project: Fusion Blocks →]({{ '/projects/fusion-system-blocks/' | relative_url }})
