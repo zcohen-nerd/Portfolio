@@ -11,83 +11,56 @@ show_title: false
 
 # Fusion System Blocks
 
-**Framework for visual systems documentation using Autodesk Fusion**
-
 <img src="{{ '/assets/images/project-placeholder.svg' | relative_url }}" alt="Fusion System Blocks" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;">
 
-## Project Overview
+## Overview
 
-Fusion System Blocks is a documentation framework that leverages Autodesk Fusion 360's design environment to create visual, hierarchical representations of complex engineering systems. This approach enables modular schematic visualization, traceable documentation across mechanical and electrical domains, and systematic design planning.
+Fusion System Blocks is a visual systems-documentation workflow built around Autodesk Fusion. It provides a structured way to represent subsystem boundaries, interfaces, and hierarchy during multidisciplinary design. The framework keeps documentation aligned with engineering development.
 
-**Key Features:**
-- **Visual System Architecture:** Block diagram representation of complex systems
-- **Hierarchical Design Planning:** Multi-level system decomposition
-- **Cross-Domain Documentation:** Mechanical and electrical integration
-- **Traceable Design Process:** Version-controlled documentation workflow
+## Problem
 
-## Technical Implementation
+Complex projects can lose traceability between mechanical, electrical, and controls decisions when documentation is fragmented.
 
-### System Architecture
-- **Fusion 360 Integration:** Native CAD environment workflow
-- **Modular Block Library:** Reusable system components
-- **Documentation Templates:** Standardized design formats
-- **Version Control:** Git-based documentation tracking
+## System Architecture
 
-### Design Methodology
-- **Top-Down Planning:** System-level decomposition
-- **Interface Documentation:** Clear domain boundaries
-- **Requirement Traceability:** Design decision tracking
-- **Collaborative Workflow:** Multi-disciplinary team support
+```mermaid
+flowchart LR
+  SYS[System Context] --> SUB[Subsystem Blocks]
+  SUB --> IFACE[Interface Definitions]
+  IFACE --> DOC[Linked Documentation]
+  DOC --> REV[Version-Control Updates]
+```
 
-## Project Outcomes
+The framework uses top-level system blocks, subsystem decomposition, and explicit interface documentation.
 
-### Deliverables
-- **📚 Framework Documentation:** Complete implementation guide
-- **🧩 Block Library:** Standard system components
-- **📋 Templates:** Project starter workflows
-- **🔧 Tools:** Custom Fusion scripts and utilities
+## Key Design Decisions
 
-### Impact & Results
-- **Improved Design Clarity:** Visual system representation
-- **Enhanced Collaboration:** Cross-disciplinary communication
-- **Faster Project Setup:** Template-based workflows
-- **Better Documentation:** Traceable design decisions
+- **Decision:** Use top-down decomposition.
+  **Rationale:** Keep architecture discussions aligned across disciplines.
+- **Decision:** Use reusable templates.
+  **Rationale:** Reduce format drift and setup time.
+- **Decision:** Keep documentation in version control.
+  **Rationale:** Track architecture changes with project history.
 
-### Current Status
-**Status:** Public Release  
-**Timeline:** 2023-2024  
-**Availability:** Open source framework
+## Implementation
 
-## Technical Details
+- Built starter templates for system maps and subsystem hierarchy.
+- Added interface documentation patterns tied to markdown notes.
+- Integrated visual system mapping with repository documentation workflows.
 
-### Tools & Technologies
-- **Autodesk Fusion 360:** Primary design environment
-- **Git:** Version control and collaboration
-- **Python:** Automation scripting
-- **Markdown:** Documentation format
+### Artifacts
 
-### Applications
-- **Systems Engineering:** Complex system planning
-- **Product Development:** Multi-domain coordination
-- **Education:** Visual learning tools
-- **Documentation:** Technical communication
+- Block library examples: (TBD: add image in `assets/images/projects/fusion-system-blocks/`)
+- Interface mapping example: (TBD: add image in `assets/images/projects/fusion-system-blocks/`)
 
-## Resources & Links
+## Lessons Learned
 
-### Documentation
-- **Framework Guide:** [Coming Soon] - Complete implementation documentation
-- **Quick Start:** [Coming Soon] - Getting started templates
-- **Examples:** [Coming Soon] - Sample projects and use cases
-
-### Code Repository
-- **GitHub:** [Coming Soon] - Source code and templates
-- **Releases:** [Coming Soon] - Version history and downloads
-- **Issues:** [Coming Soon] - Community support and feedback
+- Lightweight structure is easier to maintain during active development.
+- Explicit interface boundaries reduce integration ambiguity.
+- Shared visual vocabulary improves review and onboarding.
 
 ---
 
-**Project Lead:** Zachary Cohen  
-**Institution:** U.S. Naval Academy - Weapons, Robotics, and Control Engineering  
-**Contact:** [zcohen-nerd@gmail.com](mailto:zcohen-nerd@gmail.com)
+**Project Status:** <span class="status-badge">Public Release</span> | **Timeline:** 2023 - 2024
 
-*This framework represents ongoing work in systems documentation methodology and visual engineering communication.*
+[← Previous: ST-Link Mods]({{ '/projects/stlink-v3mods/' | relative_url }}) | [Back to Projects →]({{ '/projects/' | relative_url }})

@@ -122,7 +122,7 @@ show_title: false
 **Learning Focus:** Design validation and performance optimization
 
 **Simulation & Analysis Tools:**
-- **Static Analysis:** Stress, displacement, and safety factor calculations
+- **Outcomes:** Content pending verification
 - **Modal Analysis:** Natural frequencies and vibration modes
 - **Thermal Analysis:** Heat transfer and temperature distribution
 - **Flow Simulation:** Basic fluid flow and pressure drop analysis
@@ -184,10 +184,10 @@ show_title: false
 </div>
 
 ### Grading Distribution
-- **Weekly Modeling Exercises:** 25% (skill building and practice)
-- **Major Project Assignments:** 40% (application and integration)
-- **Technical Communication:** 20% (drawings and documentation)
-- **Final Comprehensive Assessment:** 15% (demonstrated proficiency)
+- **Outcomes:** Content pending verification
+- **Outcomes:** Content pending verification
+- **Outcomes:** Content pending verification
+- **Outcomes:** Content pending verification
 
 ## Technology Integration & Resources
 
@@ -206,14 +206,14 @@ show_title: false
 ## Student Outcomes & Success Metrics
 
 ### Academic Performance
-- **Course Completion Rate:** 92% successful completion with C or better
-- **Skill Demonstration:** 95% of students achieve competency benchmarks
-- **Industry Readiness:** 90% of graduates report confidence in using CAD professionally
+- **Outcomes:** Content pending verification
+- **Outcomes:** Content pending verification
+- **Outcomes:** Content pending verification
 - **Follow-up Success:** Strong performance in subsequent manufacturing and design courses
 
 ### Industry Feedback & Employment
 - **Employer Satisfaction:** Consistently positive feedback on graduate CAD skills
-- **Job Placement:** 85% employment rate in engineering/manufacturing within 6 months
+- **Outcomes:** Content pending verification
 - **Professional Development:** Students report immediate productivity in CAD-based roles
 - **Continuing Education:** High enrollment in advanced CAD and manufacturing courses
 
