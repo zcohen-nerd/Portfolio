@@ -7,6 +7,8 @@ tags: [autonomous, maritime, power-systems]
 status: "Pilot Deployment"
 timeline: "2022-2025"
 show_title: false
+featured: true
+weight: 2
 ---
 
 # Autonomous Surfer Fleet: Maritime Autonomy Platform
@@ -15,57 +17,72 @@ show_title: false
 
 ## Overview
 
-The Surfer Fleet project is an autonomous surface vehicle platform for long-duration maritime monitoring. It combines a marine power subsystem, onboard autonomy, and remote telemetry for field operations. The platform is structured to support modular payload integration and coordinated multi-vehicle missions.
+The Surfer Fleet project is an autonomous surface-vehicle platform for long-duration maritime monitoring. It combines energy management, onboard autonomy, and remote telemetry in a modular mission architecture. The platform supports payload integration and coordinated multi-vehicle operation.
 
 ## Problem
 
-Ocean monitoring programs needed persistent data collection in locations where crewed vessel operations are expensive and difficult to schedule. The system therefore had to balance energy availability, autonomy, and communications reliability in a marine environment.
+The system was developed for monitoring missions where crewed vessel operations are expensive and difficult to sustain, requiring robust autonomy and communications in marine conditions.
 
 ## System Architecture
 
 <img src="{{ '/assets/images/diagram-placeholder.svg' | relative_url }}" alt="Surfer Fleet System Architecture" style="width: 100%; max-width: 1000px; height: auto; border-radius: 8px; margin: 1rem 0;">
 
-The architecture is organized around four subsystems: power, navigation/autonomy, communications, and payload/data logging.
+```mermaid
+flowchart LR
+  SOLAR[Solar Array] --> PWR[Power Management/Battery]
+  PWR --> COMP[Autonomy Compute]
+  COMP --> NAV[Navigation Control]
+  NAV --> ACT[Propulsion/Actuation]
+  SENS[GNSS/IMU/Radar/Vision] --> COMP
+  COMP <--> SAT[Satellite Link]
+  COMP <--> MESH[Local Mesh Radio]
+  PAY[Payload Sensors] --> COMP
+```
 
-**Main components**
-- Solar charging and battery storage subsystem
-- GNSS/IMU/radar/vision sensor stack
-- Multi-layer autonomy and mission planning software
-- Satellite and local mesh communications links
-- Modular payload interface for sensing packages
+## Interfaces
 
-**Hardware and software interfaces**
-- Sensor fusion feeds navigation and path-planning layers
-- Mission planning coordinates with fleet-level task allocation
-- Telemetry and command data pass through satellite/mesh communications
-- Payload data is logged locally and forwarded through comms links
-
-**Diagram references**
-- System diagram: `assets/images/diagram-placeholder.svg`
-- Power/configuration image: `assets/images/project-placeholder.svg`
+- **Power interfaces:** Solar input, battery storage, onboard distribution (TBD: verify rail map and protection details).
+- **Data interfaces:** Satellite telemetry path and local mesh networking for command/data exchange.
+- **Control interfaces:** Navigation/mission control outputs to propulsion and mission subsystems (TBD: verify actuator interface details).
 
 ## Key Design Decisions
 
-- **Hybrid solar-battery power system:** Chosen to support long mission windows without continuous shore support.
-- **Layered autonomy model:** Split reactive, tactical, and strategic control to separate fast safety actions from slower mission logic.
-- **Satellite plus mesh communications:** Added resilience for remote operations and local coordination.
-- **Modular payload interface:** Allowed mission-specific instrumentation changes without redesigning core control hardware.
+- **Decision:** Use hybrid solar-battery power architecture.
+  **Rationale:** Support extended missions without constant shore-side intervention.
+- **Decision:** Split autonomy into layered control behaviors.
+  **Rationale:** Separate fast-response safety actions from higher-level mission planning.
+- **Decision:** Use satellite + mesh communications.
+  **Rationale:** Maintain remote telemetry while enabling local fleet coordination.
+- **Decision:** Keep payload interface modular.
+  **Rationale:** Enable sensor changes without redesigning core control hardware.
 
 ## Implementation
 
-Implementation covered hull/platform integration, embedded electronics, control software, and field validation workflow.
+- Integrated onboard power subsystem with charging, storage, and power-budget logic.
+- Built navigation stack from sensor fusion, route planning, and collision-avoidance components.
+- Implemented telemetry/command pathways across satellite and local radio links.
+- Used simulation, HIL workflows, controlled-water tests, and field-trial iterations.
 
-- Power subsystem integrated MPPT charging, battery management, and adaptive power budgeting.
-- Navigation stack combined GNSS/INS with collision-avoidance and route planning methods.
-- Communications stack used satellite messaging plus local radio links with retry/fault-tolerance behaviors.
-- Development and validation used simulation, hardware-in-the-loop testing, controlled water testing, and iterative field trials.
+### Artifacts
+
+- Hull/platform photo: (TBD: add image in `assets/images/projects/surfer-fleet/`)
+- Electronics layout: (TBD: add image in `assets/images/projects/surfer-fleet/`)
+- Bench integration setup: (TBD: add photo in `assets/images/projects/surfer-fleet/`)
+- Field test setup: (TBD: add photo in `assets/images/projects/surfer-fleet/`)
+
+## Testing & Verification
+
+- Power and energy-budget validation checklist (TBD: add)
+- Navigation sensor interface validation (TBD: add)
+- Telemetry/command link validation (TBD: add)
+- Mission-function verification procedure (TBD: add)
 
 ## Lessons Learned
 
-- Marine power management and communications reliability need to be designed together, not as separate workstreams.
-- Fleet behavior is easier to maintain when vehicle-level and fleet-level decisions are explicitly separated.
-- Field operations benefit from strong diagnostics and recovery procedures built into baseline firmware.
-- Early planning for payload interfaces reduced rework when adding new sensing missions.
+- Marine power and communications should be designed as one coupled system.
+- Explicit separation of vehicle-level and fleet-level control improves maintainability.
+- Embedded diagnostics and recovery paths are critical for remote operations.
+- (TBD: add one real integration issue encountered and resolution)
 
 ---
 

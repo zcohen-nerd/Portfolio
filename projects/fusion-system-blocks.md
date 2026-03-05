@@ -7,6 +7,8 @@ tags: [documentation, systems-engineering, fusion360, workflow]
 status: "Public Release"
 timeline: "2023-2024"
 show_title: false
+featured: false
+weight: 6
 ---
 
 # Fusion System Blocks
@@ -15,46 +17,49 @@ show_title: false
 
 ## Overview
 
-Fusion System Blocks is a visual systems-documentation workflow built around Autodesk Fusion. It provides a structured way to represent subsystem boundaries, interfaces, and hierarchy during multidisciplinary design. The framework is intended to keep system documentation aligned with engineering development work.
+Fusion System Blocks is a visual systems-documentation workflow built around Autodesk Fusion. It provides a structured way to represent subsystem boundaries, interfaces, and hierarchy during multidisciplinary design. The framework keeps documentation aligned with engineering development.
 
 ## Problem
 
-Complex projects often lose traceability between mechanical, electrical, and controls decisions when documentation is fragmented. This project addressed the need for a shared system mapping format that can be maintained as design details evolve.
+Complex projects can lose traceability between mechanical, electrical, and controls decisions when documentation is fragmented.
 
 ## System Architecture
 
-The framework uses a layered representation: top-level system blocks, subsystem decomposition, and interface-level documentation.
+```mermaid
+flowchart LR
+  SYS[System Context] --> SUB[Subsystem Blocks]
+  SUB --> IFACE[Interface Definitions]
+  IFACE --> DOC[Linked Documentation]
+  DOC --> REV[Version-Control Updates]
+```
 
-**Main components**
-- Reusable block templates
-- Hierarchical decomposition format
-- Interface-definition views
-- Version-controlled markdown support material
-
-**Interfaces between systems**
-- Mechanical, electrical, and controls interfaces are documented explicitly at block boundaries.
-- Design updates are tracked through the same revision process used for project documentation.
-
-**Files referenced**
-- Project image: `assets/images/project-placeholder.svg`
+The framework uses top-level system blocks, subsystem decomposition, and explicit interface documentation.
 
 ## Key Design Decisions
 
-- **Top-down decomposition approach:** Made early architecture discussion easier across teams.
-- **Reusable block templates:** Reduced setup time and formatting drift between projects.
-- **Version-controlled documentation:** Allowed architecture changes to be tracked with development history.
+- **Decision:** Use top-down decomposition.
+  **Rationale:** Keep architecture discussions aligned across disciplines.
+- **Decision:** Use reusable templates.
+  **Rationale:** Reduce format drift and setup time.
+- **Decision:** Keep documentation in version control.
+  **Rationale:** Track architecture changes with project history.
 
 ## Implementation
 
-- Developed a starter framework for system maps and subsystem hierarchy views.
-- Created repeatable templates for documenting interfaces and design intent.
-- Integrated markdown documentation practices with the visual block workflow.
+- Built starter templates for system maps and subsystem hierarchy.
+- Added interface documentation patterns tied to markdown notes.
+- Integrated visual system mapping with repository documentation workflows.
+
+### Artifacts
+
+- Block library examples: (TBD: add image in `assets/images/projects/fusion-system-blocks/`)
+- Interface mapping example: (TBD: add image in `assets/images/projects/fusion-system-blocks/`)
 
 ## Lessons Learned
 
-- Documentation structure is most useful when it is lightweight enough to maintain during active development.
-- Explicit interface definitions reduce integration ambiguity between disciplines.
-- A shared visual vocabulary improves design reviews and onboarding for new contributors.
+- Lightweight structure is easier to maintain during active development.
+- Explicit interface boundaries reduce integration ambiguity.
+- Shared visual vocabulary improves review and onboarding.
 
 ---
 

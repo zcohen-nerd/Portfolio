@@ -7,6 +7,8 @@ tags: [developer-tools, hardware, embedded, productivity]
 status: "Production Prototype"
 timeline: "2022-2023"
 show_title: false
+featured: true
+weight: 4
 ---
 
 # ST-Link V3 Modifications: Enhanced Developer Tooling
@@ -15,56 +17,70 @@ show_title: false
 
 ## Overview
 
-This project extends ST-Link V3 hardware into a broader embedded development interface board. The design adds protocol breakout access, target power control, and integrated monitoring features while staying compatible with existing debug workflows. It is used as a practical bridge between standard debug probes and bench instrumentation.
+This project extends ST-Link V3 hardware into a wider embedded development interface board. It adds power control, protocol breakout, and monitoring paths while keeping standard debug workflows intact. The goal is to reduce bring-up friction during firmware and hardware development.
 
 ## Problem
 
-The base debug probe did not provide all interfaces needed for day-to-day bring-up and protocol troubleshooting. Teams needed additional tools for power sequencing, bus inspection, and multi-interface debugging, which created setup overhead and context switching.
+The base debug probe did not expose all interfaces needed for routine board bring-up and protocol troubleshooting, resulting in fragmented tooling and setup overhead.
 
 ## System Architecture
 
 <img src="{{ '/assets/images/diagram-placeholder.svg' | relative_url }}" alt="ST-Link V3 Hardware Modifications" style="width: 100%; max-width: 1000px; height: auto; border-radius: 8px; margin: 1rem 0;">
 
-The architecture combines modified probe hardware, auxiliary interface circuitry, and extended firmware command handling.
+```mermaid
+flowchart LR
+  HOST[Host IDE/CLI] <--> CORE[ST-Link Core]
+  CORE --> PWR[Target Power Control]
+  CORE <--> DBG[JTAG/SWD]
+  CORE <--> IFACE[UART/I2C/SPI/CAN Access]
+  IFACE --> TARGET[Target Board]
+  MON[Current/Signal Monitor] --> HOST
+```
 
-**Main components**
-- ST-Link-based debug core with modified carrier circuitry
-- Power measurement and power-cycling control path
-- Protocol access for UART, I2C, SPI, and additional digital channels
-- Firmware extensions for command routing and data capture
-- Host-side integration with IDE and script workflows
+## Interfaces
 
-**Hardware and software interfaces**
-- Debug transport remains compatible with existing toolchains
-- Added interfaces expose bus monitoring and control operations
-- Firmware APIs provide automation hooks for scripted development tasks
-
-**Diagram references**
-- Hardware modification diagram: `assets/images/diagram-placeholder.svg`
-- Firmware overview image: `assets/images/project-placeholder.svg`
+- **Power interfaces:** Target power switching/measurement path (TBD: verify supported voltage/current range).
+- **Data interfaces:** JTAG/SWD plus UART/I2C/SPI/CAN breakout noted in page content.
+- **Control interfaces:** Scriptable command path for power and interface operations (TBD: verify command coverage).
 
 ## Key Design Decisions
 
-- **Maintain ST-Link compatibility:** Kept existing debug workflow intact while adding new features.
-- **On-board power management path:** Added control/measurement to support bring-up and fault isolation.
-- **Protocol-aware firmware extensions:** Reduced dependence on external tools for common interface checks.
-- **Scriptable command interface:** Supported repeatable debug and validation steps in development workflows.
+- **Decision:** Preserve baseline ST-Link compatibility.
+  **Rationale:** Keep existing debug workflow usable without retraining.
+- **Decision:** Integrate power control and monitoring.
+  **Rationale:** Improve bring-up and fault isolation on target boards.
+- **Decision:** Extend firmware with protocol-aware features.
+  **Rationale:** Reduce dependence on separate external tools.
+- **Decision:** Provide scriptable command surface.
+  **Rationale:** Support repeatable debug and validation procedures.
 
 ## Implementation
 
-Implementation included board-level modifications, firmware updates, and tooling integration.
+- Added board-level current-sensing, protection, and power-cycling circuitry.
+- Implemented firmware command extensions for power and interface operations.
+- Integrated protocol-monitoring features into host development workflow.
+- Built command-line and IDE usage patterns for repeatable debugging.
 
-- Added current sensing, protection, and controlled power-cycling circuitry.
-- Implemented firmware command extensions for power control and protocol capture paths.
-- Integrated UART/I2C/SPI monitoring capabilities into the development toolchain.
-- Built command-line and IDE support patterns for repeatable use during debug sessions.
+### Artifacts
+
+- Breakout board layout: (TBD: add image in `assets/images/projects/stlink-v3mods/`)
+- Schematic excerpt: (TBD: add image in `assets/images/projects/stlink-v3mods/`)
+- Firmware interface map: (TBD: add image in `assets/images/projects/stlink-v3mods/`)
+- Bench bring-up photo: (TBD: add photo in `assets/images/projects/stlink-v3mods/`)
+
+## Testing & Verification
+
+- Power-path bring-up checklist (TBD: add)
+- Protocol interface validation (TBD: add)
+- Debug workflow regression checklist (TBD: add)
+- Firmware command verification procedure (TBD: add)
 
 ## Lessons Learned
 
-- Preserving baseline tool compatibility is critical when extending established engineering workflows.
-- Power sequencing and bus visibility features remove major friction during board bring-up.
-- Firmware extensibility is easier to maintain when command APIs are kept modular.
-- A single integrated debug interface reduces setup variability across development stations.
+- Backward compatibility is essential when extending established debug tools.
+- Integrated power sequencing and bus visibility reduces bring-up time and ambiguity.
+- Modular firmware command design improves maintainability of feature additions.
+- (TBD: add one real integration issue encountered and resolution)
 
 ---
 

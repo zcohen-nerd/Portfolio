@@ -9,12 +9,15 @@
 - `projects/fusion-system-blocks.md`
 
 ## Sections Added / Standardized
-Each updated project page now follows the same documentation structure:
+Each updated project page now follows a shared documentation structure, with the following sections standardized across pages (where applicable):
 - Overview
 - Problem
 - System Architecture
-- Key Design Decisions
+- Interfaces
+- Artifacts
 - Implementation
+- Testing & Verification
+- Key Design Decisions
 - Lessons Learned
 
 ## Diagrams Referenced

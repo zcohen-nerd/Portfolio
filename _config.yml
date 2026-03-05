@@ -18,6 +18,8 @@ permalink: pretty
 
 # Navigation
 navigation:
+  - name: "Featured Systems"
+    link: "/#featured-systems"
   - name: "Projects"
     link: "/projects/"
   - name: "Teaching"

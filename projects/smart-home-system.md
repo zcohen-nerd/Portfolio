@@ -7,6 +7,8 @@ tags: [iot, safety, automation, networking]
 status: "Residential Deployment"
 timeline: "2021-2024"
 show_title: false
+featured: true
+weight: 5
 ---
 
 # Smart Home System: Safety-First IoT Architecture
@@ -15,57 +17,70 @@ show_title: false
 
 ## Overview
 
-This project is a residential automation platform designed around safety, security, and local control. It combines segmented networking, distributed device control, and event-driven automation to manage environmental, security, and utility subsystems. The implementation emphasizes maintainability and fault-tolerant behavior over convenience-only features.
+This project is a residential automation system built around safety, security, and local control. It integrates segmented networking, distributed device control, and event-driven automation for environmental and security functions. The implementation prioritizes maintainability and predictable behavior under degraded conditions.
 
 ## Problem
 
-Typical home automation stacks can create security and reliability issues when many device types share a flat network and cloud-only control paths. The engineering need was a system architecture that isolates critical functions, enforces controlled interfaces, and continues operating safely during component failures.
+Typical home automation deployments can mix critical and non-critical traffic on flat networks and depend heavily on cloud services. The engineering need was to isolate critical functions and keep core control local.
 
 ## System Architecture
 
 <img src="{{ '/assets/images/diagram-placeholder.svg' | relative_url }}" alt="Smart Home Network Architecture" style="width: 100%; max-width: 1000px; height: auto; border-radius: 8px; margin: 1rem 0;">
 
-The system architecture is organized around segmented network zones, local processing nodes, and an automation/control layer.
+```mermaid
+flowchart LR
+  NET[Segmented Network/VLANs] --> HUB[Automation Hub]
+  HUB <--> EDGE[Edge Controllers]
+  EDGE <--> DEV[Sensors and Actuators]
+  HUB <--> RULE[Rule Engine]
+  HUB --> LOG[Local Logging/Monitoring]
+  ADMIN[Remote Admin Path] <--> HUB
+```
 
-**Main components**
-- Central automation hub and edge controllers
-- Managed switching and VLAN segmentation
-- Sensor/actuator network for safety, environment, and security functions
-- Local data services for logging and dashboards
-- Rule engine for event handling and scene orchestration
+## Interfaces
 
-**Hardware and software interfaces**
-- Device traffic is segmented by security/risk class
-- Node-RED/Home Assistant logic coordinates automation actions
-- Data is recorded to local monitoring/analytics services
-- Remote administration uses controlled access paths and authentication controls
-
-**Diagram references**
-- Network architecture: `assets/images/diagram-placeholder.svg`
-- Hardware overview image: `assets/images/project-placeholder.svg`
+- **Power interfaces:** Distributed device and controller power domains (TBD: verify distribution map).
+- **Data interfaces:** Local network interfaces across segmented VLANs; local telemetry/logging paths.
+- **Control interfaces:** Event-driven automation and scheduling control through Node-RED/Home Assistant stack.
 
 ## Key Design Decisions
 
-- **VLAN-based segmentation:** Isolated critical services from general automation traffic.
-- **Local-first processing:** Reduced dependence on external services for core functions.
-- **Defense-in-depth controls:** Applied firewall policy, authentication controls, and monitoring together.
-- **Fail-safe automation behavior:** Designed rules so essential functions remain predictable under degraded conditions.
+- **Decision:** Use VLAN-based segmentation.
+  **Rationale:** Isolate critical services from general automation traffic.
+- **Decision:** Keep core processing local-first.
+  **Rationale:** Maintain essential functions during external connectivity loss.
+- **Decision:** Use layered security controls.
+  **Rationale:** Combine policy enforcement, authentication, and monitoring.
+- **Decision:** Define fail-safe automation states.
+  **Rationale:** Keep system behavior predictable during faults.
 
 ## Implementation
 
-Implementation included infrastructure deployment, device integration, automation development, and operational validation.
+- Built segmented network and baseline security policy.
+- Integrated environment, security, and utility devices into one control model.
+- Implemented event-driven logic and scheduling using Node-RED and Home Assistant.
+- Added local logging and dashboard workflows for diagnostics and maintenance.
 
-- Built segmented network infrastructure and baseline security policy.
-- Integrated environmental, security, and utility devices into a unified control model.
-- Implemented event-driven automation and scheduling logic using Node-RED and Home Assistant.
-- Added local logging/monitoring with dashboard and alerting support for maintenance workflows.
+### Artifacts
+
+- Network topology diagram: (TBD: add image in `assets/images/projects/smart-home-system/`)
+- Automation flow screenshot: (TBD: add image in `assets/images/projects/smart-home-system/`)
+- Device cabinet photo: (TBD: add photo in `assets/images/projects/smart-home-system/`)
+- Bench validation setup: (TBD: add photo in `assets/images/projects/smart-home-system/`)
+
+## Testing & Verification
+
+- Network segmentation validation checklist (TBD: add)
+- Device interface validation (TBD: add)
+- Automation functional test procedure (TBD: add)
+- Fault/degraded-mode behavior checks (TBD: add)
 
 ## Lessons Learned
 
-- Device onboarding is more reliable when interface standards and naming conventions are defined early.
-- Observability (logs, dashboards, alerts) is essential for diagnosing multi-device interactions.
-- Safety and security rules should be reviewed as part of each new automation feature, not after deployment.
-- Keeping critical logic local improves resilience during connectivity disruptions.
+- Standardized device onboarding and naming improves maintainability.
+- Observability tooling is required for diagnosing multi-device automation issues.
+- Security and safety checks should be part of every new automation change.
+- (TBD: add one real integration issue encountered and resolution)
 
 ---
 

@@ -1,6 +1,6 @@
 # Placeholder Images
 
-This directory contains working images for the portfolio site used during development and testing.
+This directory contains placeholder images for the portfolio site, used during development and testing.
 
 ## Image Guidelines
 
