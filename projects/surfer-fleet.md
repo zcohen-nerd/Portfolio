@@ -13,7 +13,7 @@ show_title: false
 
 <img src="{{ '/assets/images/project-placeholder.svg' | relative_url }}" alt="Autonomous Surfer Fleet Overview" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;">
 
-> **Executive Summary:** Advanced autonomous maritime vehicle platform deployed across multiple ocean sites for environmental monitoring and data collection. Features 30+ day endurance, satellite connectivity, and autonomous navigation with 99.2% mission success rate across 150+ deployments.
+> **Executive Summary:** Demonstrated functional prototype used in testing and development.
 
 ## Project Overview
 
@@ -21,26 +21,26 @@ show_title: false
 
 **Solution Approach:** Developed modular autonomous surface vehicle (ASV) platform with integrated power management, satellite communications, and sensor payloads. Emphasized fleet operations, remote diagnostics, and adaptive mission planning.
 
-**Impact:** Enabled continuous ocean monitoring across 12 research sites, reduced data collection costs by 60%, and demonstrated autonomous fleet coordination for large-scale environmental studies.
+**Impact:** Demonstrated functional prototype used in testing and development.
 
 <div class="project-grid">
   <div class="project-card">
     <h3>🎯 Mission Requirements</h3>
     <ul>
-      <li><strong>Endurance:</strong> 30+ day autonomous operation</li>
-      <li><strong>Range:</strong> 500+ km mission radius</li>
+      <li><strong>Status:</strong> Content pending verification</li>
+      <li><strong>Status:</strong> Content pending verification</li>
       <li><strong>Payload:</strong> 50kg sensor/sampling capacity</li>
       <li><strong>Communications:</strong> Real-time satellite telemetry</li>
-      <li><strong>Fleet Size:</strong> 10+ coordinated vehicles</li>
+      <li><strong>Status:</strong> Content pending verification</li>
     </ul>
   </div>
   <div class="project-card">
     <h3>📊 Performance Achieved</h3>
     <ul>
-      <li><strong>Endurance:</strong> 35-day maximum deployment</li>
-      <li><strong>Success Rate:</strong> 99.2% mission completion</li>
-      <li><strong>Data Uptime:</strong> 96% communication availability</li>
-      <li><strong>Energy Efficiency:</strong> 40% better than target</li>
+      <li><strong>Status:</strong> Content pending verification</li>
+      <li><strong>Status:</strong> Content pending verification</li>
+      <li><strong>Status:</strong> Content pending verification</li>
+      <li><strong>Status:</strong> Content pending verification</li>
       <li><strong>Fleet Operations:</strong> 12 simultaneous vehicles</li>
     </ul>
   </div>
@@ -67,7 +67,7 @@ The autonomous surfer platform integrates **hybrid solar-battery power**, **adap
 - **Capacity:** 400W flexible panels with MPPT tracking
 - **Battery Bank:** 2kWh lithium iron phosphate with BMS
 - **Power Budget:** Adaptive load management for extended missions
-- **Efficiency:** 94% end-to-end power conversion efficiency
+- **Status:** Content pending verification
 
 **Energy Management Algorithm:**
 - **Predictive modeling** based on weather forecasts and mission profiles
@@ -78,7 +78,7 @@ The autonomous surfer platform integrates **hybrid solar-battery power**, **adap
 ### Autonomy & Navigation
 
 **Multi-Layer Control Architecture:**
-- **Reactive Layer:** Collision avoidance and emergency responses (<100ms)
+- **Status:** Content pending verification
 - **Tactical Layer:** Path planning and local navigation (1-10 seconds)  
 - **Strategic Layer:** Mission planning and fleet coordination (minutes-hours)
 - **Fleet Layer:** Multi-vehicle coordination and task allocation
@@ -98,7 +98,7 @@ The autonomous surfer platform integrates **hybrid solar-battery power**, **adap
 ### Communications & Data Systems
 
 **Satellite Communications:**
-- **Primary Link:** Iridium SBD for global coverage
+- **Status:** Content pending verification
 - **Data Rates:** 340 bytes/message with store-and-forward capability
 - **Protocol:** Custom compression for telemetry and command data
 - **Reliability:** Automatic retry with exponential backoff
@@ -122,15 +122,15 @@ The autonomous surfer platform integrates **hybrid solar-battery power**, **adap
 ### Key Technical Challenges
 
 **Power Management in Marine Environment:**
-- **Solution:** Developed predictive energy management with weather-aware algorithms
-- **Innovation:** Dynamic load balancing extends mission duration by 40%
+- **Status:** Content pending verification
+- **Status:** Content pending verification
 
 **Reliable Satellite Communications:**
 - **Solution:** Implemented adaptive protocol stack with compression and error correction
-- **Innovation:** 95%+ message delivery rate in adverse weather conditions
+- **Status:** Content pending verification
 
 **Autonomous Fleet Coordination:**
-- **Solution:** Distributed consensus algorithms with fault-tolerant networking
+- **Status:** Content pending verification
 - **Innovation:** Enables coordinated missions without centralized control
 
 ## Tools & Technologies
@@ -141,7 +141,7 @@ The autonomous surfer platform integrates **hybrid solar-battery power**, **adap
     <ul>
       <li><strong>Mechanical:</strong> SolidWorks, CFD analysis, hull optimization</li>
       <li><strong>Electronics:</strong> Altium Designer, MATLAB/Simulink</li>
-      <li><strong>Software:</strong> ROS, Python, C++ embedded development</li>
+      <li><strong>Status:</strong> Content pending verification</li>
       <li><strong>Simulation:</strong> Gazebo, maritime dynamics modeling</li>
     </ul>
   </div>
@@ -150,14 +150,14 @@ The autonomous surfer platform integrates **hybrid solar-battery power**, **adap
     <ul>
       <li><strong>Laboratory:</strong> Hardware-in-the-loop testing, power cycling</li>
       <li><strong>Pool Testing:</strong> Controlled environment validation</li>
-      <li><strong>Ocean Trials:</strong> Progressive open-water deployment</li>
+      <li><strong>Status:</strong> Content pending verification</li>
       <li><strong>Fleet Operations:</strong> Multi-vehicle coordination testing</li>
     </ul>
   </div>
 </div>
 
 ### Research Partnerships
-- **Academic Institutions:** Joint development with marine engineering programs
+- **Status:** Content pending verification
 - **Government Agencies:** NOAA and Navy research collaborations  
 - **Industry Partners:** Sensor manufacturers and maritime service providers
 - **International Collaboration:** Data sharing with global ocean monitoring networks
@@ -165,15 +165,15 @@ The autonomous surfer platform integrates **hybrid solar-battery power**, **adap
 ## Results & Impact
 
 ### Mission Performance
-- **Deployment Statistics:** 150+ successful missions across 12 research sites
+- **Status:** Content pending verification
 - **Data Collection:** 2.5TB of oceanographic data collected autonomously
-- **Operational Efficiency:** 60% cost reduction vs. traditional survey methods
-- **Reliability Metrics:** 99.2% mission success rate with minimal human intervention
+- **Status:** Content pending verification
+- **Status:** Content pending verification
 
 ### Scientific Contributions
-- **Ocean Monitoring:** Continuous data streams for climate research
+- **Status:** Content pending verification
 - **Autonomous Systems:** Advances in maritime vehicle coordination
-- **Power Systems:** Novel energy management for long-endurance platforms
+- **Status:** Content pending verification
 - **Communications:** Robust networking solutions for remote operations
 
 ### Technology Transfer
@@ -185,7 +185,7 @@ The autonomous surfer platform integrates **hybrid solar-battery power**, **adap
 ### Future Development
 - **Enhanced Autonomy:** Machine learning for adaptive mission planning
 - **Sensor Integration:** Advanced payload capabilities for specialized research
-- **Fleet Scaling:** Support for 50+ coordinated vehicles
+- **Status:** Content pending verification
 - **Global Deployment:** Expansion to Arctic and deep-ocean environments
 
 ---

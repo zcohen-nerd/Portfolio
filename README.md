@@ -13,11 +13,11 @@ This repository hosts the source for my professional engineering portfolio. It h
 
 ## Featured Projects
 
-- [Sentry V3](projects/sentry-v3.md) — Production embedded actuation system (99.9% uptime, 1,200+ units deployed)
-- [Autonomous Surfer Fleet](projects/surfer-fleet.md) — Maritime autonomy platform (35‑day endurance, 99.2% mission success)
-- [PID Trainer & Lab](projects/pid-trainer.md) — Control systems education platform (95% learning objective achievement)
-- [Smart Home System](projects/smart-home-system.md) — Safety‑first IoT architecture (99.8% uptime)
-- [ST‑Link V3 Modifications](projects/stlink-v3mods.md) — Development tooling improvements (40% faster debugging)
+- [Sentry V3](projects/sentry-v3.md) — Production embedded actuation system (Demonstrated functional prototype used in testing and development)
+- [Autonomous Surfer Fleet](projects/surfer-fleet.md) — Maritime autonomy platform (Demonstrated functional prototype used in testing and development)
+- [PID Trainer & Lab](projects/pid-trainer.md) — Control systems education platform (Demonstrated instructional prototype used in testing and development)
+- [Smart Home System](projects/smart-home-system.md) — Safety‑first IoT architecture (Demonstrated functional prototype used in testing and development)
+- [ST‑Link V3 Modifications](projects/stlink-v3mods.md) — Development tooling improvements (Demonstrated tooling workflow improvements used in development)
 
 ## Repository Structure
 

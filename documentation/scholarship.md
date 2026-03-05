@@ -1,9 +1,9 @@
 ---
 title: Scholarship & Speaking
-description: "Professional presentations, peer-reviewed publications, and collaborative research contributions."
+description: "Professional presentations and collaborative technical communication contributions."
 layout: default
 permalink: /documentation/scholarship/
-tags: [scholarship, publications, presentations, speaking, research, conferences, workshops]
+tags: [scholarship, presentations, speaking, technical-communication, conferences, workshops]
 show_title: false
 ---
 
@@ -14,7 +14,7 @@ show_title: false
 > **Knowledge Sharing Philosophy**  
 > Engineering knowledge has the greatest impact when it’s shared clearly and applied practically.  
 >  
-> Whether through peer-reviewed publications, public presentations, or collaborative research, I aim to communicate systems-level engineering concepts with actionable clarity—helping both educators and practitioners apply complex ideas in accessible, measurable ways.
+> Whether through technical writeups, public presentations, or collaborative engineering work, I aim to communicate systems-level engineering concepts with actionable clarity.
 
 ---
 
@@ -30,27 +30,11 @@ This presentation centered around the *SENTRY* turret project, illustrating how 
 
 ---
 
-## Peer-Reviewed Publications
+## Publications
 
-### Real-Time Integration and Testing of Distributed Autonomous Systems  
-**IEEE Xplore, 2025** — Co-Author  
-[DOI: 10.1109/11007919](https://ieeexplore.ieee.org/document/11007919)
+Content pending verification
 
-Collaborative research exploring distributed control and verification strategies for networked robotic platforms.  
-Contributed to hardware-in-the-loop design methodology and experimental validation of embedded control systems.
-
----
-
-### Modular Embedded Architectures for Autonomous Surface Vehicles  
-**IEEE Xplore, 2024** — Co-Author  
-[DOI: 10.1109/10801999](https://ieeexplore.ieee.org/document/10801999)
-
-Describes the design and testing of a scalable embedded framework for autonomous maritime robotics.  
-Contributed to systems integration, telemetry architecture, and field testing in applied research environments.
-
----
-
-## Ongoing Research Interests
+## Ongoing Technical Interests
 
 **Systems Integration in Education:**  
 Applying professional systems-engineering workflows to hands-on academic learning environments, bridging mechanical and electronic disciplines through reproducible design.
