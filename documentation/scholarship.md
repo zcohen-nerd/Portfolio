@@ -9,7 +9,7 @@ show_title: false
 
 # Scholarship & Speaking
 
-<img src="{{ '/assets/images/hero-placeholder.svg' | relative_url }}" alt="Scholarship and Speaking Overview" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;" loading="lazy">
+<img src="{{ '/assets/images/Hero Image.png' | relative_url }}" alt="Scholarship and Speaking Overview" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;" loading="lazy">
 
 > **Knowledge Sharing Philosophy**  
 > Engineering knowledge has the greatest impact when it’s shared clearly and applied practically.  
