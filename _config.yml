@@ -58,4 +58,7 @@ exclude:
   - node_modules
   - vendor
   - scripts
+  - todo.md
+  - lighthouserc.json
+  - Gemfile.lock
 

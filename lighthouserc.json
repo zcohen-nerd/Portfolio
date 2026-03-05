@@ -2,10 +2,10 @@
   "ci": {
     "collect": {
       "url": [
-        "http://localhost:4000/",
-        "http://localhost:4000/projects/",
-        "http://localhost:4000/teaching/",
-        "http://localhost:4000/documentation/"
+        "http://localhost:4000/Portfolio/",
+        "http://localhost:4000/Portfolio/projects/",
+        "http://localhost:4000/Portfolio/teaching/",
+        "http://localhost:4000/Portfolio/documentation/"
       ],
       "startServerCommand": "bundle exec jekyll serve --port 4000",
       "startServerReadyPattern": "Server running"

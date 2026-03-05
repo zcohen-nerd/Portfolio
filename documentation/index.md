@@ -3,6 +3,7 @@ title: Documentation & Scholarship
 description: "Engineering documentation frameworks, research publications, and speaking contributions."
 layout: default
 permalink: /documentation/
+show_title: false
 ---
 
 # Documentation & Scholarship
@@ -18,7 +19,7 @@ permalink: /documentation/
 
 <div class="project-grid">
   <div class="project-card">
-    <div class="placeholder-img">� Systems Playbook</div>
+    <div class="placeholder-img">📋 Systems Playbook</div>
     <h3><a href="{{ '/documentation/systems-methods/' | relative_url }}">Systems Engineering Methods & Frameworks</a></h3>
     <p>Templates, decision frameworks, and lifecycle governance for delivering reliable multidisciplinary systems.</p>
     <p><a href="{{ '/documentation/systems-methods/' | relative_url }}">Explore methods →</a></p>

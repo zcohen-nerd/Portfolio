@@ -1,14 +1,9 @@
 ---
-title: Publications (Moved)
+title: Publications
 layout: default
 permalink: /documentation/publications/
-redirect_to: /documentation/scholarship/
+redirect_url: /documentation/scholarship/
+show_title: false
 ---
 
-# Publications → Scholarship & Speaking
-
-The publications content has been merged into the consolidated [Scholarship & Speaking]({{ '/documentation/scholarship/' | relative_url }}) page.
-
-If you landed here from an older link or bookmark, please update it to the new destination.
-
-
+This page has moved to [Scholarship & Speaking]({{ '/documentation/scholarship/' | relative_url }}).

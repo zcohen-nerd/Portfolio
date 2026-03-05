@@ -3,11 +3,10 @@ title: SENTRY Autonomous Turret
 description: "Integrated electromechanical system combining embedded control, computer vision, and custom PCB design."
 layout: default
 permalink: /projects/sentry-v3/
----
-permalink: /projects/sentry-v3/
 tags: [embedded, production, mechatronics]
 status: "In Production"
 timeline: "2023-2024"
+show_title: false
 ---
 
 # Sentry V3: Production Embedded Actuation System
@@ -181,30 +180,5 @@ The Sentry V3 architecture features a **dual-redundant control topology** with p
 
 **Project Status:** <span class="status-badge">Production Deployment</span> | **Timeline:** January 2023 - March 2024 | **Team Size:** 8 engineers
 
-[← Back to Projects]({{ '/projects/' | relative_url }}) | [Next Project: Surfer Fleet →]({{ '/projects/surfer-fleet' | relative_url }})
-
-| Phase | Activities | Artifacts |
-| --- | --- | --- |
-| Discovery & Requirements | _User interviews, risk workshops, FMEA_ | _Requirements matrix, risk register_ |
-| Concept Development | _Trade studies, simulation, prototypes_ | _Concept deck, decision log_ |
-| Engineering & Build | _PCB layout, firmware iterations, mechanical integration_ | _CAD packages, firmware releases_ |
-| Verification & Launch | _Bench testing, field trials, manufacturing ramp_ | _Validation report, release checklist_ |
-
-## Tools & Technologies
-
-- _EDA suites, mechanical CAD, firmware toolchains, scripting._
-- _Test and measurement equipment, lab automation frameworks._
-- _Vendor partnerships or manufacturing partners._
-
-## Results & Lessons Learned
-
-- _Quantify outcomes (e.g., production units shipped, uptime, certification passes)._ 
-- _Detail reliability and maintainability insights._
-- _List future roadmap items or next iteration goals._
-
-## Media & Diagrams
-
-![Exploded view placeholder](/assets/diagrams/placeholder.png)
-
-> _Embed system diagrams, architecture visuals, wiring harness drawings, or test rig photos here._
+[← Back to Projects]({{ '/projects/' | relative_url }}) | [Next Project: Surfer Fleet →]({{ '/projects/surfer-fleet/' | relative_url }})
 

@@ -7,6 +7,7 @@ tags: [control-systems, hands-on-learning, curriculum-design]
 course: "Control Systems Engineering"
 duration: "6 weeks"
 students: "25-30 per section"
+show_title: false
 ---
 
 # PID Lab Module: Control Theory in Practice
@@ -215,26 +216,5 @@ By completion of this module, students will demonstrate ability to:
 
 **Course Information:** Control Systems Engineering (ENGR 3340) | **Enrollment:** 25-30 students per semester | **Institution:** Multiple universities
 
-[← Back to Teaching]({{ '/teaching/' | relative_url }}) | [Next Module: ENT260 SolidWorks →]({{ '/teaching/ent260-solidworks' | relative_url }})
-
-## Key Activities
-
-- _List step-by-step lab tasks, checkpoints, and optional challenges._
-- _Mention collaborative elements and troubleshooting guides._
-
-## Assessment / Evaluation
-
-- _Describe formative quizzes, lab notebook expectations, practical demonstrations, and final reflections._
-- _Include rubric links or rubric summary._
-
-## Reflection & Iteration
-
-- _Capture observed learner outcomes, common pitfalls, and support resources._
-- _Note planned enhancements (e.g., new sensors, remote instrumentation)._ 
-
-## Media & Resources
-
-![Lab walkthrough placeholder](/assets/diagrams/placeholder.png)
-
-> _Embed scope captures, UI screenshots, or exemplar student submissions._
+[← Back to Teaching]({{ '/teaching/' | relative_url }}) | [Next Module: ENT260 SolidWorks →]({{ '/teaching/ent260-solidworks/' | relative_url }})
 

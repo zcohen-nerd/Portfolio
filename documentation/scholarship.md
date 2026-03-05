@@ -4,6 +4,7 @@ description: "Professional presentations, peer-reviewed publications, and collab
 layout: default
 permalink: /documentation/scholarship/
 tags: [scholarship, publications, presentations, speaking, research, conferences, workshops]
+show_title: false
 ---
 
 # Scholarship & Speaking

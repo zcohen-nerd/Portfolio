@@ -6,13 +6,14 @@ permalink: /projects/fusion-system-blocks/
 tags: [documentation, systems-engineering, fusion360, workflow]
 status: "Public Release"
 timeline: "2023-2024"
+show_title: false
 ---
 
 # Fusion System Blocks
 
 **Framework for visual systems documentation using Autodesk Fusion**
 
-![Fusion System Blocks Project Placeholder]({{ '/assets/images/fusion-system-blocks.jpg' | relative_url }})
+<img src="{{ '/assets/images/project-placeholder.svg' | relative_url }}" alt="Fusion System Blocks" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;">
 
 ## Project Overview
 

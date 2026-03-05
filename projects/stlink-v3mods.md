@@ -6,6 +6,7 @@ permalink: /projects/stlink-v3mods/
 tags: [developer-tools, hardware, embedded, productivity]
 status: "Production Prototype"
 timeline: "2022-2023"
+show_title: false
 ---
 
 # ST-Link V3 Modifications: Enhanced Developer Tooling
@@ -190,5 +191,5 @@ timeline: "2022-2023"
 
 **Project Status:** <span class="status-badge">Internal Production</span> | **Timeline:** January 2022 - August 2023 | **Team Size:** 2 engineers
 
-[← Previous: PID Trainer]({{ '/projects/pid-trainer' | relative_url }}) | [Back to Projects →]({{ '/projects/' | relative_url }})
+[← Previous: PID Trainer]({{ '/projects/pid-trainer/' | relative_url }}) | [Back to Projects →]({{ '/projects/' | relative_url }})
 

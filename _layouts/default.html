@@ -6,7 +6,7 @@
   <body>
     {% include header.html %}
     <main class="page-content" aria-label="Content">
-      <div class="container-lg px-3 my-5 markdown-body">
+      <div class="container">
         {% if page.title and page.show_title != false %}
           <h1>{{ page.title }}</h1>
         {% endif %}
@@ -14,14 +14,5 @@
       </div>
     </main>
     {% include footer.html %}
-    {% if site.google_analytics %}
-      <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);} 
-        gtag('js', new Date());
-        gtag('config', '{{ site.google_analytics }}');
-      </script>
-    {% endif %}
   </body>
 </html>

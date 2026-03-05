@@ -6,6 +6,7 @@ permalink: /documentation/systems-methods/
 tags: [systems-engineering, processes, templates, best-practices]
 audience: "Engineering teams, project managers, technical leads"
 maturity: "Production-ready"
+show_title: false
 ---
 
 # Systems Engineering Methods & Frameworks
@@ -195,5 +196,5 @@ maturity: "Production-ready"
 
 **Framework Status:** <span class="status-badge">Production Deployment</span> | **Organizations Using:** 12+ engineering teams | **Years in Development:** 8+ years
 
-[← Back to Documentation]({{ '/documentation/' | relative_url }}) | [Next: Scholarship & Speaking →]({{ '/documentation/scholarship' | relative_url }})
+[← Back to Documentation]({{ '/documentation/' | relative_url }}) | [Next: Scholarship & Speaking →]({{ '/documentation/scholarship/' | relative_url }})
 

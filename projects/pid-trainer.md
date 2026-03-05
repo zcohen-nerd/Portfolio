@@ -6,6 +6,7 @@ permalink: /projects/pid-trainer/
 tags: [education, control-systems, hardware, curriculum]
 status: "Academic Rollout"
 timeline: "2020-2023"
+show_title: false
 ---
 
 # PID Trainer & Lab Module: Control Systems Education Platform
@@ -225,5 +226,5 @@ The PID trainer features a **modular architecture** with interchangeable plant m
 
 **Project Status:** <span class="status-badge">Active Deployment</span> | **Timeline:** September 2020 - Present | **Team Size:** 3 engineers + educational consultants
 
-[← Previous: Smart Home]({{ '/projects/smart-home-system' | relative_url }}) | [Next Project: ST-Link Mods →]({{ '/projects/stlink-v3mods' | relative_url }})
+[← Previous: Smart Home]({{ '/projects/smart-home-system/' | relative_url }}) | [Next Project: ST-Link Mods →]({{ '/projects/stlink-v3mods/' | relative_url }})
 

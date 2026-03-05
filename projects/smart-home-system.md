@@ -6,6 +6,7 @@ permalink: /projects/smart-home-system/
 tags: [iot, safety, automation, networking]
 status: "Residential Deployment"
 timeline: "2021-2024"
+show_title: false
 ---
 
 # Smart Home System: Safety-First IoT Architecture
@@ -203,11 +204,5 @@ The system employs **multi-VLAN network segmentation** with dedicated subnets fo
 
 **Project Status:** <span class="status-badge">Production Operation</span> | **Timeline:** March 2021 - Present | **Team Size:** 2 engineers + family users
 
-[← Previous: Surfer Fleet]({{ '/projects/surfer-fleet' | relative_url }}) | [Next Project: PID Trainer →]({{ '/projects/pid-trainer' | relative_url }}) 
-
-## Media & Diagrams
-
-![System topology placeholder](/assets/diagrams/placeholder.png)
-
-> _Embed network diagrams, dashboard screenshots, commissioning photos, or thermal imaging._
+[← Previous: Surfer Fleet]({{ '/projects/surfer-fleet/' | relative_url }}) | [Next Project: PID Trainer →]({{ '/projects/pid-trainer/' | relative_url }})
 

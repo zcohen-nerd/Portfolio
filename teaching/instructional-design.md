@@ -6,6 +6,7 @@ permalink: /teaching/instructional-design/
 tags: [instructional-design, learning-theory, assessment, curriculum-development]
 focus: "Engineering & Technical Education"
 experience: "8+ years"
+show_title: false
 ---
 
 # Instructional Design Philosophy & Practice
@@ -255,7 +256,7 @@ experience: "8+ years"
 
 **Educational Impact:** 500+ students taught | **Course Development:** 12 courses designed/redesigned | **Years of Experience:** 8+ years in technical education
 
-[← Previous: ENT260 SolidWorks]({{ '/teaching/ent260-solidworks' | relative_url }}) | [Back to Teaching →]({{ '/teaching/' | relative_url }})
+[← Previous: ENT260 SolidWorks]({{ '/teaching/ent260-solidworks/' | relative_url }}) | [Back to Teaching →]({{ '/teaching/' | relative_url }})
 
 > _Add curriculum maps, workshop snapshots, or analytics dashboards._
 

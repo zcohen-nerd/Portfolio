@@ -4,13 +4,16 @@
 
   {% seo %}
 
+  {% if page.redirect_url %}
+    <meta http-equiv="refresh" content="0; url={{ page.redirect_url | relative_url }}">
+  {% endif %}
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 
-  <!-- Favicon and App Icons -->
   <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/images/zcohen-icon-logo.png' | relative_url }}">
   <link rel="icon" type="image/png" sizes="96x96" href="{{ '/assets/images/zcohen-icon-logo.png' | relative_url }}">
   <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/images/zcohen-icon-logo.png' | relative_url }}">

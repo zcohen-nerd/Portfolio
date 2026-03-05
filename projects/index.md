@@ -3,6 +3,7 @@ title: Projects
 description: "Engineering projects spanning systems integration, mechatronics, and technical enablement."
 layout: default
 permalink: /projects/
+show_title: false
 ---
 
 # Engineering Projects

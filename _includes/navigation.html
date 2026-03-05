@@ -1,98 +1,10 @@
+<!-- navigation.html — unused, navigation is handled in header.html -->
+<!-- To use: {% include navigation.html %} -->
 <nav class="site-nav">
-  <div class="nav-container">
-    <a href="{{ '/' | relative_url }}" class="nav-brand">
-      <img src="{{ '/assets/images/zcohen-icon-logo.png' | relative_url }}" alt="ZCohen Icon Logo" class="nav-logo">
-      <span class="nav-brand-text">{{ site.author.name }}</span>
+  {% for nav_item in site.navigation %}
+    <a href="{{ nav_item.link | relative_url }}"
+       {% if page.url contains nav_item.link %}class="active"{% endif %}>
+      {{ nav_item.name }}
     </a>
-    <div class="nav-links">
-      {% for nav_item in site.navigation %}
-        <a href="{{ nav_item.link | relative_url }}" 
-           {% if page.url contains nav_item.link %}class="active"{% endif %}>
-          {{ nav_item.name }}
-        </a>
-      {% endfor %}
-      <a href="{{ site.author.github }}" target="_blank" rel="noopener">GitHub</a>
-    </div>
-  </div>
+  {% endfor %}
 </nav>
-
-<style>
-.site-nav {
-  background: var(--white);
-  border-bottom: 2px solid var(--primary-bright);
-  padding: 1rem 0;
-  margin-bottom: 2rem;
-  box-shadow: 0 2px 4px rgba(10, 31, 68, 0.1);
-}
-
-.nav-container {
-  max-width: 64rem;
-  margin: 0 auto;
-  padding: 0 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.nav-brand {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  font-weight: 700;
-  font-size: 1.5rem;
-  color: var(--primary-dark);
-  text-decoration: none;
-  letter-spacing: -0.02em;
-}
-
-.nav-logo {
-  height: 2.5rem;
-  width: auto;
-  transition: transform 0.2s ease;
-}
-
-.nav-brand:hover .nav-logo {
-  transform: scale(1.05);
-}
-
-.nav-brand-text {
-  color: var(--primary-dark);
-}
-
-.nav-brand:hover .nav-brand-text {
-  color: var(--primary-bright);
-}
-
-.nav-links {
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-
-.nav-links a {
-  color: var(--primary-dark);
-  text-decoration: none;
-  font-weight: 500;
-  transition: all 0.2s;
-  padding: 0.5rem 0;
-  border-bottom: 2px solid transparent;
-}
-
-.nav-links a:hover,
-.nav-links a.active {
-  color: var(--primary-bright);
-  border-bottom-color: var(--accent-yellow);
-}
-
-@media (max-width: 768px) {
-  .nav-container {
-    flex-direction: column;
-    gap: 1rem;
-  }
-  
-  .nav-links {
-    gap: 1rem;
-  }
-}
-</style>

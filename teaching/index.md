@@ -3,6 +3,7 @@ title: Teaching & Education
 description: "Curriculum development, lab design, and instructional technology for engineering education."
 layout: default
 permalink: /teaching/
+show_title: false
 ---
 
 # Teaching & Educational Impact

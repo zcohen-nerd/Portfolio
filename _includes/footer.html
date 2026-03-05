@@ -1,19 +1,11 @@
-<!-- ───────────────────────────────────────────────
-     Custom Footer / Contact + License Info
-─────────────────────────────────────────────── -->
-<footer class="site-footer" style="margin-top: 4rem; padding: 2rem 0; border-top: 1px solid #e1e4e8; text-align: center; font-size: 0.9rem; color: #555;">
-  <p>
-    © {{ "now" | date: "%Y" }} {{ site.author.name }} ·
-    <a href="mailto:{{ site.author.email }}" style="text-decoration: none; color: #0366d6;">Email</a> ·
-    <a href="{{ site.author.github }}" style="text-decoration: none; color: #0366d6;">GitHub</a> ·
-    <a href="{{ site.author.linkedin }}" style="text-decoration: none; color: #0366d6;">LinkedIn</a>
-  </p>
-  <p>
-    Built with <a href="https://jekyllrb.com/" style="text-decoration: none; color: #0366d6;">Jekyll</a> & the
-    <a href="https://github.com/pages-themes/cayman" style="text-decoration: none; color: #0366d6;">Cayman</a> theme.
-  </p>
-  <p>
-    Content licensed under
-    <a href="{{ '/LICENSE.md' | relative_url }}" style="text-decoration: none; color: #0366d6;">CC BY-NC 4.0</a>.
-  </p>
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-links">
+      <a href="mailto:{{ site.author.email }}">Email</a>
+      <a href="{{ site.author.github }}" target="_blank" rel="noopener">GitHub</a>
+      <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <p>&copy; {{ "now" | date: "%Y" }} {{ site.author.name }}</p>
+    <p>Built with <a href="https://jekyllrb.com/">Jekyll</a> · Licensed under <a href="{{ '/LICENSE.md' | relative_url }}">CC BY-NC 4.0</a></p>
+  </div>
 </footer>

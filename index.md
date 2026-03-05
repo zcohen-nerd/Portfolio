@@ -31,7 +31,7 @@ Currently, I support the **Weapons, Robotics, and Control Engineering Department
 Outside of the Academy, I teach **Solid Modeling with SolidWorks** at Anne Arundel Community College, mentor engineering students on capstone and independent projects, and continuously expand my own practice in PCB design, systems engineering, and advanced manufacturing. My design philosophy is simple: **build precisely, document thoroughly, and teach openly.**
 
 
-<hr style="margin: 2rem 0;">
+<hr>
 
 <div class="project-grid">
   <div class="project-card">
@@ -50,8 +50,7 @@ Outside of the Academy, I teach **Solid Modeling with SolidWorks** at Anne Arund
   </div>
 </div>
 
-
-<hr style="margin: 2rem 0;">
+<hr>
 
 ## Featured Projects
 
@@ -59,32 +58,32 @@ Outside of the Academy, I teach **Solid Modeling with SolidWorks** at Anne Arund
 
   <!-- SENTRY -->
   <div class="project-card">
-    <img src="{{ '/assets/images/sentry-v3.jpg' | relative_url }}" alt="SENTRY autonomous turret prototype in testing configuration" class="project-image" loading="lazy">
-    <h3><a href="{{ '/projects/sentry-v3' | relative_url }}">SENTRY Autonomous Turret</a></h3>
+    <img src="{{ '/assets/images/project-placeholder.svg' | relative_url }}" alt="SENTRY autonomous turret prototype in testing configuration" class="project-image" loading="lazy">
+    <h3><a href="{{ '/projects/sentry-v3/' | relative_url }}">SENTRY Autonomous Turret</a></h3>
     <p>Integrated electromechanical system combining embedded control, computer vision, and custom PCB design. Features real-time actuation, sensor fusion, and safety interlocks for autonomous targeting and motion control.</p>
     <p class="project-status"><strong>Status:</strong> Active Development</p>
   </div>
 
   <!-- STLINK-V3MODS -->
   <div class="project-card">
-    <img src="{{ '/assets/images/stlink-v3mods.jpg' | relative_url }}" alt="STLINK-V3MODS programmer board with development setup" class="project-image" loading="lazy">
-    <h3><a href="{{ '/projects/stlink-v3mods' | relative_url }}">STLINK-V3MODS Programmer Board</a></h3>
+    <img src="{{ '/assets/images/project-placeholder.svg' | relative_url }}" alt="STLINK-V3MODS programmer board with development setup" class="project-image" loading="lazy">
+    <h3><a href="{{ '/projects/stlink-v3mods/' | relative_url }}">STLINK-V3MODS Programmer Board</a></h3>
     <p>Custom development tool providing breakout access to JTAG/SWD, UART, SPI, I²C, and CAN interfaces. Designed for durability, usability, and flexible voltage selection to support multi-platform embedded debugging.</p>
     <p class="project-status"><strong>Status:</strong> Production Prototype</p>
   </div>
 
   <!-- Smart Home System -->
   <div class="project-card">
-    <img src="{{ '/assets/images/smart-home-system.jpg' | relative_url }}" alt="Smart home automation dashboard and control interface" class="project-image" loading="lazy">
-    <h3><a href="{{ '/projects/smart-home-system' | relative_url }}">Smart Home System</a></h3>
+    <img src="{{ '/assets/images/project-placeholder.svg' | relative_url }}" alt="Smart home automation dashboard and control interface" class="project-image" loading="lazy">
+    <h3><a href="{{ '/projects/smart-home-system/' | relative_url }}">Smart Home System</a></h3>
     <p>Comprehensive IoT architecture integrating Home Assistant, ESPHome, and secure networking. Focused on reliability, automation safety, and privacy through segmented networks and fail-safe device design.</p>
     <p class="project-status"><strong>Status:</strong> Residential Deployment</p>
   </div>
 
   <!-- Fusion System Blocks -->
   <div class="project-card">
-    <img src="{{ '/assets/images/fusion-system-blocks.jpg' | relative_url }}" alt="Fusion system blocks documentation framework example" class="project-image" loading="lazy">
-    <h3><a href="{{ '/projects/fusion-system-blocks' | relative_url }}">Fusion System Blocks</a></h3>
+    <img src="{{ '/assets/images/project-placeholder.svg' | relative_url }}" alt="Fusion system blocks documentation framework example" class="project-image" loading="lazy">
+    <h3><a href="{{ '/projects/fusion-system-blocks/' | relative_url }}">Fusion System Blocks</a></h3>
     <p>Framework for visual systems documentation using Autodesk Fusion. Enables modular schematic visualization, hierarchical design planning, and traceable documentation across mechanical and electrical domains.</p>
     <p class="project-status"><strong>Status:</strong> Public Release</p>
   </div>
@@ -95,7 +94,7 @@ Outside of the Academy, I teach **Solid Modeling with SolidWorks** at Anne Arund
   <a href="{{ '/projects/' | relative_url }}" class="btn-primary">View All Projects →</a>
 </div>
 
-<hr style="margin: 2rem 0;">
+<hr>
 
 ## Core Competencies
 
@@ -136,7 +135,7 @@ Outside of the Academy, I teach **Solid Modeling with SolidWorks** at Anne Arund
   </div>
 </div>
 
-<hr style="margin: 2rem 0;">
+<hr>
 
 ## Connect & Collaborate
 

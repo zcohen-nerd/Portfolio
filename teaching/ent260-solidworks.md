@@ -7,6 +7,7 @@ tags: [cad, mechanical-design, manufacturing, technical-communication]
 course: "ENT260 - Computer-Aided Design"
 duration: "16 weeks"
 students: "20-25 per section"
+show_title: false
 ---
 
 # ENT260 — SolidWorks Fundamentals: Design for Manufacturing
@@ -239,5 +240,5 @@ students: "20-25 per section"
 
 **Course Information:** ENT260 - Computer-Aided Design | **Credit Hours:** 4 | **Frequency:** Every semester | **Prerequisites:** ENT160 Technical Drawing
 
-[← Previous: PID Lab]({{ '/teaching/pid-lab-module' | relative_url }}) | [Next: Instructional Design →]({{ '/teaching/instructional-design' | relative_url }})
+[← Previous: PID Lab]({{ '/teaching/pid-lab-module/' | relative_url }}) | [Next: Instructional Design →]({{ '/teaching/instructional-design/' | relative_url }})
 

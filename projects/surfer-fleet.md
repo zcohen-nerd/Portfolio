@@ -6,6 +6,7 @@ permalink: /projects/surfer-fleet/
 tags: [autonomous, maritime, power-systems]
 status: "Pilot Deployment"
 timeline: "2022-2025"
+show_title: false
 ---
 
 # Autonomous Surfer Fleet: Maritime Autonomy Platform
@@ -191,5 +192,5 @@ The autonomous surfer platform integrates **hybrid solar-battery power**, **adap
 
 **Project Status:** <span class="status-badge">Active Deployment</span> | **Timeline:** June 2022 - Present | **Team Size:** 12 engineers & researchers
 
-[← Previous: Sentry V3]({{ '/projects/sentry-v3' | relative_url }}) | [Next Project: Smart Home →]({{ '/projects/smart-home-system' | relative_url }})
+[← Previous: Sentry V3]({{ '/projects/sentry-v3/' | relative_url }}) | [Next Project: Smart Home →]({{ '/projects/smart-home-system/' | relative_url }})
 
