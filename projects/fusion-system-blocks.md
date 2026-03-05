@@ -7,6 +7,8 @@ tags: [documentation, systems-engineering, fusion360, workflow]
 status: "Public Release"
 timeline: "2023-2024"
 show_title: false
+featured: false
+weight: 6
 ---
 
 # Fusion System Blocks
