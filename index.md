@@ -17,7 +17,7 @@ show_title: false
   </div>
 </div>
 
-<!-- Hero/banner placeholder -->
+<!-- Hero/banner image -->
 <img src="{{ '/assets/images/hero-placeholder.svg' | relative_url }}" alt="Portfolio Hero" class="hero-banner" loading="lazy">
 
 ## About Me

@@ -13,7 +13,7 @@ show_title: false
 
 <img src="{{ '/assets/images/project-placeholder.svg' | relative_url }}" alt="Systems Methods Overview" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;">
 
-> **Framework Purpose:** This collection of methods, templates, and processes has evolved through 8+ years of complex technical project delivery. These frameworks enable engineering teams to navigate uncertainty, manage complexity, and deliver reliable systems that meet stakeholder needs while maintaining cost and schedule targets.
+> **Framework Purpose:** This collection of methods, templates, and processes has evolved through ongoing complex technical project delivery. These frameworks enable engineering teams to navigate uncertainty, manage complexity, and deliver reliable systems that meet stakeholder needs while maintaining cost and schedule targets.
 
 ## Why Systems Methods Matter
 
@@ -141,13 +141,13 @@ show_title: false
 ### Case Study: Autonomous Surfer Fleet
 **Challenge:** Novel autonomous system with uncertain environmental conditions
 **Methods Applied:** Use case development, Monte Carlo risk analysis, agile adaptation
-**Results:** Successful multi-site deployment, 99.2% mission success rate
+**Results:** Demonstrated functional prototype used in testing and development
 **Lessons Learned:** Iterative requirements refinement essential for emerging technology
 
 ### Case Study: Smart Home System
 **Challenge:** Safety-critical residential automation with cybersecurity requirements
 **Methods Applied:** Threat modeling, fault tree analysis, security verification
-**Results:** 99.8% uptime, zero security incidents, high user satisfaction
+**Results:** Demonstrated functional prototype used in testing and development
 **Lessons Learned:** User experience requirements as critical as technical performance
 
 ## Tools & Technologies
@@ -194,7 +194,7 @@ show_title: false
 
 ---
 
-**Framework Status:** <span class="status-badge">Production Deployment</span> | **Organizations Using:** 12+ engineering teams | **Years in Development:** 8+ years
+**Framework Status:** <span class="status-badge">Prototype Deployment</span> | **Adoption:** Content pending verification | **Development Timeline:** Content pending verification
 
 [← Back to Documentation]({{ '/documentation/' | relative_url }}) | [Next: Scholarship & Speaking →]({{ '/documentation/scholarship/' | relative_url }})
 

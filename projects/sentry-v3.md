@@ -13,7 +13,7 @@ show_title: false
 
 <img src="{{ '/assets/images/project-placeholder.svg' | relative_url }}" alt="Sentry V3 System Overview" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;">
 
-> **Executive Summary:** Production-ready embedded actuation system deployed in harsh industrial environments, achieving 99.9% uptime and sub-10ms response times across 1,000+ deployed units. Features redundant safety systems, IP67 environmental rating, and seamless integration with existing plant control infrastructure.
+> **Executive Summary:** Demonstrated functional prototype used in testing and development.
 
 ## Project Overview
 
@@ -21,27 +21,27 @@ show_title: false
 
 **Solution Approach:** Designed modular embedded control system with dual-redundant processing, distributed I/O architecture, and comprehensive safety interlocks. Emphasized manufacturing scalability and field serviceability.
 
-**Impact:** Reduced system downtime by 75%, eliminated pneumatic maintenance costs, and enabled predictive maintenance through integrated diagnostics. Successfully transitioned to production with zero field failures in first 12 months.
+**Impact:** Demonstrated functional prototype used in testing and development.
 
 <div class="project-grid">
   <div class="project-card">
     <h3>🎯 Key Objectives</h3>
     <ul>
-      <li><strong>Response Time:</strong> Sub-10ms actuation response</li>
-      <li><strong>Reliability:</strong> 99.9% uptime target</li>
+      <li><strong>Status:</strong> Content pending verification</li>
+      <li><strong>Status:</strong> Content pending verification</li>
       <li><strong>Environment:</strong> IP67 rating for harsh conditions</li>
       <li><strong>Safety:</strong> SIL-2 certified safety functions</li>
-      <li><strong>Production:</strong> Support 10,000+ unit manufacturing</li>
+      <li><strong>Status:</strong> Content pending verification</li>
     </ul>
   </div>
   <div class="project-card">
     <h3>📊 Key Results</h3>
     <ul>
-      <li><strong>Performance:</strong> 6.2ms average response time</li>
-      <li><strong>Reliability:</strong> 99.94% achieved uptime</li>
-      <li><strong>Manufacturing:</strong> 95% first-pass yield</li>
-      <li><strong>Cost:</strong> 30% reduction vs. pneumatic system</li>
-      <li><strong>Deployment:</strong> 1,200+ units deployed</li>
+      <li><strong>Status:</strong> Content pending verification</li>
+      <li><strong>Status:</strong> Content pending verification</li>
+      <li><strong>Status:</strong> Content pending verification</li>
+      <li><strong>Status:</strong> Content pending verification</li>
+      <li><strong>Status:</strong> Content pending verification</li>
     </ul>
   </div>
 </div>
@@ -75,7 +75,7 @@ The Sentry V3 architecture features a **dual-redundant control topology** with p
 
 **Manufacturing Considerations:**
 - Automated assembly with minimal hand-soldering
-- 100% in-circuit test coverage including boundary scan
+- Comprehensive in-circuit test coverage including boundary scan
 - Conformal coating for enhanced environmental protection
 - Laser-etched part marking for traceability
 
@@ -102,7 +102,7 @@ The Sentry V3 architecture features a **dual-redundant control topology** with p
 **Development & Testing:**
 - **Model-based design** using MATLAB/Simulink
 - **Hardware-in-the-loop** testing for control validation
-- **Automated unit testing** with 95%+ code coverage
+- **Automated unit testing** performed throughout development
 - **CI/CD pipeline** with automated builds and testing
 
 ## Design Process & Methodology
@@ -145,7 +145,7 @@ The Sentry V3 architecture features a **dual-redundant control topology** with p
 </div>
 
 ### Manufacturing Partners
-- **PCB Fabrication:** IPC Class 3 certified supplier with automotive quality systems
+- **Status:** Content pending verification
 - **Assembly:** ISO 13485 certified facility with full traceability
 - **Testing:** Custom fixture development for automated production testing
 - **Enclosure:** Local machining partner with rapid prototyping capabilities
@@ -154,8 +154,8 @@ The Sentry V3 architecture features a **dual-redundant control topology** with p
 
 ### Quantitative Results
 - **Technical Performance:** All specifications met or exceeded
-- **Quality Metrics:** 95% first-pass yield, 0.1% field failure rate
-- **Cost Targets:** 8% under target, enabled by design optimization
+- **Status:** Content pending verification
+- **Status:** Content pending verification
 - **Schedule:** Delivered 2 weeks ahead of production milestone
 
 ### Key Success Factors

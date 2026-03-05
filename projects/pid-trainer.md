@@ -13,7 +13,7 @@ show_title: false
 
 <img src="{{ '/assets/images/project-placeholder.svg' | relative_url }}" alt="PID Trainer System Overview" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;">
 
-> **Executive Summary:** Comprehensive control systems education platform that bridges theoretical PID concepts with hands-on experimentation. Deployed across 5 academic institutions with 200+ students per semester, achieving 95% learning objective completion rates and 40% improvement in control theory comprehension metrics.
+> **Executive Summary:** Demonstrated functional prototype used in testing and development.
 
 ## Project Overview
 
@@ -21,7 +21,7 @@ show_title: false
 
 **Solution Approach:** Developed modular hardware platform with interchangeable plant models (thermal, fluid, mechanical), integrated data acquisition, and structured curriculum that progresses from basic proportional control through advanced tuning methodologies.
 
-**Impact:** Transformed control systems education from abstract theory to practical implementation, with students demonstrating measurable competency in PID tuning and analysis. Platform adopted by multiple engineering programs with consistently positive learning outcomes.
+**Impact:** Demonstrated functional prototype used in testing and development.
 
 <div class="project-grid">
   <div class="project-card">
@@ -37,11 +37,11 @@ show_title: false
   <div class="project-card">
     <h3>📊 Educational Outcomes</h3>
     <ul>
-      <li><strong>Concept Mastery:</strong> 95% achievement of learning objectives</li>
-      <li><strong>Engagement:</strong> 40% increase in active participation</li>
-      <li><strong>Retention:</strong> 85% student completion rate</li>
-      <li><strong>Application:</strong> 90% successful final project completion</li>
-      <li><strong>Satisfaction:</strong> 4.8/5.0 average course rating</li>
+      <li><strong>Status:</strong> Content pending verification</li>
+      <li><strong>Status:</strong> Content pending verification</li>
+      <li><strong>Status:</strong> Content pending verification</li>
+      <li><strong>Status:</strong> Content pending verification</li>
+      <li><strong>Status:</strong> Content pending verification</li>
     </ul>
   </div>
 </div>
@@ -54,7 +54,7 @@ show_title: false
 The PID trainer features a **modular architecture** with interchangeable plant models, real-time data acquisition, and integrated safety systems. Students can experiment with thermal, fluid, and mechanical systems using consistent control interfaces and measurement tools.
 
 **Core Components:**
-- **Control Platform:** Real-time microcontroller with built-in PID algorithms
+- **Status:** Content pending verification
 - **Data Acquisition:** 16-bit ADCs, digital I/O, and communication interfaces
 - **Plant Modules:** Thermal chamber, liquid level system, motor-load assembly
 - **Safety Systems:** Emergency stops, limit switches, current protection
@@ -85,7 +85,7 @@ The PID trainer features a **modular architecture** with interchangeable plant m
 
 **Real-time Controller:**
 - **Platform:** STM32F4 with FPU for fast control calculations
-- **Control Loop:** 1ms sampling rate with deterministic execution
+- **Status:** Content pending verification
 - **Algorithms:** PID, lead-lag, state feedback implementations
 - **Interface:** USB and Ethernet for PC connectivity
 
@@ -115,7 +115,7 @@ The PID trainer features a **modular architecture** with interchangeable plant m
 ### Pedagogical Approach
 
 **Active Learning Methods:**
-- **Hands-on Experimentation:** Students directly manipulate real systems
+- **Status:** Content pending verification
 - **Collaborative Problem Solving:** Team-based tuning challenges
 - **Iterative Design:** Multiple attempts with performance feedback
 - **Peer Teaching:** Students explain concepts to team members
@@ -144,7 +144,7 @@ The PID trainer features a **modular architecture** with interchangeable plant m
 - **Outcomes:** Real-world control system design experience
 
 **Exercise 4: System Integration**
-- **Objective:** Implement multi-loop control systems
+- **Status:** Content pending verification
 - **Method:** Cascade control with multiple plant modules
 - **Outcomes:** Understanding of complex system interactions
 
@@ -156,7 +156,7 @@ The PID trainer features a **modular architecture** with interchangeable plant m
     <ul>
       <li><strong>PCB Design:</strong> Altium Designer for control and interface boards</li>
       <li><strong>Mechanical:</strong> SolidWorks for enclosures and mechanical assemblies</li>
-      <li><strong>Firmware:</strong> STM32CubeIDE, real-time control algorithms</li>
+      <li><strong>Status:</strong> Content pending verification</li>
       <li><strong>Testing:</strong> Oscilloscopes, data loggers, thermal cameras</li>
     </ul>
   </div>
@@ -180,14 +180,14 @@ The PID trainer features a **modular architecture** with interchangeable plant m
 ## Implementation & Adoption
 
 ### Pilot Program Results (2020-2021)
-- **Institution:** Local engineering program with 30 students
-- **Metrics:** 35% improvement in post-lab assessment scores
+- **Status:** Content pending verification
+- **Status:** Content pending verification
 - **Feedback:** Students reported significantly better understanding of practical control
 - **Challenges:** Initial calibration procedures needed simplification
 
 ### Multi-Institution Rollout (2021-2023)
-- **Adoption:** 5 universities across different geographic regions
-- **Scale:** 200+ students per semester using the platform
+- **Status:** Content pending verification
+- **Status:** Content pending verification
 - **Standardization:** Common curriculum modules with local customization
 - **Support Network:** Instructor community for sharing best practices
 
@@ -200,13 +200,13 @@ The PID trainer features a **modular architecture** with interchangeable plant m
 ## Results & Impact
 
 ### Quantitative Learning Outcomes
-- **Pre/Post Assessment:** 40% average improvement in control theory comprehension
-- **Practical Skills:** 95% of students successfully tune PID controllers to specification
-- **Course Completion:** 85% completion rate vs. 65% historical average
-- **Long-term Retention:** 80% of students demonstrate competency in follow-up courses
+- **Status:** Content pending verification
+- **Status:** Content pending verification
+- **Status:** Content pending verification
+- **Status:** Content pending verification
 
 ### Qualitative Feedback
-- **Student Testimonials:** "Finally understand why control theory matters in real systems"
+- **Status:** Content pending verification
 - **Instructor Observations:** "Students ask better questions and engage more deeply"
 - **Industry Partners:** "Graduates show much stronger practical control skills"
 
@@ -218,9 +218,9 @@ The PID trainer features a **modular architecture** with interchangeable plant m
 
 ### Future Development
 - **Remote Accessibility:** Web-based interface for distance learning
-- **Advanced Control:** Add model predictive control and adaptive algorithms
-- **Industry 4.0:** Integration with IoT platforms and digital twin concepts
-- **Scalability:** Cost reduction for broader educational market penetration
+- **Status:** Content pending verification
+- **Status:** Content pending verification
+- **Status:** Content pending verification
 
 ---
 

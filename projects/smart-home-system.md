@@ -13,7 +13,7 @@ show_title: false
 
 <img src="{{ '/assets/images/project-placeholder.svg' | relative_url }}" alt="Smart Home System Overview" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;">
 
-> **Executive Summary:** Comprehensive smart home automation system prioritizing safety, security, and reliability over convenience features. Deployed across 3 residential properties with 150+ connected devices, achieving 99.8% uptime and zero security incidents over 36 months of operation.
+> **Executive Summary:** Demonstrated functional prototype used in testing and development.
 
 ## Project Overview
 
@@ -21,7 +21,7 @@ show_title: false
 
 **Solution Approach:** Designed segmented network architecture with defense-in-depth security, fail-safe automation logic, and comprehensive monitoring. Emphasized local processing, encrypted communications, and graceful degradation under failure conditions.
 
-**Impact:** Achieved 25% energy reduction, enhanced home security with intelligent monitoring, and demonstrated that consumer IoT can meet enterprise-grade reliability standards when properly architected.
+**Impact:** Demonstrated functional prototype used in testing and development.
 
 <div class="project-grid">
   <div class="project-card">
@@ -37,11 +37,11 @@ show_title: false
   <div class="project-card">
     <h3>📊 Performance Metrics</h3>
     <ul>
-      <li><strong>Uptime:</strong> 99.8% system availability</li>
-      <li><strong>Energy Savings:</strong> 25% reduction in consumption</li>
+      <li><strong>Status:</strong> Content pending verification</li>
+      <li><strong>Status:</strong> Content pending verification</li>
       <li><strong>Security:</strong> Zero successful intrusion attempts</li>
-      <li><strong>Response Time:</strong> <2s for automation triggers</li>
-      <li><strong>Device Count:</strong> 150+ connected endpoints</li>
+      <li><strong>Status:</strong> Content pending verification</li>
+      <li><strong>Status:</strong> Content pending verification</li>
     </ul>
   </div>
 </div>
@@ -56,7 +56,7 @@ The system employs **multi-VLAN network segmentation** with dedicated subnets fo
 **Network Segmentation:**
 - **Critical Systems:** Fire safety, security, infrastructure (isolated VLAN)
 - **Automation:** Lighting, HVAC, entertainment (managed VLAN)
-- **Guest/IoT:** Untrusted devices with internet-only access
+- **Status:** Content pending verification
 - **Management:** Administrative access with MFA and audit logging
 
 **Security Implementation:**
@@ -73,7 +73,7 @@ The system employs **multi-VLAN network segmentation** with dedicated subnets fo
 - **Central Hub:** Industrial mini-PC with redundant storage
 - **Edge Controllers:** Raspberry Pi for zone-based processing
 - **Network Infrastructure:** Managed switches with VLAN support
-- **Power Management:** UPS backup for critical systems
+- **Status:** Content pending verification
 
 **Sensor & Actuator Integration:**
 - **Safety Sensors:** Smoke, CO, water leak detection with redundancy
@@ -82,9 +82,9 @@ The system employs **multi-VLAN network segmentation** with dedicated subnets fo
 - **Energy Management:** Smart breakers, sub-metering, solar integration
 
 **Communication Protocols:**
-- **Zigbee/Z-Wave:** Mesh networking for battery-powered devices
-- **WiFi:** High-bandwidth devices with dedicated SSID
-- **Ethernet:** Backbone infrastructure and critical devices
+- **Status:** Content pending verification
+- **Status:** Content pending verification
+- **Status:** Content pending verification
 - **RS-485:** Industrial sensors and HVAC integration
 
 ### Automation & Control Logic
@@ -128,7 +128,7 @@ The system employs **multi-VLAN network segmentation** with dedicated subnets fo
 | **Planning & Design** | 3 months | Requirements analysis, architecture design | System specification, component selection |
 | **Infrastructure Setup** | 2 months | Network configuration, security implementation | Network infrastructure, security baseline |
 | **Device Integration** | 6 months | Sensor deployment, automation development | Working automation system, initial testing |
-| **Optimization & Testing** | 4 months | Performance tuning, security validation | Production-ready system, documentation |
+| **Optimization & Testing** | 4 months | Performance tuning, security validation | Prototype system, documentation |
 | **Operations & Enhancement** | Ongoing | Monitoring, maintenance, feature additions | Operational procedures, system evolution |
 
 ### Key Implementation Challenges
@@ -154,7 +154,7 @@ The system employs **multi-VLAN network segmentation** with dedicated subnets fo
       <li><strong>Platform:</strong> Home Assistant, Node-RED, Docker containers</li>
       <li><strong>Monitoring:</strong> Grafana, Prometheus, ELK stack</li>
       <li><strong>Development:</strong> Python, JavaScript, YAML configuration</li>
-      <li><strong>Version Control:</strong> Git with automated deployment</li>
+      <li><strong>Status:</strong> Content pending verification</li>
     </ul>
   </div>
   <div class="project-card">
@@ -170,27 +170,27 @@ The system employs **multi-VLAN network segmentation** with dedicated subnets fo
 
 ### Integration Partners
 - **Device Manufacturers:** Direct integration with security and HVAC vendors
-- **Utility Companies:** Smart meter integration and demand response programs
+- **Status:** Content pending verification
 - **Service Providers:** Security monitoring and emergency response coordination
 - **Technology Vendors:** Cloud backup and remote access solution providers
 
 ## Results & Lessons Learned
 
 ### Performance Achievements
-- **Energy Efficiency:** 25% reduction in total energy consumption
-- **System Reliability:** 99.8% uptime with planned maintenance windows
-- **Security Posture:** Zero successful intrusion attempts in 36 months
-- **User Satisfaction:** High acceptance rate with non-technical family members
+- **Status:** Content pending verification
+- **Status:** Content pending verification
+- **Status:** Content pending verification
+- **Status:** Content pending verification
 
 ### Cost-Benefit Analysis
-- **Initial Investment:** $15,000 for comprehensive 3-property deployment
+- **Status:** Content pending verification
 - **Annual Savings:** $2,400 in energy costs plus increased security value
-- **ROI Period:** 6.2 years considering energy savings and insurance benefits
+- **Status:** Content pending verification
 - **Added Value:** Enhanced property value and improved quality of life
 
 ### Technical Innovations
-- **Adaptive Automation:** Self-learning algorithms reduce manual configuration
-- **Fault Tolerance:** System continues operation with up to 30% device failures
+- **Status:** Content pending verification
+- **Status:** Content pending verification
 - **Privacy Protection:** Zero personal data transmitted to third-party services
 - **Scalability:** Architecture supports expansion to commercial applications
 
