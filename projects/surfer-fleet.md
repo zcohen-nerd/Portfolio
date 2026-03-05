@@ -7,6 +7,8 @@ tags: [autonomous, maritime, power-systems]
 status: "Pilot Deployment"
 timeline: "2022-2025"
 show_title: false
+featured: true
+weight: 2
 ---
 
 # Autonomous Surfer Fleet: Maritime Autonomy Platform

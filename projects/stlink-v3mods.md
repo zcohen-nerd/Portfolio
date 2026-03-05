@@ -7,6 +7,8 @@ tags: [developer-tools, hardware, embedded, productivity]
 status: "Production Prototype"
 timeline: "2022-2023"
 show_title: false
+featured: true
+weight: 4
 ---
 
 # ST-Link V3 Modifications: Enhanced Developer Tooling

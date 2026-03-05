@@ -184,7 +184,7 @@ show_title: false
       <li><strong>Outcomes:</strong> Content pending verification</li>
       <li><strong>Outcomes:</strong> Content pending verification</li>
       <li><strong>Outcomes:</strong> Content pending verification</li>
-            <li><strong>Outcomes:</strong> Content pending verification</li>
+      <li><strong>Outcomes:</strong> Content pending verification</li>
     </ul>
   </div>
   <div class="project-card">

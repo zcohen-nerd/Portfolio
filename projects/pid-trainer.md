@@ -7,6 +7,8 @@ tags: [education, control-systems, hardware, curriculum]
 status: "Academic Rollout"
 timeline: "2020-2023"
 show_title: false
+featured: true
+weight: 3
 ---
 
 # PID Trainer & Lab Module: Control Systems Education Platform

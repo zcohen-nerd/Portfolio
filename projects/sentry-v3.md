@@ -7,6 +7,8 @@ tags: [embedded, production, mechatronics]
 status: "In Production"
 timeline: "2023-2024"
 show_title: false
+featured: true
+weight: 1
 ---
 
 # Sentry V3: Production Embedded Actuation System

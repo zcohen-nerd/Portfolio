@@ -7,6 +7,8 @@ tags: [iot, safety, automation, networking]
 status: "Residential Deployment"
 timeline: "2021-2024"
 show_title: false
+featured: true
+weight: 5
 ---
 
 # Smart Home System: Safety-First IoT Architecture
