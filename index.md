@@ -11,19 +11,19 @@ show_title: false
 
 <img src="{{ '/assets/images/hero-image.png' | relative_url }}" alt="Zachary Cohen portfolio hero image" class="hero-banner" loading="lazy">
 
-I design and integrate electromechanical systems that combine mechanical assemblies, embedded electronics, firmware, and verification workflows. My work focuses on architecture definition, interface clarity, modular implementation, and documentation that supports repeatable builds. I work across prototyping, test setup, and technical communication to move systems from concept to reliable operation.
+I design and integrate electromechanical systems that combine mechanical assemblies, embedded electronics, and firmware. My work focuses on clear system architecture, well-defined interfaces, and modular hardware that can be built, tested, and iterated quickly. I spend most of my time turning concepts into working prototypes, building test setups, and documenting the engineering decisions that make systems reliable and repeatable.
 
 ## Featured Systems {#featured-systems}
 
-- **[Sentry V3]({{ '/projects/sentry-v3/' | relative_url }})** — Embedded actuation platform for rugged automation with safety-oriented control architecture.  
+- **[Sentry V3]({{ '/projects/sentry-v3/' | relative_url }})** — Embedded control platform for a pan-tilt actuation system, integrating sensors, motor drivers, and safety-oriented control logic.  
   **Core domains:** PCB, embedded firmware, controls, integration, test
-- **[Autonomous Surfer Fleet]({{ '/projects/surfer-fleet/' | relative_url }})** — Autonomous maritime platform integrating energy management, navigation, and telemetry.  
+- **[Autonomous Surfer Fleet]({{ '/projects/surfer-fleet/' | relative_url }})** — Distributed control system for small autonomous vessels, combining navigation, telemetry, and power management.
   **Core domains:** controls, embedded systems, communications, power, systems integration
 - **[PID Trainer & Lab Module]({{ '/projects/pid-trainer/' | relative_url }})** — Hands-on control-systems platform connecting classroom models to physical plant behavior.  
   **Core domains:** controls, embedded firmware, lab hardware, data acquisition, education
-- **[ST-Link V3 Modifications]({{ '/projects/stlink-v3mods/' | relative_url }})** — Debug interface expansion board for bring-up, protocol access, and power control workflows.  
+- **[SPARK STLINK Board]({{ '/projects/stlink-v3mods/' | relative_url }})** — Hardware expansion board that exposes debugging, power control, and protocol interfaces during embedded bring-up. 
   **Core domains:** embedded tools, hardware interfaces, firmware, validation
-- **[Smart Home System]({{ '/projects/smart-home-system/' | relative_url }})** — Local-first automation stack built around segmented networking and fail-safe behavior.  
+- **[Smart Home System]({{ '/projects/smart-home-system/' | relative_url }})** — Local-first home automation system built around Home Assistant, segmented networking, and reliable fail-safe operation.  
   **Core domains:** networking, automation, systems integration, observability
 
 ## Other Work
@@ -34,12 +34,12 @@ I design and integrate electromechanical systems that combine mechanical assembl
 
 ## How I work
 
-- Start with system architecture and interface boundaries before implementation.
-- Keep subsystems modular so hardware and firmware revisions can be isolated.
-- Treat verification as part of design, not a final-stage activity.
-- Document decisions, assumptions, and integration constraints as the design evolves.
-- Prefer maintainable solutions over one-off optimizations.
-- Use manufacturability and serviceability as design constraints early.
+- Start with system architecture and clear interface boundaries before implementation.
+- Design subsystems to be modular so hardware and firmware revisions can evolve independently.
+- Treat verification as part of the design process, not something added at the end.
+- Document decisions, assumptions, and integration constraints as the system evolves.
+- Favor maintainable solutions over one-off optimizations.
+- Consider manufacturability and serviceability early in the design.
 
 ## Contact
 
