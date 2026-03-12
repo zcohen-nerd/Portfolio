@@ -1,6 +1,6 @@
 # Zachary Cohen — Engineering Portfolio
 
-**Electromechanical Technologist | Systems & Mechatronics Design**
+**Electromechanical Engineer | Systems & Mechatronics Design**
 
 [![Website](https://img.shields.io/badge/Website-Live-brightgreen)](https://zcohen-nerd.github.io/Portfolio/)
 [![License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-blue.svg)](LICENSE.md)
@@ -32,19 +32,6 @@ portfolio/
 ├─ teaching/
 ├─ documentation/
 └─ _layouts/
-```
-
-## Local Development
-
-```bash
-# Clone
-git clone https://github.com/zcohen-nerd/Portfolio.git
-cd Portfolio/portfolio
-
-# Serve locally
-bundle install
-bundle exec jekyll serve
-# View at http://localhost:4000/Portfolio/
 ```
 
 ## Contact
