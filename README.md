@@ -2,14 +2,14 @@
 
 **Electromechanical Engineer | Systems & Mechatronics Design**
 
-[![Website](https://img.shields.io/badge/Website-Live-brightgreen)](https://zcohen-nerd.github.io/Portfolio/)
+[![Website](https://img.shields.io/badge/Website-Live-brightgreen)](https://zcohen-nerd.com/)
 [![License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-blue.svg)](LICENSE.md)
 
 ## About This Portfolio
 
 This repository hosts the source for my professional engineering portfolio. It highlights work in systems integration, mechatronics design, and technical education across embedded control systems, autonomous platforms, and educational technology.
 
-• Live site: https://zcohen-nerd.github.io/Portfolio/
+• Live site: https://zcohen-nerd.com/
 
 ## Featured Projects
 
