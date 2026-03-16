@@ -11,8 +11,8 @@ author:
 
 # Theme & URLs
 theme: jekyll-theme-cayman
-url: "https://zcohen-nerd.github.io"
-baseurl: "/Portfolio"  # repository name
+url: "https://zcohen-nerd.com"
+baseurl: ""  # custom domain serves the site from the root
 repository: "zcohen-nerd/Portfolio"
 permalink: pretty
 
@@ -63,4 +63,3 @@ exclude:
   - todo.md
   - lighthouserc.json
   - Gemfile.lock
-
