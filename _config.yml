@@ -19,13 +19,13 @@ permalink: pretty
 # Navigation
 navigation:
   - name: "Featured Systems"
-    link: "#featured-systems"
+    link: "/#featured-systems"
   - name: "Projects"
-    link: "projects/"
+    link: "/projects/"
   - name: "Teaching"
-    link: "teaching/"
+    link: "/teaching/"
   - name: "Documentation"
-    link: "documentation/"
+    link: "/documentation/"
 
 # Plugins (GitHub Pages supported)
 plugins:
