@@ -7,11 +7,21 @@ show_title: false
 ---
 
 # Zachary Cohen
-## Electromechanical Engineer
+## Electromechanical Systems Engineer
 
 <img src="{{ '/assets/images/hero-image.png' | relative_url }}" alt="Zachary Cohen portfolio hero image" class="hero-banner" loading="lazy">
 
-I design and integrate electromechanical systems that combine mechanical assemblies, embedded electronics, and firmware. My work focuses on clear system architecture, well-defined interfaces, and modular hardware that can be built, tested, and iterated quickly. I spend most of my time turning concepts into working prototypes, building test setups, and documenting the engineering decisions that make systems reliable and repeatable.
+I design and build electromechanical systems that combine mechanical structures, embedded electronics, and firmware into reliable working hardware.
+
+My work focuses on system architecture, clear interface boundaries, and hardware that can be built, tested, and iterated quickly. I spend most of my time turning ideas into physical prototypes, building test platforms, and documenting the decisions that make complex systems maintainable.
+
+## How I Build Systems
+
+My work centers on defining system architecture, developing mechanical and electronic subsystems, integrating embedded firmware, and building the infrastructure needed to test and validate complex systems.
+
+<a href="{{ '/assets/images/How I Build Systems.png' | relative_url }}">
+  <img src="{{ '/assets/images/How I Build Systems.png' | relative_url }}" alt="How I build systems diagram" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 1rem auto 2rem;" loading="lazy">
+</a>
 
 ## Featured Systems {#featured-systems}
 
@@ -34,15 +44,25 @@ I design and integrate electromechanical systems that combine mechanical assembl
 
 ## How I work
 
-- Start with system architecture and clear interface boundaries before implementation.
-- Design subsystems to be modular so hardware and firmware revisions can evolve independently.
-- Treat verification as part of the design process, not something added at the end.
-- Document decisions, assumptions, and integration constraints as the system evolves.
-- Favor maintainable solutions over one-off optimizations.
-- Consider manufacturability and serviceability early in the design.
+- Start with system architecture before touching implementation.
+- Define clear electrical, mechanical, and software interfaces.
+- Design subsystems to evolve independently.
+- Treat testing as part of design, not something done afterward.
+- Document decisions so systems remain maintainable years later.
+- Consider manufacturing and serviceability from the beginning.
+
+## Engineering Focus
+
+- Embedded systems
+- PCB design
+- Electromechanical integration
+- Controls and actuation
+- Rapid prototyping
+- Hardware test infrastructure
+- Systems architecture
 
 ## Contact
 
 - GitHub: [github.com/zcohen-nerd](https://github.com/zcohen-nerd)
 - LinkedIn: [linkedin.com/in/zachary-cohen-nerd](https://www.linkedin.com/in/zachary-cohen-nerd/)
-- Email: [zcohen-nerd@gmail.com](mailto:zcohen-nerd@gmail.com)
+- Email: [zachary@zcohen-nerd.com](mailto:zachary@zcohen-nerd.com)
