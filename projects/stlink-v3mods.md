@@ -34,15 +34,21 @@ The module exposes a high-density connector and assumes a carrier board, which a
 
 **Core structure**
 
-<img src="{{ '/assets/images/projects/stlink-v3mods/Core Structure.png' | relative_url }}" alt="SPARK core structure flowchart" style="width: 100%; max-width: 1000px; height: auto; border-radius: 8px; margin-bottom: 1.5rem;">
+<a href="{{ '/assets/images/projects/stlink-v3mods/Core Structure.png' | relative_url }}">
+  <img src="{{ '/assets/images/projects/stlink-v3mods/Core Structure.png' | relative_url }}" alt="SPARK core structure flowchart" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 0 auto 1.5rem;">
+</a>
 
 **Protection layer**
 
-<img src="{{ '/assets/images/projects/stlink-v3mods/Protection Layer.png' | relative_url }}" alt="SPARK protection layer flowchart" style="width: 100%; max-width: 1000px; height: auto; border-radius: 8px; margin-bottom: 1.5rem;">
+<a href="{{ '/assets/images/projects/stlink-v3mods/Protection Layer.png' | relative_url }}">
+  <img src="{{ '/assets/images/projects/stlink-v3mods/Protection Layer.png' | relative_url }}" alt="SPARK protection layer flowchart" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 0 auto 1.5rem;">
+</a>
 
 **Supporting systems**
 
-<img src="{{ '/assets/images/projects/stlink-v3mods/Supporting Systems.png' | relative_url }}" alt="SPARK supporting systems flowchart" style="width: 100%; max-width: 1000px; height: auto; border-radius: 8px; margin-bottom: 1.5rem;">
+<a href="{{ '/assets/images/projects/stlink-v3mods/Supporting Systems.png' | relative_url }}">
+  <img src="{{ '/assets/images/projects/stlink-v3mods/Supporting Systems.png' | relative_url }}" alt="SPARK supporting systems flowchart" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 0 auto 1.5rem;">
+</a>
 
 ## Interfaces
 
