@@ -32,36 +32,25 @@ The module exposes a high-density connector and assumes a carrier board, which a
 
 ## System Architecture
 
-<img src="{{ '/assets/images/diagram-placeholder.svg' | relative_url }}" alt="ST-Link V3 Hardware Modifications" style="width: 100%; max-width: 1000px; height: auto; border-radius: 8px; margin: 1rem 0;">
-
-```mermaid
+<div class="mermaid">
 flowchart LR
 
   HOST[Development PC<br/>STM32CubeIDE / OpenOCD / CLI]
-
   USB[USB Connection]
-
   STLINK[STLINK-V3MODS Module<br/>Debugger + Programmer]
-
   SPARK[SPARK Breakout Board<br/>Signal Routing + Headers]
-
   SWD[SWD Debug Interface<br/>SWDIO / SWCLK / NRST]
-
   UART[Virtual COM Port<br/>TX / RX]
-
   TARGET[Target Embedded System<br/>STM32 or other MCU]
 
   HOST <--> USB
   USB <--> STLINK
-
   STLINK --> SPARK
-
   SPARK --> SWD
   SPARK --> UART
-
   SWD --> TARGET
   UART <--> TARGET
-```
+</div>
 
 ## Interfaces
 
