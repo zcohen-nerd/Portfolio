@@ -6,7 +6,7 @@ permalink: /projects/stlink-v3mods/
 image: /assets/images/projects/stlink-v3mods/spark-board-perspective.png
 tags: [developer-tools, hardware, embedded, productivity]
 status: "Production Prototype"
-timeline: "May 2025–Now"
+timeline: "May 2025 - Present"
 show_title: false
 featured: true
 weight: 4
@@ -76,6 +76,19 @@ SPARK exposes the key interfaces of the STLINK-V3MODS module in a form that is e
 - **Target Connection Interface:**  
   Target connections are provided through clearly organized header pins, allowing quick connection to embedded hardware during **firmware development, board validation, and debugging workflows**.
 
+## Hardware Architecture Highlights
+
+SPARK was designed as a robust interface platform for the STLINK-V3MODS debugger with emphasis on signal integrity, electrical protection, and reliable target interaction.
+
+Key architectural features include:
+
+- Hardened signal path between debugger and external connectors
+- Hybrid level translation architecture tailored to bus behavior
+- Switchable target power rails with default-safe startup behavior
+- Per-line ESD protection and series impedance on external signals
+- 4-layer PCB with extensive ground stitching for improved signal integrity
+
+
 ## Key Design Decisions
 
 - **Decision:** Use the STLINK-V3MODS module as the core debugging engine.  
@@ -128,6 +141,6 @@ SPARK exposes the key interfaces of the STLINK-V3MODS module in a form that is e
 
 ---
 
-**Project Status:** <span class="status-badge">Prototype Deployment</span> | **Timeline:** May 2025 - now
+**Project Status:** <span class="status-badge">Prototype Deployment</span> | **Timeline:** May 2025 - Present
 
 [← Previous: PID Trainer]({{ '/projects/pid-trainer/' | relative_url }}) | [Next Project: Fusion Blocks →]({{ '/projects/fusion-system-blocks/' | relative_url }})
