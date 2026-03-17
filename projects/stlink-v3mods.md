@@ -106,11 +106,15 @@ Key architectural features include:
 
 **Board layout**
 
-<img src="{{ '/assets/images/projects/stlink-v3mods/PCB.png' | relative_url }}" alt="SPARK Programming Board PCB layout" style="width: 100%; max-width: 900px; height: auto; border-radius: 8px; margin-bottom: 1.5rem;">
+<a href="{{ '/assets/images/projects/stlink-v3mods/PCB.png' | relative_url }}">
+  <img src="{{ '/assets/images/projects/stlink-v3mods/PCB.png' | relative_url }}" alt="SPARK Programming Board PCB layout" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 0 auto 1.5rem;">
+</a>
 
 **Schematic**
 
-<img src="{{ '/assets/images/projects/stlink-v3mods/Schematic.png' | relative_url }}" alt="SPARK Programming Board schematic" style="width: 100%; max-width: 900px; height: auto; border-radius: 8px; margin-bottom: 1.5rem;">
+<a href="{{ '/assets/images/projects/stlink-v3mods/Schematic.png' | relative_url }}">
+  <img src="{{ '/assets/images/projects/stlink-v3mods/Schematic.png' | relative_url }}" alt="SPARK Programming Board schematic" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 0 auto 1.5rem;">
+</a>
 
 ## Lessons Learned
 
