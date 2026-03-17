@@ -32,25 +32,17 @@ The module exposes a high-density connector and assumes a carrier board, which a
 
 ## System Architecture
 
-<div class="mermaid">
-flowchart LR
+**Core structure**
 
-  HOST[Development PC<br/>STM32CubeIDE / OpenOCD / CLI]
-  USB[USB Connection]
-  STLINK[STLINK-V3MODS Module<br/>Debugger + Programmer]
-  SPARK[SPARK Breakout Board<br/>Signal Routing + Headers]
-  SWD[SWD Debug Interface<br/>SWDIO / SWCLK / NRST]
-  UART[Virtual COM Port<br/>TX / RX]
-  TARGET[Target Embedded System<br/>STM32 or other MCU]
+<img src="{{ '/assets/images/projects/stlink-v3mods/Core Structure.png' | relative_url }}" alt="SPARK core structure flowchart" style="width: 100%; max-width: 1000px; height: auto; border-radius: 8px; margin-bottom: 1.5rem;">
 
-  HOST <--> USB
-  USB <--> STLINK
-  STLINK --> SPARK
-  SPARK --> SWD
-  SPARK --> UART
-  SWD --> TARGET
-  UART <--> TARGET
-</div>
+**Protection layer**
+
+<img src="{{ '/assets/images/projects/stlink-v3mods/Protection Layer.png' | relative_url }}" alt="SPARK protection layer flowchart" style="width: 100%; max-width: 1000px; height: auto; border-radius: 8px; margin-bottom: 1.5rem;">
+
+**Supporting systems**
+
+<img src="{{ '/assets/images/projects/stlink-v3mods/Supporting Systems.png' | relative_url }}" alt="SPARK supporting systems flowchart" style="width: 100%; max-width: 1000px; height: auto; border-radius: 8px; margin-bottom: 1.5rem;">
 
 ## Interfaces
 
