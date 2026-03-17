@@ -16,6 +16,7 @@ weight: 3
 <img src="{{ '/assets/images/project-placeholder.svg' | relative_url }}" alt="PID Trainer System Overview" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;">
 
 ## Overview
+### NEEDS REWRITE
 
 The PID Trainer is a hands-on controls platform that links classroom PID concepts with physical plant behavior. It combines a real-time embedded controller, interchangeable plant modules, and software analysis tools. The platform is structured for repeatable laboratory exercises and tuning workflows.
 
@@ -86,4 +87,4 @@ flowchart LR
 
 **Project Status:** <span class="status-badge">Active Deployment</span> | **Timeline:** September 2020 - Present
 
-[← Previous: Smart Home]({{ '/projects/smart-home-system/' | relative_url }}) | [Next Project: ST-Link Mods →]({{ '/projects/stlink-v3mods/' | relative_url }})
+[← Previous: Smart Home]({{ '/projects/smart-home-system/' | relative_url }}) | [Next Project: SPARK Programming Board →]({{ '/projects/stlink-v3mods/' | relative_url }})

@@ -14,16 +14,40 @@ Project pages are organized for quick scanning: Overview, Problem, System Archit
 
 ## Flagship Systems
 
+<div class="project-grid">
 {% for project in sorted_pages %}
 {% if project.path contains 'projects/' and project.path != 'projects/index.md' and project.featured == true %}
-- [{{ project.title }}]({{ project.url | relative_url }})
+	<div class="project-card">
+		{% if project.image %}
+		<img src="{{ project.image | relative_url }}" alt="{{ project.title }}" class="project-image" loading="lazy">
+		{% else %}
+		<div class="placeholder-img">{{ project.title }}</div>
+		{% endif %}
+		<h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+		<p>{{ project.description }}</p>
+		<p class="project-status"><strong>{{ project.status }}</strong>{% if project.timeline %} | {{ project.timeline }}{% endif %}</p>
+		<p><a href="{{ project.url | relative_url }}">View project →</a></p>
+	</div>
 {% endif %}
 {% endfor %}
+</div>
 
 ## Additional Projects
 
+<div class="project-grid">
 {% for project in sorted_pages %}
 {% if project.path contains 'projects/' and project.path != 'projects/index.md' and project.featured != true %}
-- [{{ project.title }}]({{ project.url | relative_url }})
+	<div class="project-card">
+		{% if project.image %}
+		<img src="{{ project.image | relative_url }}" alt="{{ project.title }}" class="project-image" loading="lazy">
+		{% else %}
+		<div class="placeholder-img">{{ project.title }}</div>
+		{% endif %}
+		<h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+		<p>{{ project.description }}</p>
+		<p class="project-status"><strong>{{ project.status }}</strong>{% if project.timeline %} | {{ project.timeline }}{% endif %}</p>
+		<p><a href="{{ project.url | relative_url }}">View project →</a></p>
+	</div>
 {% endif %}
 {% endfor %}
+</div>

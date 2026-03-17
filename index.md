@@ -21,7 +21,7 @@ I design and integrate electromechanical systems that combine mechanical assembl
   **Core domains:** controls, embedded systems, communications, power, systems integration
 - **[PID Trainer & Lab Module]({{ '/projects/pid-trainer/' | relative_url }})** — Hands-on control-systems platform connecting classroom models to physical plant behavior.  
   **Core domains:** controls, embedded firmware, lab hardware, data acquisition, education
-- **[SPARK STLINK Board]({{ '/projects/stlink-v3mods/' | relative_url }})** — Hardware expansion board that exposes debugging, power control, and protocol interfaces during embedded bring-up. 
+- **[SPARK Programming Board]({{ '/projects/stlink-v3mods/' | relative_url }})** — Hardware expansion board that exposes debugging, power control, and protocol interfaces during embedded bring-up. 
   **Core domains:** embedded tools, hardware interfaces, firmware, validation
 - **[Smart Home System]({{ '/projects/smart-home-system/' | relative_url }})** — Local-first home automation system built around Home Assistant, segmented networking, and reliable fail-safe operation.  
   **Core domains:** networking, automation, systems integration, observability

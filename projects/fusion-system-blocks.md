@@ -16,6 +16,7 @@ weight: 6
 <img src="{{ '/assets/images/project-placeholder.svg' | relative_url }}" alt="Fusion System Blocks" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;">
 
 ## Overview
+### NEEDS REWRITE
 
 Fusion System Blocks is a visual systems-documentation workflow built around Autodesk Fusion. It provides a structured way to represent subsystem boundaries, interfaces, and hierarchy during multidisciplinary design. The framework keeps documentation aligned with engineering development.
 
@@ -65,4 +66,4 @@ The framework uses top-level system blocks, subsystem decomposition, and explici
 
 **Project Status:** <span class="status-badge">Public Release</span> | **Timeline:** 2023 - 2024
 
-[← Previous: ST-Link Mods]({{ '/projects/stlink-v3mods/' | relative_url }}) | [Back to Projects →]({{ '/projects/' | relative_url }})
+[← Previous: SPARK Programming Board]({{ '/projects/stlink-v3mods/' | relative_url }}) | [Back to Projects →]({{ '/projects/' | relative_url }})

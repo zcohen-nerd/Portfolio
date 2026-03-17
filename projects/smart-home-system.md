@@ -16,6 +16,8 @@ weight: 5
 <img src="{{ '/assets/images/project-placeholder.svg' | relative_url }}" alt="Smart Home System Overview" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;">
 
 ## Overview
+### NEEDS REWRITE
+
 
 This project is a residential automation system built around safety, security, and local control. It integrates segmented networking, distributed device control, and event-driven automation for environmental and security functions. The implementation prioritizes maintainability and predictable behavior under degraded conditions.
 
