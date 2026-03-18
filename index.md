@@ -31,10 +31,11 @@ My work centers on defining system architecture, developing mechanical and elect
   **Core domains:** controls, embedded systems, communications, power, systems integration
 - **[SPARK Programming Board]({{ '/projects/stlink-v3mods/' | relative_url }})** — Hardware expansion board that exposes debugging, power control, and protocol interfaces during embedded bring-up. 
   **Core domains:** embedded tools, hardware interfaces, firmware, validation
+- **[Fusion System Blocks]({{ '/projects/fusion-system-blocks/' | relative_url }})** — Visual systems documentation framework for mapping architecture, subsystem boundaries, and interface definitions across multidisciplinary projects.
+  **Core domains:** systems architecture, documentation, integration planning, workflow design
 
 ## Other Work
 
-- [Fusion System Blocks]({{ '/projects/fusion-system-blocks/' | relative_url }})
 - [Teaching Portfolio]({{ '/teaching/' | relative_url }})
 - [Documentation Library]({{ '/documentation/' | relative_url }})
 

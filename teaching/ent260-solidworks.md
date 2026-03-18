@@ -1,244 +1,172 @@
 ---
-title: ENT260 — SolidWorks Fundamentals
-description: "Comprehensive parametric modeling course focusing on mechanical design and manufacturing principles."
+title: ENT260 - Advanced Solid Modeling for Mechatronics
+description: "Project-driven SolidWorks curriculum centered on advanced modeling, DFM/DFA, documentation, and CSWA preparation for mechatronics students."
 layout: default
 permalink: /teaching/ent260-solidworks/
-tags: [cad, mechanical-design, manufacturing, technical-communication]
-course: "ENT260 - Computer-Aided Design"
-duration: "16 weeks"
-students: "20-25 per section"
+tags: [cad, mechanical-design, manufacturing, mechatronics]
+course: "ENT260 - Advanced Solid Modeling for Mechatronics"
+duration: "14 weeks"
+credits: "3"
 show_title: false
 ---
 
-# ENT260 — SolidWorks Fundamentals: Design for Manufacturing
+# ENT260 - Advanced Solid Modeling for Mechatronics
 
-<img src="{{ '/assets/images/project-placeholder.svg' | relative_url }}" alt="ENT260 SolidWorks Course Overview" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;">
+<img src="{{ '/assets/images/project-placeholder.svg' | relative_url }}" alt="ENT260 course overview" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;">
 
-> **Course Mission:** Develop competency in parametric 3D modeling while building understanding of design for manufacturing principles, engineering communication, and systematic design methodology. Students create manufacturable mechanical designs using industry-standard tools and workflows.
+> **Course Mission:** This redesigned SolidWorks course uses project-driven engineering challenges to build advanced 3D modeling, assembly, documentation, and design-for-manufacturing skills for mechatronics students. The curriculum is also structured to prepare students for the Certified SolidWorks Associate (CSWA) exam.
 
-## Course Context & Objectives
+## Course Overview
 
-**Program Integration:** Second-year course in Engineering Technology program, building on technical drawing fundamentals and preceding advanced manufacturing courses. Serves both mechanical and electrical concentrations with emphasis on practical design skills.
+ENT260 was rewritten as an immersive studio-style CAD course built around realistic engineering scenarios instead of isolated software exercises. Each week places students in a client-style design context, asks them to balance technical constraints with manufacturability, and requires them to communicate their work through models, assemblies, drawings, and short design rationales.
 
-**Industry Alignment:** Curriculum developed in consultation with local manufacturing partners to ensure graduates possess immediately applicable CAD skills. Software version and workflows mirror current industry practice.
+The curriculum progresses from parametric modeling and design intent into assemblies, documentation, additive manufacturing, electronics enclosure design, and a multi-week team capstone. Throughout the course, students practice the same workflow expected in industry: define the problem, model the system, validate design decisions, and present a complete handoff package.
 
-**Duration:** 16-week semester course (48 contact hours + lab time)
-**Enrollment:** 20-25 students per section, individual workstations with SolidWorks Professional
-**Prerequisites:** Technical Drawing (ENT160), basic algebra and trigonometry
+By the end of the course, students are expected to:
 
-## Core Learning Objectives
+- Model, assemble, and analyze complex mechanical systems in SolidWorks.
+- Apply design thinking and DFM/DFA principles to real engineering problems.
+- Produce complete drawing packages and supporting manufacturing documentation.
+- Integrate mechanical design with electronics packaging and system-level constraints.
+- Complete CSWA-aligned modeling work under timed conditions.
 
-<div class="project-grid">
-  <div class="project-card">
-    <h3>🔧 Technical Competencies</h3>
-    <ul>
-      <li><strong>Parametric Modeling:</strong> Create robust, editable 3D models using feature-based design</li>
-      <li><strong>Assembly Design:</strong> Develop multi-part assemblies with appropriate constraints and motion</li>
-      <li><strong>Drawing Production:</strong> Generate manufacturing drawings with GD&T and industry standards</li>
-      <li><strong>Design Analysis:</strong> Perform basic FEA and design optimization studies</li>
-    </ul>
-  </div>
-  <div class="project-card">
-    <h3>📐 Design Principles</h3>
-    <ul>
-      <li><strong>DFM Integration:</strong> Apply design for manufacturing principles throughout design process</li>
-      <li><strong>Standards Compliance:</strong> Follow ASME Y14.5 and company drawing standards</li>
-      <li><strong>Design Intent:</strong> Capture and communicate engineering rationale effectively</li>
-      <li><strong>Iterative Design:</strong> Use parametric tools for design exploration and optimization</li>
-    </ul>
-  </div>
-</div>
+## Curriculum Structure
 
-## Course Structure & Learning Progression
+### Module 1: Foundations and Design Thinking
 
-### Module 1: Foundation & Sketching (Weeks 1-3)
-<img src="{{ '/assets/images/project-placeholder.svg' | relative_url }}" alt="SolidWorks Sketching Interface" style="width: 100%; max-width: 600px; height: auto; border-radius: 8px; float: right; margin: 0 0 1rem 1rem;">
+**Week 1: Ergonomic Redesign Challenge - "The Fatigue Factor"**  
+Students redesign a handheld tool or multimeter probe to improve comfort and usability for technicians working in constrained spaces.
 
-**Learning Focus:** Parametric modeling fundamentals and geometric constraint systems
+**Deliverables:** Three concept models, a one-page design rationale, and a basic dimensioned drawing of the final design.  
+**Skills practiced:** Sketching, constraints, extrudes, revolves, fillets, and annotation.
 
-**Core Topics:**
-- **Sketch Entities & Relations:** Lines, arcs, splines, geometric relationships
-- **Parametric Design:** Dimensions, equations, design tables
-- **Feature-Based Modeling:** Extrude, revolve, sweep, loft operations
-- **Design Intent:** Capturing engineering reasoning in model structure
+**Week 2: Parametric Design Challenge - Universal Motor Mount**  
+Students create a single SolidWorks model that adapts across NEMA 17, 23, and 34 motor sizes while fitting a standard 80/20 frame.
 
-**Hands-on Projects:**
-- **Bracket Design Series:** Progressive complexity from simple to complex geometries
-- **Parametric Family:** Single model generating multiple configurations
-- **Reverse Engineering:** Measure physical parts and create accurate 3D models
+**Deliverables:** Parameter-driven model configurations, design equations table, compatibility assemblies, and a short explanation of the parameter and DFM strategy.  
+**Skills practiced:** Global variables, equations, configurations, and parametric design logic.
 
-**Assessment Methods:**
-- Weekly modeling challenges with increasing complexity
-- Peer review sessions evaluating model robustness
-- Quiz on sketching relations and constraint principles
+**Week 3: Feature-Based Design Challenge - Modular Sensor Housing**  
+Students design a modular enclosure system for coastal environmental sensors with interchangeable sensor modules and IP54 protection goals.
 
-### Module 2: Advanced Features & Assemblies (Weeks 4-6)
+**Deliverables:** Base housing model, two sensor module variants, exploded view assembly, and design intent notes covering sealing and assembly strategy.  
+**Skills practiced:** Lofts, sweeps, shelling, feature patterns, and assembly mate strategy.
 
-**Learning Focus:** Complex geometry creation and multi-part design
+### Module 2: Mechanical Systems and Assemblies
 
-**Advanced Modeling Techniques:**
-- **Complex Features:** Shells, drafts, fillets, patterns, mirrors
-- **Multi-body Modeling:** Top-down design approach for related parts
-- **Surface Modeling:** Blended surfaces for aesthetic and functional requirements
-- **Configuration Management:** Design tables and family of parts
+**Week 4: Articulating Mount Challenge - "Vision Under Vibration"**  
+Students model a rugged three-degree-of-freedom camera mount for industrial machine vision applications.
 
-**Assembly Design Methodology:**
-- **Bottom-up Assembly:** Individual part creation followed by assembly
-- **Top-down Design:** Assembly-driven part creation with in-context modeling
-- **Constraint Strategy:** Mate types, degrees of freedom, motion studies
-- **Large Assembly Techniques:** Performance optimization and file management
+**Deliverables:** Full assembly, motion study, strength analysis of critical parts, and a short animated demonstration.  
+**Skills practiced:** Assembly mates, motion study, exploded views, and structural design.
 
-**Capstone Assembly Project:**
-- Design and model a functional mechanical device (e.g., vise, gear reducer, lifting mechanism)
-- Minimum 15 unique parts with appropriate constraints
-- Include fasteners, purchased components, and custom machined parts
-- Demonstrate assembly motion and interference detection
+**Week 5: DFM/DFA Optimization Challenge - "Manufacturing on a Budget"**  
+Students redesign a motor controller enclosure to reduce tooling complexity, part count, and manufacturing cost.
 
-### Module 3: Technical Communication (Weeks 7-9)
+**Deliverables:** Original versus optimized model comparison, revised design with snap fits and fewer parts, draft analysis, and a brief cost-saving rationale.  
+**Skills practiced:** DFM/DFA review, manufacturability analysis, simplification, and fastener reduction.
 
-**Learning Focus:** Engineering drawing production and manufacturing communication
+**Week 6: Engineering Drawing and Documentation Challenge - "Ready for Production"**  
+Students produce a complete documentation package for a linear actuator design intended for fabrication.
 
-**Drawing Standards & Practices:**
-- **View Generation:** Orthographic projections, sections, auxiliary views
-- **Dimensioning Strategy:** Functional dimensioning, baseline vs. chain dimensioning
-- **GD&T Implementation:** Form, orientation, location, and runout tolerances
-- **Annotation Standards:** Notes, symbols, material specifications
+**Deliverables:** Fully dimensioned drawings, a ballooned assembly drawing with BOM, exploded view assembly steps, and a simplified user-facing diagram.  
+**Skills practiced:** Orthographic views, GD&T, BOM creation, and exploded or section views.
 
-**Manufacturing Integration:**
-- **Machining Considerations:** Feature accessibility, tool clearances, setup planning
-- **Sheet Metal Design:** Bend allowances, flat patterns, manufacturing constraints
-- **Weldment Design:** Structural members, cut lists, weld symbols
-- **3D Printing Preparation:** STL generation, support structures, orientation
+### Module 3: Applied Mechatronics Design
 
-**Professional Documentation Package:**
-- Complete drawing set for assembly project including:
-  - Assembly drawing with bill of materials
-  - Detail drawings for all custom parts
-  - Manufacturing specifications and notes
-  - Quality control and inspection requirements
+**Week 7: Electronics Integration Challenge - IoT Enclosure**  
+Students design a rugged Raspberry Pi 4 monitoring enclosure with cable routing, passive cooling, sensor mounting, and IP54 protection.
 
-### Module 4: Analysis & Optimization (Weeks 10-12)
+**Deliverables:** Enclosure model with interfaces and vents, thermal or airflow strategy, cable routing diagram, and maintenance plan.  
+**Skills practiced:** Enclosure design, layout planning, surface modeling, and thermal consideration.
 
-**Learning Focus:** Design validation and performance optimization
+**Week 8: Precision Mechanism Challenge - Linear Indexer**  
+Students design a compact indexing mechanism that advances micro-sample trays in 10 mm increments with +/-0.1 mm repeatability.
 
-**Simulation & Analysis Tools:**
-- **Outcomes:** Content pending verification
-- **Modal Analysis:** Natural frequencies and vibration modes
-- **Thermal Analysis:** Heat transfer and temperature distribution
-- **Flow Simulation:** Basic fluid flow and pressure drop analysis
+**Deliverables:** Mechanism model, full assembly, motion simulation, force estimate, and component drawings with tolerance notes.  
+**Skills practiced:** Precision motion design, mate control, motion studies, and force estimation.
 
-**Design Optimization Process:**
-- **Design Studies:** Parametric sweeps and sensitivity analysis
-- **Material Selection:** Property databases and environmental considerations
-- **Cost Optimization:** Manufacturing cost estimation and value engineering
-- **Sustainability Assessment:** Material selection and lifecycle considerations
+**Week 9: Additive Manufacturing Challenge - Robotic End Effector**  
+Students develop a lightweight robotic end effector optimized separately for FDM and SLA printing.
 
-**Final Design Challenge:**
-- Redesign and optimize a mechanical component for specific performance criteria
-- Use simulation to validate design improvements
-- Document design rationale and optimization process
-- Present results to industry panel for feedback
+**Deliverables:** FDM and SLA model variants, STL files with slicing screenshots, additive manufacturing documentation, and a print-readiness comparison.  
+**Skills practiced:** Print orientation, lightweight design, material planning, and slicer optimization.
 
-## Pedagogical Approach & Assessment
+### Module 4: Collaborative Design Project
 
-### Active Learning Integration
+**Week 10: Capstone Kickoff - Concept Development**  
+Teams begin a compact automated sorting system for small electronic components by defining requirements, generating concepts, and planning execution.
 
-<img src="{{ '/assets/images/project-placeholder.svg' | relative_url }}" alt="Collaborative Design Session" style="width: 100%; max-width: 600px; height: auto; border-radius: 8px; float: right; margin: 0 0 1rem 1rem;">
+**Deliverables:** Client-style requirements document, three CAD-assisted concepts, a decision matrix, and a team task timeline.  
+**Skills practiced:** Concept generation, team planning, and early CAD prototyping.
 
-**Problem-Based Learning:**
-- Real-world design challenges from industry partners
-- Open-ended problems requiring creative solutions
-- Integration of manufacturing constraints from project inception
+**Week 11: Capstone Detailed Design - "From Idea to Integration"**  
+Teams fully develop the selected concept, including feeders, sorters, and control enclosures, while resolving integration issues.
 
-**Collaborative Design:**
-- Team-based assembly projects with individual part responsibility
-- Peer review of models for design intent and manufacturability
-- Cross-functional teams including manufacturing and quality perspectives
+**Deliverables:** Detailed subsystem models, integrated assembly, motion simulation, and BOM with interface resolution notes.  
+**Skills practiced:** Detailed modeling, system integration, and validation.
 
-**Industry Connections:**
-- Guest lectures from design engineers and manufacturing professionals
-- Factory tours to observe CAD-to-manufacturing workflows
-- Internship placement with local manufacturing companies
+**Week 12: Capstone Refinement and Documentation - "Handoff to the Client"**  
+Teams finalize manufacturing drawings, maintenance documentation, exploded views, and a polished demonstration package.
 
-### Comprehensive Assessment Strategy
+**Deliverables:** Final CAD package, drawings, user and assembly manuals, slide deck, demo video, and project reflection.  
+**Skills practiced:** Documentation, communication, and presentation preparation.
 
-<div class="project-grid">
-  <div class="project-card">
-    <h3>📊 Formative Assessment</h3>
-    <ul>
-      <li><strong>Weekly Challenges:</strong> Progressive skill-building exercises</li>
-      <li><strong>Peer Reviews:</strong> Model evaluation using industry criteria</li>
-      <li><strong>Concept Checks:</strong> Quick assessments of understanding</li>
-      <li><strong>Lab Practicals:</strong> Timed modeling exercises under test conditions</li>
-    </ul>
-  </div>
-  <div class="project-card">
-    <h3>🎯 Summative Assessment</h3>
-    <ul>
-      <li><strong>Project Portfolios:</strong> Complete design documentation packages</li>
-      <li><strong>Technical Presentations:</strong> Design rationale and optimization results</li>
-      <li><strong>Comprehensive Exam:</strong> Modeling proficiency demonstration</li>
-      <li><strong>Industry Evaluation:</strong> Professional assessment of final projects</li>
-    </ul>
-  </div>
-</div>
+### Module 5: CSWA Certification and Final Presentation
 
-### Grading Distribution
-- **Outcomes:** Content pending verification
-- **Outcomes:** Content pending verification
-- **Outcomes:** Content pending verification
-- **Outcomes:** Content pending verification
+**Week 13: CSWA Intensive Prep - "Certification Sprint"**  
+Students complete timed modeling problems under certification-style conditions and evaluate their own workflow efficiency.
 
-## Technology Integration & Resources
+**Deliverables:** Three timed part-modeling problems, a strategy reflection, and self-evaluation against provided solutions.  
+**Skills practiced:** Efficient modeling, time management, and exam preparation.
 
-### Software & Hardware
-- **SolidWorks Professional:** Latest version with simulation and drawing packages
-- **Hardware Specifications:** Workstations optimized for 3D graphics and large assemblies
-- **File Management:** PDM system introduction for version control and collaboration
-- **Cloud Integration:** SolidWorks 3DEXPERIENCE platform for collaborative projects
+**Week 14: Final Presentation and CSWA Exam - "Showcase and Certify"**  
+Teams present their final capstone project to an engineering audience and then complete the CSWA exam or document their certification attempt.
 
-### Supplementary Resources
-- **Video Tutorials:** Custom-created content addressing common challenges
-- **Reference Materials:** Industry handbooks, standards documents, best practices guides
-- **Online Community:** Course forum for peer assistance and knowledge sharing
-- **Help Desk:** Dedicated technical support for software and hardware issues
+**Deliverables:** Fifteen-minute professional presentation, portfolio submission, and CSWA completion or exam reflection.  
+**Skills practiced:** Design communication, professional presentation, and certification performance.
 
-## Student Outcomes & Success Metrics
+## Assessment Strategy
 
-### Academic Performance
-- **Outcomes:** Content pending verification
-- **Outcomes:** Content pending verification
-- **Outcomes:** Content pending verification
-- **Follow-up Success:** Strong performance in subsequent manufacturing and design courses
+The grading structure ties each weekly challenge to a specific engineering competency while preserving room for a larger collaborative design project and certification work.
 
-### Industry Feedback & Employment
-- **Employer Satisfaction:** Consistently positive feedback on graduate CAD skills
-- **Outcomes:** Content pending verification
-- **Professional Development:** Students report immediate productivity in CAD-based roles
-- **Continuing Education:** High enrollment in advanced CAD and manufacturing courses
+- **Week 1: Ergonomic Redesign** - 5%
+- **Week 2: Parametric Motor Mount** - 5%
+- **Week 3: Modular Sensor Housing** - 5%
+- **Week 4: Articulating Mount** - 5%
+- **Week 5: DFM/DFA Optimization** - 5%
+- **Week 6: Drawing Documentation** - 5%
+- **Week 7: IoT Enclosure Design** - 5%
+- **Week 8: Linear Indexing Mechanism** - 5%
+- **Week 9: Additive End Effector** - 5%
+- **Weeks 10-12: Capstone Project** - 25%
+- **Week 13: CSWA Prep** - 10%
+- **Week 14: CSWA Exam and Final Presentation** - 10%
 
-### Student Testimonials
-> *"This course didn't just teach me SolidWorks - it taught me how to think like a designer. Understanding manufacturability from the beginning changed how I approach every project."* - Student, Fall 2022
+| Component | Percent of grade | Notes |
+|-----------|------------------|-------|
+| Weekly design challenges (9) | 45% | Practical, CSWA-aligned projects |
+| Capstone project (Weeks 10-12) | 25% | Team design, documentation, and presentation |
+| CSWA preparation and certification | 20% | Timed modeling, strategy, certification effort |
+| Participation and peer reviews | 10% | Feedback, engagement, collaboration |
+| Total | 100% | |
 
-> *"The industry connections and real projects made this feel like actual engineering work, not just academic exercises."* - Student, Spring 2023
+## Software and Tools
 
-## Continuous Improvement & Innovation
+- SolidWorks 2024 as the primary design environment.
+- Motion Study, FEA, Draft Analysis, and Thermal Simulation tools inside SolidWorks.
+- Cura, PrusaSlicer, and Bambu Studio for additive manufacturing preparation.
+- Canvas and Google Workspace for collaboration, planning, and project submission.
 
-### Annual Course Evolution
-- **Industry Advisory Board:** Regular feedback from manufacturing partners on curriculum relevance
-- **Software Updates:** Integration of new SolidWorks features and industry workflows
-- **Project Refresh:** New design challenges based on current technology trends
-- **Assessment Innovation:** Updated evaluation methods reflecting industry practices
+## Instructional Design Notes
 
-### Future Enhancements
-- **Additive Manufacturing:** Expanded 3D printing integration with design guidelines
-- **Industry 4.0:** IoT sensor integration and smart manufacturing concepts
-- **Sustainability Focus:** Lifecycle assessment and environmental impact evaluation
-- **Virtual Reality:** Immersive design review and collaboration technologies
+This course redesign emphasizes scenario-based learning, repeated design communication, and visible engineering tradeoffs. Students do not just practice commands; they work through human factors, packaging, manufacturability, documentation, and integration problems that mirror how CAD is used in actual product development.
+
+The final capstone extends that approach into collaborative systems work. By the end of the term, students have not only a set of individual modeling exercises, but also a documented team design process, a production-style handoff package, and direct preparation for professional certification.
 
 ---
 
-**Course Information:** ENT260 - Computer-Aided Design | **Credit Hours:** 4 | **Frequency:** Every semester | **Prerequisites:** ENT160 Technical Drawing
+**Course Information:** ENT260 - Advanced Solid Modeling for Mechatronics | **Credit Hours:** 3 | **Format:** Project-driven studio course | **Primary Platform:** SolidWorks 2024
 
 [← Previous: PID Lab]({{ '/teaching/pid-lab-module/' | relative_url }}) | [Next: Instructional Design →]({{ '/teaching/instructional-design/' | relative_url }})
 
