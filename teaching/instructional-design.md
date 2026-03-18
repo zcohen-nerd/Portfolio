@@ -1,262 +1,149 @@
 ---
-title: Instructional Design Philosophy & Practice
-description: "Systematic approach to creating effective technical education experiences based on learning science and industry needs."
+title: Computer Literacy for Kids Curriculum Project
+description: "Open 18-week computer literacy curriculum designed to help young learners understand, question, and create with digital tools."
 layout: default
 permalink: /teaching/instructional-design/
-tags: [instructional-design, learning-theory, assessment, curriculum-development]
-focus: "Engineering & Technical Education"
-experience: "Content pending verification"
+tags: [instructional-design, curriculum-development, digital-literacy, k12-education]
+focus: "Digital Literacy & Youth Computing Education"
+experience: "Independent curriculum design project"
 show_title: false
 ---
 
-# Instructional Design Philosophy & Practice
+# Computer Literacy for Kids
 
-<img src="{{ '/assets/images/project-placeholder.svg' | relative_url }}" alt="Instructional Design Overview" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;">
+<a href="https://zcohen-nerd.github.io/computer_literacy_for_kids/">
+  <img src="https://zcohen-nerd.github.io/computer_literacy_for_kids/img/hero-image.png" alt="Computer Literacy for Kids curriculum hero image" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 0 auto 2rem;" loading="lazy">
+</a>
 
-> **Design Philosophy:** Effective technical education emerges from the systematic integration of learning science, industry needs, and authentic practice. My instructional design approach emphasizes **hands-on learning**, **iterative improvement**, and **measurable outcomes** to create educational experiences that prepare students for professional success.
+> **Project Summary:** Computer Literacy for Kids is a free, open 18-week curriculum built to help young learners move beyond app familiarity and develop real understanding of how computers, files, the internet, algorithms, and digital tools work. The project is designed for children roughly ages 7-11, with teacher, caregiver, or parent guidance as needed.
 
-## Core Educational Philosophy
+## Why I Built It
 
-### Learning-Centered Design Principles
+Many children grow up surrounded by digital devices but are rarely taught how those systems actually work. They learn how to tap, scroll, search, and watch, but not how files persist, how websites are made, how algorithms shape attention, or how a computer can be used as a creative tool instead of a passive entertainment surface.
 
-**Constructivist Foundation:** Students build understanding through active engagement with authentic problems and real-world applications. Knowledge construction is enhanced when learners can connect new concepts to existing experience and see immediate practical relevance.
+This curriculum was built to address that gap directly. Instead of centering instruction on memorizing software steps, it teaches durable mental models that help children reason about technology. The goal is not just digital access, but digital understanding.
 
-**Inclusive Pedagogy:** Design for diverse learning styles, backgrounds, and abilities from the outset rather than retrofitting accessibility. Multiple pathways to success ensure all students can demonstrate competency while maintaining rigorous standards.
+At its core, the project tries to answer a simple question: how do you help a child feel that computers are understandable, controllable, and worth creating with?
 
-**Industry Integration:** Curriculum design driven by current industry needs and emerging technology trends. Regular consultation with practicing professionals ensures graduates possess immediately applicable skills and understand workplace contexts.
+## What It Accomplishes
+
+The curriculum is designed to move students from digital awareness into digital reasoning and then into digital creativity. By the end of the experience, learners are meant to feel more confident exploring tools, solving simple problems, evaluating what they see online, and building digital artifacts of their own.
+
+<div class="project-grid">
+  <div class="project-card">
+    <h3>For Learners</h3>
+    <ul>
+      <li><strong>Builds judgment:</strong> Students learn how to evaluate websites, online behavior, and information instead of memorizing disconnected safety rules.</li>
+      <li><strong>Builds technical confidence:</strong> Learners begin to understand inputs, files, systems, and digital workflows as things they can reason about.</li>
+      <li><strong>Builds creative ownership:</strong> The course repeatedly pushes students to make, explain, revise, and present their own work.</li>
+    </ul>
+  </div>
+  <div class="project-card">
+    <h3>For Teachers & Families</h3>
+    <ul>
+      <li><strong>Provides structure:</strong> The 18-week sequence gives a clear progression instead of one-off tech activities.</li>
+      <li><strong>Supports flexible teaching:</strong> Each week is broken into short guided and independent sessions that can be used in classrooms, homeschool settings, or clubs.</li>
+      <li><strong>Stays reusable:</strong> The curriculum is openly licensed and maintained as a documentation site, making it easy to adapt and extend.</li>
+    </ul>
+  </div>
+</div>
+
+## Instructional Model
+
+The project is built around five mental models that appear across the entire curriculum. These are not isolated lessons; they are recurring ways of thinking that help children make sense of digital systems over time.
 
 <div class="highlight-box">
-  <h3>Guiding Principles</h3>
+  <h3>Core Mental Models</h3>
   <div class="project-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
     <div>
-      <strong>🎯 Backward Design:</strong> Start with desired outcomes and work backward to activities and assessments
+      <strong>Computers Respond to Inputs:</strong> Students learn that computers react to commands, clicks, typing, and file actions in predictable ways.
     </div>
     <div>
-      <strong>📊 Evidence-Based:</strong> Use learning research and assessment data to inform design decisions
+      <strong>Digital Work Persists:</strong> Learners understand that files can be saved, organized, revisited, and improved over time.
     </div>
     <div>
-      <strong>🔄 Iterative Improvement:</strong> Continuous refinement based on student feedback and outcome analysis
+      <strong>The Internet Is Made of People:</strong> Students connect online content to human authors, motives, and audiences.
     </div>
     <div>
-      <strong>🤝 Collaborative Learning:</strong> Leverage peer interaction and team-based problem solving
+      <strong>Systems Shape What We See:</strong> The curriculum introduces recommendation systems, search behavior, and attention-shaping algorithms.
+    </div>
+    <div>
+      <strong>Creation Beats Consumption:</strong> Computers become tools for writing, drawing, coding, presenting, and building rather than just watching and clicking.
     </div>
   </div>
 </div>
 
-## Systematic Design Process
+## Curriculum Architecture
 
-### Phase 1: Analysis & Requirements (ADDIE Foundation)
+The website organizes the course as an 18-week progression with an optional CAD extension. The structure is intentionally cumulative: early weeks build language and judgment, middle weeks build skill and reasoning, and later weeks culminate in project work.
 
-<img src="{{ '/assets/images/diagram-placeholder.svg' | relative_url }}" alt="Instructional Design Process" style="width: 100%; max-width: 1000px; height: auto; border-radius: 8px; margin: 1rem 0;">
+- **Weeks 1-3: Digital Foundations**
+  Internet basics, safety, systems thinking, and files and folders.
+- **Weeks 4-6: Core Computer Skills**
+  Typing, communication, images, and creativity.
+- **Weeks 7-8: Information & Media Literacy**
+  Search strategy, evaluating results, Wikipedia exploration, and source awareness.
+- **Weeks 9-11: Coding & Problem Solving**
+  Algorithms, Scratch, debugging, and iterative thinking.
+- **Week 12: How Things Work**
+  Digital and physical systems thinking.
+- **Weeks 13-14: AI Literacy**
+  Understanding generative AI and using it thoughtfully.
+- **Weeks 15-18: Creative Project Work**
+  Students design, build, and present a final digital artifact.
+- **Optional CAD Extension**
+  TinkerCAD, spatial thinking, and introductory 3D printing workflows.
 
-**Learner Analysis:**
-- **Prior Knowledge Assessment:** Diagnostic surveys and skills inventories
-- **Learning Style Preferences:** Multi-modal assessment and accommodation planning
-- **Motivation Factors:** Understanding student goals and career aspirations
-- **Contextual Constraints:** Time availability, technology access, support systems
+This structure makes the project more than a list of tech lessons. It becomes a full introductory computing pathway that connects literacy, safety, reasoning, creativity, and design.
 
-**Needs Assessment:**
-- **Industry Consultation:** Regular dialogue with employers and practitioners
-- **Skills Gap Analysis:** Comparison of current curriculum with industry demands
-- **Regulatory Requirements:** Professional certification and accreditation standards
-- **Institutional Alignment:** Integration with program outcomes and strategic goals
+## How the Lessons Work
 
-**Learning Environment Analysis:**
-- **Technology Infrastructure:** Available tools, platforms, and technical support
-- **Physical Spaces:** Laboratory capabilities, classroom configurations, safety requirements
-- **Support Services:** Tutoring, accessibility services, academic resources
-- **Time Constraints:** Credit hours, semester structure, prerequisite sequencing
+Each week uses a repeatable instructional pattern that is easy for teachers and caregivers to pick up quickly.
 
-### Phase 2: Learning Objective Design & Alignment
+- **Guided Session 1:** Introduces the concept through conversation, observation, and exploration.
+- **Guided Session 2:** Extends the idea through hands-on application, comparison, or decision-making.
+- **Independent Session:** Gives the learner a structured opportunity to practice, create, or explain something on their own.
 
-**SMART Learning Objectives:**
-- **Specific:** Clear, unambiguous performance expectations
-- **Measurable:** Observable behaviors with defined criteria
-- **Achievable:** Realistic given learner preparation and time constraints
-- **Relevant:** Aligned with program outcomes and industry needs
-- **Time-bound:** Appropriate scope for course duration and contact hours
+The sessions are short, usually around 30 minutes, and the site is written to be skim-friendly. Teachers and caregivers are not expected to deliver every bullet exactly. Instead, the materials are designed to support thoughtful facilitation: understand the goal, choose the right activity, and keep the learner thinking.
 
-**Bloom's Taxonomy Integration:**
-- **Knowledge/Remembering:** Technical vocabulary, procedures, safety protocols
-- **Comprehension/Understanding:** Concept relationships, theoretical foundations
-- **Application:** Problem-solving using standard methods and tools
-- **Analysis:** Troubleshooting, system design, performance evaluation
-- **Synthesis/Creation:** Original design work, innovation, integration
-- **Evaluation:** Critical assessment, optimization, professional judgment
+## Example: Week 1 Design
 
-### Phase 3: Assessment Strategy Development
+Week 1, "Internet Playground," shows the instructional approach clearly. The first guided session teaches that the internet is made of people, not just screens. Students analyze sites, infer who created them, and discuss what those people may be trying to do. The second guided session reframes online safety as judgment rather than fear, using activities about public versus private information and adult-help moments. The independent session asks the learner to explore a kid-friendly website and explain what makes it useful, interesting, or confusing.
 
-<div class="project-grid">
-  <div class="project-card">
-    <h3>📋 Formative Assessment</h3>
-    <ul>
-      <li><strong>Real-time Feedback:</strong> Classroom polling, concept checks, peer discussions</li>
-      <li><strong>Progress Monitoring:</strong> Weekly reflections, checkpoint quizzes, lab observations</li>
-      <li><strong>Peer Assessment:</strong> Team evaluations, design reviews, collaborative problem-solving</li>
-      <li><strong>Self-Assessment:</strong> Learning journals, goal setting, metacognitive reflection</li>
-    </ul>
-  </div>
-  <div class="project-card">
-    <h3>🎯 Summative Assessment</h3>
-    <ul>
-      <li><strong>Performance-Based:</strong> Practical demonstrations, design projects, laboratory competencies</li>
-      <li><strong>Portfolio Development:</strong> Curated work samples showing growth and achievement</li>
-      <li><strong>Authentic Assessment:</strong> Industry-relevant scenarios and professional contexts</li>
-      <li><strong>Comprehensive Integration:</strong> Capstone projects demonstrating program outcomes</li>
-    </ul>
-  </div>
-</div>
+That first week captures the larger intent of the project: help kids build explanations, not just obey rules. The learner is asked to analyze, compare, justify, and communicate from the beginning.
 
-## Instructional Methods & Strategies
+## Why the Design Works
 
-### Active Learning Implementation
+Several instructional choices give this project its shape:
 
-**Problem-Based Learning (PBL):**
-- **Authentic Problems:** Real industry challenges with incomplete information
-- **Collaborative Investigation:** Teams research solutions using multiple resources
-- **Facilitator Role:** Guide inquiry process rather than provide direct answers
-- **Reflection Integration:** Systematic analysis of problem-solving process
+- **Mental models over button training:** The curriculum aims for durable understanding that can transfer across tools and platforms.
+- **Guided exploration over rigid scripts:** Students are encouraged to try, notice, compare, and explain rather than only follow directions.
+- **Judgment over fear:** Digital citizenship is framed as thoughtful decision-making, not a list of scary warnings.
+- **Creation over passive use:** Writing, drawing, coding, presenting, and designing are treated as central outcomes.
+- **Caregiver usability:** Each page is structured so adults can quickly understand what to teach without reading a long manual.
 
-**Hands-On Laboratory Experiences:**
-- **Progressive Complexity:** Scaffold from guided practice to independent application
-- **Safety Integration:** Embedded safety training within technical skill development
-- **Failure-Positive Environment:** Encourage experimentation and learning from mistakes
-- **Professional Practice:** Mirror industry workflows and quality standards
+## Open Curriculum Infrastructure
 
-**Flipped Classroom Model:**
-- **Pre-class Preparation:** Curated resources for foundational knowledge acquisition
-- **Class Time Optimization:** Focus on application, synthesis, and problem-solving
-- **Individualized Support:** Instructor availability for personalized assistance
-- **Peer Learning:** Student-to-student teaching and collaboration
+The project is also a publishing and maintenance system, not just a lesson set. It is built as a documentation website, with lesson content stored in Markdown and published through Docusaurus. That matters because it makes the curriculum easy to revise, version, share, and extend.
 
-### Technology-Enhanced Learning
+The supporting design choices reinforce the educational mission:
 
-**Simulation Integration:**
-- **Risk-Free Practice:** Complex scenarios without safety or cost concerns
-- **Immediate Feedback:** Real-time performance assessment and correction
-- **Outcomes:** Content pending verification
-- **Scalability:** Individual access to expensive or dangerous equipment virtually
+- The full curriculum is public and web-based.
+- Teachers and families can start with the overview or jump directly into the current week.
+- The repository supports ongoing refinement through issues and discussions.
+- The curriculum is licensed under CC BY-NC-SA 4.0 so it can be reused and adapted in non-commercial learning environments.
 
-**Learning Management Systems:**
-- **Content Organization:** Logical progression with clear navigation
-- **Communication Facilitation:** Discussion forums, announcement systems, messaging
-- **Assessment Integration:** Online quizzes, assignment submission, grade tracking
-- **Analytics Utilization:** Learning data analysis for intervention and improvement
+This means the project accomplishes two things at once: it teaches kids, and it gives educators a practical, adaptable delivery format.
 
-## Assessment Philosophy & Methods
+## What This Project Demonstrates
 
-### Competency-Based Assessment
+For me, this project represents instructional design as systems design. The work was not only to write lessons, but to define the conceptual spine of the curriculum, sequence the progression, shape the teaching pattern, build an approachable publishing format, and make the material open enough to be shared and improved over time.
 
-**Performance Standards:**
-- **Industry-Aligned Criteria:** Skills directly applicable to professional practice
-- **Observable Behaviors:** Specific actions that demonstrate competency achievement
-- **Multiple Evidence Sources:** Various assessment types to accommodate different strengths
-- **Continuous Improvement:** Regular calibration with industry partners and alumni feedback
-
-**Rubric Development:**
-- **Transparent Expectations:** Clear criteria shared with students at course beginning
-- **Progressive Development:** Scaffolded expectations building toward professional competency
-- **Holistic Evaluation:** Integration of technical skills with professional behaviors
-- **Self-Assessment Tools:** Enable student self-evaluation and goal setting
-
-### Learning Analytics & Data-Driven Improvement
-
-**Student Performance Tracking:**
-- **Early Warning Systems:** Identification of at-risk students for timely intervention
-- **Learning Path Analysis:** Understanding how students progress through material
-- **Engagement Metrics:** Participation patterns and resource utilization
-- **Outcome Correlation:** Relationship between activities and achievement
-
-**Continuous Course Improvement:**
-- **Pre/Post Assessment:** Quantitative measurement of learning gains
-- **Student Feedback Integration:** Systematic collection and analysis of learner input
-- **Instructor Reflection:** Regular evaluation of teaching effectiveness and methods
-- **Industry Advisory Input:** External validation of curriculum relevance and rigor
-
-## Impact & Measured Outcomes
-
-### Quantitative Results Across Programs
-
-<div class="project-grid">
-  <div class="project-card">
-    <h3>📊 Academic Performance</h3>
-    <ul>
-      <li><strong>Outcomes:</strong> Content pending verification</li>
-      <li><strong>Outcomes:</strong> Content pending verification</li>
-      <li><strong>Outcomes:</strong> Content pending verification</li>
-      <li><strong>Outcomes:</strong> Content pending verification</li>
-    </ul>
-  </div>
-  <div class="project-card">
-    <h3>🎯 Professional Outcomes</h3>
-    <ul>
-      <li><strong>Outcomes:</strong> Content pending verification</li>
-      <li><strong>Outcomes:</strong> Content pending verification</li>
-      <li><strong>Outcomes:</strong> Content pending verification</li>
-      <li><strong>Outcomes:</strong> Content pending verification</li>
-    </ul>
-  </div>
-</div>
-
-### Qualitative Impact Evidence
-
-**Student Testimonials:**
-> *"The hands-on approach made complex concepts finally click. I felt prepared from day one at my engineering job."* - Mechanical Engineering Technology Graduate
-
-> *"Having real industry problems to solve made the coursework feel relevant and kept me motivated throughout the program."* - Control Systems Student
-
-**Industry Partner Feedback:**
-> *"Graduates from this program hit the ground running. They understand not just the theory but how to apply it in our manufacturing environment."* - Plant Engineering Manager
-
-### Educational Innovation Recognition
-
-**Professional Development & Certification:**
-- **Graduate Certificate:** Content pending verification
-- **Professional Memberships:** ASEE, ATMAE, International Society for Technology in Education
-- **Conference Presentations:** Content pending verification
-- **Professional Service:** Content pending verification
-
-**Curriculum Adoption & Scaling:**
-- **Multi-Institutional Implementation:** Content pending verification
-- **Open Educational Resources:** Curriculum materials shared under Creative Commons license
-- **Faculty Development:** Content pending verification
-- **Publications:** Content pending verification
-
-## Future Directions & Innovation
-
-### Emerging Technology Integration
-
-**Artificial Intelligence in Education:**
-- **Adaptive Learning Systems:** Personalized learning paths based on individual progress
-- **Intelligent Tutoring:** AI-powered assistance for complex problem-solving
-- **Assessment Automation:** Streamlined grading and feedback generation
-- **Learning Analytics:** Advanced pattern recognition for intervention optimization
-
-**Virtual and Augmented Reality:**
-- **Immersive Laboratories:** Safe practice environments for dangerous or expensive procedures
-- **Remote Collaboration:** Virtual team projects across geographic boundaries
-- **3D Visualization:** Complex system understanding through spatial interaction
-- **Historical Recreation:** Virtual field trips and historical technology exploration
-
-### Sustainability & Global Perspective
-
-**Environmental Integration:**
-- **Sustainable Design Principles:** Environmental impact consideration in all engineering projects
-- **Lifecycle Thinking:** Full product lifecycle assessment in design curricula
-- **Renewable Energy Focus:** Integration of clean energy technologies across disciplines
-- **Social Responsibility:** Engineering ethics and community impact emphasis
-
-**Global Competency Development:**
-- **International Collaboration:** Virtual exchange programs and joint projects
-- **Cultural Competency:** Understanding of diverse engineering practices and perspectives
-- **Language Integration:** Technical communication in multiple languages
-- **Global Challenge Focus:** Climate change, poverty reduction, and sustainable development
+It shows how I think about educational design when the real objective is long-term understanding: identify the durable ideas, reduce intimidation, build confidence through action, and make sure the learner leaves with both skill and agency.
 
 ---
 
-**Educational Impact:** Content pending verification
+**Project Link:** [Computer Literacy for Kids](https://zcohen-nerd.github.io/computer_literacy_for_kids/) | **Source:** [GitHub Repository](https://github.com/zcohen-nerd/computer_literacy_for_kids) | **License:** CC BY-NC-SA 4.0
 
 [← Previous: ENT260 SolidWorks]({{ '/teaching/ent260-solidworks/' | relative_url }}) | [Back to Teaching →]({{ '/teaching/' | relative_url }})
-
-> _Add curriculum maps, workshop snapshots, or analytics dashboards._
 
