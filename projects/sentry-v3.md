@@ -13,7 +13,9 @@ weight: 1
 
 # Sentry V3: Production Embedded Actuation System
 
-<img src="{{ '/assets/images/project-placeholder.svg' | relative_url }}" alt="Sentry V3 System Overview" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;">
+<a href="{{ '/assets/images/projects/SENTRY/SENTRY Reveal.gif' | relative_url }}">
+  <img src="{{ '/assets/images/projects/SENTRY/SENTRY Reveal.gif' | relative_url }}" alt="SENTRY V3 reveal animation" style="display: block; width: auto; max-width: 100%; max-height: 360px; height: auto; border-radius: 8px; margin: 0 auto 2rem;" loading="lazy">
+</a>
 
 ## Overview
 
@@ -27,6 +29,22 @@ Earlier versions of the platform relied on ad-hoc wiring and distributed control
 
 <a href="{{ '/assets/images/projects/SENTRY/Functional Block Diagram.png' | relative_url }}">
   <img src="{{ '/assets/images/projects/SENTRY/Functional Block Diagram.png' | relative_url }}" alt="SENTRY functional block diagram" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 1rem auto 1.5rem;">
+</a>
+
+## Hardware Design
+
+The mechanical and electrical design of SENTRY V3 was developed together so the control board, drivetrain, sensor placement, and service access all supported reliable integration. The platform layout emphasizes subsystem separation, maintainable wiring, and clear mechanical paths for actuation and feed components.
+
+**CAD assembly overview**
+
+<a href="{{ '/assets/images/projects/SENTRY/SENTRY Turret-EDIT.jpg' | relative_url }}">
+  <img src="{{ '/assets/images/projects/SENTRY/SENTRY Turret-EDIT.jpg' | relative_url }}" alt="SENTRY V3 CAD assembly overview" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 1rem auto 1.5rem;" loading="lazy">
+</a>
+
+**Labeled subsystem view**
+
+<a href="{{ '/assets/images/projects/SENTRY/SENTRY Turret Labeled.png' | relative_url }}">
+  <img src="{{ '/assets/images/projects/SENTRY/SENTRY Turret Labeled.png' | relative_url }}" alt="SENTRY V3 labeled CAD view" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 0 auto 1.5rem;" loading="lazy">
 </a>
 
 ## Interfaces
@@ -56,12 +74,43 @@ Earlier versions of the platform relied on ad-hoc wiring and distributed control
 - Integration with an external compute platform responsible for vision processing and target selection while the embedded controller manages real-time actuation.
 - Bench testing and bring-up performed using logic analysis, current monitoring, and iterative firmware tuning.
 
+**Cross-section view**
+
+<a href="{{ '/assets/images/projects/SENTRY/SENTRY Cross Section blur.png' | relative_url }}">
+  <img src="{{ '/assets/images/projects/SENTRY/SENTRY Cross Section blur.png' | relative_url }}" alt="SENTRY V3 CAD cross section" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 1rem auto 1.5rem;" loading="lazy">
+</a>
+
+**Labeled cross-section**
+
+<a href="{{ '/assets/images/projects/SENTRY/SENTRY Turret Cross Section Labeled.png' | relative_url }}">
+  <img src="{{ '/assets/images/projects/SENTRY/SENTRY Turret Cross Section Labeled.png' | relative_url }}" alt="SENTRY V3 labeled CAD cross section" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 0 auto 1.5rem;" loading="lazy">
+</a>
+
 ### Artifacts
 
-- PCB layout screenshot: (TBD: add image in `assets/images/projects/sentry-v3/`)
-- Schematic excerpt: (TBD: add image in `assets/images/projects/sentry-v3/`)
-- Bench test setup: (TBD: add photo in `assets/images/projects/sentry-v3/`)
-- CAD assembly: (TBD: add image in `assets/images/projects/sentry-v3/`)
+**Control board integration**
+
+<a href="{{ '/assets/images/projects/SENTRY/SENTRY Board-EDIT.jpg' | relative_url }}">
+  <img src="{{ '/assets/images/projects/SENTRY/SENTRY Board-EDIT.jpg' | relative_url }}" alt="SENTRY V3 control board integration view" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 1rem auto 1.5rem;" loading="lazy">
+</a>
+
+**PCB layout**
+
+<a href="{{ '/assets/images/projects/SENTRY/SENTRY PCB.png' | relative_url }}">
+  <img src="{{ '/assets/images/projects/SENTRY/SENTRY PCB.png' | relative_url }}" alt="SENTRY V3 PCB layout" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 0 auto 1.5rem;" loading="lazy">
+</a>
+
+**Labeled PCB**
+
+<a href="{{ '/assets/images/projects/SENTRY/SENTRY PCB Labeled.png' | relative_url }}">
+  <img src="{{ '/assets/images/projects/SENTRY/SENTRY PCB Labeled.png' | relative_url }}" alt="SENTRY V3 labeled PCB layout" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 0 auto 1.5rem;" loading="lazy">
+</a>
+
+**Electronics schematic**
+
+<a href="{{ '/assets/images/projects/SENTRY/SENTRY Schematic.png' | relative_url }}">
+  <img src="{{ '/assets/images/projects/SENTRY/SENTRY Schematic.png' | relative_url }}" alt="SENTRY V3 electronics schematic" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 0 auto 1.5rem;" loading="lazy">
+</a>
 
 ## Testing & Verification
 
