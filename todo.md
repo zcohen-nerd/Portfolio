@@ -84,39 +84,21 @@ Avoid long lists.
 
 # PROJECT SECTION CHANGES
 
-## REMOVE PROJECT
-
-Delete completely:
-
-PID Trainer & Lab Module
-
-Actions:
-
-- Remove from Featured Systems
-- Delete project page if it exists
-- Remove any navigation links
-
-Reason:
-
-Project is not mature enough for portfolio inclusion.
-
 ---
 
 # FEATURED SYSTEMS SECTION
 
-After removal of PID Trainer, the featured projects should be:
+Featured projects should be:
 
 1. SENTRY
 2. Autonomous Surfer Fleet
 3. SPARK
-4. Smart Home System
 
 Order recommendation:
 
 1. SENTRY
 2. SPARK
 3. Autonomous Surfer Fleet
-4. Smart Home System
 
 Reason:
 
@@ -200,28 +182,6 @@ Mention:
 Add diagram:
 
 Fleet architecture diagram.
-
----
-
-# SMART HOME SYSTEM PAGE
-
-Keep this project but position it as:
-
-Systems engineering and infrastructure design.
-
-Add sections:
-
-System Architecture  
-Reliability Strategy  
-Monitoring and Observability  
-Automation Design
-
-Mention:
-
-- Home Assistant architecture
-- monitoring tools
-- redundancy
-- failure handling
 
 ---
 

@@ -134,4 +134,4 @@ Key architectural features include:
 
 **Project Status:** <span class="status-badge">Prototype Deployment</span> | **Timeline:** May 2025 - Present
 
-[← Previous: PID Trainer]({{ '/projects/pid-trainer/' | relative_url }}) | [Next Project: Fusion Blocks →]({{ '/projects/fusion-system-blocks/' | relative_url }})
+[← Previous: Autonomous Surfer Fleet]({{ '/projects/surfer-fleet/' | relative_url }}) | [Next Project: Fusion Blocks →]({{ '/projects/fusion-system-blocks/' | relative_url }})

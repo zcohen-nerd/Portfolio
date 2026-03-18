@@ -15,8 +15,6 @@ This repository hosts the source for my professional engineering portfolio. It h
 
 - [Sentry V3](projects/sentry-v3.md) — Production embedded actuation system (Demonstrated functional prototype used in testing and development)
 - [Autonomous Surfer Fleet](projects/surfer-fleet.md) — Maritime autonomy platform (Demonstrated functional prototype used in testing and development)
-- [PID Trainer & Lab](projects/pid-trainer.md) — Control systems education platform (Demonstrated instructional prototype used in testing and development)
-- [Smart Home System](projects/smart-home-system.md) — Safety‑first IoT architecture (Demonstrated functional prototype used in testing and development)
 - [SPARK Programming Board](projects/stlink-v3mods.md) — Development tooling improvements (Demonstrated tooling workflow improvements used in development)
 
 [![SPARK Programming Board preview](assets/images/projects/stlink-v3mods/spark-board-perspective.png)](projects/stlink-v3mods.md)

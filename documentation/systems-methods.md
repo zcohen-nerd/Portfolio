@@ -144,12 +144,6 @@ show_title: false
 **Results:** Demonstrated functional prototype used in testing and development
 **Lessons Learned:** Iterative requirements refinement essential for emerging technology
 
-### Case Study: Smart Home System
-**Challenge:** Safety-critical residential automation with cybersecurity requirements
-**Methods Applied:** Threat modeling, fault tree analysis, security verification
-**Results:** Demonstrated functional prototype used in testing and development
-**Lessons Learned:** User experience requirements as critical as technical performance
-
 ## Tools & Technologies
 
 ### Software Tools & Platforms

@@ -112,13 +112,6 @@ The mechanical and electrical design of SENTRY V3 was developed together so the 
   <img src="{{ '/assets/images/projects/SENTRY/SENTRY Schematic.png' | relative_url }}" alt="SENTRY V3 electronics schematic" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 0 auto 1.5rem;" loading="lazy">
 </a>
 
-## Testing & Verification
-
-- Power bring-up checklist (TBD: add)
-- Interface validation for CAN/diagnostics and distributed I/O (TBD: add)
-- Functional test procedure for actuation and safety states (TBD: add)
-- Environmental and reliability verification workflow (TBD: add)
-
 ## Lessons Learned
 
 - Separating high-level control from real-time actuation simplifies system behavior and makes debugging significantly easier.

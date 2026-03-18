@@ -93,4 +93,4 @@ flowchart LR
 
 **Project Status:** <span class="status-badge">Active Deployment</span> | **Timeline:** June 2022 - Present
 
-[← Previous: Sentry V3]({{ '/projects/sentry-v3/' | relative_url }}) | [Next Project: Smart Home →]({{ '/projects/smart-home-system/' | relative_url }})
+[← Previous: Sentry V3]({{ '/projects/sentry-v3/' | relative_url }}) | [Next Project: SPARK Programming Board →]({{ '/projects/stlink-v3mods/' | relative_url }})
