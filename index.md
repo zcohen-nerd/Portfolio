@@ -9,6 +9,9 @@ show_title: false
 # Zachary Cohen
 ## Electromechanical Systems Engineer
 
+Electromechanical Systems Engineer  
+Designing integrated hardware systems from architecture to deployment
+
 <img src="{{ '/assets/images/hero-image.png' | relative_url }}" alt="Zachary Cohen portfolio hero image" class="hero-banner" loading="lazy">
 
 I design and build electromechanical systems that combine mechanical structures, embedded electronics, and firmware into reliable working hardware.
