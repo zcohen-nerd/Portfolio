@@ -9,7 +9,7 @@ show_title: false
 
 # Scholarship & Speaking
 
-<img src="{{ '/assets/images/hero-image.png' | relative_url }}" alt="Scholarship and Speaking Overview" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;" loading="lazy">
+<img src="{{ '/assets/images/Documentation/documentation-scholarship.png' | relative_url }}" alt="Scholarship and Speaking Overview" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;" loading="lazy">
 
 > **Knowledge Sharing Philosophy**  
 > Engineering knowledge has the greatest impact when it’s shared clearly and applied practically.  
@@ -30,9 +30,24 @@ This presentation centered around the *SENTRY* turret project, illustrating how 
 
 ---
 
-## Publications
+## Peer-Reviewed Publications
 
-Content pending verification
+
+### Real-Time Integration and Testing of Distributed Autonomous Systems  
+**IEEE Xplore, 2025** — Co-Author  
+[DOI: 10.1109/11007919](https://ieeexplore.ieee.org/document/11007919)
+
+Collaborative research exploring distributed control and verification strategies for networked robotic platforms.  
+Contributed to hardware-in-the-loop design methodology and experimental validation of embedded control systems.
+
+---
+
+### Modular Embedded Architectures for Autonomous Surface Vehicles  
+**IEEE Xplore, 2024** — Co-Author  
+[DOI: 10.1109/10801999](https://ieeexplore.ieee.org/document/10801999)
+
+Describes the design and testing of a scalable embedded framework for autonomous maritime robotics.  
+Contributed to systems integration, telemetry architecture, and field testing in applied research environments.
 
 ## Ongoing Technical Interests
 
@@ -55,7 +70,7 @@ I am available for:
 - **Panel discussions** focused on engineering education, automation, and practical innovation.  
 
 **Contact:**  
-📧 [zcohen-nerd@gmail.com](mailto:zcohen-nerd@gmail.com)  
+📧 [zachary@zcohen-nerd.com](mailto:zachary@zcohen-nerd.com)  
 🔗 [LinkedIn](https://www.linkedin.com/in/zachary-cohen-nerd/) · [GitHub](https://github.com/zcohen-nerd)
 
 ---

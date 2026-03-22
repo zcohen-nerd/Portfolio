@@ -20,9 +20,9 @@ show_title: false
 <div class="project-grid">
   <div class="project-card">
     <div class="placeholder-img">📋 Systems Playbook</div>
-    <h3><a href="{{ '/documentation/systems-methods/' | relative_url }}">Systems Engineering Methods & Frameworks</a></h3>
+    <h3><a href="{{ '/documentation/selected-essays/' | relative_url }}">Selected Essays</a></h3>
     <p>Templates, decision frameworks, and lifecycle governance for delivering reliable multidisciplinary systems.</p>
-    <p><a href="{{ '/documentation/systems-methods/' | relative_url }}">Explore methods →</a></p>
+    <p><a href="{{ '/documentation/selected-essays/' | relative_url }}">Read essays →</a></p>
   </div>
   <div class="project-card">
     <div class="placeholder-img">🎤 Scholarship & Speaking</div>
