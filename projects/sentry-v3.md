@@ -6,6 +6,7 @@ permalink: /projects/sentry-v3/
 tags: [embedded, production, mechatronics]
 status: "In Production"
 timeline: "2023-2025"
+image: "/assets/images/projects/SENTRY/SENTRY Reveal.gif"
 show_title: false
 featured: true
 weight: 1

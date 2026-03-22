@@ -6,6 +6,7 @@ permalink: /projects/fusion-system-blocks/
 tags: [documentation, systems-engineering, fusion, workflow]
 status: "Public Release"
 timeline: "2025–2026"
+image: "/assets/images/projects/Fusion System Blocks/System Diagram.png"
 show_title: false
 featured: true
 weight: 6
