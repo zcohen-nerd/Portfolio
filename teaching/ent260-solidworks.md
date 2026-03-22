@@ -12,7 +12,7 @@ show_title: false
 
 # ENT260 - Advanced Solid Modeling for Mechatronics
 
-<img src="{{ '/assets/images/project-placeholder.svg' | relative_url }}" alt="ENT260 course overview" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;">
+<img src="{{ '/assets/images/Teaching/ent-260.png' | relative_url }}" alt="ENT260 course overview" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;" loading="lazy">
 
 > **Course Mission:** This redesigned SolidWorks course uses project-driven engineering challenges to build advanced 3D modeling, assembly, documentation, and design-for-manufacturing skills for mechatronics students. The curriculum is also structured to prepare students for the Certified SolidWorks Associate (CSWA) exam.
 

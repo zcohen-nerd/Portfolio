@@ -19,16 +19,17 @@ show_title: false
 
 <div class="project-grid">
   <div class="project-card">
-    <div class="placeholder-img">📋 Systems Playbook</div>
+    <img src="{{ '/assets/images/Documentation/selected-essays.png' | relative_url }}" alt="Selected Essays preview" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 1rem;" loading="lazy">
     <h3><a href="{{ '/documentation/selected-essays/' | relative_url }}">Selected Essays</a></h3>
-    <p>Templates, decision frameworks, and lifecycle governance for delivering reliable multidisciplinary systems.</p>
+    <p>Reflections on engineering practice, systems thinking, and professional growth drawn from real-world electromechanical system design and mentoring experience.</p>
     <p><a href="{{ '/documentation/selected-essays/' | relative_url }}">Read essays →</a></p>
   </div>
+
   <div class="project-card">
-    <div class="placeholder-img">🎤 Scholarship & Speaking</div>
+    <img src="{{ '/assets/images/Documentation/documentation-scholarship.png' | relative_url }}" alt="Scholarship and Speaking preview" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 1rem;" loading="lazy">
     <h3><a href="{{ '/documentation/scholarship/' | relative_url }}">Scholarship & Speaking</a></h3>
-    <p>Highlighted technical writeups, conference sessions, and the philosophy behind sharing systems-level insights.</p>
-    <p><a href="{{ '/documentation/scholarship/' | relative_url }}">View highlights →</a></p>
+    <p>Conference presentations, technical talks, and published work focused on systems engineering, mechatronics, and engineering education.</p>
+    <p><a href="{{ '/documentation/scholarship/' | relative_url }}">View talks & publications →</a></p>
   </div>
 </div>
 
