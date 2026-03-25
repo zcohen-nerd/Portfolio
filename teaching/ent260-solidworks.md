@@ -14,6 +14,23 @@ show_title: false
 
 <img src="{{ '/assets/images/Teaching/ent-260.png' | relative_url }}" alt="ENT260 course overview" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;" loading="lazy">
 
+## Why This Course Is Structured This Way
+
+Many students entering mechatronics and engineering technology programs learn CAD as a standalone skill, focusing primarily on modeling tools and drawing production. While these skills are important, real engineering work requires using CAD as part of a larger system development process.
+
+ENT260 was redesigned to treat CAD not just as a drafting tool, but as a core component of multidisciplinary engineering. The course emphasizes how mechanical design connects to electronics integration, manufacturability, and system architecture.
+
+Rather than teaching isolated modeling techniques, the course focuses on:
+
+- designing parts that interact with real hardware
+- thinking about assemblies and interfaces early in the design process
+- documenting design intent clearly
+- building models that support iteration and modification
+
+By the end of the course, students are not only able to use SolidWorks effectively, but also understand how mechanical design fits into the broader workflow of modern mechatronics and product development.
+
+This structure reflects how mechanical design is used in real engineering environments, where CAD models must support electronics integration, manufacturing constraints, and system-level design decisions.
+
 > **Course Mission:** This redesigned SolidWorks course uses project-driven engineering challenges to build advanced 3D modeling, assembly, documentation, and design-for-manufacturing skills for mechatronics students. The curriculum is also structured to prepare students for the Certified SolidWorks Associate (CSWA) exam.
 
 ## Course Overview

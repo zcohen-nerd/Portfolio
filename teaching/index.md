@@ -13,6 +13,8 @@ Across courses in CAD, digital design, and mechatronics, I design learning exper
 
 Many of my students are preparing for careers in manufacturing, robotics, and electromechanical systems. My goal is to ensure they leave the classroom not just knowing how to operate software or hardware, but understanding how engineering decisions affect the systems they will build and maintain.
 
+Related leadership work in student engineering environments is highlighted in [FIRST Robotics Competition]({{ '/frc/' | relative_url }}).
+
 ## Teaching Philosophy
 
 Engineering is best learned by building, testing, and iterating. While theoretical foundations are important, real understanding emerges when students apply those concepts to physical systems and encounter the kinds of constraints engineers face in practice.
