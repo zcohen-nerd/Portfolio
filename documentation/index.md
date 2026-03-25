@@ -46,7 +46,7 @@ Peer-reviewed research, conference presentations, and speaking opportunities tha
 ### Continuous Improvement
 Both collections evolve through active projects, teaching, and research collaborations—each addition is grounded in measurable impact and repeatability.
 
-Related leadership context: [FIRST Robotics Competition]({{ '/frc/' | relative_url }}) extends these same documentation and systems principles into live event operations, judging, and mentoring environments.
+Related leadership context: [*FIRST* Robotics Competition]({{ '/frc/' | relative_url }}) extends these same documentation and systems principles into live event operations, judging, and mentoring environments.
 
 ---
 

@@ -61,7 +61,7 @@ Building fault-tolerant, safety-aware control architectures for multi-agent robo
 Advancing how technical teams document, visualize, and teach complex systems effectively.
 
 **Engineering Leadership in Competition Environments:**  
-Applying systems thinking, event operations discipline, and mentoring structure through [FIRST Robotics Competition]({{ '/frc/' | relative_url }}).
+Applying systems thinking, event operations discipline, and mentoring structure through [*FIRST* Robotics Competition]({{ '/frc/' | relative_url }}).
 
 ---
 

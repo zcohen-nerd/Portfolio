@@ -7,31 +7,31 @@ tags: [frc, robotics, event-operations, technical-leadership]
 show_title: false
 ---
 
-### FIRST Involvement Timeline
+### *FIRST* Involvement Timeline
 
-• 2006 — FIRST Robotics Competition founding student (team 1712)
-• 2007–present — Mentor for multiple FIRST teams
+• 2006 — *FIRST* Robotics Competition founding student (team 1712)
+• 2007–present — Mentor for multiple *FIRST* teams
 • 2013–2017 — Lead Mentor, Team 1111 Power Hawks  
 • 2015–2016 — Maryland robotics funding legislation effort  
-• 2016 — Hosted and ran FIRST Chesapeake district event  
+• 2016 — Hosted and ran *FIRST* Chesapeake district event  
 • 2017 — Team 1111 first event win  
 • 2013–present — FRC and FTC Judge  
 • District Championship Judge  
-• FIRST World Championship Judge  
-• Event Manager — FIRST Chesapeake District Events
+• *FIRST* World Championship Judge  
+• Event Manager — *FIRST* Chesapeake District Events
 
-# FIRST Robotics Competition
-## Event Manager & Leadership - FIRST Chesapeake
+# *FIRST* Robotics Competition
+## Event Manager & Leadership - *FIRST* Chesapeake
 
-My involvement with the FIRST Robotics Competition spans multiple roles including student competitor, mentor, judge, and event manager. Over time, my focus has shifted toward helping deliver competitions that serve hundreds of students and volunteers each season.
+My involvement with the *FIRST* Robotics Competition spans multiple roles including student competitor, mentor, judge, and event manager. Over time, my focus has shifted toward helping deliver competitions that serve hundreds of students and volunteers each season.
 
-FIRST Robotics events are large-scale operations that bring together dozens of robotics teams, hundreds of students, and large volunteer staffs to run multi-day engineering competitions. These events must operate reliably under strict schedules while supporting students, mentors, and technical volunteers.
+*FIRST* Robotics events are large-scale operations that bring together dozens of robotics teams, hundreds of students, and large volunteer staffs to run multi-day engineering competitions. These events must operate reliably under strict schedules while supporting students, mentors, and technical volunteers.
 
-Since 2013, I have served as a volunteer leader within FIRST Chesapeake, helping coordinate and deliver district competitions for teams across the region.
+Since 2013, I have served as a volunteer leader within *FIRST* Chesapeake, helping coordinate and deliver district competitions for teams across the region.
 
 ---
 
-### Event Manager — FIRST Chesapeake
+### Event Manager — *FIRST* Chesapeake
 
 As Event Manager, I am responsible for the successful operation of an entire robotics competition. This includes overseeing event logistics, coordinating volunteers, maintaining schedule integrity, and ensuring the competition environment supports teams and students.
 
@@ -39,8 +39,8 @@ Each event operates as a complex system composed of many specialized volunteer r
 
 #### Events Led
 
-• Event Manager for **four FIRST Chesapeake District Events (2016, 2017, 2018, 2026)**  
-• Assistant Event Manager for **FIRST Chesapeake District Championship (2018)**  
+• Event Manager for **four *FIRST* Chesapeake District Events (2016, 2017, 2018, 2026)**  
+• Assistant Event Manager for *FIRST* Chesapeake District Championship (2018)  
 • Volunteer leadership within the program since **2013**
 
 Typical event scale:
@@ -92,7 +92,7 @@ This leadership structure mirrors many real-world engineering environments where
 
 ### Unique Leadership Experience
 
-One of the most unusual experiences in my involvement with FIRST occurred during the first event I managed. At the time, I was also serving as **Lead Mentor for Team 1111**, meaning I was responsible for both running the competition and supporting my team simultaneously.
+One of the most unusual experiences in my involvement with *FIRST* occurred during the first event I managed. At the time, I was also serving as **Lead Mentor for Team 1111**, meaning I was responsible for both running the competition and supporting my team simultaneously.
 
 Balancing these responsibilities required careful delegation, strong volunteer leadership, and trust in the systems and people involved in the event.
 
@@ -109,11 +109,11 @@ Through these roles I have helped deliver robotics competitions that:
 
 These experiences have reinforced the importance of leadership, communication, and operational coordination in complex technical environments.
 
-## Judge - FIRST Robotics Competition
+## Judge - *FIRST* Robotics Competition
 
-In addition to event leadership roles, I have served as a judge for both the FIRST Robotics Competition (FRC) and FIRST Tech Challenge (FTC). Judging provides an opportunity to evaluate teams not only on their technical accomplishments but also on how they grow as engineers, collaborators, and leaders.
+In addition to event leadership roles, I have served as a judge for both the *FIRST* Robotics Competition (FRC) and *FIRST* Tech Challenge (FTC). Judging provides an opportunity to evaluate teams not only on their technical accomplishments but also on how they grow as engineers, collaborators, and leaders.
 
-While robots are the visible outcome of these programs, the true goal of FIRST is student development. As a judge, my focus has always been on understanding how teams operate as organizations: how students learn, collaborate, and develop their skills over time.
+While robots are the visible outcome of these programs, the true goal of *FIRST* is student development. As a judge, my focus has always been on understanding how teams operate as organizations: how students learn, collaborate, and develop their skills over time.
 
 ---
 
@@ -140,10 +140,10 @@ Judging interviews allow students to explain how their team operates and how the
 
 My judging experience includes:
 
-• Numerous **FIRST Robotics Competition (FRC) District Events**  
-• **FIRST Robotics Competition District Championship**  
-• **FIRST Robotics Competition World Championship**  
-• Multiple **FIRST Tech Challenge (FTC) Events**
+• Numerous *FIRST* Robotics Competition (FRC) District Events  
+• *FIRST* Robotics Competition District Championship  
+• *FIRST* Robotics Competition World Championship  
+• Multiple *FIRST* Tech Challenge (FTC) Events
 
 These events involve interviewing many teams across multiple judging sessions and collaborating with judging panels to evaluate teams across a variety of award categories.
 
@@ -167,7 +167,7 @@ This experience reinforces the importance of mentorship, leadership development,
 
 ## Mentorship — Team 1111: The Power Hawks Robotics Team
 
-My longest and most intensive involvement in FIRST Robotics Competition was as the **Lead Mentor and Teacher Advisor for Team 1111, the Power Hawks Robotics Team**, from the 2013 through 2017 seasons.
+My longest and most intensive involvement in *FIRST* Robotics Competition was as the **Lead Mentor and Teacher Advisor for Team 1111, the Power Hawks Robotics Team**, from the 2013 through 2017 seasons.
 
 During this period, my role focused on building a sustainable engineering program that developed students as leaders, engineers, and contributors to their communities.
 
@@ -182,7 +182,7 @@ During my time as lead mentor, the Power Hawks program grew significantly in bot
 Program scale during this period included:
 
 • Growth from approximately **36 FRC students to more than 60**  
-• Development of **three FIRST Tech Challenge (FTC) teams**, each with ~12 students  
+• Development of **three *FIRST* Tech Challenge (FTC) teams**, each with ~12 students  
 • Oversight of a mentoring staff of **30+ adult professional mentors each season**
 
 This structure operated more like an engineering organization than a traditional school club. Students worked in functional subteams supported by professional mentors, while leadership roles existed for both students and adults.
@@ -219,7 +219,7 @@ Highlights include:
 
 • **First competition win in team history (2017)**  
 • **Two event finalist appearances**  
-• **Qualification for the FIRST World Championship three times**  
+• **Qualification for the *FIRST* World Championship three times**  
 • **Regional Chairman’s Award**  
 • **Regional Engineering Inspiration Award**  
 • **District Chairman’s Award**  
@@ -251,13 +251,13 @@ During my time with the Power Hawks:
 • **98% of students attended four-year universities**  
 • More than **500 students were directly impacted** by the program
 
-These outcomes reflect the broader mission of FIRST: preparing students to become engineers, scientists, and leaders in their communities.
+These outcomes reflect the broader mission of *FIRST*: preparing students to become engineers, scientists, and leaders in their communities.
 
 ---
 
 ### Hosting and Running a District Event
 
-One of the most significant milestones for the team occurred during the 2016 season when we hosted a FIRST Chesapeake district competition at our school.
+One of the most significant milestones for the team occurred during the 2016 season when we hosted a *FIRST* Chesapeake district competition at our school.
 
 This event created a unique situation in which I simultaneously served as:
 
@@ -276,9 +276,9 @@ Managing the event while coordinating school logistics and overseeing the team�
 
 ### Broader Mentorship Involvement
 
-My involvement in mentoring FIRST teams extends beyond Team 1111. I have supported teams on and off since **2007**, contributing to student development across multiple programs.
+My involvement in mentoring *FIRST* teams extends beyond Team 1111. I have supported teams on and off since **2007**, contributing to student development across multiple programs.
 
-Over time, this mentorship experience led naturally into additional roles within the FIRST community, including judging and large-scale event leadership.
+Over time, this mentorship experience led naturally into additional roles within the *FIRST* community, including judging and large-scale event leadership.
 
 ### Program Influence
 
@@ -292,11 +292,11 @@ The program structure developed during this period emphasized:
 • long-term engineering knowledge retention  
 • program sustainability beyond individual graduating classes
 
-As the program matured, numerous teams within the FIRST Chesapeake district adopted similar organizational approaches when expanding their own teams.
+As the program matured, numerous teams within the *FIRST* Chesapeake district adopted similar organizational approaches when expanding their own teams.
 
-In addition to internal growth, the Power Hawks actively supported the broader FIRST community by mentoring other teams and helping them develop sustainable programs.
+In addition to internal growth, the Power Hawks actively supported the broader *FIRST* community by mentoring other teams and helping them develop sustainable programs.
 
-These efforts included supporting **FRC, FTC, and FIRST LEGO League (FLL)** teams and sharing program structures, mentorship strategies, and organizational practices.
+These efforts included supporting **FRC, FTC, and *FIRST* LEGO League (FLL)** teams and sharing program structures, mentorship strategies, and organizational practices.
 
 Through these efforts, the Power Hawks program helped influence the development of robotics programs across the region.
 
@@ -310,7 +310,7 @@ During the 2015–2016 season, the team helped initiate legislation in Maryland 
 
 Working directly with **Maryland Delegate Eric Reznik**, I served as the primary point of contact and coordinated the effort to introduce legislation that ultimately provided **$250,000 annually in funding for after-school robotics programs**.
 
-The effort involved coordinating with students, preparing advocacy materials, and working with legislative staff to explain the educational impact of programs like FIRST.
+The effort involved coordinating with students, preparing advocacy materials, and working with legislative staff to explain the educational impact of programs like *FIRST*.
 
 The bill was successfully introduced and passed, helping expand access to robotics education for students across Maryland.
 
@@ -335,9 +335,9 @@ The Power Hawks program demonstrated how a student robotics team can function as
 
 ---
 
-## Lessons from FIRST
+## Lessons from *FIRST*
 
-My involvement with FIRST has spanned many roles: student competitor, mentor, judge, and event manager. Each role provided a different perspective on how complex organizations function and how engineering culture is developed.
+My involvement with *FIRST* has spanned many roles: student competitor, mentor, judge, and event manager. Each role provided a different perspective on how complex organizations function and how engineering culture is developed.
 
 Over time, these experiences reinforced a set of lessons that apply well beyond robotics competitions.
 
@@ -400,21 +400,21 @@ Seeing students grow into engineers, scientists, and leaders in their communitie
 
 ---
 
-FIRST Robotics Competition is ultimately about building people who can build the future. My involvement in the program has reinforced the value of leadership, systems thinking, and community-driven engineering.
+*FIRST* Robotics Competition is ultimately about building people who can build the future. My involvement in the program has reinforced the value of leadership, systems thinking, and community-driven engineering.
 
-## Why I Continue to Volunteer with FIRST
+## Why I Continue to Volunteer with *FIRST*
 
-My involvement with FIRST has evolved over time. I began as a student competitor, later became a mentor and program leader, and eventually moved into judging and event management roles that support the broader robotics community.
+My involvement with *FIRST* has evolved over time. I began as a student competitor, later became a mentor and program leader, and eventually moved into judging and event management roles that support the broader robotics community.
 
 What has remained consistent throughout those roles is the mission of helping students discover what they are capable of building.
 
 Robotics competitions provide students with a rare opportunity to work on complex engineering problems in collaborative environments that mirror professional engineering teams. Students design, build, test, and iterate on real systems while learning how to communicate, lead, and solve problems under pressure.
 
-Volunteering with FIRST allows me to help create those environments for thousands of students each year.
+Volunteering with *FIRST* allows me to help create those environments for thousands of students each year.
 
 Whether mentoring a team, interviewing students as a judge, or running a competition as an event manager, the goal remains the same: ensuring students have the opportunity to grow into capable engineers, leaders, and contributors to their communities.
 
-Programs like FIRST demonstrate that engineering is not only about technology—it is about people working together to build something meaningful.
+Programs like *FIRST* demonstrate that engineering is not only about technology; it is about people working together to build something meaningful.
 
 
 [← Back to Portfolio Home]({{ '/' | relative_url }})

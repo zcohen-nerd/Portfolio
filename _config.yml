@@ -22,7 +22,7 @@ navigation:
     link: "/#featured-systems"
   - name: "Projects"
     link: "/projects/"
-  - name: "FIRST Robotics"
+  - name: "<em>FIRST</em> Robotics"
     link: "/frc/"
   - name: "Teaching"
     link: "/teaching/"

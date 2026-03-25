@@ -18,7 +18,7 @@ I design and build electromechanical systems that combine mechanical structures,
 
 My work focuses on system architecture, clear interface boundaries, and hardware that can be built, tested, and iterated quickly. I spend most of my time turning ideas into physical prototypes, building test platforms, and documenting the decisions that make complex systems maintainable.
 
-I also apply the same systems mindset through volunteer leadership in [FIRST Robotics Competition]({{ '/frc/' | relative_url }}), including event operations, judging, and mentoring engineering teams.
+I also apply the same systems mindset through volunteer leadership in [*FIRST* Robotics Competition]({{ '/frc/' | relative_url }}), including event operations, judging, and mentoring engineering teams.
 
 ## How I Build Systems
 
@@ -41,7 +41,7 @@ My work centers on defining system architecture, developing mechanical and elect
 
 ## Other Work
 
-- [FIRST Robotics]({{ '/frc/' | relative_url }})
+- [*FIRST* Robotics]({{ '/frc/' | relative_url }})
 - [Teaching Portfolio]({{ '/teaching/' | relative_url }})
 - [Documentation Library]({{ '/documentation/' | relative_url }})
 
@@ -53,7 +53,7 @@ My work centers on defining system architecture, developing mechanical and elect
 - Treat testing as part of design, not something done afterward.
 - Document decisions so systems remain maintainable years later.
 - Consider manufacturing and serviceability from the beginning.
-- Apply the same systems thinking in [FIRST Robotics Competition]({{ '/frc/' | relative_url }}) event operations, mentoring, and technical leadership environments.
+- Apply the same systems thinking in [*FIRST* Robotics Competition]({{ '/frc/' | relative_url }}) event operations, mentoring, and technical leadership environments.
 
 ## Engineering Focus
 

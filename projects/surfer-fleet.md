@@ -89,7 +89,7 @@ flowchart LR
 - Emergency stop systems should disable propulsion without cutting power to onboard compute to prevent filesystem corruption.
 - Designing for maintainability across multiple vessels becomes more important than optimizing any single platform.
 
-Related leadership context: [FIRST Robotics Competition]({{ '/frc/' | relative_url }}) reinforces the same emphasis on student engineering systems, operational reliability, and structured technical leadership.
+Related leadership context: [*FIRST* Robotics Competition]({{ '/frc/' | relative_url }}) reinforces the same emphasis on student engineering systems, operational reliability, and structured technical leadership.
 
 ---
 
