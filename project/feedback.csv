@@ -1,0 +1,5 @@
+activity_id,session_id,outcome,notes,rating
+creative_prompt,demo-001,positive,Comfortable and engaging,5
+challenge_card,demo-001,neutral,Fine with clear reset option,3
+high_energy_game,demo-002,negative,A little too intense for that day,2
+story_exchange,demo-002,positive,Felt grounding and connected,5

@@ -10,14 +10,23 @@ show_title: false
 ### *FIRST* Involvement Timeline
 
 • 2006 — *FIRST* Robotics Competition founding student (team 1712)
+
 • 2007–present — Mentor for multiple *FIRST* teams
+
 • 2013–2017 — Lead Mentor, Team 1111 Power Hawks  
+
 • 2015–2016 — Maryland robotics funding legislation effort  
+
 • 2016 — Hosted and ran *FIRST* Chesapeake district event  
+
 • 2017 — Team 1111 first event win  
+
 • 2013–present — FRC and FTC Judge  
+
 • District Championship Judge  
+
 • *FIRST* World Championship Judge  
+
 • Event Manager — *FIRST* Chesapeake District Events
 
 # *FIRST* Robotics Competition

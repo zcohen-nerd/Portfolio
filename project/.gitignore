@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+analytics_output/
+session_output.csv
+session_output.json
+session_output.xlsx
