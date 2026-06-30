@@ -11,8 +11,8 @@ author:
 
 # Theme & URLs
 theme: jekyll-theme-cayman
-url: "https://zcohen-nerd.com"
-baseurl: ""  # custom domain serves the site from the root
+url: "https://zcohen-nerd.github.io"
+baseurl: "/Portfolio"
 repository: "zcohen-nerd/Portfolio"
 permalink: pretty
 
