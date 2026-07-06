@@ -1,17 +1,11 @@
 ---
 title: Selected Essays
 description: "Systematic approaches to requirements engineering, risk management, and verification planning for complex technical projects."
-layout: default
-permalink: /documentation/selected-essays/
-tags: [systems-engineering, processes, templates, best-practices]
-audience: "Engineering teams, project managers, technical leads"
-maturity: "Production-ready"
-show_title: false
 ---
 
 # Selected Essays
 
-<img src="{{ '/assets/images/Documentation/selected-essays.png' | relative_url }}" alt="Selected Essays hero image" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;">
+<img src="/assets/images/Documentation/selected-essays.png" alt="Selected Essays hero image" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;">
 
 Every six weeks I publish a long-form essay exploring engineering practice, systems thinking, and professional growth. These essays draw from real-world engineering experience — designing electromechanical systems, debugging complex failures, and mentoring the next generation of engineers.
 
@@ -50,5 +44,5 @@ Clear explanations, diagrams, and written reflections help teams reason about sy
 
 **Publication Status:** <span class="status-badge">Published</span> | **Availability:** Substack | **Cadence:** Approximately every six weeks
 
-[← Back to Documentation]({{ '/documentation/' | relative_url }}) | [Next: Scholarship & Speaking →]({{ '/documentation/scholarship/' | relative_url }})
+[← Back to Documentation](/documentation/) | [Next: Scholarship & Speaking →](/documentation/scholarship/)
 

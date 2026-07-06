@@ -1,9 +1,6 @@
 ---
 title: Teaching & Education
 description: "Curriculum development, lab design, and instructional technology for engineering education."
-layout: default
-permalink: /teaching/
-show_title: false
 ---
 
 # Teaching & Educational Impact
@@ -13,7 +10,7 @@ Across courses in CAD, digital design, and mechatronics, I design learning exper
 
 Many of my students are preparing for careers in manufacturing, robotics, and electromechanical systems. My goal is to ensure they leave the classroom not just knowing how to operate software or hardware, but understanding how engineering decisions affect the systems they will build and maintain.
 
-Related leadership work in student engineering environments is highlighted in [*FIRST* Robotics Competition]({{ '/frc/' | relative_url }}).
+Related leadership work in student engineering environments is highlighted in [*FIRST* Robotics Competition](/frc/).
 
 ## Teaching Philosophy
 
@@ -32,25 +29,18 @@ As both a practicing engineer and an educator, I intentionally integrate real in
 ## Current Courses & Modules
 
 <div class="project-grid">
-  {% for teaching_file in site.pages %}
-    {% if teaching_file.path contains 'teaching/' and teaching_file.path != 'teaching/index.md' %}
-      {% assign teaching_title = teaching_file.title | default: teaching_file.name %}
-      <div class="project-card">
-        {% if teaching_file.path == 'teaching/instructional-design.md' %}
-          <img src="https://zcohen-nerd.github.io/computer_literacy_for_kids/img/hero-image.png" alt="Computer Literacy for Kids curriculum preview" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 1rem;" loading="lazy">
-        {% elsif teaching_file.path == 'teaching/ent260-solidworks.md' %}
-          <img src="{{ '/assets/images/Teaching/ent-260.png' | relative_url }}" alt="ENT260 course preview" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 1rem;" loading="lazy">
-        {% else %}
-          <div class="placeholder-img">
-            📚 {{ teaching_title }} Materials
-          </div>
-        {% endif %}
-        <h3><a href="{{ teaching_file.url | relative_url }}">{{ teaching_title }}</a></h3>
-        <p>Course materials, learning objectives, and example projects demonstrating how students apply engineering concepts through hands-on design and modeling.</p>
-        <p><a href="{{ teaching_file.url | relative_url }}">Learn more →</a></p>
-      </div>
-    {% endif %}
-  {% endfor %}
+	<div class="project-card">
+		<img src="https://zcohen-nerd.github.io/computer_literacy_for_kids/img/hero-image.png" alt="Computer Literacy for Kids curriculum preview" class="project-image" loading="lazy">
+		<h3><a href="/teaching/instructional-design/">Computer Literacy for Kids Curriculum Project</a></h3>
+		<p>Course materials, learning objectives, and example projects demonstrating how students apply engineering concepts through hands-on design and modeling.</p>
+		<p><a href="/teaching/instructional-design/">Learn more →</a></p>
+	</div>
+	<div class="project-card">
+		<img src="/assets/images/Teaching/ent-260.png" alt="ENT260 course preview" class="project-image" loading="lazy">
+		<h3><a href="/teaching/ent260-solidworks/">ENT260 - Advanced Solid Modeling for Mechatronics</a></h3>
+		<p>Course materials, learning objectives, and example projects demonstrating how students apply engineering concepts through hands-on design and modeling.</p>
+		<p><a href="/teaching/ent260-solidworks/">Learn more →</a></p>
+	</div>
 </div>
 
 ## Educational Technology

@@ -1,14 +1,11 @@
 ---
 title: Documentation & Scholarship
 description: "Engineering documentation frameworks, technical documentation, and speaking contributions."
-layout: default
-permalink: /documentation/
-show_title: false
 ---
 
 # Documentation & Scholarship
 
-<img src="{{ '/assets/images/hero-image.png' | relative_url }}" alt="Documentation and Scholarship Overview" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;" loading="lazy">
+<img src="/assets/images/hero-image.png" alt="Documentation and Scholarship Overview" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;" loading="lazy">
 
 > **Purpose of This Library**  
 > Curated resources that capture how I document complex engineering systems, share research-backed methods, and present those findings to technical and educational audiences.
@@ -19,17 +16,17 @@ show_title: false
 
 <div class="project-grid">
   <div class="project-card">
-    <img src="{{ '/assets/images/Documentation/selected-essays.png' | relative_url }}" alt="Selected Essays preview" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 1rem;" loading="lazy">
-    <h3><a href="{{ '/documentation/selected-essays/' | relative_url }}">Selected Essays</a></h3>
+    <img src="/assets/images/Documentation/selected-essays.png" alt="Selected Essays preview" class="project-image" loading="lazy">
+    <h3><a href="/documentation/selected-essays/">Selected Essays</a></h3>
     <p>Reflections on engineering practice, systems thinking, and professional growth drawn from real-world electromechanical system design and mentoring experience.</p>
-    <p><a href="{{ '/documentation/selected-essays/' | relative_url }}">Read essays →</a></p>
+    <p><a href="/documentation/selected-essays/">Read essays →</a></p>
   </div>
 
   <div class="project-card">
-    <img src="{{ '/assets/images/Documentation/documentation-scholarship.png' | relative_url }}" alt="Scholarship and Speaking preview" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 1rem;" loading="lazy">
-    <h3><a href="{{ '/documentation/scholarship/' | relative_url }}">Scholarship & Speaking</a></h3>
+    <img src="/assets/images/Documentation/documentation-scholarship.png" alt="Scholarship and Speaking preview" class="project-image" loading="lazy">
+    <h3><a href="/documentation/scholarship/">Scholarship & Speaking</a></h3>
     <p>Conference presentations, technical talks, and published work focused on systems engineering, mechatronics, and engineering education.</p>
-    <p><a href="{{ '/documentation/scholarship/' | relative_url }}">View talks & publications →</a></p>
+    <p><a href="/documentation/scholarship/">View talks & publications →</a></p>
   </div>
 </div>
 
@@ -46,8 +43,8 @@ Peer-reviewed research, conference presentations, and speaking opportunities tha
 ### Continuous Improvement
 Both collections evolve through active projects, teaching, and research collaborations—each addition is grounded in measurable impact and repeatability.
 
-Related leadership context: [*FIRST* Robotics Competition]({{ '/frc/' | relative_url }}) extends these same documentation and systems principles into live event operations, judging, and mentoring environments.
+Related leadership context: [*FIRST* Robotics Competition](/frc/) extends these same documentation and systems principles into live event operations, judging, and mentoring environments.
 
 ---
 
-[← Back to Portfolio Home]({{ '/' | relative_url }})
+[← Back to Portfolio Home](/)
