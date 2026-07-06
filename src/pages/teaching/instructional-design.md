@@ -1,12 +1,6 @@
 ---
 title: Computer Literacy for Kids Curriculum Project
 description: "Open 18-week computer literacy curriculum designed to help young learners understand, question, and create with digital tools."
-layout: default
-permalink: /teaching/instructional-design/
-tags: [instructional-design, curriculum-development, digital-literacy, k12-education]
-focus: "Digital Literacy & Youth Computing Education"
-experience: "Independent curriculum design project"
-show_title: false
 ---
 
 # Computer Literacy for Kids
@@ -145,5 +139,5 @@ It shows how I think about educational design when the real objective is long-te
 
 **Project Link:** [Computer Literacy for Kids](https://zcohen-nerd.github.io/computer_literacy_for_kids/) | **Source:** [GitHub Repository](https://github.com/zcohen-nerd/computer_literacy_for_kids) | **License:** CC BY-NC-SA 4.0
 
-[← Previous: ENT260 SolidWorks]({{ '/teaching/ent260-solidworks/' | relative_url }}) | [Back to Teaching →]({{ '/teaching/' | relative_url }})
+[← Previous: ENT260 SolidWorks](/teaching/ent260-solidworks/) | [Back to Teaching →](/teaching/)
 

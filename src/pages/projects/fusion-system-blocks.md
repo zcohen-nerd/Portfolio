@@ -1,21 +1,12 @@
 ---
 title: Fusion System Blocks
 description: "Framework for visual systems documentation using Autodesk Fusion. Enables modular schematic visualization and hierarchical design planning."
-layout: default
-permalink: /projects/fusion-system-blocks/
-tags: [documentation, systems-engineering, fusion, workflow]
-status: "Public Release"
-timeline: "2025–2026"
-image: "/assets/images/projects/Fusion System Blocks/System Diagram.png"
-show_title: false
-featured: true
-weight: 6
 ---
 
 # Fusion System Blocks
 
-<a href="{{ '/assets/images/projects/Fusion System Blocks/System Diagram.png' | relative_url }}">
-  <img src="{{ '/assets/images/projects/Fusion System Blocks/System Diagram.png' | relative_url }}" alt="Fusion System Blocks system diagram" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 0 auto 2rem;" loading="lazy">
+<a href="/assets/images/projects/Fusion System Blocks/System Diagram.png">
+  <img src="/assets/images/projects/Fusion System Blocks/System Diagram.png" alt="Fusion System Blocks system diagram" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 0 auto 2rem;" loading="lazy">
 </a>
 
 ## Overview
@@ -127,4 +118,4 @@ Using the same architectural structure across projects helps maintain consistenc
 
 **Project Status:** <span class="status-badge">Public Release</span> | **Timeline:** 2025–2026
 
-[← Previous: SPARK Programming Board]({{ '/projects/stlink-v3mods/' | relative_url }}) | [Back to Projects →]({{ '/projects/' | relative_url }})
+[← Previous: SPARK Programming Board](/projects/stlink-v3mods/) | [Back to Projects →](/projects/)

@@ -1,21 +1,12 @@
 ---
 title: SENTRY Autonomous Turret
 description: "Integrated electromechanical system combining embedded control, computer vision, and custom PCB design."
-layout: default
-permalink: /projects/sentry-v3/
-tags: [embedded, production, mechatronics]
-status: "In Production"
-timeline: "2023-2025"
-image: "/assets/images/projects/SENTRY/SENTRY Reveal.gif"
-show_title: false
-featured: true
-weight: 1
 ---
 
 # Sentry V3: Production Embedded Actuation System
 
-<a href="{{ '/assets/images/projects/SENTRY/SENTRY Reveal.gif' | relative_url }}">
-  <img src="{{ '/assets/images/projects/SENTRY/SENTRY Reveal.gif' | relative_url }}" alt="SENTRY V3 reveal animation" style="display: block; width: auto; max-width: 100%; max-height: 360px; height: auto; border-radius: 8px; margin: 0 auto 2rem;" loading="lazy">
+<a href="/assets/images/projects/SENTRY/SENTRY Reveal.gif">
+  <img src="/assets/images/projects/SENTRY/SENTRY Reveal.gif" alt="SENTRY V3 reveal animation" style="display: block; width: auto; max-width: 100%; max-height: 360px; height: auto; border-radius: 8px; margin: 0 auto 2rem;" loading="lazy">
 </a>
 
 ## Overview
@@ -28,8 +19,8 @@ Earlier versions of the platform relied on ad-hoc wiring and distributed control
 
 ## System Architecture
 
-<a href="{{ '/assets/images/projects/SENTRY/Functional Block Diagram.png' | relative_url }}">
-  <img src="{{ '/assets/images/projects/SENTRY/Functional Block Diagram.png' | relative_url }}" alt="SENTRY functional block diagram" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 1rem auto 1.5rem;">
+<a href="/assets/images/projects/SENTRY/Functional Block Diagram.png">
+  <img src="/assets/images/projects/SENTRY/Functional Block Diagram.png" alt="SENTRY functional block diagram" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 1rem auto 1.5rem;">
 </a>
 
 ## Hardware Design
@@ -38,14 +29,14 @@ The mechanical and electrical design of SENTRY V3 was developed together so the 
 
 **CAD assembly overview**
 
-<a href="{{ '/assets/images/projects/SENTRY/SENTRY Turret-EDIT.jpg' | relative_url }}">
-  <img src="{{ '/assets/images/projects/SENTRY/SENTRY Turret-EDIT.jpg' | relative_url }}" alt="SENTRY V3 CAD assembly overview" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 1rem auto 1.5rem;" loading="lazy">
+<a href="/assets/images/projects/SENTRY/SENTRY Turret-EDIT.jpg">
+  <img src="/assets/images/projects/SENTRY/SENTRY Turret-EDIT.jpg" alt="SENTRY V3 CAD assembly overview" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 1rem auto 1.5rem;" loading="lazy">
 </a>
 
 **Labeled subsystem view**
 
-<a href="{{ '/assets/images/projects/SENTRY/SENTRY Turret Labeled.png' | relative_url }}">
-  <img src="{{ '/assets/images/projects/SENTRY/SENTRY Turret Labeled.png' | relative_url }}" alt="SENTRY V3 labeled CAD view" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 0 auto 1.5rem;" loading="lazy">
+<a href="/assets/images/projects/SENTRY/SENTRY Turret Labeled.png">
+  <img src="/assets/images/projects/SENTRY/SENTRY Turret Labeled.png" alt="SENTRY V3 labeled CAD view" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 0 auto 1.5rem;" loading="lazy">
 </a>
 
 ## Interfaces
@@ -77,40 +68,40 @@ The mechanical and electrical design of SENTRY V3 was developed together so the 
 
 **Cross-section view**
 
-<a href="{{ '/assets/images/projects/SENTRY/SENTRY Cross Section blur.png' | relative_url }}">
-  <img src="{{ '/assets/images/projects/SENTRY/SENTRY Cross Section blur.png' | relative_url }}" alt="SENTRY V3 CAD cross section" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 1rem auto 1.5rem;" loading="lazy">
+<a href="/assets/images/projects/SENTRY/SENTRY Cross Section blur.png">
+  <img src="/assets/images/projects/SENTRY/SENTRY Cross Section blur.png" alt="SENTRY V3 CAD cross section" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 1rem auto 1.5rem;" loading="lazy">
 </a>
 
 **Labeled cross-section**
 
-<a href="{{ '/assets/images/projects/SENTRY/SENTRY Turret Cross Section Labeled.png' | relative_url }}">
-  <img src="{{ '/assets/images/projects/SENTRY/SENTRY Turret Cross Section Labeled.png' | relative_url }}" alt="SENTRY V3 labeled CAD cross section" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 0 auto 1.5rem;" loading="lazy">
+<a href="/assets/images/projects/SENTRY/SENTRY Turret Cross Section Labeled.png">
+  <img src="/assets/images/projects/SENTRY/SENTRY Turret Cross Section Labeled.png" alt="SENTRY V3 labeled CAD cross section" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 0 auto 1.5rem;" loading="lazy">
 </a>
 
 ### Artifacts
 
 **Control board integration**
 
-<a href="{{ '/assets/images/projects/SENTRY/SENTRY Board-EDIT.jpg' | relative_url }}">
-  <img src="{{ '/assets/images/projects/SENTRY/SENTRY Board-EDIT.jpg' | relative_url }}" alt="SENTRY V3 control board integration view" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 1rem auto 1.5rem;" loading="lazy">
+<a href="/assets/images/projects/SENTRY/SENTRY Board-EDIT.jpg">
+  <img src="/assets/images/projects/SENTRY/SENTRY Board-EDIT.jpg" alt="SENTRY V3 control board integration view" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 1rem auto 1.5rem;" loading="lazy">
 </a>
 
 **PCB layout**
 
-<a href="{{ '/assets/images/projects/SENTRY/SENTRY PCB.png' | relative_url }}">
-  <img src="{{ '/assets/images/projects/SENTRY/SENTRY PCB.png' | relative_url }}" alt="SENTRY V3 PCB layout" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 0 auto 1.5rem;" loading="lazy">
+<a href="/assets/images/projects/SENTRY/SENTRY PCB.png">
+  <img src="/assets/images/projects/SENTRY/SENTRY PCB.png" alt="SENTRY V3 PCB layout" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 0 auto 1.5rem;" loading="lazy">
 </a>
 
 **Labeled PCB**
 
-<a href="{{ '/assets/images/projects/SENTRY/SENTRY PCB Labeled.png' | relative_url }}">
-  <img src="{{ '/assets/images/projects/SENTRY/SENTRY PCB Labeled.png' | relative_url }}" alt="SENTRY V3 labeled PCB layout" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 0 auto 1.5rem;" loading="lazy">
+<a href="/assets/images/projects/SENTRY/SENTRY PCB Labeled.png">
+  <img src="/assets/images/projects/SENTRY/SENTRY PCB Labeled.png" alt="SENTRY V3 labeled PCB layout" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 0 auto 1.5rem;" loading="lazy">
 </a>
 
 **Electronics schematic**
 
-<a href="{{ '/assets/images/projects/SENTRY/SENTRY Schematic.png' | relative_url }}">
-  <img src="{{ '/assets/images/projects/SENTRY/SENTRY Schematic.png' | relative_url }}" alt="SENTRY V3 electronics schematic" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 0 auto 1.5rem;" loading="lazy">
+<a href="/assets/images/projects/SENTRY/SENTRY Schematic.png">
+  <img src="/assets/images/projects/SENTRY/SENTRY Schematic.png" alt="SENTRY V3 electronics schematic" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 0 auto 1.5rem;" loading="lazy">
 </a>
 
 ## Lessons Learned
@@ -307,4 +298,4 @@ This approach allows the platform to scale beyond a single application while rem
 
 **Project Status:** <span class="status-badge">Production Deployment</span> | **Timeline:** January 2024 - December 2025
 
-[← Back to Projects]({{ '/projects/' | relative_url }}) | [Next Project: Surfer Fleet →]({{ '/projects/surfer-fleet/' | relative_url }})
+[← Back to Projects](/projects/) | [Next Project: Surfer Fleet →](/projects/surfer-fleet/)

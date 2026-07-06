@@ -1,15 +1,11 @@
 ---
 title: Scholarship & Speaking
 description: "Professional presentations and collaborative technical communication contributions."
-layout: default
-permalink: /documentation/scholarship/
-tags: [scholarship, presentations, speaking, technical-communication, conferences, workshops]
-show_title: false
 ---
 
 # Scholarship & Speaking
 
-<img src="{{ '/assets/images/Documentation/documentation-scholarship.png' | relative_url }}" alt="Scholarship and Speaking Overview" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;" loading="lazy">
+<img src="/assets/images/Documentation/documentation-scholarship.png" alt="Scholarship and Speaking Overview" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;" loading="lazy">
 
 > **Knowledge Sharing Philosophy**  
 > Engineering knowledge has the greatest impact when it’s shared clearly and applied practically.  
@@ -61,7 +57,7 @@ Building fault-tolerant, safety-aware control architectures for multi-agent robo
 Advancing how technical teams document, visualize, and teach complex systems effectively.
 
 **Engineering Leadership in Competition Environments:**  
-Applying systems thinking, event operations discipline, and mentoring structure through [*FIRST* Robotics Competition]({{ '/frc/' | relative_url }}).
+Applying systems thinking, event operations discipline, and mentoring structure through [*FIRST* Robotics Competition](/frc/).
 
 ---
 
@@ -78,4 +74,4 @@ I am available for:
 
 ---
 
-[← Back to Documentation]({{ '/documentation/' | relative_url }})
+[← Back to Documentation](/documentation/)

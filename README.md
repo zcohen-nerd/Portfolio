@@ -2,44 +2,57 @@
 
 **Electromechanical Engineer | Systems & Mechatronics Design**
 
-[![Website](https://img.shields.io/badge/Website-Live-brightgreen)](https://zcohen-nerd.com/)
+[![Website](https://img.shields.io/badge/Website-Live-brightgreen)](https://portfolio.zcohen-nerd.com/)
 [![License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-blue.svg)](LICENSE.md)
 
-## About This Portfolio
+The professional engineering portfolio of Zachary Cohen — systems integration, mechatronics design, and technical education across embedded control systems, autonomous platforms, and educational technology.
 
-This repository hosts the source for my professional engineering portfolio. It highlights work in systems integration, mechatronics design, and technical education across embedded control systems, autonomous platforms, and educational technology.
+**Live site: https://portfolio.zcohen-nerd.com/** — part of the [zcohen-nerd ecosystem](https://www.zcohen-nerd.com/).
 
-• Live site: https://zcohen-nerd.com/
+Built with [Docusaurus](https://docusaurus.io/), consuming the shared [`@zcohen-nerd/brand`](https://github.com/zcohen-nerd/zcohen-nerd-brand) package for the Navbar, Footer, and design tokens.
 
 ## Featured Projects
 
-- [Sentry V3](projects/sentry-v3.md) — Production embedded actuation system (Demonstrated functional prototype used in testing and development)
-- [Autonomous Surfer Fleet](projects/surfer-fleet.md) — Maritime autonomy platform (Demonstrated functional prototype used in testing and development)
-- [SPARK Programming Board](projects/stlink-v3mods.md) — Development tooling improvements (Demonstrated tooling workflow improvements used in development)
-
-[![SPARK Programming Board preview](assets/images/projects/stlink-v3mods/spark-board-perspective.png)](projects/stlink-v3mods.md)
+- [SENTRY Autonomous Turret](src/pages/projects/sentry-v3.md) — Production embedded actuation system
+- [Autonomous Surfer Fleet](src/pages/projects/surfer-fleet.md) — Maritime autonomy platform
+- [SPARK Programming Board](src/pages/projects/stlink-v3mods.md) — Embedded development tooling
+- [Fusion System Blocks](src/pages/projects/fusion-system-blocks.md) — Visual systems documentation framework
 
 ## Repository Structure
 
 ```
-portfolio/
-├─ _config.yml            # Jekyll configuration
-├─ index.md               # Main portfolio page
-├─ assets/
-│  ├─ images/
-│  └─ diagrams/
-├─ projects/
-├─ teaching/
-├─ documentation/
-└─ _layouts/
+Portfolio/
+├─ docusaurus.config.js      # Site config (brand theme, metadata)
+├─ src/
+│  ├─ pages/                 # All content pages (markdown)
+│  │  ├─ index.md            # Homepage
+│  │  ├─ frc.md              # FIRST Robotics
+│  │  ├─ projects/           # Project writeups
+│  │  ├─ teaching/           # Teaching portfolio
+│  │  └─ documentation/      # Documentation & scholarship
+│  └─ css/custom.css         # Brand tokens + page styles
+├─ static/
+│  ├─ assets/                # Images and media
+│  └─ CNAME                  # Custom domain
+└─ .github/workflows/        # GitHub Pages deploy
 ```
 
-## Contact
+## Local Development
 
-- Email: zcohen-nerd@gmail.com  
-- LinkedIn: https://www.linkedin.com/in/zachary-cohen-nerd/  
-- GitHub: https://github.com/zcohen-nerd
+Requires the brand package cloned alongside this repo:
+
+```bash
+git clone https://github.com/zcohen-nerd/zcohen-nerd-brand.git ../zcohen-nerd-brand
+git clone https://github.com/zcohen-nerd/Portfolio.git
+cd Portfolio
+npm install
+npm start
+```
+
+## Deployment
+
+Deploys automatically to GitHub Pages on every push to `main` via GitHub Actions.
 
 ## License
 
-All repository content (text, images, documentation, educational materials) is licensed under the [Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)](LICENSE.md). Code/configuration snippets may reference upstream open-source projects under their respective licenses.
+Content licensed under [CC BY-NC 4.0](LICENSE.md).

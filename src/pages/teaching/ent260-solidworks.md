@@ -1,18 +1,11 @@
 ---
 title: ENT260 - Advanced Solid Modeling for Mechatronics
 description: "Project-driven SolidWorks curriculum centered on advanced modeling, DFM/DFA, documentation, and CSWA preparation for mechatronics students."
-layout: default
-permalink: /teaching/ent260-solidworks/
-tags: [cad, mechanical-design, manufacturing, mechatronics]
-course: "ENT260 - Advanced Solid Modeling for Mechatronics"
-duration: "14 weeks"
-credits: "3"
-show_title: false
 ---
 
 # ENT260 - Advanced Solid Modeling for Mechatronics
 
-<img src="{{ '/assets/images/Teaching/ent-260.png' | relative_url }}" alt="ENT260 course overview" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;" loading="lazy">
+<img src="/assets/images/Teaching/ent-260.png" alt="ENT260 course overview" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;" loading="lazy">
 
 ## Why This Course Is Structured This Way
 
@@ -185,5 +178,5 @@ The final capstone extends that approach into collaborative systems work. By the
 
 **Course Information:** ENT260 - Advanced Solid Modeling for Mechatronics | **Credit Hours:** 3 | **Format:** Project-driven studio course | **Primary Platform:** SolidWorks 2024
 
-[← Previous: PID Lab]({{ '/teaching/pid-lab-module/' | relative_url }}) | [Next: Instructional Design →]({{ '/teaching/instructional-design/' | relative_url }})
+[← Back to Teaching](/teaching/) | [Next: Instructional Design →](/teaching/instructional-design/)
 

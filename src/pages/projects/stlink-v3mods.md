@@ -1,20 +1,11 @@
 ---
 title: SPARK Programming Board
 description: "Custom development tool providing breakout access to JTAG/SWD, UART, SPI, I²C, and CAN interfaces."
-layout: default
-permalink: /projects/stlink-v3mods/
-image: /assets/images/projects/stlink-v3mods/spark-board-perspective.png
-tags: [developer-tools, hardware, embedded, productivity]
-status: "Production Prototype"
-timeline: "May 2025 - Present"
-show_title: false
-featured: true
-weight: 4
 ---
 
 # STLINK Programming and Reconfigurable Kit (SPARK)
 
-<img src="{{ '/assets/images/projects/stlink-v3mods/spark-board-perspective.png' | relative_url }}" alt="SPARK Programming Board Overview" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;">
+<img src="/assets/images/projects/stlink-v3mods/spark-board-perspective.png" alt="SPARK Programming Board Overview" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;">
 
 ## Overview
 
@@ -34,20 +25,20 @@ The module exposes a high-density connector and assumes a carrier board, which a
 
 **Core structure**
 
-<a href="{{ '/assets/images/projects/stlink-v3mods/Core Structure.png' | relative_url }}">
-  <img src="{{ '/assets/images/projects/stlink-v3mods/Core Structure.png' | relative_url }}" alt="SPARK core structure flowchart" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 0 auto 1.5rem;">
+<a href="/assets/images/projects/stlink-v3mods/Core Structure.png">
+  <img src="/assets/images/projects/stlink-v3mods/Core Structure.png" alt="SPARK core structure flowchart" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 0 auto 1.5rem;">
 </a>
 
 **Protection layer**
 
-<a href="{{ '/assets/images/projects/stlink-v3mods/Protection Layer.png' | relative_url }}">
-  <img src="{{ '/assets/images/projects/stlink-v3mods/Protection Layer.png' | relative_url }}" alt="SPARK protection layer flowchart" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 0 auto 1.5rem;">
+<a href="/assets/images/projects/stlink-v3mods/Protection Layer.png">
+  <img src="/assets/images/projects/stlink-v3mods/Protection Layer.png" alt="SPARK protection layer flowchart" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 0 auto 1.5rem;">
 </a>
 
 **Supporting systems**
 
-<a href="{{ '/assets/images/projects/stlink-v3mods/Supporting Systems.png' | relative_url }}">
-  <img src="{{ '/assets/images/projects/stlink-v3mods/Supporting Systems.png' | relative_url }}" alt="SPARK supporting systems flowchart" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 0 auto 1.5rem;">
+<a href="/assets/images/projects/stlink-v3mods/Supporting Systems.png">
+  <img src="/assets/images/projects/stlink-v3mods/Supporting Systems.png" alt="SPARK supporting systems flowchart" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 0 auto 1.5rem;">
 </a>
 
 ## Interfaces
@@ -106,14 +97,14 @@ Key architectural features include:
 
 **Board layout**
 
-<a href="{{ '/assets/images/projects/stlink-v3mods/PCB.png' | relative_url }}">
-  <img src="{{ '/assets/images/projects/stlink-v3mods/PCB.png' | relative_url }}" alt="SPARK Programming Board PCB layout" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 0 auto 1.5rem;">
+<a href="/assets/images/projects/stlink-v3mods/PCB.png">
+  <img src="/assets/images/projects/stlink-v3mods/PCB.png" alt="SPARK Programming Board PCB layout" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 0 auto 1.5rem;">
 </a>
 
 **Schematic**
 
-<a href="{{ '/assets/images/projects/stlink-v3mods/Schematic.png' | relative_url }}">
-  <img src="{{ '/assets/images/projects/stlink-v3mods/Schematic.png' | relative_url }}" alt="SPARK Programming Board schematic" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 0 auto 1.5rem;">
+<a href="/assets/images/projects/stlink-v3mods/Schematic.png">
+  <img src="/assets/images/projects/stlink-v3mods/Schematic.png" alt="SPARK Programming Board schematic" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 0 auto 1.5rem;">
 </a>
 
 ## Lessons Learned
@@ -134,4 +125,4 @@ Key architectural features include:
 
 **Project Status:** <span class="status-badge">Prototype Deployment</span> | **Timeline:** May 2025 - Present
 
-[← Previous: Autonomous Surfer Fleet]({{ '/projects/surfer-fleet/' | relative_url }}) | [Next Project: Fusion Blocks →]({{ '/projects/fusion-system-blocks/' | relative_url }})
+[← Previous: Autonomous Surfer Fleet](/projects/surfer-fleet/) | [Next Project: Fusion Blocks →](/projects/fusion-system-blocks/)

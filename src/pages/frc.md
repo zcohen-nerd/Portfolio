@@ -1,10 +1,6 @@
 ---
 title: FIRST Robotics Competition - Engineering Leadership & Event Operations
 description: "Volunteer leadership in FIRST Robotics Competition through event operations, judging, mentoring, and technical program support."
-layout: default
-permalink: /frc/
-tags: [frc, robotics, event-operations, technical-leadership]
-show_title: false
 ---
 
 ### *FIRST* Involvement Timeline
@@ -426,4 +422,4 @@ Whether mentoring a team, interviewing students as a judge, or running a competi
 Programs like *FIRST* demonstrate that engineering is not only about technology; it is about people working together to build something meaningful.
 
 
-[← Back to Portfolio Home]({{ '/' | relative_url }})
+[← Back to Portfolio Home](/)

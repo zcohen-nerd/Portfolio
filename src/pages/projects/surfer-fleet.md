@@ -1,19 +1,11 @@
 ---
 title: Autonomous Surfer Fleet
 description: "Maritime autonomous vehicle platform with advanced power management systems."
-layout: default
-permalink: /projects/surfer-fleet/
-tags: [autonomous, maritime, power-systems]
-status: "Class Deployment"
-timeline: "2023-2025"
-show_title: false
-featured: true
-weight: 2
 ---
 
 # Autonomous Surfer Fleet: Maritime Autonomy Platform
 
-<img src="{{ '/assets/images/project-placeholder.svg' | relative_url }}" alt="Autonomous Surfer Fleet Overview" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;">
+<img src="/assets/images/project-placeholder.svg" alt="Autonomous Surfer Fleet Overview" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;">
 
 ## Overview
 
@@ -27,7 +19,7 @@ Early vessel prototypes relied on ad-hoc wiring and single-computer architecture
 
 ## System Architecture
 
-<img src="{{ '/assets/images/diagram-placeholder.svg' | relative_url }}" alt="SURFER Fleet System Architecture" style="width: 100%; max-width: 1000px; height: auto; border-radius: 8px; margin: 1rem 0;">
+<img src="/assets/images/diagram-placeholder.svg" alt="SURFER Fleet System Architecture" style="width: 100%; max-width: 1000px; height: auto; border-radius: 8px; margin: 1rem 0;">
 
 ```mermaid
 flowchart LR
@@ -89,10 +81,10 @@ flowchart LR
 - Emergency stop systems should disable propulsion without cutting power to onboard compute to prevent filesystem corruption.
 - Designing for maintainability across multiple vessels becomes more important than optimizing any single platform.
 
-Related leadership context: [*FIRST* Robotics Competition]({{ '/frc/' | relative_url }}) reinforces the same emphasis on student engineering systems, operational reliability, and structured technical leadership.
+Related leadership context: [*FIRST* Robotics Competition](/frc/) reinforces the same emphasis on student engineering systems, operational reliability, and structured technical leadership.
 
 ---
 
 **Project Status:** <span class="status-badge">Active Deployment</span> | **Timeline:** June 2022 - Present
 
-[← Previous: Sentry V3]({{ '/projects/sentry-v3/' | relative_url }}) | [Next Project: SPARK Programming Board →]({{ '/projects/stlink-v3mods/' | relative_url }})
+[← Previous: Sentry V3](/projects/sentry-v3/) | [Next Project: SPARK Programming Board →](/projects/stlink-v3mods/)
