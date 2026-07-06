@@ -19,10 +19,21 @@ body {
    All portfolio pages are markdown pages; give them a comfortable reading
    column inside the classic Layout's <main>. */
 .main-wrapper > main {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 48px 24px 80px;
   width: 100%;
+}
+
+/* Markdown pages render content in col--8 with the table of contents in
+   col--2, which is far too narrow. Rebalance to 75/25 — the prose column
+   stays ~900px wide and the TOC gets a readable ~300px. */
+.main-wrapper > main .row > .col.col--8 {
+  --ifm-col-width: 75%;
+}
+
+.main-wrapper > main .row > .col.col--2 {
+  --ifm-col-width: 25%;
 }
 
 .main-wrapper > main h1 {
