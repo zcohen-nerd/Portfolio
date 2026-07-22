@@ -26,6 +26,8 @@ This structure reflects how mechanical design is used in real engineering enviro
 
 > **Course Mission:** This redesigned SolidWorks course uses project-driven engineering challenges to build advanced 3D modeling, assembly, documentation, and design-for-manufacturing skills for mechatronics students. The curriculum is also structured to prepare students for the Certified SolidWorks Associate (CSWA) exam.
 
+Taught at Anne Arundel Community College. Students achieve a ~75% pass rate on the CSWA exam.
+
 ## Course Overview
 
 ENT260 was rewritten as an immersive studio-style CAD course built around realistic engineering scenarios instead of isolated software exercises. Each week places students in a client-style design context, asks them to balance technical constraints with manufacturability, and requires them to communicate their work through models, assemblies, drawings, and short design rationales.

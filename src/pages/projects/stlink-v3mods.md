@@ -1,6 +1,8 @@
 ---
 title: SPARK Programming Board
 description: "Custom development tool providing breakout access to JTAG/SWD, UART, SPI, I²C, and CAN interfaces."
+status: Prototype
+displayDate: May 2025–Present
 ---
 
 # STLINK Programming and Reconfigurable Kit (SPARK)
@@ -123,6 +125,6 @@ Key architectural features include:
 
 ---
 
-**Project Status:** <span class="status-badge">Prototype Deployment</span> | **Timeline:** May 2025 - Present
+**Project Status:** <span class="status-badge">Prototype</span> | **Timeline:** May 2025–Present
 
 [← Previous: Sentry V3](/projects/sentry-v3/) | [Next Project: Fusion Blocks →](/projects/fusion-system-blocks/)

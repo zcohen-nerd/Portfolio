@@ -67,7 +67,7 @@ const config = {
         {label: 'Projects', href: '/projects/'},
         {label: 'FIRST Robotics', href: '/frc/'},
         {label: 'Teaching', href: '/teaching/'},
-        {label: 'Documentation', href: '/documentation/'},
+        {label: 'Writing & Research', href: '/documentation/'},
       ],
       connectLinks: [
         {label: 'GitHub', href: 'https://github.com/zcohen-nerd'},

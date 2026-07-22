@@ -1,6 +1,8 @@
 ---
 title: Fusion System Blocks
 description: "Framework for visual systems documentation using Autodesk Fusion. Enables modular schematic visualization and hierarchical design planning."
+status: Public Beta
+displayDate: 2025–Present
 ---
 
 # Fusion System Blocks
@@ -116,6 +118,6 @@ Using the same architectural structure across projects helps maintain consistenc
 
 ---
 
-**Project Status:** <span class="status-badge">Public Release</span> | **Timeline:** 2025–2026
+**Project Status:** <span class="status-badge">Public Beta</span> | **Timeline:** 2025–Present
 
 [← Previous: SPARK Programming Board](/projects/stlink-v3mods/) | [Back to Projects →](/projects/)

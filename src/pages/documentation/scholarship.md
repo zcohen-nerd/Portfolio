@@ -1,6 +1,6 @@
 ---
 title: Scholarship & Speaking
-description: "Professional presentations and collaborative technical communication contributions."
+description: "Peer-reviewed publications and conference presentations spanning flight-controller test infrastructure, additive manufacturing, robotics, and mechatronics education."
 ---
 
 # Scholarship & Speaking
@@ -14,36 +14,34 @@ description: "Professional presentations and collaborative technical communicati
 
 ---
 
-## Featured Presentation
-
-### From Schematics to Reality: Turbocharging Mechatronics with Autodesk Fusion  
-**Autodesk University 2025 — Las Vegas, NV**  
-**Role:** Presenter  
-[View presentation →](https://www.autodesk.com/autodesk-university/class/From-Schematics-to-Reality-Turbocharging-Mechatronics-with-Autodesk-Fusion-2025)
-
-A featured Autodesk University session showcasing a systems-engineering approach to integrating PCB design, 3D modeling, and documentation workflows within Autodesk Fusion.  
-This presentation centered around the *SENTRY* turret project, illustrating how multidisciplinary prototyping can bridge mechanical, electrical, and educational engineering workflows.
-
----
-
 ## Peer-Reviewed Publications
 
+### GNSS Emulator for Test and Evaluation of Flight Controller Performance
+**International Conference on Unmanned Aircraft Systems (ICUAS) — May 2025**  
+**Role:** Co-author  
+[View on IEEE Xplore →](https://doi.org/10.1109/ICUAS65942.2025.11007919)
 
-### Real-Time Integration and Testing of Distributed Autonomous Systems  
-**IEEE Xplore, 2025** — Co-Author  
-[DOI: 10.1109/11007919](https://ieeexplore.ieee.org/document/11007919)
-
-Collaborative research exploring distributed control and verification strategies for networked robotic platforms.  
-Contributed to hardware-in-the-loop design methodology and experimental validation of embedded control systems.
+I co-authored this work, building the hardware and running the experimental testing behind the published data.
 
 ---
 
-### Modular Embedded Architectures for Autonomous Surface Vehicles  
-**IEEE Xplore, 2024** — Co-Author  
-[DOI: 10.1109/10801999](https://ieeexplore.ieee.org/document/10801999)
+### A Geometry-based Approach for Support-free Additive Manufacturing of Structures with Large Overhang Angles and Closed Features
+**IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) — October 2024**  
+**Role:** Co-author and conference presenter  
+[View on IEEE Xplore →](https://doi.org/10.1109/IROS58592.2024.10801999)
 
-Describes the design and testing of a scalable embedded framework for autonomous maritime robotics.  
-Contributed to systems integration, telemetry architecture, and field testing in applied research environments.
+I co-authored this work and presented it at IROS 2024 in Abu Dhabi.
+
+---
+
+## Conference Presentations & Selected Speaking
+
+### From Schematics to Reality: Turbocharging Mechatronics with Fusion
+**Autodesk University — September 2025**  
+**Role:** Selected Presenter  
+[View presentation →](https://www.autodesk.com/autodesk-university/class/From-Schematics-to-Reality-Turbocharging-Mechatronics-with-Autodesk-Fusion-2025)
+
+A selected Autodesk University session based on the [SENTRY](/projects/sentry-v3/) mechatronics platform, using it to demonstrate the relationship between schematics, mechanical design, system integration, and physical implementation in Autodesk Fusion.
 
 ## Ongoing Technical Interests
 
@@ -70,8 +68,9 @@ I am available for:
 
 **Contact:**  
 📧 [zachary@zcohen-nerd.com](mailto:zachary@zcohen-nerd.com)  
-🔗 [LinkedIn](https://www.linkedin.com/in/zachary-cohen-nerd/) · [GitHub](https://github.com/zcohen-nerd)
+🔗 [LinkedIn](https://www.linkedin.com/in/zachary-cohen-nerd/) · [GitHub](https://github.com/zcohen-nerd)  
+📄 [Résumé (PDF)](pathname:///files/zac-cohen-resume.pdf)
 
 ---
 
-[← Back to Documentation](/documentation/)
+[← Back to Writing & Research](/documentation/)

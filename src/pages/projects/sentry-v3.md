@@ -1,6 +1,8 @@
 ---
 title: SENTRY Autonomous Turret
 description: "Integrated electromechanical system combining embedded control, computer vision, and custom PCB design."
+status: Deployed
+displayDate: 2023–2025
 ---
 
 # Sentry V3: Production Embedded Actuation System
@@ -8,6 +10,12 @@ description: "Integrated electromechanical system combining embedded control, co
 <a href="/assets/images/projects/SENTRY/SENTRY Reveal.gif">
   <img src="/assets/images/projects/SENTRY/SENTRY Reveal.gif" alt="SENTRY V3 reveal animation" style="display: block; width: auto; max-width: 100%; max-height: 360px; height: auto; border-radius: 8px; margin: 0 auto 2rem;" loading="lazy">
 </a>
+
+## At a glance
+
+- Used annually by 100+ students as a hands-on mechatronics platform
+- Originated at the U.S. Naval Academy and released publicly as open source
+- Subject of a selected Autodesk University 2025 presentation ([From Schematics to Reality](/documentation/scholarship/))
 
 ## Overview
 
@@ -296,6 +304,6 @@ This approach allows the platform to scale beyond a single application while rem
 
 ---
 
-**Project Status:** <span class="status-badge">Production Deployment</span> | **Timeline:** January 2024 - December 2025
+**Project Status:** <span class="status-badge">Deployed</span> | **Timeline:** 2023–2025
 
 [← Back to Projects](/projects/) | [Next Project: SPARK Programming Board →](/projects/stlink-v3mods/)
