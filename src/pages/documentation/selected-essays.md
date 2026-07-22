@@ -7,13 +7,13 @@ description: "Systematic approaches to requirements engineering, risk management
 
 <img src="/assets/images/Documentation/selected-essays.png" alt="Selected Essays hero image" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;">
 
-Every six weeks I publish a long-form essay exploring engineering practice, systems thinking, and professional growth. These essays draw from real-world engineering experience — designing electromechanical systems, debugging complex failures, and mentoring the next generation of engineers.
+I publish occasional long-form essays exploring engineering practice, systems thinking, and professional growth. These essays draw from real-world engineering experience — designing electromechanical systems, debugging complex failures, and mentoring the next generation of engineers.
 
 Much of this writing focuses on engineering judgment: how engineers manage complexity, make decisions under uncertainty, and develop intuition about how real systems behave.
 
 New essays are published periodically on my Substack.
 
-[Read the essays on Substack →](https://substack.com/@zcohennerd)
+[Read the essays on Substack →](https://zcohennerd.substack.com/)
 
 ## Why These Essays Matter
 
@@ -42,7 +42,7 @@ Clear explanations, diagrams, and written reflections help teams reason about sy
 
 ---
 
-**Publication Status:** <span class="status-badge">Published</span> | **Availability:** Substack | **Cadence:** Approximately every six weeks
+**Publication Status:** <span class="status-badge">Published occasionally</span> | **Availability:** [Substack](https://zcohennerd.substack.com/)
 
 [← Back to Documentation](/documentation/) | [Next: Scholarship & Speaking →](/documentation/scholarship/)
 

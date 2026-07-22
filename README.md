@@ -14,7 +14,6 @@ Built with [Docusaurus](https://docusaurus.io/), consuming the shared [`@zcohen-
 ## Featured Projects
 
 - [SENTRY Autonomous Turret](src/pages/projects/sentry-v3.md) — Production embedded actuation system
-- [Autonomous Surfer Fleet](src/pages/projects/surfer-fleet.md) — Maritime autonomy platform
 - [SPARK Programming Board](src/pages/projects/stlink-v3mods.md) — Embedded development tooling
 - [Fusion System Blocks](src/pages/projects/fusion-system-blocks.md) — Visual systems documentation framework
 
