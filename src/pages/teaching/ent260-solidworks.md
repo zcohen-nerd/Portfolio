@@ -5,7 +5,7 @@ description: "Project-driven SolidWorks curriculum centered on advanced modeling
 
 # ENT260 - Advanced Solid Modeling for Mechatronics
 
-<img src="/assets/images/Teaching/ent-260.png" alt="ENT260 course overview" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;" loading="lazy">
+<img src="/assets/images/Teaching/ent-260.webp" alt="ENT260 course overview" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;" loading="lazy">
 
 ## Why This Course Is Structured This Way
 

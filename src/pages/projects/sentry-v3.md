@@ -7,15 +7,19 @@ displayDate: 2023–2025
 
 # Sentry V3: Production Embedded Actuation System
 
-<a href="https://portfolio.zcohen-nerd.com/assets/images/projects/SENTRY/SENTRY Reveal.gif">
-  <img src="/assets/images/projects/SENTRY/SENTRY Reveal.gif" alt="SENTRY V3 reveal animation" style="display: block; width: auto; max-width: 100%; max-height: 360px; height: auto; border-radius: 8px; margin: 0 auto 2rem;" loading="lazy">
-</a>
+<video autoplay muted loop playsinline preload="metadata" width="412" height="232" poster="/media/sentry/sentry-reveal-poster.webp" style="display: block; width: auto; max-width: 100%; max-height: 360px; height: auto; border-radius: 8px; margin: 0 auto 0.75rem;">
+  <source src="/media/sentry/sentry-reveal.webm" type="video/webm">
+  <source src="/media/sentry/sentry-reveal.mp4" type="video/mp4">
+</video>
+
+<p style="text-align: center; margin: 0 0 2rem;"><em>The assembled SENTRY V3 pan–tilt turret platform (silent looping animation).</em></p>
 
 ## At a glance
 
 - Used annually by 100+ students as a hands-on mechatronics platform
 - Originated at the U.S. Naval Academy and released publicly as open source
 - Subject of a selected Autodesk University 2025 presentation ([From Schematics to Reality](/documentation/scholarship/))
+- [View source on GitHub](https://github.com/zcohen-nerd/SENTRY)
 
 ## Overview
 
@@ -72,7 +76,6 @@ The mechanical and electrical design of SENTRY V3 was developed together so the 
 - Embedded firmware running on the RP2040 that coordinates flywheel spin-up, ammunition feed control, and pan–tilt positioning.
 - I²C sensor integration for orientation and system monitoring, with current sensing used to detect projectile events during firing.
 - Integration with an external compute platform responsible for vision processing and target selection while the embedded controller manages real-time actuation.
-- Bench testing and bring-up performed using logic analysis, current monitoring, and iterative firmware tuning.
 
 **Cross-section view**
 
@@ -102,8 +105,8 @@ The mechanical and electrical design of SENTRY V3 was developed together so the 
 
 **Labeled PCB**
 
-<a href="https://portfolio.zcohen-nerd.com/assets/images/projects/SENTRY/SENTRY PCB Labeled.png">
-  <img src="/assets/images/projects/SENTRY/SENTRY PCB Labeled.png" alt="SENTRY V3 labeled PCB layout" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 0 auto 1.5rem;" loading="lazy">
+<a href="https://portfolio.zcohen-nerd.com/assets/images/projects/SENTRY/sentry-pcb-labeled.webp" title="Open full-resolution labeled PCB layout">
+  <img src="/assets/images/projects/SENTRY/sentry-pcb-labeled.webp" alt="SENTRY V3 labeled PCB layout" width="2179" height="1759" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 0 auto 1.5rem;" loading="lazy">
 </a>
 
 **Electronics schematic**
@@ -111,6 +114,12 @@ The mechanical and electrical design of SENTRY V3 was developed together so the 
 <a href="https://portfolio.zcohen-nerd.com/assets/images/projects/SENTRY/SENTRY Schematic.png">
   <img src="/assets/images/projects/SENTRY/SENTRY Schematic.png" alt="SENTRY V3 electronics schematic" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 0 auto 1.5rem;" loading="lazy">
 </a>
+
+## Testing & Verification
+
+- Bench testing and bring-up were performed using logic analysis, current monitoring, and iterative firmware tuning.
+- Flywheel current sensing was verified as a projectile-event detector — current spikes provide shot counting without dedicated sensors.
+- The platform's ongoing classroom use (100+ students annually) exercises the integrated system across repeated build-and-run cycles.
 
 ## Lessons Learned
 
@@ -120,187 +129,11 @@ The mechanical and electrical design of SENTRY V3 was developed together so the 
 - Early bring-up instrumentation (current monitoring, logic analysis, and serial diagnostics) greatly reduces iteration time during firmware development.
 - Designing the control board with spare interfaces and expansion capability makes it easier to add sensors and experiment with new control strategies.
 
-## SENTRY V4 — Next Steps
+## What comes next
 
-SENTRY V4 represents a major architectural redesign of the SENTRY platform.  
-Rather than iterating on the previous PCB, the system is being **re-architected from first principles** to improve reliability, safety, and educational usability.
+The deployed V3 platform established the mechanical, electrical, embedded, and controls architecture described above. A separate V4 roadmap explores a ground-up redesign — layered perception, compute, control, and safety domains — carrying forward the lessons from V3 deployment. V4 is planning-stage work, not a shipped system.
 
-The goal of V4 is to transform SENTRY from a prototype control stack into a **robust robotics platform** that cleanly separates perception, orchestration, control, and safety.
-
----
-
-### 1. Establish System Architecture
-
-The first step is defining the complete system architecture before beginning schematic or PCB work.
-
-Key architectural elements:
-
-- **Vision Layer** — Oak-D stereo camera performing onboard depth and neural inference
-- **Compute Layer** — Raspberry Pi Compute Module 5 orchestrating perception and student code
-- **Control Layer** — RP-series MCU (RP2040/RP2350 class) performing deterministic real-time control
-- **Safety Layer** — dedicated safety supervisor MCU enforcing hardware-level safety constraints
-
-Responsibilities are intentionally separated so that:
-
-- Linux cannot directly control actuators
-- student firmware cannot bypass safety enforcement
-- perception and real-time control operate independently
-
-This layered architecture significantly improves fault containment and system reliability.
-
----
-
-### 2. Design Independent Safety Supervisor
-
-A new **hardware safety supervisor** will be added to the system.
-
-This subsystem is implemented using a small microcontroller (ATtiny-class device) whose only responsibility is safety enforcement.
-
-The safety supervisor will monitor:
-
-- E-stop input
-- pan and tilt limit switches
-- RP controller heartbeat
-- actuator runtime limits
-- system power brownout
-- main input overcurrent
-
-The safety controller implements a **three-level fault model**:
-
-**Level 2 — Warning**
-
-- status LED / telemetry
-- no immediate shutdown
-
-**Level 1 — Motion Inhibit**
-
-- actuator driver enables disabled
-- system remains powered for debugging
-
-**Level 0 — Hard Shutdown**
-
-- safety relay opens
-- actuator power rail disconnected
-- manual reset required
-
-This layered safety approach allows the platform to remain usable during minor faults while still enforcing strict safety guarantees.
-
----
-
-### 3. Define Power Architecture
-
-The V4 board will introduce a clear separation between logic and actuation power domains.
-
-The primary power structure will include:
-
-- protected system power input
-- actuator power rail (relay controlled)
-- 5V compute rail for the CM5
-- 3.3V logic rail for MCU and sensors
-
-Protection features will include:
-
-- input overcurrent detection
-- brownout detection
-- power sequencing
-- relay-based motion power cutoff
-
-Separating these domains improves electrical stability and reduces noise coupling between motors and compute systems.
-
----
-
-### 4. Define Communication Interfaces
-
-Communication paths will be explicitly defined between system layers.
-
-Primary internal link:
-
-- **UART between CM5 and RP MCU**
-  - structured command protocol
-  - heartbeat monitoring
-  - telemetry reporting
-
-External access paths:
-
-- USB device interface to the MCU for beginner firmware development
-- USB gadget or network access to the CM5 for advanced Linux-based control
-- USB host connection between CM5 and Oak-D camera
-
-These pathways allow the system to support both **introductory embedded learning** and **advanced robotics experimentation**.
-
----
-
-### 5. Develop PCB Floorplan
-
-Before schematic entry, the physical PCB layout will be planned around four functional zones:
-
-- Compute Domain (CM5 and high-speed interfaces)
-- Control Domain (RP MCU and sensors)
-- Safety & Power Supervision
-- Actuation Domain (motor drivers and MOSFETs)
-
-Separating these zones simplifies routing and minimizes electrical interference between high-current motor systems and digital compute hardware.
-
----
-
-### 6. Begin Schematic Capture
-
-Once the architecture, power topology, and floorplan are finalized, schematic development will begin.
-
-Key schematic areas include:
-
-- compute module carrier circuitry
-- MCU control subsystem
-- safety supervisor logic
-- power distribution and protection
-- motor driver interfaces
-- sensor expansion headers
-
-The schematic will be developed with strong emphasis on **clear domain boundaries and debuggability**.
-
----
-
-### 7. PCB Stackup and Layout
-
-Because the system integrates high-speed compute and power electronics, the board will likely use a **6-layer stackup** to maintain signal integrity and provide solid ground reference planes.
-
-Typical structure:
-- Signal
-- Ground
-- Signal
-- Power
-- Ground
-- Signal
-
-
-This provides clean return paths for digital signals while isolating actuator switching currents.
-
----
-
-### 8. Open Hardware Documentation
-
-The final step will be publishing the full system documentation including:
-
-- architecture diagrams
-- block diagrams
-- safety model
-- communication protocol
-- schematic and PCB files
-
-The intent is for SENTRY V4 to function as a **fully documented open robotics control platform** that others can study, modify, and build upon.
-
----
-
-### Long-Term Vision
-
-While originally developed for the SENTRY turret system, the V4 architecture is designed to be reusable as a **general robotics control motherboard** combining:
-
-- onboard perception
-- deterministic motion control
-- layered safety supervision
-- clean power and interface architecture
-
-This approach allows the platform to scale beyond a single application while remaining approachable for students and makers.
+[View the SENTRY V4 roadmap →](/projects/sentry-v4/)
 
 ---
 

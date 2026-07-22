@@ -5,7 +5,7 @@ description: "Systematic approaches to requirements engineering, risk management
 
 # Selected Essays
 
-<img src="/assets/images/Documentation/selected-essays.png" alt="Selected Essays hero image" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;">
+<img src="/assets/images/Documentation/selected-essays.webp" alt="Selected Essays hero image" width="1280" height="853" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;" loading="lazy">
 
 I publish occasional long-form essays exploring engineering practice, systems thinking, and professional growth. These essays draw from real-world engineering experience — designing electromechanical systems, debugging complex failures, and mentoring the next generation of engineers.
 

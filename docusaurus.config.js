@@ -65,6 +65,9 @@ const config = {
   // Shared brand: swizzled Navbar + Footer for the whole ecosystem.
   themes: ['@zcohen-nerd/brand'],
 
+  // Pause ambient autoplay video for prefers-reduced-motion users.
+  clientModules: [require.resolve('./src/clientModules/reduced-motion.js')],
+
   plugins: [
     [
       '@docusaurus/plugin-client-redirects',

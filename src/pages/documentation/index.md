@@ -5,7 +5,7 @@ description: "Publications, presentations, engineering documentation frameworks,
 
 # Writing & Research
 
-<img src="/assets/images/hero-image.png" alt="Writing and Research Overview" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;" loading="lazy">
+<img src="/img/portfolio/portfolio-hero.webp" alt="Writing and Research Overview" width="1536" height="808" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;" loading="lazy">
 
 > **Purpose of This Library**  
 > Curated resources that capture how I document complex engineering systems, share research-backed methods, and present those findings to technical and educational audiences.
@@ -16,14 +16,14 @@ description: "Publications, presentations, engineering documentation frameworks,
 
 <div class="project-grid">
   <div class="project-card">
-    <img src="/assets/images/Documentation/selected-essays.png" alt="Selected Essays preview" class="project-image" loading="lazy">
+    <img src="/assets/images/Documentation/selected-essays.webp" alt="Selected Essays preview" class="project-image" width="1280" height="853" loading="lazy">
     <h3><a href="/documentation/selected-essays/">Selected Essays</a></h3>
     <p>Reflections on engineering practice, systems thinking, and professional growth drawn from real-world electromechanical system design and mentoring experience.</p>
     <p><a href="/documentation/selected-essays/">Read essays →</a></p>
   </div>
 
   <div class="project-card">
-    <img src="/assets/images/Documentation/documentation-scholarship.png" alt="Scholarship and Speaking preview" class="project-image" loading="lazy">
+    <img src="/assets/images/Documentation/documentation-scholarship.webp" alt="Scholarship and Speaking preview" class="project-image" width="1280" height="720" loading="lazy">
     <h3><a href="/documentation/scholarship/">Scholarship & Speaking</a></h3>
     <p>Conference presentations, technical talks, and published work focused on systems engineering, mechatronics, and engineering education.</p>
     <p><a href="/documentation/scholarship/">View talks & publications →</a></p>

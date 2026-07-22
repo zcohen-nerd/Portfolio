@@ -36,7 +36,7 @@ As both a practicing engineer and an educator, I intentionally integrate real in
 		<p><a href="/teaching/instructional-design/">Learn more →</a></p>
 	</div>
 	<div class="project-card">
-		<img src="/assets/images/Teaching/ent-260.png" alt="ENT260 course preview" class="project-image" loading="lazy">
+		<img src="/assets/images/Teaching/ent-260.webp" alt="ENT260 course preview" class="project-image" loading="lazy">
 		<h3><a href="/teaching/ent260-solidworks/">ENT260 - Advanced Solid Modeling for Mechatronics</a></h3>
 		<p>Course materials, learning objectives, and example projects demonstrating how students apply engineering concepts through hands-on design and modeling.</p>
 		<p><a href="/teaching/ent260-solidworks/">Learn more →</a></p>

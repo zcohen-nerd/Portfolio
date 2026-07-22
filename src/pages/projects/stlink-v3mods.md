@@ -7,7 +7,7 @@ displayDate: May 2025–Present
 
 # STLINK Programming and Reconfigurable Kit (SPARK)
 
-<img src="/assets/images/projects/stlink-v3mods/spark-board-perspective.png" alt="SPARK Programming Board Overview" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;">
+<img src="/assets/images/projects/stlink-v3mods/spark-board-perspective.webp" alt="SPARK Programming Board Overview" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;">
 
 ## Overview
 
