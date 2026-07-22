@@ -38,7 +38,20 @@ My work centers on defining system architecture, developing mechanical and elect
 
 - [*FIRST* Robotics](/frc/)
 - [Teaching Portfolio](/teaching/)
-- [Documentation Library](/documentation/)
+- [Writing & Research](/documentation/)
+
+## Publications & Speaking
+
+Peer-reviewed work and conference presentations spanning flight-controller test infrastructure, additive manufacturing, robotics, and mechatronics education.
+
+- **ICUAS 2025** — *GNSS Emulator for Test and Evaluation of Flight Controller Performance*  
+  Co-author
+- **IEEE/RSJ IROS 2024** — *A Geometry-based Approach for Support-free Additive Manufacturing of Structures with Large Overhang Angles and Closed Features*  
+  Co-author and presenter · Abu Dhabi
+- **Autodesk University 2025** — *From Schematics to Reality: Turbocharging Mechatronics with Fusion*  
+  Selected presenter · Based on [SENTRY](/projects/sentry-v3/)
+
+[View publications and presentations →](/documentation/scholarship/)
 
 ## How I work
 
@@ -65,3 +78,4 @@ My work centers on defining system architecture, developing mechanical and elect
 - GitHub: [github.com/zcohen-nerd](https://github.com/zcohen-nerd)
 - LinkedIn: [linkedin.com/in/zachary-cohen-nerd](https://www.linkedin.com/in/zachary-cohen-nerd/)
 - Email: [zachary@zcohen-nerd.com](mailto:zachary@zcohen-nerd.com)
+- Résumé: [View résumé (PDF)](pathname:///files/zac-cohen-resume.pdf)

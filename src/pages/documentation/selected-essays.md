@@ -44,5 +44,5 @@ Clear explanations, diagrams, and written reflections help teams reason about sy
 
 **Publication Status:** <span class="status-badge">Published occasionally</span> | **Availability:** [Substack](https://zcohennerd.substack.com/)
 
-[← Back to Documentation](/documentation/) | [Next: Scholarship & Speaking →](/documentation/scholarship/)
+[← Back to Writing & Research](/documentation/) | [Next: Scholarship & Speaking →](/documentation/scholarship/)
 

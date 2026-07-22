@@ -1,11 +1,11 @@
 ---
-title: Documentation & Scholarship
-description: "Engineering documentation frameworks, technical documentation, and speaking contributions."
+title: Writing & Research
+description: "Publications, presentations, engineering documentation frameworks, and selected technical writing."
 ---
 
-# Documentation & Scholarship
+# Writing & Research
 
-<img src="/assets/images/hero-image.png" alt="Documentation and Scholarship Overview" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;" loading="lazy">
+<img src="/assets/images/hero-image.png" alt="Writing and Research Overview" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;" loading="lazy">
 
 > **Purpose of This Library**  
 > Curated resources that capture how I document complex engineering systems, share research-backed methods, and present those findings to technical and educational audiences.
