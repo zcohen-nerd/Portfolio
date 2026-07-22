@@ -7,7 +7,7 @@ displayDate: 2025–Present
 
 # Fusion System Blocks
 
-<a href="/assets/images/projects/Fusion System Blocks/System Diagram.png">
+<a href="https://portfolio.zcohen-nerd.com/assets/images/projects/Fusion System Blocks/System Diagram.png">
   <img src="/assets/images/projects/Fusion System Blocks/System Diagram.png" alt="Fusion System Blocks system diagram" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 0 auto 2rem;" loading="lazy">
 </a>
 
