@@ -13,19 +13,49 @@ const config = {
 
   url: 'https://portfolio.zcohen-nerd.com',
   baseUrl: '/',
+  // GitHub Pages serves directory-style URLs (/projects/sentry-v3/);
+  // explicit so the sitemap uses the final, non-redirecting form.
+  trailingSlash: true,
 
   organizationName: 'zcohen-nerd',
   projectName: 'Portfolio',
 
-  onBrokenLinks: 'warn',
+  onBrokenLinks: 'throw',
   markdown: {
     // .md files are CommonMark (raw HTML passes through unchanged — the
     // ported Jekyll content uses class/style attributes); .mdx files are MDX.
     format: 'detect',
     hooks: {
-      onBrokenMarkdownLinks: 'warn',
+      onBrokenMarkdownLinks: 'throw',
     },
   },
+
+  // Structured data: ProfilePage anchored to the shared Person identity
+  // (primary URL is the hub; this site is the portfolio property).
+  headTags: [
+    {
+      tagName: 'script',
+      attributes: {type: 'application/ld+json'},
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'ProfilePage',
+        url: 'https://portfolio.zcohen-nerd.com/',
+        name: 'Zachary Cohen — Engineering Portfolio',
+        mainEntity: {
+          '@type': 'Person',
+          name: 'Zac Cohen',
+          alternateName: 'Zachary Cohen',
+          url: 'https://zcohen-nerd.com/',
+          jobTitle: 'Electromechanical Systems Engineer',
+          sameAs: [
+            'https://github.com/zcohen-nerd',
+            'https://www.linkedin.com/in/zachary-cohen-nerd/',
+            'https://zcohennerd.substack.com/',
+          ],
+        },
+      }),
+    },
+  ],
 
   i18n: {
     defaultLocale: 'en',

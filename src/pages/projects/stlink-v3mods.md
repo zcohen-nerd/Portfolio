@@ -27,19 +27,19 @@ The module exposes a high-density connector and assumes a carrier board, which a
 
 **Core structure**
 
-<a href="/assets/images/projects/stlink-v3mods/Core Structure.png">
+<a href="https://portfolio.zcohen-nerd.com/assets/images/projects/stlink-v3mods/Core Structure.png">
   <img src="/assets/images/projects/stlink-v3mods/Core Structure.png" alt="SPARK core structure flowchart" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 0 auto 1.5rem;">
 </a>
 
 **Protection layer**
 
-<a href="/assets/images/projects/stlink-v3mods/Protection Layer.png">
+<a href="https://portfolio.zcohen-nerd.com/assets/images/projects/stlink-v3mods/Protection Layer.png">
   <img src="/assets/images/projects/stlink-v3mods/Protection Layer.png" alt="SPARK protection layer flowchart" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 0 auto 1.5rem;">
 </a>
 
 **Supporting systems**
 
-<a href="/assets/images/projects/stlink-v3mods/Supporting Systems.png">
+<a href="https://portfolio.zcohen-nerd.com/assets/images/projects/stlink-v3mods/Supporting Systems.png">
   <img src="/assets/images/projects/stlink-v3mods/Supporting Systems.png" alt="SPARK supporting systems flowchart" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 0 auto 1.5rem;">
 </a>
 
@@ -99,13 +99,13 @@ Key architectural features include:
 
 **Board layout**
 
-<a href="/assets/images/projects/stlink-v3mods/PCB.png">
+<a href="https://portfolio.zcohen-nerd.com/assets/images/projects/stlink-v3mods/PCB.png">
   <img src="/assets/images/projects/stlink-v3mods/PCB.png" alt="SPARK Programming Board PCB layout" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 0 auto 1.5rem;">
 </a>
 
 **Schematic**
 
-<a href="/assets/images/projects/stlink-v3mods/Schematic.png">
+<a href="https://portfolio.zcohen-nerd.com/assets/images/projects/stlink-v3mods/Schematic.png">
   <img src="/assets/images/projects/stlink-v3mods/Schematic.png" alt="SPARK Programming Board schematic" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 0 auto 1.5rem;">
 </a>
 
