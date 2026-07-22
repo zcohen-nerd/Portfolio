@@ -30,7 +30,7 @@ As both a practicing engineer and an educator, I intentionally integrate real in
 
 <div class="project-grid">
 	<div class="project-card">
-		<img src="https://zcohen-nerd.github.io/computer_literacy_for_kids/img/hero-image.png" alt="Computer Literacy for Kids curriculum preview" class="project-image" loading="lazy">
+		<img src="/img/teaching/literacy-for-kids-hero.jpg" alt="Literacy for Kids curriculum preview" class="project-image" loading="lazy">
 		<h3><a href="/teaching/instructional-design/">Computer Literacy for Kids Curriculum Project</a></h3>
 		<p>Course materials, learning objectives, and example projects demonstrating how students apply engineering concepts through hands-on design and modeling.</p>
 		<p><a href="/teaching/instructional-design/">Learn more →</a></p>

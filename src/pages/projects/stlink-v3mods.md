@@ -125,4 +125,4 @@ Key architectural features include:
 
 **Project Status:** <span class="status-badge">Prototype Deployment</span> | **Timeline:** May 2025 - Present
 
-[← Previous: Autonomous Surfer Fleet](/projects/surfer-fleet/) | [Next Project: Fusion Blocks →](/projects/fusion-system-blocks/)
+[← Previous: Sentry V3](/projects/sentry-v3/) | [Next Project: Fusion Blocks →](/projects/fusion-system-blocks/)

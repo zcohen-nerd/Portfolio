@@ -5,8 +5,8 @@ description: "Open 18-week computer literacy curriculum designed to help young l
 
 # Computer Literacy for Kids
 
-<a href="https://zcohen-nerd.github.io/computer_literacy_for_kids/">
-  <img src="https://zcohen-nerd.github.io/computer_literacy_for_kids/img/hero-image.png" alt="Computer Literacy for Kids curriculum hero image" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 0 auto 2rem;" loading="lazy">
+<a href="https://www.literacy-for-kids.com/">
+  <img src="/img/teaching/literacy-for-kids-hero.jpg" alt="Literacy for Kids curriculum hero image" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 0 auto 2rem;" loading="lazy">
 </a>
 
 > **Project Summary:** Computer Literacy for Kids is a free, open 18-week curriculum built to help young learners move beyond app familiarity and develop real understanding of how computers, files, the internet, algorithms, and digital tools work. The project is designed for children roughly ages 7-11, with teacher, caregiver, or parent guidance as needed.
@@ -137,7 +137,7 @@ It shows how I think about educational design when the real objective is long-te
 
 ---
 
-**Project Link:** [Computer Literacy for Kids](https://zcohen-nerd.github.io/computer_literacy_for_kids/) | **Source:** [GitHub Repository](https://github.com/zcohen-nerd/computer_literacy_for_kids) | **License:** CC BY-NC-SA 4.0
+**Project Link:** [Literacy for Kids](https://www.literacy-for-kids.com/) | **Source:** [GitHub Repository](https://github.com/zcohen-nerd/computer_literacy_for_kids) | **License:** CC BY-NC-SA 4.0
 
 [← Previous: ENT260 SolidWorks](/teaching/ent260-solidworks/) | [Back to Teaching →](/teaching/)
 

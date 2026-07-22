@@ -35,6 +35,23 @@ const config = {
   // Shared brand: swizzled Navbar + Footer for the whole ecosystem.
   themes: ['@zcohen-nerd/brand'],
 
+  plugins: [
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        // Surfer Fleet was unpublished pending a complete rewrite; its
+        // source is preserved in drafts/projects/surfer-fleet/. Old
+        // bookmarks land on the Projects index.
+        redirects: [
+          {
+            from: '/projects/surfer-fleet',
+            to: '/projects/',
+          },
+        ],
+      },
+    ],
+  ],
+
   customFields: {
     brand: {
       projectName: 'Portfolio',
@@ -78,7 +95,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: 'img/zcohen-nerd-icon.png',
+      image: 'img/og-zac-cohen-portfolio.png',
       colorMode: {
         defaultMode: 'light',
         disableSwitch: true,

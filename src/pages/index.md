@@ -29,8 +29,6 @@ My work centers on defining system architecture, developing mechanical and elect
 
 - **[Sentry V3](/projects/sentry-v3/)** — Embedded control platform for a pan-tilt actuation system, integrating sensors, motor drivers, and safety-oriented control logic.  
   **Core domains:** PCB, embedded firmware, controls, integration, test
-- **[Autonomous Surfer Fleet](/projects/surfer-fleet/)** — Distributed control system for small autonomous vessels, combining navigation, telemetry, and power management.
-  **Core domains:** controls, embedded systems, communications, power, systems integration
 - **[SPARK Programming Board](/projects/stlink-v3mods/)** — Hardware expansion board that exposes debugging, power control, and protocol interfaces during embedded bring-up. 
   **Core domains:** embedded tools, hardware interfaces, firmware, validation
 - **[Fusion System Blocks](/projects/fusion-system-blocks/)** — Visual systems documentation framework for mapping architecture, subsystem boundaries, and interface definitions across multidisciplinary projects.

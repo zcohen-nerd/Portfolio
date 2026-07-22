@@ -298,4 +298,4 @@ This approach allows the platform to scale beyond a single application while rem
 
 **Project Status:** <span class="status-badge">Production Deployment</span> | **Timeline:** January 2024 - December 2025
 
-[← Back to Projects](/projects/) | [Next Project: Surfer Fleet →](/projects/surfer-fleet/)
+[← Back to Projects](/projects/) | [Next Project: SPARK Programming Board →](/projects/stlink-v3mods/)
