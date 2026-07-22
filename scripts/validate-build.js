@@ -94,6 +94,10 @@ for (const needle of ['zcohen-nerd.github.io/Portfolio', 'literacy-for-kids.gith
 // Accessibility statics (shared brand navigation)
 check('project disclosure in HTML', indexHtml.includes('id="zc-project-disclosure"'));
 check('drawer trigger has aria-controls', indexHtml.includes('aria-controls="zc-mobile-drawer"'));
+const discStart = indexHtml.indexOf('id="zc-project-disclosure"');
+const discEnd = indexHtml.indexOf('id="zc-mobile-drawer"');
+const discBody = discStart !== -1 && discEnd > discStart ? indexHtml.slice(discStart, discEnd) : '';
+check('disclosure links server-rendered', (discBody.match(/href="/g) || []).length >= 3);
 const ids = [...indexHtml.matchAll(/ id="([^"]+)"/g)].map((m) => m[1]);
 check('no duplicate ids', ids.length === new Set(ids).size);
 

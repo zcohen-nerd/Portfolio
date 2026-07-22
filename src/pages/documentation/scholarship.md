@@ -5,7 +5,7 @@ description: "Peer-reviewed publications and conference presentations spanning f
 
 # Scholarship & Speaking
 
-<img src="/assets/images/Documentation/documentation-scholarship.png" alt="Scholarship and Speaking Overview" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;" loading="lazy">
+<img src="/assets/images/Documentation/documentation-scholarship.webp" alt="Scholarship and Speaking Overview" width="1280" height="720" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;" loading="lazy">
 
 > **Knowledge Sharing Philosophy**  
 > Engineering knowledge has the greatest impact when it’s shared clearly and applied practically.  

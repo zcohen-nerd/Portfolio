@@ -132,6 +132,44 @@ body {
   padding: 12px;
 }
 
+/* ── FIRST Robotics timeline ───────────────────────────────────────────────
+   Accessible semantic list styled as a vertical timeline — real text, no
+   raster image, screen-reader and keyboard friendly. */
+.frc-timeline {
+  list-style: none;
+  margin: 24px 0 32px;
+  padding: 0 0 0 24px;
+  border-left: 3px solid var(--zc-cyan-500);
+}
+
+.frc-timeline li {
+  position: relative;
+  margin-bottom: 16px;
+  line-height: 1.55;
+}
+
+.frc-timeline li::before {
+  content: '';
+  position: absolute;
+  left: -31px;
+  top: 7px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--zc-cyan-500);
+  border: 2px solid #fff;
+}
+
+.frc-timeline-year {
+  display: inline-block;
+  font-family: var(--zc-font-mono);
+  font-size: 13px;
+  font-weight: var(--zc-weight-semibold);
+  color: var(--zc-cyan-700);
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
 @media (max-width: 720px) {
   .project-grid {
     grid-template-columns: 1fr;

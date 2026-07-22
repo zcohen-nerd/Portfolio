@@ -1,0 +1,93 @@
+---
+title: SENTRY V4 Roadmap
+description: "Planned ground-up redesign of the SENTRY platform — layered perception, compute, control, and safety architecture. Concept stage; not a deployed system."
+status: Concept
+---
+
+# SENTRY V4 Roadmap
+
+> **This page documents planned work and design direction. It does not describe a completed or deployed system.** The deployed platform is [SENTRY V3](/projects/sentry-v3/).
+
+## Overview
+
+SENTRY V4 represents a major architectural redesign of the SENTRY platform. Rather than iterating on the previous PCB, the system is being **re-architected from first principles** to improve reliability, safety, and educational usability.
+
+## Goals
+
+The goal of V4 is to transform SENTRY from a prototype control stack into a **robust robotics platform** that cleanly separates perception, orchestration, control, and safety:
+
+- Linux cannot directly control actuators
+- student firmware cannot bypass safety enforcement
+- perception and real-time control operate independently
+
+The intent is for SENTRY V4 to function as a **fully documented open robotics control platform** — architecture diagrams, safety model, communication protocol, schematic, and PCB files — that others can study, modify, and build upon.
+
+## Lessons carried forward from V3
+
+The [V3 lessons learned](/projects/sentry-v3/#lessons-learned) directly shape this roadmap: separating high-level control from real-time actuation, using instrumentation (current monitoring, logic analysis) from the first bring-up, and designing boards with spare interfaces for expansion. V4 extends that separation principle into dedicated hardware domains.
+
+## Proposed architecture
+
+The first step is defining the complete system architecture before beginning schematic or PCB work.
+
+- **Vision Layer** — Oak-D stereo camera performing onboard depth and neural inference
+- **Compute Layer** — Raspberry Pi Compute Module 5 orchestrating perception and student code
+- **Control Layer** — RP-series MCU (RP2040/RP2350 class) performing deterministic real-time control
+- **Safety Layer** — dedicated safety supervisor MCU enforcing hardware-level safety constraints
+
+This layered architecture significantly improves fault containment and system reliability.
+
+## Planned hardware changes
+
+### Independent safety supervisor
+
+A new **hardware safety supervisor** will be added — a small microcontroller (ATtiny-class device) whose only responsibility is safety enforcement. It will monitor the E-stop input, pan and tilt limit switches, RP controller heartbeat, actuator runtime limits, system power brownout, and main input overcurrent.
+
+The safety controller implements a **three-level fault model**:
+
+- **Level 2 — Warning:** status LED / telemetry, no immediate shutdown
+- **Level 1 — Motion Inhibit:** actuator driver enables disabled; system remains powered for debugging
+- **Level 0 — Hard Shutdown:** safety relay opens, actuator power rail disconnected, manual reset required
+
+### Power architecture
+
+The V4 board will introduce a clear separation between logic and actuation power domains: protected system power input, relay-controlled actuator rail, 5 V compute rail for the CM5, and a 3.3 V logic rail. Planned protection features include input overcurrent detection, brownout detection, power sequencing, and relay-based motion power cutoff.
+
+### PCB floorplan and stackup
+
+Before schematic entry, the physical layout will be planned around four functional zones — Compute, Control, Safety & Power Supervision, and Actuation — to simplify routing and minimize interference between high-current motor systems and digital compute hardware. Because the system integrates high-speed compute and power electronics, the board will likely use a **6-layer stackup** (signal/ground/signal/power/ground/signal) for solid return paths and isolation of actuator switching currents.
+
+### Schematic capture
+
+Once the architecture, power topology, and floorplan are finalized, schematic development will begin: compute-module carrier circuitry, MCU control subsystem, safety supervisor logic, power distribution and protection, motor driver interfaces, and sensor expansion headers — with strong emphasis on **clear domain boundaries and debuggability**.
+
+## Planned software and controls changes
+
+Communication paths will be explicitly defined between system layers:
+
+- **UART between CM5 and RP MCU** — structured command protocol, heartbeat monitoring, telemetry reporting
+- USB device interface to the MCU for beginner firmware development
+- USB gadget or network access to the CM5 for advanced Linux-based control
+- USB host connection between CM5 and the Oak-D camera
+
+These pathways allow the system to support both **introductory embedded learning** and **advanced robotics experimentation**.
+
+## Open questions
+
+- Final choice within the RP-series controller family (RP2040 vs RP2350 class)
+- Final PCB stackup (6-layer is the working assumption, not yet committed)
+- Schematic and layout work has not yet begun; details above describe direction, not finished design
+
+## Current status
+
+**Concept / planning.** Architecture definition is the active work; no hardware has been fabricated for V4. No delivery dates are committed.
+
+## Long-term vision
+
+While originally developed for the SENTRY turret system, the V4 architecture is designed to be reusable as a **general robotics control motherboard** combining onboard perception, deterministic motion control, layered safety supervision, and clean power and interface architecture — scaling beyond a single application while remaining approachable for students and makers.
+
+---
+
+**Project Status:** <span class="status-badge">Concept</span>
+
+[← SENTRY V3 (deployed system)](/projects/sentry-v3/) | [Back to Projects](/projects/)
