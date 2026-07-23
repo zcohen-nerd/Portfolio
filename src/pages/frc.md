@@ -1,5 +1,6 @@
 ---
-title: FIRST Robotics Competition - Engineering Leadership & Event Operations
+image: /img/og/og-frc.png
+title: FIRST Robotics
 description: "Two decades in FIRST Robotics — from founding student to lead mentor, judge, and district event manager."
 ---
 

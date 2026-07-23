@@ -1,4 +1,5 @@
 ---
+image: /img/og/og-writing-research.png
 title: Writing & Research
 description: "Peer-reviewed publications, selected presentations, and occasional essays on engineering judgment and systems thinking."
 ---
