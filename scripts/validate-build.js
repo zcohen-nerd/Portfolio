@@ -35,15 +35,22 @@ check('canonical link uses portfolio domain', indexHtml.includes(`rel="canonical
 check('OG image exists', fs.existsSync(path.join(build, 'img', 'og-zac-cohen-portfolio.png')));
 check('og:image meta present', indexHtml.includes('og-zac-cohen-portfolio.png'));
 
-// JSON-LD
-const jsonLd = [...indexHtml.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)];
-check('one JSON-LD block', jsonLd.length === 1, `found ${jsonLd.length}`);
-try {
-  const parsed = JSON.parse(jsonLd[0]?.[1] ?? '');
-  check('JSON-LD is ProfilePage', parsed['@type'] === 'ProfilePage');
-  check('Person identity anchored to hub', parsed.mainEntity?.url === 'https://zcohen-nerd.com/');
-} catch (e) {
-  check('JSON-LD parses', false, e.message);
+// JSON-LD: a global Person identity is expected; NO route may emit a
+// ProfilePage that claims to be the portfolio homepage (the former global
+// ProfilePage defect). Blocks are parsed, not substring-matched.
+function ldBlocks(html) {
+  return [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map((m) => {
+    try { return JSON.parse(m[1]); } catch { return {__parseError: true}; }
+  });
+}
+const homeLd = ldBlocks(indexHtml);
+check('homepage JSON-LD parses', homeLd.length > 0 && homeLd.every((b) => !b.__parseError));
+check('homepage Person identity anchored to hub', homeLd.some((b) => b['@type'] === 'Person' && b.url === 'https://zcohen-nerd.com/'));
+for (const route of ['', 'projects/sentry-v3', 'projects/fusion-system-blocks', 'projects/stlink-v3mods', 'teaching/ent260-solidworks']) {
+  const f = path.join(build, route, 'index.html');
+  const blocks = ldBlocks(fs.readFileSync(f, 'utf8'));
+  const badProfile = blocks.find((b) => b['@type'] === 'ProfilePage' && b.url === 'https://portfolio.zcohen-nerd.com/');
+  check(`no homepage ProfilePage on /${route || ''}`, !badProfile);
 }
 
 // Sitemap
@@ -125,10 +132,52 @@ check('no raw mermaid wrapper in Fusion page HTML', !fusionHtml.includes('<div c
 // real build output).
 const jsDir = path.join(build, 'assets', 'js');
 const jsFiles = fs.readdirSync(jsDir).filter((f) => f.endsWith('.js'));
-const hasDiagramChunk = jsFiles.some((f) => fs.readFileSync(path.join(jsDir, f), 'utf8').includes('SYS[System Context]'));
+const hasDiagramChunk = jsFiles.some((f) => fs.readFileSync(path.join(jsDir, f), 'utf8').includes('ADDIN[Fusion add-in layer]'));
 const hasMermaidRuntime = jsFiles.some((f) => fs.readFileSync(path.join(jsDir, f), 'utf8').includes('docusaurus-mermaid-container'));
 check('Fusion diagram definition present in page chunk', hasDiagramChunk);
 check('Mermaid theme runtime present in build', hasMermaidRuntime);
+
+// ── Step 3 factual-correctness guards ────────────────────────────────────
+// Fusion System Blocks must describe the real Fusion add-in.
+check('FSB identifies as an Autodesk Fusion add-in', fusionVisible.includes('Autodesk Fusion add-in'));
+check('FSB links its GitHub repository', fusionHtml.includes('github.com/zcohen-nerd/Fusion_System_Blocks'));
+check('FSB links its Releases page', fusionHtml.includes('Fusion_System_Blocks/releases'));
+check('FSB has Verification & Diagnostics section', fusionVisible.includes('Verification'));
+check('FSB shows Public Beta', fusionVisible.includes('Public Beta'));
+check('FSB carries current test evidence', fusionVisible.includes('775') && fusionVisible.includes('24') && fusionVisible.includes('30'));
+check('FSB obsolete workflow-only framing absent', !fusionVisible.includes('lightweight architectural framework'));
+
+// SPARK must describe the real V0.4 protection/power/translation design.
+const sparkHtml = fs.readFileSync(path.join(build, 'projects', 'stlink-v3mods', 'index.html'), 'utf8');
+const sparkVisible = sparkHtml.replace(/<script[\s\S]*?<\/script>/g, '');
+check('SPARK documents eFuse entry protection', sparkVisible.includes('TPS2596'));
+check('SPARK documents switched target rails', sparkVisible.includes('TPS22919'));
+check('SPARK documents hybrid translation', sparkVisible.includes('LSF0108') && sparkVisible.includes('SN74AXC8T245'));
+check('SPARK documents CAN FD', sparkVisible.includes('TCAN1051'));
+check('SPARK documents 4-layer PCB', sparkVisible.includes('4-layer'));
+check('SPARK links its GitHub repository', sparkHtml.includes('github.com/zcohen-nerd/SPARK'));
+check('SPARK validation status is explicit', sparkVisible.includes('execution remains in progress'));
+check('SPARK false no-active-circuitry rationale absent', !sparkVisible.includes('clean signal breakout rather than adding active circuitry') && !sparkVisible.includes('Keeping the board electrically simple'));
+
+// ENT260 must read as a proposal, with the CSWA outcome kept historical.
+const entHtml = fs.readFileSync(path.join(build, 'teaching', 'ent260-solidworks', 'index.html'), 'utf8');
+const entVisible = entHtml.replace(/<script[\s\S]*?<\/script>/g, '');
+check('ENT260 labeled Proposed Curriculum Redesign', entVisible.includes('Proposed Curriculum Redesign'));
+check('ENT260 CSWA outcome tied to prior offerings', entVisible.includes('prior offerings of the existing course, approximately 75%'));
+check('ENT260 separation statement present', entVisible.includes('not the proposal'));
+check('ENT260 no unqualified rewrite claim', !entVisible.includes('ENT260 was rewritten') && !entVisible.includes('ENT260 was redesigned'));
+
+// SENTRY heading and usage wording.
+const sentryHtml = fs.readFileSync(path.join(build, 'projects', 'sentry-v3', 'index.html'), 'utf8');
+check('SENTRY heading uses caps + Deployed framing', sentryHtml.includes('SENTRY V3: Deployed Mechatronics Platform'));
+check('SENTRY heading avoids commercial-production claim', !sentryHtml.includes('Production Embedded Actuation System'));
+check('SENTRY usage metric carries deployment context', sentryHtml.includes('U.S. Naval Academy instructional deployment'));
+
+// Literacy canonical facts.
+const litHtml = fs.readFileSync(path.join(build, 'teaching', 'instructional-design', 'index.html'), 'utf8');
+check('Literacy age range is canonical 8–12', litHtml.includes('ages 8–12') && !litHtml.includes('ages 7-11'));
+check('Literacy source links canonical org', litHtml.includes('github.com/literacy-for-kids'));
+check('Literacy legacy repo link absent', !litHtml.includes('github.com/zcohen-nerd/computer_literacy_for_kids'));
 
 // ── FIRST history heading guard ──────────────────────────────────────────
 const frcHistory = fs.readFileSync(path.join(build, 'frc', 'history', 'index.html'), 'utf8');

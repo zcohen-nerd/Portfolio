@@ -5,7 +5,7 @@ status: Deployed
 displayDate: 2023–2025
 ---
 
-# Sentry V3: Production Embedded Actuation System
+# SENTRY V3: Deployed Mechatronics Platform
 
 <video autoplay muted loop playsinline preload="metadata" width="412" height="232" poster="/media/sentry/sentry-reveal-poster.webp" style="display: block; width: auto; max-width: 100%; max-height: 360px; height: auto; border-radius: 8px; margin: 0 auto 0.75rem;">
   <source src="/media/sentry/sentry-reveal.webm" type="video/webm">
@@ -16,7 +16,7 @@ displayDate: 2023–2025
 
 ## At a glance
 
-- Used annually by 100+ students as a hands-on mechatronics platform
+- Used by 100+ students per year in its U.S. Naval Academy instructional deployment
 - Originated at the U.S. Naval Academy and released publicly as open source
 - Subject of a selected Autodesk University 2025 presentation ([From Schematics to Reality](/documentation/scholarship/))
 - [View source on GitHub](https://github.com/zcohen-nerd/SENTRY)
@@ -119,7 +119,7 @@ The mechanical and electrical design of SENTRY V3 was developed together so the 
 
 - Bench testing and bring-up were performed using logic analysis, current monitoring, and iterative firmware tuning.
 - Flywheel current sensing was verified as a projectile-event detector — current spikes provide shot counting without dedicated sensors.
-- The platform's ongoing classroom use (100+ students annually) exercises the integrated system across repeated build-and-run cycles.
+- The platform's classroom deployment (100+ students per year at the U.S. Naval Academy) exercises the integrated system across repeated build-and-run cycles.
 
 ## Lessons Learned
 

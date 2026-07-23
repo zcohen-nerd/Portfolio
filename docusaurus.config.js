@@ -32,29 +32,27 @@ const config = {
     },
   },
 
-  // Structured data: ProfilePage anchored to the shared Person identity
-  // (primary URL is the hub; this site is the portfolio property).
+  // Structured data: shared Person identity only. A global ProfilePage was
+  // previously injected on EVERY route, wrongly declaring each page to be
+  // the portfolio homepage — removed. A homepage-only ProfilePage is
+  // deferred (the CommonMark homepage cannot cleanly host per-page head
+  // tags without an MDX conversion risk).
   headTags: [
     {
       tagName: 'script',
       attributes: {type: 'application/ld+json'},
       innerHTML: JSON.stringify({
         '@context': 'https://schema.org',
-        '@type': 'ProfilePage',
-        url: 'https://portfolio.zcohen-nerd.com/',
-        name: 'Zachary Cohen — Engineering Portfolio',
-        mainEntity: {
-          '@type': 'Person',
-          name: 'Zac Cohen',
-          alternateName: 'Zachary Cohen',
-          url: 'https://zcohen-nerd.com/',
-          jobTitle: 'Electromechanical Systems Engineer',
-          sameAs: [
-            'https://github.com/zcohen-nerd',
-            'https://www.linkedin.com/in/zachary-cohen-nerd/',
-            'https://zcohennerd.substack.com/',
-          ],
-        },
+        '@type': 'Person',
+        name: 'Zac Cohen',
+        alternateName: 'Zachary Cohen',
+        url: 'https://zcohen-nerd.com/',
+        jobTitle: 'Electromechanical Systems Engineer',
+        sameAs: [
+          'https://github.com/zcohen-nerd',
+          'https://www.linkedin.com/in/zachary-cohen-nerd/',
+          'https://zcohennerd.substack.com/',
+        ],
       }),
     },
   ],
