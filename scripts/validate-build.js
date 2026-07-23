@@ -141,7 +141,21 @@ check('drawer trigger has aria-controls', indexHtml.includes('aria-controls="zc-
 const discStart = indexHtml.indexOf('id="zc-project-disclosure"');
 const discEnd = indexHtml.indexOf('id="zc-mobile-drawer"');
 const discBody = discStart !== -1 && discEnd > discStart ? indexHtml.slice(discStart, discEnd) : '';
-check('disclosure links server-rendered', (discBody.match(/href="/g) || []).length >= 3);
+check('disclosure links server-rendered', (discBody.match(/href="/g) || []).length >= 8, `found ${(discBody.match(/href="/g) || []).length}`);
+
+// ── Distinct Projects / Ecosystem navigation (Step 2) ────────────────────
+// The internal Projects link and the shared Ecosystem disclosure must both
+// exist and be clearly distinct. Structural checks — no global string bans
+// ("Projects" legitimately appears across the site).
+check('internal Projects link targets /projects/', /<a[^>]*href="\/projects\/"[^>]*>Projects/.test(indexHtml));
+const ecoTriggerMatch = indexHtml.match(/<button[^>]*aria-controls="zc-project-disclosure"[^>]*>([\s\S]*?)<\/button>/);
+const ecoTriggerText = (ecoTriggerMatch?.[1] || '').replace(/<[^>]+>/g, '').trim();
+check('ecosystem disclosure trigger labeled Ecosystem', ecoTriggerText.startsWith('Ecosystem'), `got "${ecoTriggerText}"`);
+check('old shared Projects trigger absent', !ecoTriggerText.startsWith('Projects'));
+
+// Fusion System Blocks page must keep its Public Beta status.
+const fsbPage = fs.readFileSync(path.join(build, 'projects', 'fusion-system-blocks', 'index.html'), 'utf8');
+check('Fusion System Blocks page shows Public Beta', fsbPage.includes('Public Beta'));
 const ids = [...indexHtml.matchAll(/ id="([^"]+)"/g)].map((m) => m[1]);
 check('no duplicate ids', ids.length === new Set(ids).size);
 
