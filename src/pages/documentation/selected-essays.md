@@ -1,6 +1,6 @@
 ---
 title: Selected Essays
-description: "Systematic approaches to requirements engineering, risk management, and verification planning for complex technical projects."
+description: "Occasional essays on engineering judgment, systems thinking, technical communication, and lessons from building complex electromechanical systems."
 ---
 
 # Selected Essays
@@ -11,9 +11,43 @@ I publish occasional long-form essays exploring engineering practice, systems th
 
 Much of this writing focuses on engineering judgment: how engineers manage complexity, make decisions under uncertainty, and develop intuition about how real systems behave.
 
-New essays are published periodically on my Substack.
+New essays are published occasionally on my Substack.
 
-[Read the essays on Substack →](https://zcohennerd.substack.com/)
+## Published Essays
+
+### Functional Success vs Engineering Success
+
+**Published:** July 22, 2026
+
+A working prototype proves possibility; engineering proves it can be understood, repeated, and trusted.
+
+[Read on Substack →](https://zcohennerd.substack.com/p/functional-success-vs-engineering)
+
+### How Living Documentation Changes Engineering Culture
+
+**Published:** July 22, 2026
+
+Turning engineering knowledge from individual dependency into shared infrastructure.
+
+[Read on Substack →](https://zcohennerd.substack.com/p/how-living-documentation-changes)
+
+### How to Build a Living Documentation System
+
+**Published:** July 22, 2026
+
+How to make engineering knowledge evolve alongside the systems it supports.
+
+[Read on Substack →](https://zcohennerd.substack.com/p/how-to-build-a-living-documentation)
+
+### Why Every Engineer Should Document Like a Teacher
+
+**Published:** February 24, 2026
+
+Why clarity is the most underrated engineering discipline.
+
+[Read on Substack →](https://zcohennerd.substack.com/p/why-every-engineer-should-document)
+
+[View all writing on Substack →](https://zcohennerd.substack.com/)
 
 ## Why These Essays Matter
 

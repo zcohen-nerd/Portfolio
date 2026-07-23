@@ -1,6 +1,6 @@
 ---
 title: Writing & Research
-description: "Publications, presentations, engineering documentation frameworks, and selected technical writing."
+description: "Peer-reviewed publications, selected presentations, and occasional essays on engineering judgment and systems thinking."
 ---
 
 # Writing & Research
@@ -32,16 +32,15 @@ description: "Publications, presentations, engineering documentation frameworks,
 
 ---
 
-## How These Resources Fit Together
+## What You'll Find Here
 
-### Documentation Practice
-Foundational systems-engineering methods, templates, and governance models that guide project execution, risk reduction, and knowledge capture.
+### Essays
 
-### Scholarship & Outreach
-Peer-reviewed research, conference presentations, and speaking opportunities that share lessons learned from applying these methods in real-world environments.
+Occasional writing on engineering judgment, systems thinking, technical communication, and lessons from real projects — published on [Substack](https://zcohennerd.substack.com/) and indexed on the [Selected Essays](/documentation/selected-essays/) page.
 
-### Continuous Improvement
-Both collections evolve through active projects, teaching, and research collaborations—each addition is grounded in measurable impact and repeatability.
+### Research & Speaking
+
+Peer-reviewed publications and selected presentations covering flight-controller test infrastructure, additive manufacturing, robotics, and mechatronics education — collected on the [Scholarship & Speaking](/documentation/scholarship/) page.
 
 Related leadership context: [*FIRST* Robotics Competition](/frc/) extends these same documentation and systems principles into live event operations, judging, and mentoring environments.
 
