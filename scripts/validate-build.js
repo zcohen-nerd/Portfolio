@@ -69,6 +69,7 @@ if (fs.existsSync(surferPage)) {
 } else {
   check('surfer-fleet route absent or redirect', true);
 }
+check('Surfer Fleet draft preserved outside published routes', fs.existsSync(path.join(root, 'drafts', 'projects', 'surfer-fleet', 'surfer-fleet.md')));
 
 // Batch B publication facts intact
 const scholarship = fs.readFileSync(path.join(build, 'documentation', 'scholarship', 'index.html'), 'utf8');
@@ -90,6 +91,49 @@ for (const needle of ['zcohen-nerd.github.io/Portfolio', 'literacy-for-kids.gith
   const hit = htmlFiles.find((f) => fs.readFileSync(f, 'utf8').includes(needle));
   check(`no legacy URL: ${needle}`, !hit, hit ? path.relative(build, hit) : '');
 }
+
+// ── Mermaid regression guard ─────────────────────────────────────────────
+// The Fusion System Blocks diagram once shipped as a raw <div class="mermaid">
+// wrapper that rendered as body text. Guard both the source and the build.
+
+// Source: no raw Mermaid wrappers in any published page; the Fusion page
+// must use a fenced ```mermaid block. (drafts/ is private and exempt.)
+const srcPages = [];
+(function walkSrc(dir) {
+  for (const f of fs.readdirSync(dir)) {
+    const p = path.join(dir, f);
+    if (fs.statSync(p).isDirectory()) walkSrc(p);
+    else if (/\.(md|mdx|js)$/.test(f)) srcPages.push(p);
+  }
+})(path.join(root, 'src', 'pages'));
+const rawWrapperHit = srcPages.find((f) => fs.readFileSync(f, 'utf8').includes('<div class="mermaid"'));
+check('no raw Mermaid wrappers in published source', !rawWrapperHit, rawWrapperHit ? path.relative(root, rawWrapperHit) : '');
+const fusionSrc = fs.readFileSync(path.join(root, 'src', 'pages', 'projects', 'fusion-system-blocks.md'), 'utf8');
+check('Fusion System Blocks source uses a fenced mermaid block', fusionSrc.includes('```mermaid'));
+
+// Build: the Fusion page's visible HTML (scripts stripped) must not contain
+// unprocessed diagram source…
+const fusionHtml = fs.readFileSync(path.join(build, 'projects', 'fusion-system-blocks', 'index.html'), 'utf8');
+const fusionVisible = fusionHtml.replace(/<script[\s\S]*?<\/script>/g, '');
+check('no raw flowchart source in Fusion page HTML', !fusionVisible.includes('flowchart') && !fusionVisible.includes('SYS[System Context]'));
+check('no raw mermaid wrapper in Fusion page HTML', !fusionHtml.includes('<div class="mermaid"'));
+
+// …and the Mermaid integration must actually be wired in: the diagram is
+// client-hydrated, so the evidence lives in the JS assets — the page chunk
+// carries the diagram definition and the theme runtime carries the
+// docusaurus-mermaid-container it renders into (structure confirmed from
+// real build output).
+const jsDir = path.join(build, 'assets', 'js');
+const jsFiles = fs.readdirSync(jsDir).filter((f) => f.endsWith('.js'));
+const hasDiagramChunk = jsFiles.some((f) => fs.readFileSync(path.join(jsDir, f), 'utf8').includes('SYS[System Context]'));
+const hasMermaidRuntime = jsFiles.some((f) => fs.readFileSync(path.join(jsDir, f), 'utf8').includes('docusaurus-mermaid-container'));
+check('Fusion diagram definition present in page chunk', hasDiagramChunk);
+check('Mermaid theme runtime present in build', hasMermaidRuntime);
+
+// ── FIRST history heading guard ──────────────────────────────────────────
+const frcHistory = fs.readFileSync(path.join(build, 'frc', 'history', 'index.html'), 'utf8');
+const h1Count = (frcHistory.match(/<h1[\s>]/g) || []).length;
+check('FIRST history contains exactly one H1', h1Count === 1, `found ${h1Count}`);
 
 // Accessibility statics (shared brand navigation)
 check('project disclosure in HTML', indexHtml.includes('id="zc-project-disclosure"'));

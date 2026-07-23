@@ -7,7 +7,7 @@ description: "Complete chronological history of FIRST Robotics Competition invol
 
 This is the complete, detailed history. For the concise overview, see [FIRST Robotics](/frc/).
 
-# *FIRST* Robotics Competition
+## *FIRST* Robotics Competition
 ## Event Manager & Leadership - *FIRST* Chesapeake
 
 My involvement with the *FIRST* Robotics Competition spans multiple roles including student competitor, mentor, judge, and event manager. Over time, my focus has shifted toward helping deliver competitions that serve hundreds of students and volunteers each season.
