@@ -179,6 +179,36 @@ check('Literacy age range is canonical 8–12', litHtml.includes('ages 8–12') 
 check('Literacy source links canonical org', litHtml.includes('github.com/literacy-for-kids'));
 check('Literacy legacy repo link absent', !litHtml.includes('github.com/zcohen-nerd/computer_literacy_for_kids'));
 
+// ── Step 4 content-completion guards ─────────────────────────────────────
+// Teaching index: distinct cards, honest section names, historical CSWA.
+const teachHtml = fs.readFileSync(path.join(build, 'teaching', 'index.html'), 'utf8');
+const teachVisible = teachHtml.replace(/<script[\s\S]*?<\/script>/g, '');
+check('teaching section renamed', teachVisible.includes('Teaching & Curriculum Projects') || teachVisible.includes('Teaching &amp; Curriculum Projects'));
+check('no empty Impact & Metrics section', !teachVisible.includes('Impact & Metrics') && !teachVisible.includes('Impact &amp; Metrics'));
+check('literacy card describes digital literacy', teachVisible.includes('computer-literacy curriculum'));
+check('ENT260 card marked Proposed', teachVisible.includes('Proposed SolidWorks Curriculum Redesign'));
+check('teaching cards are distinct', !teachVisible.includes('Course materials, learning objectives, and example projects demonstrating'));
+check('Anne Arundel Community College named on teaching page', teachVisible.includes('Anne Arundel Community College'));
+check('CSWA outcome historically qualified on teaching page', teachVisible.includes('prior offerings of ENT260'));
+
+// Selected Essays: real Substack inventory, occasional cadence.
+const essaysHtml = fs.readFileSync(path.join(build, 'documentation', 'selected-essays', 'index.html'), 'utf8');
+const essaysVisible = essaysHtml.replace(/<script[\s\S]*?<\/script>/g, '');
+const essayLinks = [...essaysHtml.matchAll(/href="(https:\/\/zcohennerd\.substack\.com\/p\/[^"]+)"/g)].map((m) => m[1]);
+check('Selected Essays lists at least one essay', essayLinks.length >= 1, `found ${essayLinks.length}`);
+check('essay entries carry publication dates', (essaysVisible.match(/Published:/g) || []).length >= essayLinks.length ? true : (essaysVisible.match(/Published:/g) || []).length >= 1);
+check('essays cadence remains occasional', essaysVisible.includes('occasional'));
+check('no six-week cadence on essays page', !essaysVisible.includes('six weeks') && !essaysVisible.includes('six-week'));
+check('no LinkedIn writing destination on essays page', !essaysHtml.includes('linkedin.com/in/zachary-cohen-nerd/recent-activity'));
+
+// Writing & Research index: only real collections promised.
+const docsHtml = fs.readFileSync(path.join(build, 'documentation', 'index.html'), 'utf8');
+const docsVisible = docsHtml.replace(/<script[\s\S]*?<\/script>/g, '');
+check('no unsupported templates/governance promise', !docsVisible.includes('templates, and governance models') && !docsVisible.includes('governance models'));
+check('no unsupported measurable-impact claim', !docsVisible.includes('measurable impact and repeatability'));
+check('index links Selected Essays', docsHtml.includes('/documentation/selected-essays/'));
+check('index links Scholarship', docsHtml.includes('/documentation/scholarship/'));
+
 // ── FIRST history heading guard ──────────────────────────────────────────
 const frcHistory = fs.readFileSync(path.join(build, 'frc', 'history', 'index.html'), 'utf8');
 const h1Count = (frcHistory.match(/<h1[\s>]/g) || []).length;
