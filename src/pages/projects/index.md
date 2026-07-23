@@ -25,7 +25,7 @@ Project pages emphasize the problem, architecture, interfaces, implementation de
 		<p><a href="/projects/stlink-v3mods/">View project →</a></p>
 	</div>
 	<div class="project-card">
-		<img src="/assets/images/projects/Fusion System Blocks/System Diagram.png" alt="Fusion System Blocks" class="project-image" loading="lazy">
+		<img src="/assets/images/projects/fusion-system-blocks/system-diagram.webp" alt="Fusion System Blocks" class="project-image" width="3032" height="1040" loading="lazy">
 		<h3><a href="/projects/fusion-system-blocks/">Fusion System Blocks</a></h3>
 		<p>Framework for visual systems documentation using Autodesk Fusion. Enables modular schematic visualization and hierarchical design planning.</p>
 		<p class="project-status"><strong>Public Beta</strong> | 2025–Present</p>

@@ -1,4 +1,5 @@
 ---
+image: /img/og/og-sentry-v3.png
 title: SENTRY Autonomous Turret
 description: "Integrated electromechanical system combining embedded control, computer vision, and custom PCB design."
 status: Deployed
@@ -31,9 +32,7 @@ Earlier versions of the platform relied on ad-hoc wiring and distributed control
 
 ## System Architecture
 
-<a href="https://portfolio.zcohen-nerd.com/assets/images/projects/SENTRY/Functional Block Diagram.png">
-  <img src="/assets/images/projects/SENTRY/Functional Block Diagram.png" alt="SENTRY functional block diagram" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 1rem auto 1.5rem;">
-</a>
+<img src="/assets/images/projects/SENTRY/functional-block-diagram.webp" alt="SENTRY functional block diagram" width="225" height="665" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 1rem auto 1.5rem;" loading="lazy">
 
 ## Hardware Design
 
@@ -41,15 +40,13 @@ The mechanical and electrical design of SENTRY V3 was developed together so the 
 
 **CAD assembly overview**
 
-<a href="https://portfolio.zcohen-nerd.com/assets/images/projects/SENTRY/SENTRY Turret-EDIT.jpg">
-  <img src="/assets/images/projects/SENTRY/SENTRY Turret-EDIT.jpg" alt="SENTRY V3 CAD assembly overview" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 1rem auto 1.5rem;" loading="lazy">
-</a>
+<img src="/assets/images/projects/SENTRY/sentry-turret.webp" alt="SENTRY V3 CAD assembly overview" width="1426" height="1069" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 1rem auto 1.5rem;" loading="lazy">
 
 **Labeled subsystem view**
 
-<a href="https://portfolio.zcohen-nerd.com/assets/images/projects/SENTRY/SENTRY Turret Labeled.png">
-  <img src="/assets/images/projects/SENTRY/SENTRY Turret Labeled.png" alt="SENTRY V3 labeled CAD view" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 0 auto 1.5rem;" loading="lazy">
-</a>
+<img src="/assets/images/projects/SENTRY/sentry-turret-labeled.webp" alt="SENTRY V3 labeled CAD view" width="1942" height="1000" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 1rem auto 1.5rem;" loading="lazy">
+
+<p style="text-align: center; margin: -0.75rem 0 1.5rem;"><a href="https://portfolio.zcohen-nerd.com/assets/images/projects/SENTRY/sentry-turret-labeled.webp" target="_blank" rel="noopener noreferrer">Open full-resolution labeled view in a new tab →</a></p>
 
 ## Interfaces
 
@@ -79,41 +76,35 @@ The mechanical and electrical design of SENTRY V3 was developed together so the 
 
 **Cross-section view**
 
-<a href="https://portfolio.zcohen-nerd.com/assets/images/projects/SENTRY/SENTRY Cross Section blur.png">
-  <img src="/assets/images/projects/SENTRY/SENTRY Cross Section blur.png" alt="SENTRY V3 CAD cross section" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 1rem auto 1.5rem;" loading="lazy">
-</a>
+<img src="/assets/images/projects/SENTRY/sentry-cross-section.webp" alt="SENTRY V3 CAD cross section" width="1600" height="632" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 1rem auto 1.5rem;" loading="lazy">
 
 **Labeled cross-section**
 
-<a href="https://portfolio.zcohen-nerd.com/assets/images/projects/SENTRY/SENTRY Turret Cross Section Labeled.png">
-  <img src="/assets/images/projects/SENTRY/SENTRY Turret Cross Section Labeled.png" alt="SENTRY V3 labeled CAD cross section" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 0 auto 1.5rem;" loading="lazy">
-</a>
+<img src="/assets/images/projects/SENTRY/sentry-turret-cross-section-labeled.webp" alt="SENTRY V3 labeled CAD cross section" width="1909" height="926" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 1rem auto 1.5rem;" loading="lazy">
+
+<p style="text-align: center; margin: -0.75rem 0 1.5rem;"><a href="https://portfolio.zcohen-nerd.com/assets/images/projects/SENTRY/sentry-turret-cross-section-labeled.webp" target="_blank" rel="noopener noreferrer">Open full-resolution labeled cross-section in a new tab →</a></p>
 
 ### Artifacts
 
 **Control board integration**
 
-<a href="https://portfolio.zcohen-nerd.com/assets/images/projects/SENTRY/SENTRY Board-EDIT.jpg">
-  <img src="/assets/images/projects/SENTRY/SENTRY Board-EDIT.jpg" alt="SENTRY V3 control board integration view" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 1rem auto 1.5rem;" loading="lazy">
-</a>
+<img src="/assets/images/projects/SENTRY/sentry-board.webp" alt="SENTRY V3 control board integration view" width="1218" height="913" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 1rem auto 1.5rem;" loading="lazy">
 
 **PCB layout**
 
-<a href="https://portfolio.zcohen-nerd.com/assets/images/projects/SENTRY/SENTRY PCB.png">
-  <img src="/assets/images/projects/SENTRY/SENTRY PCB.png" alt="SENTRY V3 PCB layout" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 0 auto 1.5rem;" loading="lazy">
-</a>
+<img src="/assets/images/projects/SENTRY/sentry-pcb.png" alt="SENTRY V3 PCB layout" width="861" height="819" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 1rem auto 1.5rem;" loading="lazy">
 
 **Labeled PCB**
 
-<a href="https://portfolio.zcohen-nerd.com/assets/images/projects/SENTRY/sentry-pcb-labeled.webp" title="Open full-resolution labeled PCB layout">
-  <img src="/assets/images/projects/SENTRY/sentry-pcb-labeled.webp" alt="SENTRY V3 labeled PCB layout" width="2179" height="1759" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 0 auto 1.5rem;" loading="lazy">
-</a>
+<img src="/assets/images/projects/SENTRY/sentry-pcb-labeled-inline.webp" alt="SENTRY V3 labeled PCB layout" width="1280" height="1034" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 1rem auto 1.5rem;" loading="lazy">
+
+<p style="text-align: center; margin: -0.75rem 0 1.5rem;"><a href="https://portfolio.zcohen-nerd.com/assets/images/projects/SENTRY/sentry-pcb-labeled.webp" target="_blank" rel="noopener noreferrer">Open full-resolution labeled PCB in a new tab →</a></p>
 
 **Electronics schematic**
 
-<a href="https://portfolio.zcohen-nerd.com/assets/images/projects/SENTRY/SENTRY Schematic.png">
-  <img src="/assets/images/projects/SENTRY/SENTRY Schematic.png" alt="SENTRY V3 electronics schematic" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 0 auto 1.5rem;" loading="lazy">
-</a>
+<img src="/assets/images/projects/SENTRY/sentry-schematic-inline.webp" alt="SENTRY V3 electronics schematic" width="1600" height="1036" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 1rem auto 1.5rem;" loading="lazy">
+
+<p style="text-align: center; margin: -0.75rem 0 1.5rem;"><a href="https://portfolio.zcohen-nerd.com/assets/images/projects/SENTRY/sentry-schematic.png" target="_blank" rel="noopener noreferrer">Open full-resolution schematic in a new tab →</a></p>
 
 ## Testing & Verification
 

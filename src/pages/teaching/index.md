@@ -1,4 +1,5 @@
 ---
+image: /img/og/og-teaching.png
 title: Teaching & Education
 description: "Curriculum development, lab design, and instructional technology for engineering education."
 ---

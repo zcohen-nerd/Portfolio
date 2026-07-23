@@ -6,7 +6,7 @@
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Zachary Cohen — Engineering Portfolio',
+  title: 'Zac Cohen Portfolio',
   tagline:
     'Electromechanical systems engineer — designing integrated hardware systems from architecture to deployment.',
   favicon: 'img/zcohen-nerd-icon.png',

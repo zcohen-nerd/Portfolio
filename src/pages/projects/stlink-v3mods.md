@@ -1,4 +1,5 @@
 ---
+image: /img/og/og-spark.png
 title: SPARK Programming Board
 description: "A hardened breakout and target-interface board for the STLINK-V3MODS — protected power, switched target rails, hybrid level translation, and CAN FD."
 status: Prototype

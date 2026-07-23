@@ -1,5 +1,5 @@
 ---
-title: Zachary Cohen—Engineering Portfolio
+title: Electromechanical Systems Engineer
 description: "Electromechanical engineer specializing in systems integration across hardware, firmware, and documentation."
 ---
 
@@ -21,9 +21,7 @@ I also apply the same systems mindset through volunteer leadership in [*FIRST* R
 
 My work centers on defining system architecture, developing mechanical and electronic subsystems, integrating embedded firmware, and building the infrastructure needed to test and validate complex systems.
 
-<a href="https://portfolio.zcohen-nerd.com/assets/images/How I Build Systems.png">
-  <img src="/assets/images/How I Build Systems.png" alt="How I build systems diagram" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 1rem auto 2rem;" loading="lazy">
-</a>
+<img src="/assets/images/how-i-build-systems.webp" alt="How I build systems diagram" width="683" height="795" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 1rem auto 2rem;" loading="lazy">
 
 ## Featured Systems {#featured-systems}
 

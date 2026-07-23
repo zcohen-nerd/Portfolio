@@ -238,6 +238,76 @@ check('Fusion System Blocks page shows Public Beta', fsbPage.includes('Public Be
 const ids = [...indexHtml.matchAll(/ id="([^"]+)"/g)].map((m) => m[1]);
 check('no duplicate ids', ids.length === new Set(ids).size);
 
+// ── Step 5 polish guards ─────────────────────────────────────────────────
+// No publicly served filenames may contain spaces.
+const spaced = [];
+(function walkStatic(dir) {
+  for (const f of fs.readdirSync(dir)) {
+    const p2 = path.join(dir, f);
+    if (fs.statSync(p2).isDirectory()) walkStatic(p2);
+    else if (f.includes(' ')) spaced.push(path.relative(root, p2));
+  }
+})(path.join(root, 'static'));
+check('no spaced filenames in static/', spaced.length === 0, spaced[0]);
+
+// No stale references to renamed assets in built HTML.
+const staleNeedles = ['How%20I%20Build', 'SENTRY%20Turret', 'SENTRY%20Schematic', 'SENTRY%20PCB.png', 'Cross%20Section%20blur', 'System%20Diagram.png', 'SENTRY Reveal'];
+for (const needle of staleNeedles) {
+  const hit = htmlFiles.find((f) => fs.readFileSync(f, 'utf8').includes(needle));
+  check(`no stale asset ref: ${needle}`, !hit, hit ? path.relative(build, hit) : '');
+}
+
+// SENTRY inline media budget: every media file referenced by the page,
+// summed from the build output, stays under 1200 KB.
+const sentryPage = fs.readFileSync(path.join(build, 'projects', 'sentry-v3', 'index.html'), 'utf8');
+// Media only (not JS bundles); a browser downloads one video source, so
+// the mp4 fallback is excluded when the webm is present.
+const mediaRefs = [...new Set([...sentryPage.matchAll(/(?:src|poster)="(\/(?:assets|media)\/[^"]+\.(?:webp|png|jpg|jpeg|gif|webm|mp4))"/g)].map((m) => m[1]))]
+  .filter((r) => !(r.endsWith('.mp4') && sentryPage.includes(r.replace('.mp4', '.webm'))));
+let mediaTotal = 0;
+for (const ref of mediaRefs) {
+  const fp = path.join(build, decodeURIComponent(ref).replace(/^\//, ''));
+  if (fs.existsSync(fp)) mediaTotal += fs.statSync(fp).size;
+}
+check('SENTRY inline media under 1200 KB', mediaTotal / 1024 < 1200, `${Math.round(mediaTotal / 1024)} KB across ${mediaRefs.length} files`);
+
+// Retained full-resolution links are clearly labeled.
+check('full-resolution links carry visible labels', (sentryPage.match(/Open full-resolution/g) || []).length >= 4);
+
+// Titles: homepage must not repeat itself; site title is concise.
+const homeTitle = (indexHtml.match(/<title[^>]*>([^<]+)<\/title>/) || [])[1] || '';
+check('homepage title is deduplicated', homeTitle.includes('Electromechanical Systems Engineer') && homeTitle.includes('Zac Cohen Portfolio') && !/Zachary Cohen—Engineering Portfolio \| Zachary/.test(homeTitle), homeTitle);
+
+// Page-specific OG images: files exist at 1200x630 and pages reference them.
+function pngDims(fp) {
+  const b = fs.readFileSync(fp);
+  return {w: b.readUInt32BE(16), h: b.readUInt32BE(20)};
+}
+const ogPages = [
+  ['projects/sentry-v3', 'og-sentry-v3.png'],
+  ['projects/stlink-v3mods', 'og-spark.png'],
+  ['projects/fusion-system-blocks', 'og-fusion-system-blocks.png'],
+  ['teaching', 'og-teaching.png'],
+  ['documentation', 'og-writing-research.png'],
+  ['frc', 'og-frc.png'],
+];
+for (const [route, img] of ogPages) {
+  const fp = path.join(build, 'img', 'og', img);
+  const exists = fs.existsSync(fp);
+  check(`OG image exists: ${img}`, exists);
+  if (exists) {
+    const d = pngDims(fp);
+    check(`OG image ${img} is 1200x630`, d.w === 1200 && d.h === 630, `${d.w}x${d.h}`);
+  }
+  const pageHtml = fs.readFileSync(path.join(build, route, 'index.html'), 'utf8');
+  check(`route /${route}/ uses its own OG image`, pageHtml.includes(`/img/og/${img}`));
+}
+
+// Custom 404.
+const notFound = fs.readFileSync(path.join(build, '404.html'), 'utf8');
+check('custom 404 content present', notFound.includes('wandered off during integration'));
+check('404 links to projects and hub', notFound.includes('href="/projects/"') && notFound.includes('https://zcohen-nerd.com/'));
+
 if (failures.length) {
   console.error(`\n${failures.length} validation failure(s).`);
   process.exit(1);

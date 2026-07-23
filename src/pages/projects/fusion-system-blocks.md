@@ -1,4 +1,5 @@
 ---
+image: /img/og/og-fusion-system-blocks.png
 title: Fusion System Blocks
 description: "An Autodesk Fusion add-in that provides a system block-diagram editor inside the CAD environment — typed connections, CAD links, rule checks, snapshots, and 11 export formats."
 status: Public Beta
