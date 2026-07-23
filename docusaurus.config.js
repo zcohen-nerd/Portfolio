@@ -25,6 +25,8 @@ const config = {
     // .md files are CommonMark (raw HTML passes through unchanged — the
     // ported Jekyll content uses class/style attributes); .mdx files are MDX.
     format: 'detect',
+    // Render ```mermaid fences via @docusaurus/theme-mermaid.
+    mermaid: true,
     hooks: {
       onBrokenMarkdownLinks: 'throw',
     },
@@ -62,8 +64,8 @@ const config = {
     locales: ['en'],
   },
 
-  // Shared brand: swizzled Navbar + Footer for the whole ecosystem.
-  themes: ['@zcohen-nerd/brand'],
+  // Mermaid diagram rendering + shared brand (swizzled Navbar + Footer).
+  themes: ['@docusaurus/theme-mermaid', '@zcohen-nerd/brand'],
 
   // Pause ambient autoplay video for prefers-reduced-motion users.
   clientModules: [require.resolve('./src/clientModules/reduced-motion.js')],

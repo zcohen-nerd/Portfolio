@@ -40,14 +40,14 @@ Fusion System Blocks was developed to provide a **lightweight architectural fram
 
 ## System Architecture
 
-<div class="mermaid">
-flowchart LR
+```mermaid
+flowchart TB
   SYS[System Context] --> ARCH[System Architecture]
   ARCH --> SUB[Subsystem Blocks]
   SUB --> IFACE[Interface Definitions]
   IFACE --> INTEG[System Integration]
   INTEG --> DOC[Linked Documentation]
-</div>
+```
 
 The framework organizes system knowledge through several layers:
 
