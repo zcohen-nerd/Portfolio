@@ -1,40 +1,44 @@
 ---
-title: ENT260 - Advanced Solid Modeling for Mechatronics
-description: "Project-driven SolidWorks curriculum centered on advanced modeling, DFM/DFA, documentation, and CSWA preparation for mechatronics students."
+title: ENT260 — Proposed SolidWorks Curriculum Redesign
+description: "A proposed project-driven revision of ENT260 centered on mechatronics, DFM/DFA, engineering documentation, and CSWA preparation."
 ---
 
-# ENT260 - Advanced Solid Modeling for Mechatronics
+# ENT260 — Proposed SolidWorks Curriculum Redesign
 
 <img src="/assets/images/Teaching/ent-260.webp" alt="ENT260 course overview" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;" loading="lazy">
 
-## Why This Course Is Structured This Way
+> **Status: Proposed Curriculum Redesign**
+>
+> This page presents a proposed future revision of ENT260. It reflects how I would restructure the course around real-world mechatronics, DFM/DFA, documentation, and project-based learning; it is not a description of the curriculum currently delivered in full.
+
+I have taught ENT260 at Anne Arundel Community College. In prior offerings of the existing course, approximately 75% of students passed the CSWA exam. That historical outcome reflects the existing curriculum, not the proposal described below.
+
+## Why This Proposal Is Structured This Way
 
 Many students entering mechatronics and engineering technology programs learn CAD as a standalone skill, focusing primarily on modeling tools and drawing production. While these skills are important, real engineering work requires using CAD as part of a larger system development process.
 
-ENT260 was redesigned to treat CAD not just as a drafting tool, but as a core component of multidisciplinary engineering. The course emphasizes how mechanical design connects to electronics integration, manufacturability, and system architecture.
+This proposed redesign treats CAD not just as a drafting tool, but as a core component of multidisciplinary engineering. The proposal emphasizes how mechanical design connects to electronics integration, manufacturability, and system architecture.
 
-Rather than teaching isolated modeling techniques, the course focuses on:
+Rather than teaching isolated modeling techniques, the proposed course would focus on:
 
 - designing parts that interact with real hardware
 - thinking about assemblies and interfaces early in the design process
 - documenting design intent clearly
 - building models that support iteration and modification
 
-By the end of the course, students are not only able to use SolidWorks effectively, but also understand how mechanical design fits into the broader workflow of modern mechatronics and product development.
+By the end of the proposed course, students would not only use SolidWorks effectively, but also understand how mechanical design fits into the broader workflow of modern mechatronics and product development.
 
 This structure reflects how mechanical design is used in real engineering environments, where CAD models must support electronics integration, manufacturing constraints, and system-level design decisions.
 
-> **Course Mission:** This redesigned SolidWorks course uses project-driven engineering challenges to build advanced 3D modeling, assembly, documentation, and design-for-manufacturing skills for mechatronics students. The curriculum is also structured to prepare students for the Certified SolidWorks Associate (CSWA) exam.
+> **Proposed Course Mission:** This proposed SolidWorks course redesign uses project-driven engineering challenges to build advanced 3D modeling, assembly, documentation, and design-for-manufacturing skills for mechatronics students. The curriculum is also structured to prepare students for the Certified SolidWorks Associate (CSWA) exam.
 
-Taught at Anne Arundel Community College. Students achieve a ~75% pass rate on the CSWA exam.
+## Proposed Course Overview
 
-## Course Overview
+This proposal restructures ENT260 as an immersive studio-style CAD course built around realistic engineering scenarios instead of isolated software exercises. Each week would place students in a client-style design context, ask them to balance technical constraints with manufacturability, and require them to communicate their work through models, assemblies, drawings, and short design rationales.
 
-ENT260 was rewritten as an immersive studio-style CAD course built around realistic engineering scenarios instead of isolated software exercises. Each week places students in a client-style design context, asks them to balance technical constraints with manufacturability, and requires them to communicate their work through models, assemblies, drawings, and short design rationales.
+The proposed curriculum progresses from parametric modeling and design intent into assemblies, documentation, additive manufacturing, electronics enclosure design, and a multi-week team capstone. Throughout the course, students would practice the same workflow expected in industry: define the problem, model the system, validate design decisions, and present a complete handoff package.
 
-The curriculum progresses from parametric modeling and design intent into assemblies, documentation, additive manufacturing, electronics enclosure design, and a multi-week team capstone. Throughout the course, students practice the same workflow expected in industry: define the problem, model the system, validate design decisions, and present a complete handoff package.
-
-By the end of the course, students are expected to:
+By the end of the proposed course, students would be expected to:
 
 - Model, assemble, and analyze complex mechanical systems in SolidWorks.
 - Apply design thinking and DFM/DFA principles to real engineering problems.
@@ -42,7 +46,9 @@ By the end of the course, students are expected to:
 - Integrate mechanical design with electronics packaging and system-level constraints.
 - Complete CSWA-aligned modeling work under timed conditions.
 
-## Curriculum Structure
+## Proposed Curriculum Structure
+
+The sequence below describes the proposed weekly challenges.
 
 ### Module 1: Foundations and Design Thinking
 
@@ -138,9 +144,9 @@ Teams present their final capstone project to an engineering audience and then c
 **Deliverables:** Fifteen-minute professional presentation, portfolio submission, and CSWA completion or exam reflection.  
 **Skills practiced:** Design communication, professional presentation, and certification performance.
 
-## Assessment Strategy
+## Proposed Assessment Strategy
 
-The grading structure ties each weekly challenge to a specific engineering competency while preserving room for a larger collaborative design project and certification work.
+The proposed grading structure ties each weekly challenge to a specific engineering competency while preserving room for a larger collaborative design project and certification work.
 
 - **Week 1: Ergonomic Redesign** - 5%
 - **Week 2: Parametric Motor Mount** - 5%
@@ -165,20 +171,20 @@ The grading structure ties each weekly challenge to a specific engineering compe
 
 ## Software and Tools
 
-- SolidWorks 2024 as the primary design environment.
+- The current institutional version of SolidWorks as the primary design environment.
 - Motion Study, FEA, Draft Analysis, and Thermal Simulation tools inside SolidWorks.
 - Cura, PrusaSlicer, and Bambu Studio for additive manufacturing preparation.
 - Canvas and Google Workspace for collaboration, planning, and project submission.
 
 ## Instructional Design Notes
 
-This course redesign emphasizes scenario-based learning, repeated design communication, and visible engineering tradeoffs. Students do not just practice commands; they work through human factors, packaging, manufacturability, documentation, and integration problems that mirror how CAD is used in actual product development.
+This proposed redesign emphasizes scenario-based learning, repeated design communication, and visible engineering tradeoffs. Students do not just practice commands; they work through human factors, packaging, manufacturability, documentation, and integration problems that mirror how CAD is used in actual product development.
 
-The final capstone extends that approach into collaborative systems work. By the end of the term, students have not only a set of individual modeling exercises, but also a documented team design process, a production-style handoff package, and direct preparation for professional certification.
+The final capstone extends that approach into collaborative systems work. By the end of the term, students would leave with not only a set of individual modeling exercises, but also a documented team design process, a production-style handoff package, and direct preparation for professional certification.
 
 ---
 
-**Course Information:** ENT260 - Advanced Solid Modeling for Mechatronics | **Credit Hours:** 3 | **Format:** Project-driven studio course | **Primary Platform:** SolidWorks 2024
+**Course Information:** ENT260 — Proposed Curriculum Redesign | **Credit Hours:** 3 | **Format:** Project-driven studio course | **Primary Platform:** SolidWorks
 
 [← Back to Teaching](/teaching/) | [Next: Instructional Design →](/teaching/instructional-design/)
 
