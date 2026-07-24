@@ -22,6 +22,13 @@ function check(name, ok, detail = '') {
   }
 }
 
+// Brand dependency must come from the npm registry, not a local path.
+const pkg = JSON.parse(fs.readFileSync(path.join(root, 'package.json'), 'utf8'));
+const brandDep = pkg.dependencies['@zcohen-nerd/brand'] || '';
+check('brand dependency is a registry version', /^\d+\.\d+\.\d+$/.test(brandDep), `got "${brandDep}"`);
+const lock = fs.readFileSync(path.join(root, 'package-lock.json'), 'utf8');
+check('lockfile has no local brand paths', !lock.includes('"file:') && !lock.includes('../zcohen-nerd-brand'));
+
 const cname = fs.readFileSync(path.join(root, 'static', 'CNAME'), 'utf8').trim();
 const indexHtml = fs.readFileSync(path.join(build, 'index.html'), 'utf8');
 const sitemap = fs.readFileSync(path.join(build, 'sitemap.xml'), 'utf8');
