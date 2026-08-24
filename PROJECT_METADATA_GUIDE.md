@@ -43,6 +43,7 @@ The pages are CommonMark markdown, so frontmatter is not rendered — it is the 
 | SENTRY Autonomous Turret | Deployed | 2023–2025 |
 | SPARK Programming Board | Prototype | May 2025–Present |
 | Fusion System Blocks | Public Beta | 2025–Present |
+| SENTRY V4 Roadmap | Concept | — (none; planning-stage) |
 
 ## Rules
 

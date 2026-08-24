@@ -13,7 +13,7 @@ Built with [Docusaurus](https://docusaurus.io/), consuming the shared [`@zcohen-
 
 ## Featured Projects
 
-- [SENTRY Autonomous Turret](src/pages/projects/sentry-v3.md) — Production embedded actuation system
+- [SENTRY Autonomous Turret](src/pages/projects/sentry-v3.md) — Deployed mechatronics platform
 - [SPARK Programming Board](src/pages/projects/stlink-v3mods.md) — Embedded development tooling
 - [Fusion System Blocks](src/pages/projects/fusion-system-blocks.md) — Visual systems documentation framework
 
@@ -28,24 +28,34 @@ Portfolio/
 │  │  ├─ frc.md              # FIRST Robotics
 │  │  ├─ projects/           # Project writeups
 │  │  ├─ teaching/           # Teaching portfolio
-│  │  └─ documentation/      # Documentation & scholarship
+│  │  └─ documentation/      # Writing & research
 │  └─ css/custom.css         # Brand tokens + page styles
 ├─ static/
 │  ├─ assets/                # Images and media
+│  ├─ files/                 # Résumé PDF
 │  └─ CNAME                  # Custom domain
+├─ drafts/                   # Unpublished content awaiting rework
+├─ scripts/                  # Build validation + OG image generation
+├─ docs/reports/             # Archived work-session reports
 └─ .github/workflows/        # GitHub Pages deploy
 ```
 
 ## Local Development
 
-Requires the brand package cloned alongside this repo:
+The [`@zcohen-nerd/brand`](https://github.com/zcohen-nerd/zcohen-nerd-brand) theme is consumed from the npm registry — no sibling clone needed:
 
 ```bash
-git clone https://github.com/zcohen-nerd/zcohen-nerd-brand.git ../zcohen-nerd-brand
 git clone https://github.com/zcohen-nerd/Portfolio.git
 cd Portfolio
 npm install
 npm start
+```
+
+To run the same checks as CI:
+
+```bash
+npm run build
+node scripts/validate-build.js
 ```
 
 ## Deployment
