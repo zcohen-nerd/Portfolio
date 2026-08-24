@@ -6,7 +6,7 @@ description: "Open 18-week computer literacy curriculum designed to help young l
 # Computer Literacy for Kids
 
 <a href="https://www.literacy-for-kids.com/">
-  <img src="/img/teaching/literacy-for-kids-hero.jpg" alt="Literacy for Kids curriculum hero image" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 0 auto 2rem;" loading="lazy">
+  <img src="/img/teaching/literacy-for-kids-hero.jpg" alt="Literacy for Kids curriculum hero image" width="800" height="533" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 0 auto 2rem;" loading="lazy">
 </a>
 
 > **Project Summary:** Computer Literacy for Kids is a free, open 18-week curriculum built to help young learners move beyond app familiarity and develop real understanding of how computers, files, the internet, algorithms, and digital tools work. The project is designed for children ages 8–12 (roughly grades 3–6), with teacher, caregiver, or parent guidance as needed.

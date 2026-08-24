@@ -6,8 +6,6 @@ description: "Peer-reviewed publications, selected presentations, and occasional
 
 # Writing & Research
 
-<img src="/img/portfolio/portfolio-hero.webp" alt="Writing and Research Overview" width="1536" height="808" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;" loading="lazy">
-
 > **Purpose of This Library**  
 > Curated resources that capture how I document complex engineering systems, share research-backed methods, and present those findings to technical and educational audiences.
 

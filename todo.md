@@ -1,283 +1,82 @@
 # Portfolio Improvement TODO
 
-This document tracks updates needed to improve the clarity, credibility, and engineering signal of the portfolio.
+Open items only. Completed items (Engineering Focus section, per-project
+Lessons Learned, SENTRY diagrams and imagery, core-domains tightening,
+factual/status cleanup) were removed — see git history for the original list.
 
-Primary goals:
+Primary goals remain:
 
-- Remove unfinished projects
-- Reduce generic AI-style text
 - Emphasize real engineering decisions
 - Add system architecture visuals
 - Highlight systems integration experience
+- Make the writing read like an engineer describing real work
 
 ---
 
-# GLOBAL SITE IMPROVEMENTS
+## Content
 
-## Rewrite hero section slightly
+### Relaunch the Autonomous Surfer Fleet page
 
-Current tone is good but still a bit generic.
+The draft in `drafts/projects/surfer-fleet/` needs a complete rewrite before
+publishing (see its README):
 
-Adjust wording to emphasize:
+- Real photos: hull/platform, electronics layout, bench integration, field test
+- Fleet architecture diagram
+- Replace filler copy; verify all claims
+- Use a controlled-vocabulary status (`Deployed`), not "Active Deployment"
+- Remove the `/projects/surfer-fleet` → `/projects/` redirect on relaunch
 
-- systems integration
-- hardware + firmware + mechanical
-- real prototypes and test setups
+### Add an About / Experience section
 
-Add something like:
+The site never states current role, education, or certifications:
 
-"Most of my work involves turning partially defined concepts into working physical systems, building the tools and infrastructure required to test and validate them."
+- Professional work: BlackSea Technologies (proprietary-safe summary),
+  USNA breadth ("30+ custom PCBs", vessel fleet)
+- Education: M.Eng. (in progress), M.Ed., B.S.
+- Certifications: CSWP
 
----
+### Add the PID Hover Rig
 
-## Add "Engineering Focus" section under hero
+On the résumé's Selected Projects, absent from the site. Fits Teaching
+(controls teaching platform) or Projects. Needs photos before publishing.
 
-Add a short list that helps recruiters categorize your skills quickly.
+### FIRST photography
 
-Example:
+`/frc/` and `/frc/history/` have zero images across 20 years of involvement.
 
-Engineering Focus
+### SPARK diagrams
 
-- Embedded systems
-- Electromechanical system integration
-- PCB design and bring-up
-- Embedded debugging infrastructure
-- Rapid prototyping and hardware validation
-- Control systems and actuation
-- Test platform development
+Schematic and PCB layout images are now on the page. Still wanted:
 
----
-
-## Add diagrams to the site
-
-At least one diagram per major project.
-
-Priority projects:
-
-SENTRY  
-SPARK  
-Autonomous Surfer Fleet
-
-Preferred diagram types:
-
-- System architecture diagram
+- Debug signal flow diagram
 - Hardware architecture diagram
-- Control flow diagram
 
 Diagrams should be exported from yEd.
 
 ---
 
-## Reduce generic "Core domains" text
+## Site infrastructure
 
-Current cards show things like:
-
-Core domains: PCB, embedded firmware, controls, integration, test
-
-Keep them but tighten wording to:
-
-Core domains: embedded systems, PCB design, actuation control, system integration
-
-Avoid long lists.
-
----
-
-# PROJECT SECTION CHANGES
+- **Per-subpage OG images:** sentry-v4, frc/history, teaching and
+  documentation subpages fall back to the generic site card.
+- **External link checking:** `validate-build.js` only checks built output;
+  Substack, DOI, Autodesk, ST.com, and literacy-for-kids.com links are never
+  verified. Consider a scheduled link-check workflow.
+- **Essays page freshness:** no process syncs `/documentation/selected-essays/`
+  with new Substack posts; newest listed is July 2026.
+- **Analytics:** none by design so far — decide on Plausible (snippet
+  documented in the hub report) or keep none.
 
 ---
 
-# FEATURED SYSTEMS SECTION
-
-Featured projects should be:
-
-1. SENTRY
-2. Autonomous Surfer Fleet
-3. SPARK
-
-Order recommendation:
-
-1. SENTRY
-2. SPARK
-3. Autonomous Surfer Fleet
-
-Reason:
-
-Front-load embedded hardware work.
-
----
-
-# SENTRY PROJECT PAGE
-
-Add sections if not present:
-
-Problem  
-System Architecture  
-Hardware Design  
-Safety Architecture  
-Implementation  
-Lessons Learned
-
-Add diagrams:
-
-- System architecture
-- Hardware architecture
-- Control flow
-
-Mention explicitly:
-
-- motor drivers
-- sensors
-- safety systems
-- embedded control
-- integration challenges
-
----
-
-# SPARK PROJECT PAGE
-
-Add a section:
-
-Hardware Architecture Highlights
-
-Content should mention:
-
-- hardened signal path
-- hybrid level translation strategy
-- switchable target power rails
-- ESD protection
-- 4-layer PCB design
-
-Add diagrams:
-
-- debug signal flow
-- hardware architecture
-
-Add images:
-
-- PCB render
-- assembled board
-- debugging setup photo
-
----
-
-# AUTONOMOUS SURFER FLEET PAGE
-
-Strengthen the systems engineering story.
-
-Add sections:
-
-System Architecture  
-Distributed Control Model  
-Power Distribution  
-Communication Architecture  
-Integration Challenges
-
-Mention:
-
-- Raspberry Pi architecture
-- power management
-- communications
-- control integration
-
-Add diagram:
-
-Fleet architecture diagram.
-
----
-
-# ADD NEW SECTION TO FRONT PAGE
-
-Add below Featured Systems:
-
-## Engineering Approach
-
-Short paragraph:
-
-"My work focuses on building reliable electromechanical systems by defining clear interface boundaries between hardware, firmware, and mechanical structures. I prioritize modular architectures that allow systems to evolve without requiring complete redesign."
-
----
-
-# OTHER WORK SECTION
-
-Keep but clarify scope.
-
-Rename to:
-
-Tools and Supporting Work
-
-Include:
-
-- Fusion System Blocks
-- Documentation Library
-- Teaching Portfolio
-
-These should be secondary to hardware projects.
-
----
-
-# PROJECT PAGE CONSISTENCY
-
-Every project page should follow the same structure:
-
-Overview  
-Problem  
-System Architecture  
-Hardware Design  
-Implementation  
-Lessons Learned
-
-Consistency makes the portfolio feel more professional.
-
----
-
-# ADD "LESSONS LEARNED" TO EVERY PROJECT
-
-Hiring managers love this.
-
-Examples:
-
-- signal integrity issues discovered
-- power sequencing problems
-- integration constraints
-- debugging challenges
-
----
-
-# ADD VISUAL CREDIBILITY
-
-Minimum per project:
-
-1 architecture diagram  
-1 hardware image  
-1 implementation photo
-
-Hardware portfolios without images feel weak.
-
----
-
-# FINAL QUALITY CHECK
-
-Before publishing updates:
-
-- remove all "TBD" language
-- eliminate placeholder phrasing
-- reduce passive voice
-- avoid marketing tone
-
-Goal:
-
-Make the writing read like an engineer describing real work.
-
----
-
-# LONG TERM ADDITIONS (OPTIONAL)
+## Long-term additions (optional)
 
 Possible future projects to add:
 
-- SENTRY V4 redesign
+- SENTRY V4 build (page exists as roadmap; becomes a project page when hardware exists)
 - SPARK V0.4 production version
-- drone platform (Artemis lab concept)
-- custom power supply project
+- Drone platform (Artemis lab concept)
+- Custom power supply project
 
 Only add projects when they have:
 

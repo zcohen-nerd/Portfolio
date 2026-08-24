@@ -5,7 +5,7 @@ description: "A proposed project-driven revision of ENT260 centered on mechatron
 
 # ENT260 — Proposed SolidWorks Curriculum Redesign
 
-<img src="/assets/images/Teaching/ent-260.webp" alt="ENT260 course overview" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;" loading="lazy">
+<img src="/assets/images/Teaching/ent-260.webp" alt="ENT260 course overview" width="1280" height="853" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 2rem;" loading="lazy">
 
 > **Status: Proposed Curriculum Redesign**
 >
