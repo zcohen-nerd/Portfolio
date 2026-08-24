@@ -310,6 +310,21 @@ for (const [route, img] of ogPages) {
   check(`route /${route}/ uses its own OG image`, pageHtml.includes(`/img/og/${img}`));
 }
 
+// ── About page guards ────────────────────────────────────────────────────
+// The About page carries the professional record and must never leak the
+// résumé's private fields (phone, home town, clearance details).
+const aboutHtml = fs.readFileSync(path.join(build, 'about', 'index.html'), 'utf8');
+const aboutVisible = aboutHtml.replace(/<script[\s\S]*?<\/script>/g, '');
+check('About names current employer', aboutVisible.includes('BlackSea Technologies'));
+check('About carries USNA experience', aboutVisible.includes('U.S. Naval Academy'));
+check('About lists education', aboutVisible.includes('Old Dominion University') && aboutVisible.includes('Millersville University'));
+check('About lists CSWP certification', aboutVisible.includes('Certified SolidWorks Professional'));
+check('About links the résumé PDF', aboutHtml.includes('/files/zac-cohen-resume.pdf'));
+check('About has no clearance mention', !/clearance/i.test(aboutVisible));
+check('About has no phone number', !/\(\d{3}\)\s?\d{3}-\d{4}/.test(aboutVisible));
+check('About has no home town', !aboutVisible.includes('Edgewater'));
+check('homepage links About', indexHtml.includes('href="/about/"'));
+
 // Custom 404.
 const notFound = fs.readFileSync(path.join(build, '404.html'), 'utf8');
 check('custom 404 content present', notFound.includes('wandered off during integration'));

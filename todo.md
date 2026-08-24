@@ -26,14 +26,11 @@ publishing (see its README):
 - Use a controlled-vocabulary status (`Deployed`), not "Active Deployment"
 - Remove the `/projects/surfer-fleet` → `/projects/` redirect on relaunch
 
-### Add an About / Experience section
+### Refresh the résumé PDF
 
-The site never states current role, education, or certifications:
-
-- Professional work: BlackSea Technologies (proprietary-safe summary),
-  USNA breadth ("30+ custom PCBs", vessel fleet)
-- Education: M.Eng. (in progress), M.Ed., B.S.
-- Certifications: CSWP
+`static/files/zac-cohen-resume.pdf` predates the current résumé (it lacks
+the Micro1 role). Export a public-safe version (no phone, no clearance
+details) and replace it.
 
 ### Add the PID Hover Rig
 

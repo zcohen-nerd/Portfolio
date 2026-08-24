@@ -1,67 +1,32 @@
 # Zachary Cohen — Engineering Portfolio
 
-**Electromechanical Engineer | Systems & Mechatronics Design**
+**Electromechanical Systems Engineer · Autonomous & Robotic Systems · Systems Integration**
 
 [![Website](https://img.shields.io/badge/Website-Live-brightgreen)](https://portfolio.zcohen-nerd.com/)
 [![License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-blue.svg)](LICENSE.md)
 
-The professional engineering portfolio of Zachary Cohen — systems integration, mechatronics design, and technical education across embedded control systems, autonomous platforms, and educational technology.
+I design and build electromechanical systems that combine mechanical structures, embedded electronics, and firmware into reliable working hardware — carrying field-deployable autonomous platforms from concept through live-water test.
 
-**Live site: https://portfolio.zcohen-nerd.com/** — part of the [zcohen-nerd ecosystem](https://www.zcohen-nerd.com/).
+This repository is just the source. The portfolio itself lives at:
 
-Built with [Docusaurus](https://docusaurus.io/), consuming the shared [`@zcohen-nerd/brand`](https://github.com/zcohen-nerd/zcohen-nerd-brand) package for the Navbar, Footer, and design tokens.
+## **→ [portfolio.zcohen-nerd.com](https://portfolio.zcohen-nerd.com/)**
 
-## Featured Projects
+## Start here
 
-- [SENTRY Autonomous Turret](src/pages/projects/sentry-v3.md) — Deployed mechatronics platform
-- [SPARK Programming Board](src/pages/projects/stlink-v3mods.md) — Embedded development tooling
-- [Fusion System Blocks](src/pages/projects/fusion-system-blocks.md) — Visual systems documentation framework
+- [**SENTRY Autonomous Turret**](https://portfolio.zcohen-nerd.com/projects/sentry-v3/) — deployed open-source mechatronics platform, used by 100+ students per year
+- [**SPARK Programming Board**](https://portfolio.zcohen-nerd.com/projects/stlink-v3mods/) — hardened breakout and target-interface board for embedded bring-up
+- [**Fusion System Blocks**](https://portfolio.zcohen-nerd.com/projects/fusion-system-blocks/) — system block diagrams inside Autodesk Fusion, in public beta
+- [**About & Experience**](https://portfolio.zcohen-nerd.com/about/) — roles, education, and certifications
+- [**Publications & Speaking**](https://portfolio.zcohen-nerd.com/documentation/scholarship/) — IEEE/RSJ IROS, ICUAS, Autodesk University
+- [**FIRST Robotics**](https://portfolio.zcohen-nerd.com/frc/) — two decades of mentoring, judging, and event management
+- [**Teaching**](https://portfolio.zcohen-nerd.com/teaching/) — college CAD instruction and open curriculum work
 
-## Repository Structure
+## Elsewhere
 
-```
-Portfolio/
-├─ docusaurus.config.js      # Site config (brand theme, metadata)
-├─ src/
-│  ├─ pages/                 # All content pages (markdown)
-│  │  ├─ index.md            # Homepage
-│  │  ├─ frc.md              # FIRST Robotics
-│  │  ├─ projects/           # Project writeups
-│  │  ├─ teaching/           # Teaching portfolio
-│  │  └─ documentation/      # Writing & research
-│  └─ css/custom.css         # Brand tokens + page styles
-├─ static/
-│  ├─ assets/                # Images and media
-│  ├─ files/                 # Résumé PDF
-│  └─ CNAME                  # Custom domain
-├─ drafts/                   # Unpublished content awaiting rework
-├─ scripts/                  # Build validation + OG image generation
-├─ docs/reports/             # Archived work-session reports
-└─ .github/workflows/        # GitHub Pages deploy
-```
+- [LinkedIn](https://www.linkedin.com/in/zachary-cohen-nerd/)
+- [zcohen-nerd.com](https://www.zcohen-nerd.com/) — the rest of the ecosystem
+- [zachary@zcohen-nerd.com](mailto:zachary@zcohen-nerd.com)
 
-## Local Development
+---
 
-The [`@zcohen-nerd/brand`](https://github.com/zcohen-nerd/zcohen-nerd-brand) theme is consumed from the npm registry — no sibling clone needed:
-
-```bash
-git clone https://github.com/zcohen-nerd/Portfolio.git
-cd Portfolio
-npm install
-npm start
-```
-
-To run the same checks as CI:
-
-```bash
-npm run build
-node scripts/validate-build.js
-```
-
-## Deployment
-
-Deploys automatically to GitHub Pages on every push to `main` via GitHub Actions.
-
-## License
-
-Content licensed under [CC BY-NC 4.0](LICENSE.md).
+Built with [Docusaurus](https://docusaurus.io/) and the shared [`@zcohen-nerd/brand`](https://github.com/zcohen-nerd/zcohen-nerd-brand) theme · Content licensed [CC BY-NC 4.0](LICENSE.md)
