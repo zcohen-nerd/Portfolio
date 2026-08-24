@@ -69,6 +69,14 @@ The CAN interface uses a **TCAN1051 CAN FD transceiver** with 120 Ω bus termina
 
 Complete in the repository: the **schematic** and **PCB layout** sources, the design archive, generated **fabrication packages** (Gerber archives and an ODB++ output tree), the master **BOM**, and board renders. The layout uses heavy ground flooding with via stitching, 12-mil typical routing, and an ENIG finish with ink-plugged vias.
 
+**Electronics schematic**
+
+<img src="/assets/images/projects/stlink-v3mods/Schematic.png" alt="SPARK V0.4 electronics schematic" width="1024" height="663" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 1rem auto 1.5rem;" loading="lazy">
+
+**PCB layout**
+
+<img src="/assets/images/projects/stlink-v3mods/PCB.png" alt="SPARK V0.4 PCB layout" width="375" height="375" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 1rem auto 1.5rem;" loading="lazy">
+
 Not yet complete: physical board fabrication and assembly are not recorded in the repository — the fabrication packages exist, but the project's own status lists fabrication outputs and validation as in progress.
 
 ## Testing & Verification

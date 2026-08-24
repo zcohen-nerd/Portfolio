@@ -35,7 +35,8 @@ flowchart LR
 
   SENS[Navigation & Environmental Sensors] --> PI1
   PI2 --> NAV[Student Navigation / Autonomy Code]
-  
+```
+
 ## Interfaces
 
 - **Power interfaces:** Battery input distributed through an onboard power distribution board supplying compute nodes, motor controllers, and auxiliary electronics.

@@ -6,7 +6,6 @@ description: "Electromechanical engineer specializing in systems integration acr
 # Zachary Cohen
 ## Electromechanical Systems Engineer
 
-Electromechanical Systems Engineer  
 Designing integrated hardware systems from architecture to deployment
 
 <img src="/img/portfolio/portfolio-hero.webp" alt="Zachary Cohen portfolio hero image" class="hero-banner" width="1536" height="808" loading="eager" fetchpriority="high">
