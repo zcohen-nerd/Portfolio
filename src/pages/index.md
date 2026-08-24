@@ -59,7 +59,6 @@ Peer-reviewed work and conference presentations spanning flight-controller test 
 - Treat testing as part of design, not something done afterward.
 - Document decisions so systems remain maintainable years later.
 - Consider manufacturing and serviceability from the beginning.
-- Apply the same systems thinking in [*FIRST* Robotics Competition](/frc/) event operations, mentoring, and technical leadership environments.
 
 ## Engineering Focus
 
