@@ -54,9 +54,6 @@ Building fault-tolerant, safety-aware control architectures for multi-agent robo
 **Engineering Communication & Documentation:**  
 Advancing how technical teams document, visualize, and teach complex systems effectively.
 
-**Engineering Leadership in Competition Environments:**  
-Applying systems thinking, event operations discipline, and mentoring structure through [*FIRST* Robotics Competition](/frc/).
-
 ---
 
 ## Speaking Engagements & Availability

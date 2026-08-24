@@ -43,8 +43,6 @@ Occasional writing on engineering judgment, systems thinking, technical communic
 
 Peer-reviewed publications and selected presentations covering flight-controller test infrastructure, additive manufacturing, robotics, and mechatronics education — collected on the [Scholarship & Speaking](/documentation/scholarship/) page.
 
-Related leadership context: [*FIRST* Robotics Competition](/frc/) extends these same documentation and systems principles into live event operations, judging, and mentoring environments.
-
 ---
 
 [← Back to Portfolio Home](/)
