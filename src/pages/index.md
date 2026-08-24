@@ -16,6 +16,8 @@ My work focuses on system architecture, clear interface boundaries, and hardware
 
 I also apply the same systems mindset through volunteer leadership in [*FIRST* Robotics Competition](/frc/), including event operations, judging, and mentoring engineering teams.
 
+The full professional record — experience, education, and certifications — is on the [About page](/about/).
+
 ## How I Build Systems
 
 My work centers on defining system architecture, developing mechanical and electronic subsystems, integrating embedded firmware, and building the infrastructure needed to test and validate complex systems.
