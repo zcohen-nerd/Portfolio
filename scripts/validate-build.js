@@ -249,6 +249,13 @@ check('no unsupported measurable-impact claim', !docsVisible.includes('measurabl
 check('index links Selected Essays', docsHtml.includes('/documentation/selected-essays/'));
 check('index links Scholarship', docsHtml.includes('/documentation/scholarship/'));
 
+// ── SENTRY V4 planned-architecture language guard ────────────────────────
+// V4 is unbuilt; the page must not claim achieved performance.
+const v4Html = fs.readFileSync(path.join(build, 'projects', 'sentry-v4', 'index.html'), 'utf8');
+const v4Visible = v4Html.replace(/<script[\s\S]*?<\/script>/g, '');
+check('SENTRY V4 avoids achieved-benefit claims', !v4Visible.includes('significantly improves'));
+check('SENTRY V4 keeps planned framing', v4Visible.includes('does not describe a completed or deployed system'));
+
 // ── FIRST history heading guard ──────────────────────────────────────────
 const frcHistory = fs.readFileSync(path.join(build, 'frc', 'history', 'index.html'), 'utf8');
 const h1Count = (frcHistory.match(/<h1[\s>]/g) || []).length;
@@ -354,6 +361,7 @@ check('About lists education', aboutVisible.includes('Old Dominion University') 
 check('About lists CSWP certification', aboutVisible.includes('Certified SolidWorks Professional'));
 check('About links the résumé PDF', aboutHtml.includes('/files/zac-cohen-resume.pdf'));
 check('About has no clearance mention', !/clearance/i.test(aboutVisible));
+check('About avoids awkward proofing phrasing', !aboutVisible.includes('proofing'));
 check('About has no phone number', !/\(\d{3}\)\s?\d{3}-\d{4}/.test(aboutVisible));
 check('About has no home town', !aboutVisible.includes('Edgewater'));
 check('homepage links About', indexHtml.includes('href="/about/"'));

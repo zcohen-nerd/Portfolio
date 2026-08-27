@@ -14,7 +14,7 @@ Project pages emphasize the problem, architecture, interfaces, implementation de
 		<img src="/assets/images/projects/surfer-fleet/surfer-on-water.webp" alt="SURFER autonomous vessel on the water" class="project-image" width="1600" height="1205" loading="lazy">
 		<h3><a href="/projects/surfer-fleet/">SURFER Autonomous Vessel Fleet</a></h3>
 		<p>20-vessel holonomic autonomous surface-vehicle fleet with dual-Pi control architecture, custom electronics, and hardware safety systems.</p>
-		<p class="project-status"><strong>Deployed</strong> | 2020–Present</p>
+		<p class="project-status"><strong>Deployed</strong> | Program: 2020–Present · My role: 2024–2026</p>
 		<p><a href="/projects/surfer-fleet/">View project →</a></p>
 	</div>
 	<div class="project-card">

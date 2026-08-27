@@ -15,7 +15,7 @@ Today I do that work professionally on autonomous maritime systems, teach CAD an
 
 **Baltimore, MD · 2025–Present**
 
-- Cross-portfolio electromechanical systems integrator — reviewing designs across mechanical, electrical, controls, firmware, and manufacturing boundaries, and proofing new projects at concept and mid-development for electromechanical feasibility.
+- Cross-portfolio electromechanical systems integrator — reviewing designs across mechanical, electrical, controls, firmware, and manufacturing boundaries, and evaluating new projects at concept and mid-development for electromechanical feasibility.
 - Led all integration on an experimental autonomous hydrofoil under a 2-month sprint, delivering on schedule and passing sea trials; currently leading integration of a payload-release add-on for an autonomous surface vessel on a one-quarter timeline.
 - Make and defend cross-domain design decisions — release mechanisms, sealing architecture, connector selection, power distribution — under schedule and procurement constraints.
 
