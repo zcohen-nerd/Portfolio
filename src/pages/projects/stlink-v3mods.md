@@ -97,4 +97,4 @@ A [bench-validation plan](https://github.com/zcohen-nerd/SPARK/blob/main/validat
 
 **Project Status:** <span class="status-badge">Prototype</span> | **Timeline:** May 2025–Present
 
-[← Previous: Sentry V3](/projects/sentry-v3/) | [Next Project: Fusion Blocks →](/projects/fusion-system-blocks/)
+[← Previous: SURFER Autonomous Vessel Fleet](/projects/surfer-fleet/) | [Next Project: Fusion Blocks →](/projects/fusion-system-blocks/)

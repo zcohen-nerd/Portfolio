@@ -130,4 +130,4 @@ The deployed V3 platform established the mechanical, electrical, embedded, and c
 
 **Project Status:** <span class="status-badge">Deployed</span> | **Timeline:** 2023–2025
 
-[← Back to Projects](/projects/) | [Next Project: SPARK Programming Board →](/projects/stlink-v3mods/)
+[← Back to Projects](/projects/) | [Next Project: SURFER Autonomous Vessel Fleet →](/projects/surfer-fleet/)

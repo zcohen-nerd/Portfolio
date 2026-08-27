@@ -15,31 +15,10 @@ Primary goals remain:
 
 ## Content
 
-### Relaunch the Autonomous Surfer Fleet page
-
-The draft in `drafts/projects/surfer-fleet/` needs a complete rewrite before
-publishing (see its README):
-
-- Real photos: hull/platform, electronics layout, bench integration, field test
-- Fleet architecture diagram
-- Replace filler copy; verify all claims
-- Use a controlled-vocabulary status (`Deployed`), not "Active Deployment"
-- Remove the `/projects/surfer-fleet` → `/projects/` redirect on relaunch
-
-### Refresh the résumé PDF
-
-`static/files/zac-cohen-resume.pdf` predates the current résumé (it lacks
-the Micro1 role). Export a public-safe version (no phone, no clearance
-details) and replace it.
-
 ### Add the PID Hover Rig
 
 On the résumé's Selected Projects, absent from the site. Fits Teaching
 (controls teaching platform) or Projects. Needs photos before publishing.
-
-### FIRST photography
-
-`/frc/` and `/frc/history/` have zero images across 20 years of involvement.
 
 ### SPARK diagrams
 
@@ -54,8 +33,8 @@ Diagrams should be exported from yEd.
 
 ## Site infrastructure
 
-- **Per-subpage OG images:** sentry-v4, frc/history, teaching and
-  documentation subpages fall back to the generic site card.
+- **Per-subpage OG images:** surfer-fleet, sentry-v4, frc/history, teaching
+  and documentation subpages fall back to the generic site card.
 - **External link checking:** `validate-build.js` only checks built output;
   Substack, DOI, Autodesk, ST.com, and literacy-for-kids.com links are never
   verified. Consider a scheduled link-check workflow.

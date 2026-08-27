@@ -18,6 +18,13 @@ Project pages emphasize the problem, architecture, interfaces, implementation de
 		<p><a href="/projects/sentry-v3/">View project →</a></p>
 	</div>
 	<div class="project-card">
+		<img src="/assets/images/projects/surfer-fleet/surfer-on-water.webp" alt="SURFER autonomous vessel on the water" class="project-image" width="1600" height="1205" loading="lazy">
+		<h3><a href="/projects/surfer-fleet/">SURFER Autonomous Vessel Fleet</a></h3>
+		<p>20-vessel holonomic autonomous surface-vehicle fleet with dual-Pi control architecture, custom electronics, and hardware safety systems.</p>
+		<p class="project-status"><strong>Deployed</strong> | 2020–Present</p>
+		<p><a href="/projects/surfer-fleet/">View project →</a></p>
+	</div>
+	<div class="project-card">
 		<img src="/assets/images/projects/stlink-v3mods/spark-board-perspective.webp" alt="SPARK Programming Board" class="project-image" loading="lazy">
 		<h3><a href="/projects/stlink-v3mods/">SPARK Programming Board</a></h3>
 		<p>Custom development tool providing breakout access to JTAG/SWD, UART, SPI, I²C, and CAN interfaces.</p>

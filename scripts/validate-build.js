@@ -65,7 +65,7 @@ const locs = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
 check('sitemap non-empty', locs.length > 0);
 check('sitemap uses portfolio domain', locs.every((u) => u.startsWith(DOMAIN + '/')), locs.find((u) => !u.startsWith(DOMAIN + '/')));
 check('sitemap URLs end with /', locs.every((u) => u.endsWith('/')), locs.find((u) => !u.endsWith('/')));
-check('sitemap excludes surfer-fleet', !sitemap.includes('surfer-fleet'));
+check('sitemap includes surfer-fleet', sitemap.includes(`${DOMAIN}/projects/surfer-fleet/`));
 
 // Robots
 check('robots has Sitemap directive', robots.includes(`Sitemap: ${DOMAIN}/sitemap.xml`));
@@ -75,15 +75,36 @@ check('robots allows crawling', robots.includes('User-agent: *') && robots.inclu
 check('resume PDF in build', fs.existsSync(path.join(build, 'files', 'zac-cohen-resume.pdf')));
 check('resume link on homepage', indexHtml.includes('href="/files/zac-cohen-resume.pdf"'));
 
-// Surfer Fleet stays unpublished (redirect page only, no content)
+// ── SURFER Fleet page guards ─────────────────────────────────────────────
+// Published as a real project page; must carry the canonical facts, the
+// open-ended timeline, and no leftover draft placeholders.
 const surferPage = path.join(build, 'projects', 'surfer-fleet', 'index.html');
-if (fs.existsSync(surferPage)) {
-  const surfer = fs.readFileSync(surferPage, 'utf8');
-  check('surfer-fleet is redirect-only', surfer.includes('url=/projects/') && !surfer.includes('Maritime'));
-} else {
-  check('surfer-fleet route absent or redirect', true);
+const surferExists = fs.existsSync(surferPage);
+check('SURFER page exists in build', surferExists, path.relative(build, surferPage));
+const surferHtml = surferExists ? fs.readFileSync(surferPage, 'utf8') : '';
+const surferVisible = surferHtml.replace(/<script[\s\S]*?<\/script>/g, '');
+check('SURFER page is real content, not a redirect', surferVisible.includes('Holonomic Autonomous Surface Vessels'));
+check('SURFER timeline is open-ended', surferVisible.includes('2020–Present') && !surferVisible.includes('2020–2026'));
+check('SURFER documents the dual-Pi authority boundary', surferVisible.includes('Student Raspberry Pi') && surferVisible.includes('Vessel Raspberry Pi'));
+check('SURFER documents VESC propulsion', surferVisible.includes('VESC'));
+check('SURFER e-stop preserves compute', surferVisible.includes('remain powered'));
+check('SURFER role attribution present', surferVisible.includes('My Role'));
+check('SURFER has no draft placeholders', !/TBD|TODO/.test(surferVisible));
+check('SURFER hero image referenced', surferHtml.includes('/assets/images/projects/surfer-fleet/surfer-on-water.webp'));
+const surferDiagramChunk = fs.readdirSync(path.join(build, 'assets', 'js')).filter((f) => f.endsWith('.js'))
+  .some((f) => fs.readFileSync(path.join(build, 'assets', 'js', f), 'utf8').includes('STUDENT[Student Raspberry Pi 4]'));
+check('SURFER diagram definition present in page chunk', surferDiagramChunk);
+// Inline media budget, same policy as SENTRY.
+const surferMediaRefs = [...new Set([...surferHtml.matchAll(/(?:src|poster)="(\/(?:assets|media)\/[^"]+\.(?:webp|png|jpg|jpeg|gif|webm|mp4))"/g)].map((m) => m[1]))];
+let surferMediaTotal = 0;
+for (const ref of surferMediaRefs) {
+  const fp = path.join(build, decodeURIComponent(ref).replace(/^\//, ''));
+  if (fs.existsSync(fp)) surferMediaTotal += fs.statSync(fp).size;
 }
-check('Surfer Fleet draft preserved outside published routes', fs.existsSync(path.join(root, 'drafts', 'projects', 'surfer-fleet', 'surfer-fleet.md')));
+check('SURFER inline media under 1200 KB', surferMediaTotal / 1024 < 1200, `${Math.round(surferMediaTotal / 1024)} KB across ${surferMediaRefs.length} files`);
+// Discoverable from the projects index.
+const projIndexHtml = fs.readFileSync(path.join(build, 'projects', 'index.html'), 'utf8');
+check('projects index links surfer-fleet', projIndexHtml.includes('/projects/surfer-fleet/'));
 
 // Batch B publication facts intact
 const scholarship = fs.readFileSync(path.join(build, 'documentation', 'scholarship', 'index.html'), 'utf8');

@@ -19,6 +19,13 @@ Today I do that work professionally on autonomous maritime systems, teach CAD an
 - Led all integration on an experimental autonomous hydrofoil under a 2-month sprint, delivering on schedule and passing sea trials; currently leading integration of a payload-release add-on for an autonomous surface vessel on a one-quarter timeline.
 - Make and defend cross-domain design decisions — release mechanisms, sealing architecture, connector selection, power distribution — under schedule and procurement constraints.
 
+### Industry Expert, Independent Consultant (Contract) — Tegus by AlphaSense
+
+**Remote · 2026–Present**
+
+- Paid industry expert for client research engagements spanning engineering, manufacturing, autonomous systems, defense technology, and PCB development — including screened engagements on the unmanned-maritime market outlook and on PCB design services and AI-assisted PCB tools.
+- Translate hands-on integration and manufacturing experience into decision-useful insight while maintaining strict boundaries around proprietary, confidential, controlled, and non-public information.
+
 ### AI Training Expert, Fusion CAM (Contract) — Micro1
 
 **Remote · 2026–Present**
@@ -31,7 +38,7 @@ Today I do that work professionally on autonomous maritime systems, teach CAD an
 **Weapons, Robotics & Controls Engineering Department · Annapolis, MD · 2023–2026**
 
 - Designed and deployed 30+ custom PCBs for sensor integration, motion control, power distribution, and embedded processing across autonomous marine and robotics platforms.
-- Architected and deployed a fleet of 20+ autonomous surface vessels for swarm and multi-agent research, using a dual–Raspberry Pi control architecture and standardized sensor-payload interfaces, across repeated live-water deployments.
+- Architected and deployed [SURFER, a 20-vessel fleet of autonomous surface vessels](/projects/surfer-fleet/) for swarm and multi-agent research, using a dual–Raspberry Pi control architecture and standardized sensor-payload interfaces, across repeated live-water deployments.
 - Designed the electromechanical and PCB architecture for [SENTRY](/projects/sentry-v3/), an open-source pan-tilt turret platform later released publicly by the institution.
 - Integrated sensors, actuators, embedded controllers, communications, and power electronics into field-deployable platforms; improved reliability through iterative field testing, fault isolation, and redundancy planning.
 

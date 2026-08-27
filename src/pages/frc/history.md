@@ -28,6 +28,7 @@ Each event operates as a complex system composed of many specialized volunteer r
 
 • Event Manager for **four *FIRST* Chesapeake District Events (2016, 2017, 2018, 2026)**  
 • Assistant Event Manager for *FIRST* Chesapeake District Championship (2018)  
+• Upcoming — 2027 season: Event Manager for the **Central Maryland District Event** at South River High School, and Event Manager for the ***FIRST* Chesapeake District Championship** at Showplace Arena  
 • Volunteer leadership within the program since **2013**
 
 Typical event scale:
