@@ -10,6 +10,10 @@ I've been part of the *FIRST* Robotics Competition for two decades — first as 
 
 Today my focus is delivering competitions for *FIRST* Chesapeake — coordinating the referees, judges, inspectors, field crews, and volunteer staffs that make a three-day event with hundreds of students run on schedule. For the 2027 season I will serve as Event Manager of the Central Maryland District Event at South River High School and as Event Manager of the *FIRST* Chesapeake District Championship at Showplace Arena — the region's culminating event.
 
+<img src="/assets/images/frc/severn-before-doors.webp" alt="Zachary Cohen in the empty gym hours before doors open at the 2026 Severn District Event" width="1050" height="1400" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 1rem auto 0.75rem;" loading="eager">
+
+<p style="text-align: center; margin: 0 0 2rem;"><em>Hours before doors open at the 2026 Severn District Event.</em></p>
+
 ## Timeline
 
 <ul class="frc-timeline">
@@ -27,6 +31,10 @@ Today my focus is delivering competitions for *FIRST* Chesapeake — coordinatin
 ## Engineering and systems leadership
 
 A district competition is a system of systems: ~36 teams, 700–1,500 students, 100+ volunteers, and three days of matches that have to stay on schedule. As Event Manager I coordinate the specialized volunteer groups — refereeing, judging, inspection, field operations, pit administration — and make sure their work integrates into one reliable operation.
+
+<img src="/assets/images/frc/severn-playoffs.webp" alt="Packed stands and the competition field during playoffs at the 2026 Severn District Event" width="1600" height="1200" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 1rem auto 0.75rem;" loading="lazy">
+
+<p style="text-align: center; margin: 0 0 1.5rem;"><em>The same gym during playoffs — the 2026 Severn District Event in full swing.</em></p>
 
 That is the same job systems engineering does on a hardware program: define the interfaces, trust the specialists, watch the critical path, and manage escalations before small failures ripple outward. Event leadership taught me that discipline years before I applied it to autonomous platforms.
 

@@ -20,10 +20,6 @@ Primary goals remain:
 On the résumé's Selected Projects, absent from the site. Fits Teaching
 (controls teaching platform) or Projects. Needs photos before publishing.
 
-### FIRST photography
-
-`/frc/` and `/frc/history/` have zero images across 20 years of involvement.
-
 ### SPARK diagrams
 
 Schematic and PCB layout images are now on the page. Still wanted:
