@@ -31,7 +31,7 @@ Today I do that work professionally on autonomous maritime systems, teach CAD an
 **Weapons, Robotics & Controls Engineering Department · Annapolis, MD · 2023–2026**
 
 - Designed and deployed 30+ custom PCBs for sensor integration, motion control, power distribution, and embedded processing across autonomous marine and robotics platforms.
-- Architected and deployed a fleet of 20+ autonomous surface vessels for swarm and multi-agent research, using a dual–Raspberry Pi control architecture and standardized sensor-payload interfaces, across repeated live-water deployments.
+- Architected and deployed [SURFER, a 20-vessel fleet of autonomous surface vessels](/projects/surfer-fleet/) for swarm and multi-agent research, using a dual–Raspberry Pi control architecture and standardized sensor-payload interfaces, across repeated live-water deployments.
 - Designed the electromechanical and PCB architecture for [SENTRY](/projects/sentry-v3/), an open-source pan-tilt turret platform later released publicly by the institution.
 - Integrated sensors, actuators, embedded controllers, communications, and power electronics into field-deployable platforms; improved reliability through iterative field testing, fault isolation, and redundancy planning.
 

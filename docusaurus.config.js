@@ -68,23 +68,6 @@ const config = {
   // Pause ambient autoplay video for prefers-reduced-motion users.
   clientModules: [require.resolve('./src/clientModules/reduced-motion.js')],
 
-  plugins: [
-    [
-      '@docusaurus/plugin-client-redirects',
-      {
-        // Surfer Fleet was unpublished pending a complete rewrite; its
-        // source is preserved in drafts/projects/surfer-fleet/. Old
-        // bookmarks land on the Projects index.
-        redirects: [
-          {
-            from: '/projects/surfer-fleet',
-            to: '/projects/',
-          },
-        ],
-      },
-    ],
-  ],
-
   customFields: {
     brand: {
       projectName: 'Portfolio',
