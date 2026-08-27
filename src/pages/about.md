@@ -19,6 +19,13 @@ Today I do that work professionally on autonomous maritime systems, teach CAD an
 - Led all integration on an experimental autonomous hydrofoil under a 2-month sprint, delivering on schedule and passing sea trials; currently leading integration of a payload-release add-on for an autonomous surface vessel on a one-quarter timeline.
 - Make and defend cross-domain design decisions — release mechanisms, sealing architecture, connector selection, power distribution — under schedule and procurement constraints.
 
+### Industry Expert, Independent Consultant (Contract) — Tegus by AlphaSense
+
+**Remote · 2026–Present**
+
+- Paid industry expert for client research engagements spanning engineering, manufacturing, autonomous systems, defense technology, and PCB development — including screened engagements on the unmanned-maritime market outlook and on PCB design services and AI-assisted PCB tools.
+- Translate hands-on integration and manufacturing experience into decision-useful insight while maintaining strict boundaries around proprietary, confidential, controlled, and non-public information.
+
 ### AI Training Expert, Fusion CAM (Contract) — Micro1
 
 **Remote · 2026–Present**
