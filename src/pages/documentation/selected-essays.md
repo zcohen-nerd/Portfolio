@@ -51,28 +51,7 @@ Why clarity is the most underrated engineering discipline.
 
 ## Why These Essays Matter
 
-Engineering is more than tools, equations, and software. The hardest parts of the job are often invisible: making decisions under uncertainty, managing complexity, and learning how systems actually behave in the real world.
-
-These essays explore the thinking behind the work.
-
-### Managing Complexity
-
-Modern engineering systems rarely exist in isolation. Mechanical, electrical, software, and human systems all interact, often in ways that are difficult to predict.  
-Understanding how to structure and reason about complex systems is one of the most important skills an engineer can develop.
-
-### Engineering Judgment
-
-Textbooks teach principles. Real projects teach trade-offs.  
-Much of engineering comes down to making informed decisions with incomplete information — balancing performance, cost, risk, and time.
-
-### Learning From Failure
-
-Every engineer spends time debugging systems that don’t behave as expected. These experiences often produce the most valuable lessons, revealing how systems actually work rather than how we assumed they would.
-
-### Communicating Technical Thinking
-
-Engineering ideas only become valuable when they can be shared.  
-Clear explanations, diagrams, and written reflections help teams reason about systems together and preserve knowledge for future engineers.
+The hardest parts of engineering are often invisible: decisions made under uncertainty, complexity kept under control, and systems that behave differently than assumed. These essays document that thinking — the judgment behind the work shown elsewhere on this site.
 
 ---
 

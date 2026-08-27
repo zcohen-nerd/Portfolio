@@ -15,19 +15,27 @@ Primary goals remain:
 
 ## Content
 
-### Add the PID Hover Rig
+### PID Hover Rig full page
 
-On the résumé's Selected Projects, absent from the site. Fits Teaching
-(controls teaching platform) or Projects. Needs photos before publishing.
+A compact card now exists in Additional Engineering Work. A full project
+page needs photos of the actual rig (the PID-Trainer repo is currently
+empty except for a license).
 
-### SPARK diagrams
+### SPARK evidence
 
-Schematic and PCB layout images are now on the page. Still wanted:
+Beta boards are in hand and bring-up has begun. Highest-value additions:
 
-- Debug signal flow diagram
-- Hardware architecture diagram
+- Photos of the physical boards and assembly
+- Bring-up measurements as they are collected (power rails, eFuse,
+  translation, CAN FD) — the page has a pending checklist ready for them
+- Debug signal flow and hardware architecture diagrams (yEd)
 
-Diagrams should be exported from yEd.
+### Two-page public résumé
+
+The served PDF is the four-page extended record. A targeted ~2-page
+general engineering résumé needs an editable source document — none
+exists in the repo, so it must be exported from the résumé source and
+added alongside the extended version.
 
 ---
 

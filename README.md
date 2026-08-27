@@ -1,4 +1,4 @@
-# Zachary Cohen — Engineering Portfolio
+# Zac Cohen — Engineering Portfolio
 
 **Electromechanical Systems Engineer · Autonomous & Robotic Systems · Systems Integration**
 

@@ -41,6 +41,14 @@ Occasional writing on engineering judgment, systems thinking, technical communic
 
 Peer-reviewed publications and selected presentations covering flight-controller test infrastructure, additive manufacturing, robotics, and mechatronics education — collected on the [Scholarship & Speaking](/documentation/scholarship/) page.
 
+### Engineering Documentation
+
+Writing that ships as engineering infrastructure rather than prose:
+
+- **[Connector Engineering Field Guide](https://zcohen-nerd.github.io/connector-engineering-field-guide/)** — open-source reference for connector selection and interface engineering: selection workflows, datasheet interpretation, MIL-DTL-38999, M8/M12, checklists, and connector ICDs.
+- **[Fusion System Blocks](/projects/fusion-system-blocks/)** — system-architecture documentation tooling embedded directly in the CAD environment.
+- **Project documentation** — each [flagship system](/projects/) ships with architecture, interface, and verification documentation as part of the engineering deliverable.
+
 ---
 
 [← Back to Portfolio Home](/)

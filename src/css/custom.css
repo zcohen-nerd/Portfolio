@@ -132,6 +132,42 @@ body {
   padding: 12px;
 }
 
+/* ── Homepage proof strip ──────────────────────────────────────────────────
+   Compact quantified-evidence row under the hero. Plain flex layout so it
+   wraps naturally on narrow screens and stays real text for screen readers. */
+.proof-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 24px 0 32px;
+}
+
+.proof-item {
+  flex: 1 1 160px;
+  min-width: 150px;
+  background: #fff;
+  border: 1px solid var(--zc-color-border);
+  border-radius: var(--zc-radius-md);
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.proof-number {
+  font-family: var(--zc-font-mono);
+  font-size: 24px;
+  font-weight: var(--zc-weight-semibold);
+  color: var(--zc-cyan-700);
+  line-height: 1.2;
+}
+
+.proof-label {
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--zc-color-text-muted);
+}
+
 /* ── FIRST Robotics timeline ───────────────────────────────────────────────
    Accessible semantic list styled as a vertical timeline — real text, no
    raster image, screen-reader and keyboard friendly. */

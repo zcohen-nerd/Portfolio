@@ -2,7 +2,7 @@
   "name": "zcohen-nerd-portfolio",
   "version": "2.0.0",
   "private": true,
-  "description": "Engineering portfolio of Zachary Cohen at portfolio.zcohen-nerd.com — electromechanical systems, embedded hardware, teaching, and documentation. Built on Docusaurus, consumes @zcohen-nerd/brand.",
+  "description": "Engineering portfolio of Zac Cohen at portfolio.zcohen-nerd.com — electromechanical systems, embedded hardware, teaching, and documentation. Built on Docusaurus, consumes @zcohen-nerd/brand.",
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",

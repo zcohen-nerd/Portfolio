@@ -34,6 +34,19 @@ Earlier versions of the platform relied on ad-hoc wiring and distributed control
 
 <img src="/assets/images/projects/SENTRY/functional-block-diagram.webp" alt="SENTRY functional block diagram" width="225" height="665" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 1rem auto 1.5rem;" loading="lazy">
 
+## My Role
+
+I architected and built the platform end to end. The parts of SENTRY that are mine:
+
+- System and electromechanical architecture
+- Mechanical design of the turret platform and enclosure
+- Control electronics and PCB design
+- Embedded reference firmware proving closed-loop operation, structured as a student-writable software interface
+- Electromechanical integration, bring-up, and verification
+- Technical documentation
+
+Higher-level vision processing, targeting software, and autonomy experiments run on an external compute platform and are developed by the platform's users — faculty, researchers, and students — not by me. SENTRY originated at the U.S. Naval Academy and was released publicly by the institution; I independently maintain the hardware, PCB, and mechanical design.
+
 ## Hardware Design
 
 The mechanical and electrical design of SENTRY V3 was developed together so the control board, drivetrain, sensor placement, and service access all supported reliable integration. The platform layout emphasizes subsystem separation, maintainable wiring, and clear mechanical paths for actuation and feed components.

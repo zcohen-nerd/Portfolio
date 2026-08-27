@@ -89,6 +89,7 @@ check('SURFER documents the dual-Pi authority boundary', surferVisible.includes(
 check('SURFER documents VESC propulsion', surferVisible.includes('VESC'));
 check('SURFER e-stop preserves compute', surferVisible.includes('remain powered'));
 check('SURFER role attribution present', surferVisible.includes('My Role'));
+check('SURFER program vs role timeline explicit', surferVisible.includes('My role:') && surferVisible.includes('2024–2026'));
 check('SURFER has no draft placeholders', !/TBD|TODO/.test(surferVisible));
 check('SURFER hero image referenced', surferHtml.includes('/assets/images/projects/surfer-fleet/surfer-on-water.webp'));
 const surferDiagramChunk = fs.readdirSync(path.join(build, 'assets', 'js')).filter((f) => f.endsWith('.js'))
@@ -184,7 +185,9 @@ check('SPARK documents hybrid translation', sparkVisible.includes('LSF0108') && 
 check('SPARK documents CAN FD', sparkVisible.includes('TCAN1051'));
 check('SPARK documents 4-layer PCB', sparkVisible.includes('4-layer'));
 check('SPARK links its GitHub repository', sparkHtml.includes('github.com/zcohen-nerd/SPARK'));
-check('SPARK validation status is explicit', sparkVisible.includes('execution remains in progress'));
+check('SPARK validation status is explicit', sparkVisible.includes('no completed measurement records are published yet'));
+check('SPARK status reflects beta hardware in bring-up', sparkVisible.includes('bring-up are underway') && !sparkVisible.includes('not recorded in the repository'));
+check('SPARK uses precise resistance wording', sparkVisible.includes('22 Ω series resistance') && !sparkVisible.includes('series impedance') && !sparkVisible.includes('controlled-impedance PCB'));
 check('SPARK false no-active-circuitry rationale absent', !sparkVisible.includes('clean signal breakout rather than adding active circuitry') && !sparkVisible.includes('Keeping the board electrically simple'));
 
 // ENT260 must read as a proposal, with the CSWA outcome kept historical.
@@ -200,6 +203,15 @@ const sentryHtml = fs.readFileSync(path.join(build, 'projects', 'sentry-v3', 'in
 check('SENTRY heading uses caps + Deployed framing', sentryHtml.includes('SENTRY V3: Deployed Mechatronics Platform'));
 check('SENTRY heading avoids commercial-production claim', !sentryHtml.includes('Production Embedded Actuation System'));
 check('SENTRY usage metric carries deployment context', sentryHtml.includes('U.S. Naval Academy instructional deployment'));
+check('SENTRY My Role section present', sentryHtml.includes('My Role'));
+
+// Homepage positioning: proof strip present, SURFER leads Featured Systems.
+check('homepage proof strip present', indexHtml.includes('proof-strip'));
+// Relative hrefs only — the shared brand disclosure links SENTRY with
+// absolute portfolio URLs before the page body.
+const surferFeatured = indexHtml.indexOf('href="/projects/surfer-fleet/"');
+const sentryFeatured = indexHtml.indexOf('href="/projects/sentry-v3/"');
+check('homepage features SURFER before SENTRY', surferFeatured > -1 && sentryFeatured > -1 && surferFeatured < sentryFeatured);
 
 // Literacy canonical facts.
 const litHtml = fs.readFileSync(path.join(build, 'teaching', 'instructional-design', 'index.html'), 'utf8');
