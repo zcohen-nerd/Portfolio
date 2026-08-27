@@ -41,7 +41,7 @@ The pages are CommonMark markdown, so frontmatter is not rendered — it is the 
 | Project | Status | displayDate |
 |---|---|---|
 | SENTRY Autonomous Turret | Deployed | 2023–2025 |
-| SURFER Autonomous Vessel Fleet | Deployed | 2020–Present |
+| SURFER Autonomous Vessel Fleet | Deployed | 2020–Present (program; role was 2024–2026) |
 | SPARK Programming Board | Prototype | May 2025–Present |
 | Fusion System Blocks | Public Beta | 2025–Present |
 | SENTRY V4 Roadmap | Concept | — (none; planning-stage) |

@@ -35,7 +35,7 @@ The first step is defining the complete system architecture before beginning sch
 - **Control Layer** — RP-series MCU (RP2040/RP2350 class) performing deterministic real-time control
 - **Safety Layer** — dedicated safety supervisor MCU enforcing hardware-level safety constraints
 
-This layered architecture significantly improves fault containment and system reliability.
+The partitioned architecture is intended to provide clearer fault containment and authority boundaries than the single-controller V3 design.
 
 ## Planned hardware changes
 
@@ -70,7 +70,7 @@ Communication paths will be explicitly defined between system layers:
 - USB gadget or network access to the CM5 for advanced Linux-based control
 - USB host connection between CM5 and the Oak-D camera
 
-These pathways allow the system to support both **introductory embedded learning** and **advanced robotics experimentation**.
+These pathways are intended to support both **introductory embedded learning** and **advanced robotics experimentation**.
 
 ## Open questions
 
