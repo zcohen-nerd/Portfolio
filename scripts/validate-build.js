@@ -78,7 +78,10 @@ check('resume link on homepage', indexHtml.includes('href="/files/zac-cohen-resu
 // ── SURFER Fleet page guards ─────────────────────────────────────────────
 // Published as a real project page; must carry the canonical facts, the
 // open-ended timeline, and no leftover draft placeholders.
-const surferHtml = fs.readFileSync(path.join(build, 'projects', 'surfer-fleet', 'index.html'), 'utf8');
+const surferPage = path.join(build, 'projects', 'surfer-fleet', 'index.html');
+const surferExists = fs.existsSync(surferPage);
+check('SURFER page exists in build', surferExists, path.relative(build, surferPage));
+const surferHtml = surferExists ? fs.readFileSync(surferPage, 'utf8') : '';
 const surferVisible = surferHtml.replace(/<script[\s\S]*?<\/script>/g, '');
 check('SURFER page is real content, not a redirect', surferVisible.includes('Holonomic Autonomous Surface Vessels'));
 check('SURFER timeline is open-ended', surferVisible.includes('2020–Present') && !surferVisible.includes('2020–2026'));
