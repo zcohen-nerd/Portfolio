@@ -10,7 +10,7 @@ I've been part of the *FIRST* Robotics Competition for two decades — first as 
 
 Today my focus is delivering competitions for *FIRST* Chesapeake — coordinating the referees, judges, inspectors, field crews, and volunteer staffs that make a three-day event with hundreds of students run on schedule. For the 2027 season I will serve as Event Manager of the Central Maryland District Event at South River High School and as Event Manager of the *FIRST* Chesapeake District Championship at Showplace Arena — the region's culminating event.
 
-<img src="/assets/images/frc/severn-before-doors.webp" alt="Zachary Cohen in the empty gym hours before doors open at the 2026 Severn District Event" width="1050" height="1400" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 1rem auto 0.75rem;" loading="eager">
+<img src="/assets/images/frc/severn-before-doors.webp" alt="Zac Cohen in the empty gym hours before doors open at the 2026 Severn District Event" width="1050" height="1400" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 1rem auto 0.75rem;" loading="eager">
 
 <p style="text-align: center; margin: 0 0 2rem;"><em>Hours before doors open at the 2026 Severn District Event.</em></p>
 

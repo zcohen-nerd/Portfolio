@@ -13,6 +13,7 @@ displayDate: 2020–Present
 
 ## At a glance
 
+- Program running since 2020; I owned the complete vessel redesign from 2024 to 2026
 - 20-vessel research fleet, including 10 vessels used concurrently in a Spring 2026 course
 - Four Blue Robotics T200 thrusters providing independent surge, sway, and yaw control
 - Dual–Raspberry Pi 4 architecture separating protected vessel control from student software
@@ -180,6 +181,6 @@ Other technicians performed the fleet's bulk fabrication and assembly. Professor
 
 ---
 
-**Project Status:** <span class="status-badge">Deployed</span> | **Timeline:** 2020–Present
+**Project Status:** <span class="status-badge">Deployed</span> | **Program:** 2020–Present | **My role:** 2024–2026
 
 [← Previous: SENTRY V3](/projects/sentry-v3/) | [Next Project: SPARK Programming Board →](/projects/stlink-v3mods/)

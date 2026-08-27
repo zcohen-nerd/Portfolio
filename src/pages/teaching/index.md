@@ -42,25 +42,11 @@ As both a practicing engineer and an educator, I intentionally integrate real in
 	</div>
 </div>
 
-## Educational Technology
+## Laboratory & Program Development
 
-### Laboratory Development
+Across a decade of high-school engineering programs, I designed and built the fabrication labs the curricula ran in — additive manufacturing, CNC, laser cutting, and PCB/electronics prototyping — selecting the equipment, developing student workflows and safety practices, and maintaining the mechanical, electrical, and computing infrastructure.
 
-Hands-on laboratories are central to my teaching approach. I design labs that allow students to directly interact with the systems they are studying, reinforcing theoretical concepts through experimentation.
-
-Key principles include:
-
-- **Hands-on learning** through physical systems and practical experimentation  
-- **Integrated safety practices** embedded directly into laboratory workflows  
-- **Performance-based evaluation** where students demonstrate understanding through completed designs and working systems  
-
-### Curriculum Design
-
-Courses are structured to support both conceptual understanding and practical application.
-
-- **Backward design**: defining learning outcomes first and building activities to support them  
-- **Multiple learning modalities** including visual modeling, physical systems, and guided experimentation  
-- **Industry alignment** through the use of professional tools and real-world engineering examples  
+The courses were built the same way: backward from learning outcomes, using professional tools and real engineering examples, with students evaluated on completed designs and working systems rather than worksheets. Student teams worked through full design cycles — CAD, fabrication, assembly, test, and troubleshooting — on hardware they could hold.
 
 ## Teaching Scope & Outcomes
 

@@ -1,11 +1,11 @@
 ---
 title: About
-description: "Professional experience, education, and certifications of Zachary Cohen — electromechanical systems engineer."
+description: "Professional experience, education, and certifications of Zac Cohen — electromechanical systems engineer."
 ---
 
 # About
 
-I'm an electromechanical systems integrator who works the boundaries where mechanical, electrical, controls, firmware, and manufacturing meet — proofing whether systems are buildable and integrable, and carrying field-deployable autonomous platforms from concept through live-water test. My work is hands-on across mechanical design, custom PCB development, and embedded controls.
+I'm an electromechanical systems integrator who works the boundaries where mechanical, electrical, controls, firmware, and manufacturing meet — de-risking system buildability and integration, and carrying field-deployable autonomous platforms from concept through live-water test. My work is hands-on across mechanical design, custom PCB development, and embedded controls.
 
 Today I do that work professionally on autonomous maritime systems, teach CAD and mechatronics as adjunct faculty, and volunteer in [*FIRST* Robotics Competition](/frc/) leadership. I'm a published co-author ([IEEE/RSJ IROS, ICUAS](/documentation/scholarship/)) — building the hardware and running the experimental testing behind the data.
 
@@ -62,6 +62,16 @@ Today I do that work professionally on autonomous maritime systems, teach CAD an
 - Designed and built engineering fabrication labs (additive manufacturing, CNC, laser cutting, PCB/electronics prototyping) and the project-based curricula that ran in them.
 - Guided student teams through full mechanical/embedded design cycles — CAD, fabrication, assembly, test, and troubleshooting.
 
+## Selected Professional Integration Work
+
+Sanitized summaries of current work — process and outcomes only, no customer or system specifics.
+
+**Autonomous hydrofoil integration.** Led all integration on an experimental autonomous hydrofoil under a 2-month sprint — coordinating mechanical, electrical, controls, and firmware interfaces — delivering on schedule and passing sea trials.
+
+**ASV payload-release integration.** Leading integration of a payload-release add-on for an autonomous surface vessel on a one-quarter timeline: requirements clarification, electromechanical boundaries, and testability worked together rather than sequentially.
+
+**Design-risk review.** In a controls design review, identified an oversized power-distribution unit, GPIO margin shortfalls, and reliability-tier mismatches — driving corrections before fabrication instead of after.
+
 ## Education
 
 - **M.Eng., Engineering Management** — Old Dominion University *(in progress)*
@@ -76,7 +86,7 @@ Today I do that work professionally on autonomous maritime systems, teach CAD an
 
 - **Systems architecture & integration:** cross-domain electromechanical integration; interface definition and ownership in ambiguous system boundaries; integration-risk identification and mitigation; requirements traceability; verification & validation; configuration management
 - **Electrical / PCB:** multi-layer PCB design (Altium, KiCad, Fusion Electronics); power distribution and regulation; EMI mitigation; connector selection; signal integrity; electronics bring-up
-- **Embedded / controls:** STM32, ESP32, RP2040, ARM Cortex, ATtiny85; C/C++, MicroPython; CAN, RS-485 / Modbus RTU, I²C, SPI, UART; motor control; ABZ encoders; sensor and actuator integration
+- **Embedded / controls:** STM32 (ARM Cortex-M), ESP32, RP2040/RP2350, AVR/ATtiny; C/C++, MicroPython; CAN, RS-485 / Modbus RTU, I²C, SPI, UART; motor control; ABZ encoders; sensor and actuator integration
 - **Mechanical / CAD:** SolidWorks (CSWP), Fusion 360; GD&T and tolerance stack-ups; enclosure architecture for harsh environments; electromechanical packaging; thermal considerations; sealing (O-ring / U-cup)
 - **Prototyping, fabrication & DFM:** additive (FDM/SLA) and subtractive (CNC) manufacturing; DFM/DFA; rapid hardware development; prototype-to-field transition; lab and test infrastructure; technical data packages
 
@@ -86,6 +96,6 @@ Peer-reviewed publications and conference presentations are collected on [Schola
 
 ---
 
-**Résumé:** [View résumé (PDF)](pathname:///files/zac-cohen-resume.pdf)
+**Résumé:** [Extended résumé (PDF)](pathname:///files/zac-cohen-resume.pdf)
 
 [← Back to Portfolio Home](/)

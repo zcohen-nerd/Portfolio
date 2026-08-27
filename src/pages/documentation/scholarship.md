@@ -66,7 +66,7 @@ I am available for:
 **Contact:**  
 📧 [zachary@zcohen-nerd.com](mailto:zachary@zcohen-nerd.com)  
 🔗 [LinkedIn](https://www.linkedin.com/in/zachary-cohen-nerd/) · [GitHub](https://github.com/zcohen-nerd)  
-📄 [Résumé (PDF)](pathname:///files/zac-cohen-resume.pdf)
+📄 [Extended résumé (PDF)](pathname:///files/zac-cohen-resume.pdf)
 
 ---
 

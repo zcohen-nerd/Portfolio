@@ -75,7 +75,7 @@ const config = {
       projectUrl: 'https://portfolio.zcohen-nerd.com/',
       repoUrl: 'https://github.com/zcohen-nerd/Portfolio',
       attribution:
-        'The engineering portfolio of Zachary Cohen — part of the zcohen-nerd ecosystem.',
+        'The engineering portfolio of Zac Cohen — part of the zcohen-nerd ecosystem.',
       // isHub renders navLinks in the shared Navbar; here they are this
       // site's own sections rather than hub destinations.
       isHub: true,

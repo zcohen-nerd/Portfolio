@@ -46,6 +46,16 @@ By the end of the proposed course, students would be expected to:
 - Integrate mechanical design with electronics packaging and system-level constraints.
 - Complete CSWA-aligned modeling work under timed conditions.
 
+## The Proposal at a Glance
+
+1. **Existing problem** — CAD taught as isolated software exercises, disconnected from the engineering workflows students will actually work in.
+2. **Redesign philosophy** — a studio-style course of weekly client-style design scenarios that treat CAD as one part of multidisciplinary product development.
+3. **Representative challenges** — a parametric universal motor mount spanning NEMA 17/23/34, an IP54 modular sensor housing, a DFM/DFA enclosure cost-reduction, and a Raspberry Pi monitoring enclosure with thermal and cable-routing constraints.
+4. **Assessment** — nine weekly design challenges (45%), a three-week team capstone (25%), CSWA preparation and certification (20%), and participation and peer review (10%).
+5. **CSWA alignment** — timed modeling practice and a certification attempt built into the final two weeks.
+
+The full 14-week sequence follows.
+
 ## Proposed Curriculum Structure
 
 The sequence below describes the proposed weekly challenges.
