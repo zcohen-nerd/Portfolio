@@ -1,14 +1,14 @@
 ---
 image: /img/og/og-frc.png
 title: FIRST Robotics
-description: "Two decades in FIRST Robotics — from founding student to lead mentor, judge, and district event manager."
+description: "Two decades in FIRST Robotics — from founding student to lead mentor, judge, and event manager, from district events to the FIRST Chesapeake District Championship."
 ---
 
 # *FIRST* Robotics Competition
 
 I've been part of the *FIRST* Robotics Competition for two decades — first as a founding student on a team, then as a mentor, lead mentor, judge, and event manager. What started as building a robot in high school became a throughline for how I approach engineering: complex systems succeed when the people, processes, and technology are designed together.
 
-Today my focus is delivering competitions for *FIRST* Chesapeake — coordinating the referees, judges, inspectors, field crews, and volunteer staffs that make a three-day event with hundreds of students run on schedule.
+Today my focus is delivering competitions for *FIRST* Chesapeake — coordinating the referees, judges, inspectors, field crews, and volunteer staffs that make a three-day event with hundreds of students run on schedule. For the 2027 season I will serve as Event Manager of the Central Maryland District Event at South River High School and as Event Manager of the *FIRST* Chesapeake District Championship at Showplace Arena — the region's culminating event.
 
 ## Timeline
 
@@ -21,6 +21,7 @@ Today my focus is delivering competitions for *FIRST* Chesapeake — coordinatin
   <li><span class="frc-timeline-year">2016</span> Hosted and event-managed a <em>FIRST</em> Chesapeake district event</li>
   <li><span class="frc-timeline-year">2017</span> Team 1111's first event win</li>
   <li><span class="frc-timeline-year">2016–2026</span> Event Manager for four <em>FIRST</em> Chesapeake district events; Assistant Event Manager, District Championship (2018)</li>
+  <li><span class="frc-timeline-year">2027</span> Event Manager, Central Maryland District Event; Event Manager, <em>FIRST</em> Chesapeake District Championship (upcoming season)</li>
 </ul>
 
 ## Engineering and systems leadership
