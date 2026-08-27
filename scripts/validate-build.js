@@ -361,7 +361,7 @@ check('About lists education', aboutVisible.includes('Old Dominion University') 
 check('About lists CSWP certification', aboutVisible.includes('Certified SolidWorks Professional'));
 check('About links the résumé PDF', aboutHtml.includes('/files/zac-cohen-resume.pdf'));
 check('About has no clearance mention', !/clearance/i.test(aboutVisible));
-check('About avoids awkward proofing phrasing', !aboutVisible.includes('proofing'));
+check('About avoids awkward proofing phrasing', !/\bproofing\b/i.test(aboutVisible));
 check('About has no phone number', !/\(\d{3}\)\s?\d{3}-\d{4}/.test(aboutVisible));
 check('About has no home town', !aboutVisible.includes('Edgewater'));
 check('homepage links About', indexHtml.includes('href="/about/"'));
