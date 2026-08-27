@@ -15,12 +15,6 @@ Primary goals remain:
 
 ## Content
 
-### Refresh the résumé PDF
-
-`static/files/zac-cohen-resume.pdf` predates the current résumé (it lacks
-the Micro1 role). Export a public-safe version (no phone, no clearance
-details) and replace it.
-
 ### Add the PID Hover Rig
 
 On the résumé's Selected Projects, absent from the site. Fits Teaching
