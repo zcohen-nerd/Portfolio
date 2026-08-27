@@ -25,7 +25,7 @@ Project pages emphasize the problem, architecture, interfaces, implementation de
 		<p><a href="/projects/surfer-fleet/">View project →</a></p>
 	</div>
 	<div class="project-card">
-		<img src="/assets/images/projects/stlink-v3mods/spark-board-perspective.webp" alt="SPARK Programming Board" class="project-image" loading="lazy">
+		<img src="/assets/images/projects/stlink-v3mods/spark-board-perspective.webp" alt="SPARK Programming Board" class="project-image" width="1046" height="697" loading="lazy">
 		<h3><a href="/projects/stlink-v3mods/">SPARK Programming Board</a></h3>
 		<p>Custom development tool providing breakout access to JTAG/SWD, UART, SPI, I²C, and CAN interfaces.</p>
 		<p class="project-status"><strong>Prototype</strong> | May 2025–Present</p>
