@@ -253,7 +253,7 @@ check('index links Scholarship', docsHtml.includes('/documentation/scholarship/'
 // V4 is unbuilt; the page must not claim achieved performance.
 const v4Html = fs.readFileSync(path.join(build, 'projects', 'sentry-v4', 'index.html'), 'utf8');
 const v4Visible = v4Html.replace(/<script[\s\S]*?<\/script>/g, '');
-check('SENTRY V4 avoids achieved-benefit claims', !v4Visible.includes('significantly improves'));
+check('SENTRY V4 avoids achieved-benefit claims', !/significantly improve(s)?/i.test(v4Visible));
 check('SENTRY V4 keeps planned framing', v4Visible.includes('does not describe a completed or deployed system'));
 
 // ── FIRST history heading guard ──────────────────────────────────────────
