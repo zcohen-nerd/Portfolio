@@ -55,6 +55,32 @@ documented every current finding.
 `.github/workflows/links-external.yml` runs weekly (and on demand) with
 `--warn-only`. Deploy (`deploy.yml`) is unchanged.
 
+## Adding images, PDFs, or other media
+
+This repository ships publicly. Every non-code artifact is inventoried in
+[`NOTICE.md`](./NOTICE.md) with its rights status, and the licenses are split
+(see [`LICENSE.md`](./LICENSE.md)). Before adding any image, PDF, video, or audio
+file:
+
+1. **Establish provenance.** Who made it, from what, and when. Design outputs you
+   authored (schematics, PCB renders, CAD, diagrams) are fine; photos of people,
+   events, or institutional facilities need the photographer's permission and, if
+   people are identifiable, their consent.
+2. **Determine the rights status** and add a row to `NOTICE.md`:
+   - Authored for this repo → CC BY-NC 4.0 (prose graphics) or MIT (generated
+     build output).
+   - Output of a separate project → "project repo governs"; link that repo.
+   - Institutional / employer / third-party → not licensed here; reference for
+     accuracy only.
+   - Can't establish reuse authority → mark **"rights status requires owner
+     confirmation"** and list it under the excluded section. Do **not** delete a
+     useful piece of public evidence over an unresolved rights question — mark it
+     and move on.
+3. **Do not** relicense institutional or third-party material, and do not guess
+   ownership.
+
+A PR that adds media without a matching `NOTICE.md` row should not merge.
+
 ## Notes
 
 - **Mermaid** (`@docusaurus/theme-mermaid`) is already async + route-gated — the
