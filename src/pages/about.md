@@ -1,6 +1,7 @@
 ---
 title: About
 description: "Professional experience, education, and certifications of Zac Cohen — electromechanical systems engineer."
+image: /img/og/og-about.png
 ---
 
 # About

@@ -70,4 +70,10 @@ I am available for:
 
 ---
 
+## Related work
+
+- **[SENTRY V3](/projects/sentry-v3/)** — the mechatronics platform the *From Schematics to Reality* Autodesk University session is built on.
+- **[SURFER Autonomous Vessel Fleet](/projects/surfer-fleet/)** — the fault-tolerant multi-agent platform behind the autonomous-systems research above.
+- **[Selected Essays](/documentation/selected-essays/)** — long-form writing on the engineering-communication interest listed here.
+
 [← Back to Writing & Research](/documentation/)

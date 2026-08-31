@@ -1,0 +1,31 @@
+/* Central styling for the contextual "Related work" block. */
+
+.related {
+  margin: 2.5rem 0 1rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--zc-color-border, #e3e8ef);
+}
+
+.heading {
+  font-size: 1.15rem;
+  margin: 0 0 0.6rem;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  margin: 0.4rem 0;
+  line-height: 1.55;
+}
+
+.link {
+  font-weight: var(--zc-weight-semibold, 600);
+}
+
+.reason {
+  color: var(--zc-color-text-muted, #5a6b82);
+}

@@ -6,9 +6,17 @@ description: "Zac Cohen — electromechanical systems engineer specializing in s
 # Zac Cohen
 ## Electromechanical Systems Engineer
 
+<p class="hero-domains">Autonomous maritime systems · robotics · embedded hardware · field integration</p>
+
 Designing integrated hardware systems from architecture to deployment
 
-<img src="/img/portfolio/portfolio-hero.webp" alt="Zac Cohen portfolio hero image" class="hero-banner" width="1536" height="808" loading="eager" fetchpriority="high">
+<div class="hero-actions">
+
+[View selected systems](#featured-systems) [Résumé (PDF)](pathname:///files/zac-cohen-resume.pdf) [Email Zac](mailto:zachary@zcohen-nerd.com)
+
+</div>
+
+<img src="/img/portfolio/portfolio-hero.webp" alt="Zac Cohen beside a system block diagram — a controller linked to sensors, actuators, and a power domain — and a render of the SENTRY turret platform" class="hero-banner" width="1536" height="808" loading="eager" fetchpriority="high">
 
 I design and build electromechanical systems that combine mechanical structures, embedded electronics, and firmware into reliable working hardware.
 
@@ -28,13 +36,13 @@ The full professional record — experience, education, and certifications — i
 
 ## Featured Systems {#featured-systems}
 
-- **[SURFER Autonomous Vessel Fleet](/projects/surfer-fleet/)** · *Deployed* — 20-vessel holonomic autonomous surface-vehicle fleet combining SLA manufacturing redesign, custom electronics, and a hardware safety architecture.  
+- **[SURFER Autonomous Vessel Fleet](/projects/surfer-fleet/)** · *Deployed* · Maritime autonomy — 20-vessel holonomic autonomous surface-vehicle fleet combining an SLA (stereolithography) manufacturing redesign, custom electronics, and a hardware safety architecture.  
   **Core domains:** systems architecture, manufacturing, embedded controls, safety systems, fleet integration
-- **[SENTRY V3](/projects/sentry-v3/)** · *Deployed* — Embedded control platform for a pan-tilt actuation system, integrating sensors, motor drivers, and safety-oriented control logic.  
+- **[SENTRY V3](/projects/sentry-v3/)** · *Deployed* · Embedded control / mechatronics — Embedded control platform for a pan-tilt actuation system, integrating sensors, motor drivers, and safety-oriented control logic.  
   **Core domains:** PCB, embedded firmware, controls, integration, test
-- **[Fusion System Blocks](/projects/fusion-system-blocks/)** · *Public Beta* — Autodesk Fusion add-in that embeds structured system-architecture diagrams inside Fusion designs — typed connections, rule checking, links to real CAD components, snapshots, and engineering exports, backed by automated tests.  
+- **[Fusion System Blocks](/projects/fusion-system-blocks/)** · *Public Beta* · System-architecture tooling — Autodesk Fusion add-in that embeds structured system-architecture diagrams inside Fusion designs — typed connections, rule checking, links to real CAD components, snapshots, and engineering exports, backed by automated tests.  
   **Core domains:** systems architecture, documentation tooling, software verification, CAD integration
-- **[SPARK Programming Board](/projects/stlink-v3mods/)** · *Prototype* — Hardened breakout and target-interface board for embedded bring-up; beta hardware in hand and in bring-up.  
+- **[SPARK Programming Board](/projects/stlink-v3mods/)** · *Prototype* · Hardware tooling — Hardened breakout and target-interface board for embedded bring-up; beta hardware in hand and in bring-up.  
   **Core domains:** embedded tools, hardware interfaces, firmware, validation
 
 ## How I Build Systems
