@@ -346,3 +346,18 @@ body {
     flex: 1 1 100%;
   }
 }
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   WCAG SC 1.4.1 — links inside running prose must not rely on colour alone.
+   Underline content links in paragraphs, list items, and table cells; the
+   hero-action button row (rendered as a <p> by Docusaurus) keeps its own
+   button styling.
+   ───────────────────────────────────────────────────────────────────────────── */
+.main-wrapper main article p a,
+.main-wrapper main article li a,
+.main-wrapper main article td a {
+  text-decoration: underline;
+}
+.main-wrapper main article .hero-actions a {
+  text-decoration: none;
+}
