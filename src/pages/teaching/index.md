@@ -58,3 +58,9 @@ The courses were built the same way: backward from learning outcomes, using prof
 ## Professional Development
 
 I continually refine my teaching through both professional engineering work and ongoing involvement in technical education — developing project-based engineering curricula and mentoring students in hands-on design and fabrication, including through the [*FIRST* Robotics Competition](/frc/).
+
+## Related work
+
+- **[SENTRY V3](/projects/sentry-v3/)** — the deployed platform behind "100+ students per year": real hardware students build, wire, and run.
+- **[Computer Literacy for Kids Curriculum Project](/teaching/instructional-design/)** — the open 18-week curriculum, built with the same backward-from-outcomes method.
+- **[*FIRST* Robotics](/frc/)** — two decades of the same project-based mentoring, at competition scale.

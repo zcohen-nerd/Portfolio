@@ -1,0 +1,80 @@
+/* Central styling for the case-study "At a glance" summary block. */
+
+.atAGlance {
+  margin: 1rem 0 2rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--zc-color-rail, #f7f8fa);
+  border: 1px solid var(--zc-color-border, #e3e8ef);
+  border-left: 4px solid var(--zc-cyan-500, #10b8d8);
+  border-radius: var(--zc-radius-md, 8px);
+}
+
+.facts {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.35rem 1rem;
+  margin: 0;
+}
+
+.fact {
+  display: contents;
+}
+
+.term {
+  font-family: var(--zc-font-mono, ui-monospace, monospace);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--zc-color-text-subtle, #7a8aa0);
+  padding-top: 0.15rem;
+}
+
+.value {
+  margin: 0;
+  line-height: 1.55;
+}
+
+/* Freeform project-specific facts (a markdown list, usually). */
+.detail {
+  margin-top: 0.9rem;
+}
+
+.detail :global(ul) {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.detail :global(li) {
+  margin: 0.25rem 0;
+  line-height: 1.55;
+}
+
+.facts + .detail {
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--zc-color-border, #e3e8ef);
+}
+
+.links {
+  margin: 0.9rem 0 0;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--zc-color-border, #e3e8ef);
+  font-size: 0.92rem;
+}
+
+.linksLabel {
+  font-family: var(--zc-font-mono, ui-monospace, monospace);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--zc-color-text-subtle, #7a8aa0);
+}
+
+@media (max-width: 600px) {
+  .facts {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+  .term {
+    padding-top: 0.5rem;
+  }
+}

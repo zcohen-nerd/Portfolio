@@ -6,16 +6,52 @@ status: Public Beta
 displayDate: 2025–Present
 ---
 
+import Head from '@docusaurus/Head';
+
+{/* Route-scoped structured data. Only fields backed by this page's own visible
+    content and the GitHub links it shows — no offers, ratings, or Organization. */}
+<Head>
+  <script type="application/ld+json">
+    {JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'SoftwareApplication',
+      name: 'Fusion System Blocks',
+      description:
+        'An Autodesk Fusion add-in that provides a system block-diagram editor inside the CAD environment — typed connections, CAD links, rule checks, snapshots, and 11 export formats.',
+      applicationCategory: 'DeveloperApplication',
+      operatingSystem: 'Autodesk Fusion',
+      softwareVersion: '0.1.1',
+      url: 'https://portfolio.zcohen-nerd.com/projects/fusion-system-blocks/',
+      sameAs: 'https://github.com/zcohen-nerd/Fusion_System_Blocks',
+      downloadUrl:
+        'https://github.com/zcohen-nerd/Fusion_System_Blocks/releases',
+      license:
+        'https://github.com/zcohen-nerd/Fusion_System_Blocks/blob/main/LICENSE',
+      author: {'@type': 'Person', name: 'Zac Cohen'},
+    })}
+  </script>
+</Head>
+
 # Fusion System Blocks
 
 ## At a glance
+
+<ProjectAtAGlance
+  status="Public Beta"
+  timeline="2025–Present"
+  role="Sole developer — Fusion add-in layer, HTML/JS panel, pure-Python core, and the export and rule engines"
+  links={[
+    {href: 'https://github.com/zcohen-nerd/Fusion_System_Blocks', label: 'Source on GitHub'},
+    {href: 'https://github.com/zcohen-nerd/Fusion_System_Blocks/releases', label: 'Releases'},
+  ]}>
 
 - Autodesk Fusion add-in — a system block-diagram editor inside the CAD environment
 - Diagrams are saved inside the Fusion design file, next to the 3D model
 - Blocks link to real CAD components (name, material, and mass carried into the diagram)
 - 775 passing Python tests, 24 JavaScript harness tests, and 30 in-app diagnostic checks
-- 11 export formats, including PDF report, BOM, connection matrix, and SVG
-- [View source on GitHub](https://github.com/zcohen-nerd/Fusion_System_Blocks) · [Download the latest release](https://github.com/zcohen-nerd/Fusion_System_Blocks/releases)
+- 11 export formats, including PDF report, BOM (bill of materials), connection matrix, and SVG
+
+</ProjectAtAGlance>
 
 ## Overview
 
@@ -89,6 +125,27 @@ Three distinct layers of verification exist, and they are different things:
 
 ---
 
-**Project Status:** <span class="status-badge">Public Beta</span> | **Timeline:** 2025–Present
+[← All projects](/projects/)
 
-[← Previous: SPARK Programming Board](/projects/stlink-v3mods/) | [Back to Projects](/projects/)
+<RelatedWork
+  items={[
+    {
+      href: '/#how-i-build-systems',
+      title: 'How I build systems',
+      reason:
+        'The architecture → interfaces → implementation → integration method this tool is built to keep visible inside the CAD file.',
+    },
+    {
+      href: 'https://github.com/zcohen-nerd/FusionToGitHub',
+      title: 'FusionToGitHub',
+      reason:
+        'The same “keep the design and its history together” goal, solved with one-click version control instead of in-file diagrams.',
+    },
+    {
+      href: '/documentation/selected-essays/',
+      title: 'Selected Essays',
+      reason:
+        '“How Living Documentation Changes Engineering Culture” — the drift-between-model-and-plan problem System Blocks addresses.',
+    },
+  ]}
+/>

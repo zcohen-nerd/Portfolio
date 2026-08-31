@@ -2,16 +2,24 @@
 # Zero dependencies (Windows GDI+), same visual language as the site-wide
 # card (scripts/generate-og-image.ps1). Re-run after adding a page below.
 #   powershell -File scripts/generate-og-pages.ps1
+#
+# An optional `photo` key (a filename in ../source-assets) composites that
+# owned image full-bleed behind a navy overlay, keeping the title/subtitle/
+# attribution in a readable dark safe area on the left. Without it, the card
+# uses the plain navy gradient + cyan glow like the others.
 
 Add-Type -AssemblyName System.Drawing
 
 $pages = @(
+  @{file='og-surfer.jpg';              title='SURFER';               sub=('Deployed ' + [char]0x00B7 + ' 20-vessel autonomous fleet'); accent='#10b8d8'; photo='SURFER On Water.jpg'},
   @{file='og-sentry-v3.png';            title='SENTRY V3';            sub='Deployed mechatronics platform';                         accent='#e11d48'},
   @{file='og-spark.png';                title='SPARK';                sub='Hardened STLINK-V3MODS interface board';                 accent='#7c3aed'},
   @{file='og-fusion-system-blocks.png'; title='Fusion System Blocks'; sub='System block diagrams inside Autodesk Fusion';           accent='#d97706'},
   @{file='og-teaching.png';             title='Teaching';             sub='Curriculum projects & engineering education';            accent='#2e8555'},
   @{file='og-writing-research.png';     title='Writing & Research';   sub='Publications, presentations, and essays';                accent='#0d9488'},
-  @{file='og-frc.png';                  title='FIRST Robotics';       sub='Two decades of mentoring, judging & event operations';   accent='#2563eb'}
+  @{file='og-frc.png';                  title='FIRST Robotics';       sub='Two decades of mentoring, judging & event operations';   accent='#2563eb'},
+  @{file='og-about.png';                title='About';                sub='Experience, education & certifications';                 accent='#22d3ee'},
+  @{file='og-projects.png';             title='Engineering Projects'; sub='Systems integration, mechatronics & technical enablement'; accent='#38bdf8'}
 )
 
 $outDir = Join-Path $PSScriptRoot '..\static\img\og'
@@ -32,13 +40,47 @@ foreach ($p in $pages) {
     35.0)
   $g.FillRectangle($bg, $rect)
 
-  $glowPath = New-Object System.Drawing.Drawing2D.GraphicsPath
-  $glowPath.AddEllipse(760, -320, 760, 760)
-  $glow = New-Object System.Drawing.Drawing2D.PathGradientBrush($glowPath)
-  $glow.CenterColor = [System.Drawing.Color]::FromArgb(70, 16, 184, 216)
-  $glow.SurroundColors = @([System.Drawing.Color]::FromArgb(0, 16, 184, 216))
-  $g.FillPath($glow, $glowPath)
-  $glowPath.Dispose()
+  if ($p.photo) {
+    $photoPath = Join-Path $PSScriptRoot ('..\source-assets\' + $p.photo)
+    if (-not (Test-Path $photoPath)) { throw "OG photo not found: $photoPath" }
+    $img = [System.Drawing.Image]::FromFile($photoPath)
+    try {
+      # Cover-fit the owned photo across the whole card.
+      $scale = [Math]::Max($w / $img.Width, $h / $img.Height)
+      $dw = [int][Math]::Ceiling($img.Width * $scale)
+      $dh = [int][Math]::Ceiling($img.Height * $scale)
+      $dx = [int](($w - $dw) / 2)
+      $dy = [int](($h - $dh) / 2)
+      $g.DrawImage($img, $dx, $dy, $dw, $dh)
+    } finally {
+      $img.Dispose()
+    }
+    # Horizontal navy wash: near-opaque on the left (text safe area),
+    # light on the right so the photo reads. Matches the brand navy.
+    $navy = [System.Drawing.ColorTranslator]::FromHtml('#0a1428')
+    $overlay = New-Object System.Drawing.Drawing2D.LinearGradientBrush(
+      $rect,
+      [System.Drawing.Color]::FromArgb(242, $navy.R, $navy.G, $navy.B),
+      [System.Drawing.Color]::FromArgb(64,  $navy.R, $navy.G, $navy.B),
+      0.0)
+    $blend = New-Object System.Drawing.Drawing2D.ColorBlend(3)
+    $blend.Colors = @(
+      [System.Drawing.Color]::FromArgb(247, $navy.R, $navy.G, $navy.B),
+      [System.Drawing.Color]::FromArgb(224, $navy.R, $navy.G, $navy.B),
+      [System.Drawing.Color]::FromArgb(70,  $navy.R, $navy.G, $navy.B))
+    $blend.Positions = @(0.0, 0.64, 1.0)
+    $overlay.InterpolationColors = $blend
+    $g.FillRectangle($overlay, $rect)
+    $overlay.Dispose()
+  } else {
+    $glowPath = New-Object System.Drawing.Drawing2D.GraphicsPath
+    $glowPath.AddEllipse(760, -320, 760, 760)
+    $glow = New-Object System.Drawing.Drawing2D.PathGradientBrush($glowPath)
+    $glow.CenterColor = [System.Drawing.Color]::FromArgb(70, 16, 184, 216)
+    $glow.SurroundColors = @([System.Drawing.Color]::FromArgb(0, 16, 184, 216))
+    $g.FillPath($glow, $glowPath)
+    $glowPath.Dispose()
+  }
 
   $white = New-Object System.Drawing.SolidBrush([System.Drawing.Color]::White)
   $accent = New-Object System.Drawing.SolidBrush([System.Drawing.ColorTranslator]::FromHtml($p.accent))
@@ -70,7 +112,18 @@ foreach ($p in $pages) {
   $g.DrawString('Zac Cohen Portfolio' + $dot + 'portfolio.zcohen-nerd.com', $attrFont, $faint, [single]($margin + 28), 511, $fmt)
 
   $out = Join-Path $outDir $p.file
-  $bmp.Save($out, [System.Drawing.Imaging.ImageFormat]::Png)
+  if ($p.file -match '\.jpe?g$') {
+    # Photographic cards compress far smaller as JPEG; text-only cards stay PNG.
+    $jpgCodec = [System.Drawing.Imaging.ImageCodecInfo]::GetImageEncoders() |
+      Where-Object { $_.MimeType -eq 'image/jpeg' }
+    $eps = New-Object System.Drawing.Imaging.EncoderParameters(1)
+    $eps.Param[0] = New-Object System.Drawing.Imaging.EncoderParameter(
+      [System.Drawing.Imaging.Encoder]::Quality, [long]82)
+    $bmp.Save($out, $jpgCodec, $eps)
+    $eps.Dispose()
+  } else {
+    $bmp.Save($out, [System.Drawing.Imaging.ImageFormat]::Png)
+  }
   $g.Dispose(); $bmp.Dispose()
   Write-Output ("wrote {0}" -f $p.file)
 }

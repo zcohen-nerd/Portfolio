@@ -53,6 +53,12 @@ Why clarity is the most underrated engineering discipline.
 
 The hardest parts of engineering are often invisible: decisions made under uncertainty, complexity kept under control, and systems that behave differently than assumed. These essays document that thinking — the judgment behind the work shown elsewhere on this site.
 
+## Related work
+
+- **[Scholarship & Speaking](/documentation/scholarship/)** — peer-reviewed publications and conference talks: the formal counterpart to these essays.
+- **[Fusion System Blocks](/projects/fusion-system-blocks/)** — the "living documentation" essays in practice: a tool that keeps system architecture from drifting out of sync.
+- **[SURFER Autonomous Vessel Fleet](/projects/surfer-fleet/)** — "Functional Success vs Engineering Success" as a real project: a prototype process that had to become a fleet process.
+
 ---
 
 **Publication Status:** <span class="status-badge">Published occasionally</span> | **Availability:** [Substack](https://zcohennerd.substack.com/)

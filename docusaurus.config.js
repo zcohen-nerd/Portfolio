@@ -21,6 +21,7 @@ const config = {
   projectName: 'Portfolio',
 
   onBrokenLinks: 'throw',
+  onBrokenAnchors: 'throw',
   markdown: {
     // .md files are CommonMark (raw HTML passes through unchanged — the
     // ported Jekyll content uses class/style attributes); .mdx files are MDX.
@@ -47,14 +48,41 @@ const config = {
         name: 'Zac Cohen',
         alternateName: 'Zachary Cohen',
         url: 'https://zcohen-nerd.com/',
+        image: 'https://zcohen-nerd.com/img/zachary-cohen-headshot.jpg',
         jobTitle: 'Electromechanical Systems Engineer',
+        // Matches the About page: a one-line summary, no employer / location.
+        description:
+          'Systems-minded electromechanical engineer, maker, and educator — builder of practical engineering tools, technical guides, and open educational resources.',
+        // Only topics that appear on the sites' own pages. No invented terms.
+        knowsAbout: [
+          'Electromechanical systems integration',
+          'Autonomous maritime systems',
+          'Embedded hardware bring-up',
+          'Hardware safety architecture',
+          'PCB design',
+          'Connector and interface engineering',
+          'Fusion 360',
+          'Engineering documentation',
+          'Engineering education',
+        ],
         sameAs: [
           'https://github.com/zcohen-nerd',
           'https://www.linkedin.com/in/zachary-cohen-nerd/',
           'https://zcohennerd.substack.com/',
+          'https://portfolio.zcohen-nerd.com/',
         ],
       }),
     },
+    // Icons + a minimal, non-PWA web manifest (display: "browser", no service
+    // worker). Docusaurus already emits <link rel="icon"> from `favicon`.
+    {tagName: 'link', attributes: {rel: 'apple-touch-icon', href: '/apple-touch-icon.png'}},
+    {tagName: 'link', attributes: {rel: 'manifest', href: '/site.webmanifest'}},
+    {tagName: 'meta', attributes: {name: 'theme-color', content: '#0a1428'}},
+    // Search Console verification — paste the token from Google Search Console /
+    // Bing Webmaster Tools and uncomment, then rebuild. See
+    // SEARCH-CONSOLE-CHECKLIST.md. (No console change has been made.)
+    // {tagName: 'meta', attributes: {name: 'google-site-verification', content: 'REPLACE_ME'}},
+    // {tagName: 'meta', attributes: {name: 'msvalidate.01', content: 'REPLACE_ME'}},
   ],
 
   i18n: {
@@ -88,8 +116,12 @@ const config = {
       ],
       connectLinks: [
         {label: 'GitHub', href: 'https://github.com/zcohen-nerd'},
-        {label: 'LinkedIn', href: 'https://www.linkedin.com/in/zachary-cohen-nerd/'},
+        {
+          label: 'LinkedIn',
+          href: 'https://www.linkedin.com/in/zachary-cohen-nerd/',
+        },
         {label: 'Email', href: 'mailto:zachary@zcohen-nerd.com'},
+        {label: 'Privacy', href: '/privacy/'},
       ],
     },
   },

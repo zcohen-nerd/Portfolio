@@ -8,19 +8,51 @@ displayDate: 2023–2025
 
 # SENTRY V3: Deployed Mechatronics Platform
 
-<video autoplay muted loop playsinline preload="metadata" width="412" height="232" poster="/media/sentry/sentry-reveal-poster.webp" style="display: block; width: auto; max-width: 100%; max-height: 360px; height: auto; border-radius: 8px; margin: 0 auto 0.75rem;">
-  <source src="/media/sentry/sentry-reveal.webm" type="video/webm">
-  <source src="/media/sentry/sentry-reveal.mp4" type="video/mp4">
-</video>
-
-<p style="text-align: center; margin: 0 0 2rem;"><em>The assembled SENTRY V3 pan–tilt turret platform (silent looping animation).</em></p>
+{/* Ambient reveal clip — the one non-image figure on the flagship pages, so it
+    stays hand-written JSX rather than going through <Figure>. The reduced-motion
+    client module pauses it and shows the poster for prefers-reduced-motion. */}
+<figure style={{margin: '1.5rem 0', textAlign: 'center'}}>
+  <video
+    autoPlay
+    muted
+    loop
+    playsInline
+    preload="metadata"
+    width={412}
+    height={232}
+    poster="/media/sentry/sentry-reveal-poster.webp"
+    style={{
+      display: 'block',
+      width: 'auto',
+      maxWidth: '100%',
+      maxHeight: '360px',
+      height: 'auto',
+      margin: '0 auto',
+      borderRadius: '8px',
+    }}>
+    <source src="/media/sentry/sentry-reveal.webm" type="video/webm" />
+    <source src="/media/sentry/sentry-reveal.mp4" type="video/mp4" />
+  </video>
+  <figcaption style={{fontStyle: 'italic', fontSize: '0.95rem', marginTop: '0.6rem'}}>
+    The assembled SENTRY V3 pan–tilt turret platform (silent looping animation).
+  </figcaption>
+</figure>
 
 ## At a glance
+
+<ProjectAtAGlance
+  status="Deployed"
+  timeline="2023–2025"
+  role="Architected and built the platform end to end — architecture, mechanical design, control electronics and PCB, and reference firmware; users' vision and targeting software runs on external compute"
+  links={[
+    {href: 'https://github.com/zcohen-nerd/SENTRY', label: 'Source on GitHub'},
+  ]}>
 
 - Used by 100+ students per year in its U.S. Naval Academy instructional deployment
 - Originated at the U.S. Naval Academy and released publicly as open source
 - Subject of a selected Autodesk University 2025 presentation ([From Schematics to Reality](/documentation/scholarship/))
-- [View source on GitHub](https://github.com/zcohen-nerd/SENTRY)
+
+</ProjectAtAGlance>
 
 ## Overview
 
@@ -32,7 +64,12 @@ Earlier versions of the platform relied on ad-hoc wiring and distributed control
 
 ## System Architecture
 
-<img src="/assets/images/projects/SENTRY/functional-block-diagram.webp" alt="SENTRY functional block diagram" width="225" height="665" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 1rem auto 1.5rem;" loading="lazy">
+<Figure
+  src="/assets/images/projects/SENTRY/functional-block-diagram.webp"
+  alt="SENTRY functional block diagram"
+  width={225}
+  height={665}
+/>
 
 ## My Role
 
@@ -53,13 +90,25 @@ The mechanical and electrical design of SENTRY V3 was developed together so the 
 
 **CAD assembly overview**
 
-<img src="/assets/images/projects/SENTRY/sentry-turret.webp" alt="SENTRY V3 CAD assembly overview" width="1426" height="1069" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 1rem auto 1.5rem;" loading="lazy">
+<Figure
+  src="/assets/images/projects/SENTRY/sentry-turret.webp"
+  alt="SENTRY V3 CAD assembly overview"
+  width={1426}
+  height={1069}
+/>
 
 **Labeled subsystem view**
 
-<img src="/assets/images/projects/SENTRY/sentry-turret-labeled.webp" alt="SENTRY V3 labeled CAD view" width="1942" height="1000" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 1rem auto 1.5rem;" loading="lazy">
-
-<p style="text-align: center; margin: -0.75rem 0 1.5rem;"><a href="https://portfolio.zcohen-nerd.com/assets/images/projects/SENTRY/sentry-turret-labeled.webp" target="_blank" rel="noopener noreferrer">Open full-resolution labeled view in a new tab →</a></p>
+<Figure
+  src="/assets/images/projects/SENTRY/sentry-turret-labeled.webp"
+  alt="SENTRY V3 labeled CAD view"
+  width={1942}
+  height={1000}
+  fullResolution={{
+    href: 'https://portfolio.zcohen-nerd.com/assets/images/projects/SENTRY/sentry-turret-labeled.webp',
+    label: 'Open full-resolution labeled view',
+  }}
+/>
 
 ## Interfaces
 
@@ -89,35 +138,71 @@ The mechanical and electrical design of SENTRY V3 was developed together so the 
 
 **Cross-section view**
 
-<img src="/assets/images/projects/SENTRY/sentry-cross-section.webp" alt="SENTRY V3 CAD cross section" width="1600" height="632" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 1rem auto 1.5rem;" loading="lazy">
+<Figure
+  src="/assets/images/projects/SENTRY/sentry-cross-section.webp"
+  alt="SENTRY V3 CAD cross section"
+  width={1600}
+  height={632}
+/>
 
 **Labeled cross-section**
 
-<img src="/assets/images/projects/SENTRY/sentry-turret-cross-section-labeled.webp" alt="SENTRY V3 labeled CAD cross section" width="1909" height="926" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 1rem auto 1.5rem;" loading="lazy">
-
-<p style="text-align: center; margin: -0.75rem 0 1.5rem;"><a href="https://portfolio.zcohen-nerd.com/assets/images/projects/SENTRY/sentry-turret-cross-section-labeled.webp" target="_blank" rel="noopener noreferrer">Open full-resolution labeled cross-section in a new tab →</a></p>
+<Figure
+  src="/assets/images/projects/SENTRY/sentry-turret-cross-section-labeled.webp"
+  alt="SENTRY V3 labeled CAD cross section"
+  width={1909}
+  height={926}
+  fullResolution={{
+    href: 'https://portfolio.zcohen-nerd.com/assets/images/projects/SENTRY/sentry-turret-cross-section-labeled.webp',
+    label: 'Open full-resolution labeled cross-section',
+  }}
+/>
 
 ### Artifacts
 
 **Control board integration**
 
-<img src="/assets/images/projects/SENTRY/sentry-board.webp" alt="SENTRY V3 control board integration view" width="1218" height="913" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 1rem auto 1.5rem;" loading="lazy">
+<Figure
+  src="/assets/images/projects/SENTRY/sentry-board.webp"
+  alt="SENTRY V3 control board integration view"
+  width={1218}
+  height={913}
+/>
 
 **PCB layout**
 
-<img src="/assets/images/projects/SENTRY/sentry-pcb.png" alt="SENTRY V3 PCB layout" width="861" height="819" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 1rem auto 1.5rem;" loading="lazy">
+<Figure
+  src="/assets/images/projects/SENTRY/sentry-pcb.png"
+  alt="SENTRY V3 PCB layout"
+  width={861}
+  height={819}
+/>
 
 **Labeled PCB**
 
-<img src="/assets/images/projects/SENTRY/sentry-pcb-labeled-inline.webp" alt="SENTRY V3 labeled PCB layout" width="1280" height="1034" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 1rem auto 1.5rem;" loading="lazy">
-
-<p style="text-align: center; margin: -0.75rem 0 1.5rem;"><a href="https://portfolio.zcohen-nerd.com/assets/images/projects/SENTRY/sentry-pcb-labeled.webp" target="_blank" rel="noopener noreferrer">Open full-resolution labeled PCB in a new tab →</a></p>
+<Figure
+  src="/assets/images/projects/SENTRY/sentry-pcb-labeled-inline.webp"
+  alt="SENTRY V3 labeled PCB layout"
+  width={1280}
+  height={1034}
+  fullResolution={{
+    href: 'https://portfolio.zcohen-nerd.com/assets/images/projects/SENTRY/sentry-pcb-labeled.webp',
+    label: 'Open full-resolution labeled PCB',
+  }}
+/>
 
 **Electronics schematic**
 
-<img src="/assets/images/projects/SENTRY/sentry-schematic-inline.webp" alt="SENTRY V3 electronics schematic" width="1600" height="1036" style="display: block; width: auto; max-width: 100%; max-height: 420px; height: auto; border-radius: 8px; margin: 1rem auto 1.5rem;" loading="lazy">
-
-<p style="text-align: center; margin: -0.75rem 0 1.5rem;"><a href="https://portfolio.zcohen-nerd.com/assets/images/projects/SENTRY/sentry-schematic.png" target="_blank" rel="noopener noreferrer">Open full-resolution schematic in a new tab →</a></p>
+<Figure
+  src="/assets/images/projects/SENTRY/sentry-schematic-inline.webp"
+  alt="SENTRY V3 electronics schematic"
+  width={1600}
+  height={1036}
+  fullResolution={{
+    href: 'https://portfolio.zcohen-nerd.com/assets/images/projects/SENTRY/sentry-schematic.png',
+    label: 'Open full-resolution schematic',
+  }}
+/>
 
 ## Testing & Verification
 
@@ -141,6 +226,27 @@ The deployed V3 platform established the mechanical, electrical, embedded, and c
 
 ---
 
-**Project Status:** <span class="status-badge">Deployed</span> | **Timeline:** 2023–2025
+[← All projects](/projects/)
 
-[← Back to Projects](/projects/) | [Next Project: SURFER Autonomous Vessel Fleet →](/projects/surfer-fleet/)
+<RelatedWork
+  items={[
+    {
+      href: '/projects/sentry-v4/',
+      title: 'SENTRY V4 Roadmap',
+      reason:
+        'Concept-stage redesign that pushes this platform’s control / safety separation into dedicated hardware domains.',
+    },
+    {
+      href: '/documentation/scholarship/',
+      title: '“From Schematics to Reality” — Autodesk University 2025',
+      reason:
+        'The selected AU session built on this platform, walking schematic → mechanical → integration in Autodesk Fusion.',
+    },
+    {
+      href: 'https://github.com/zcohen-nerd/PinmapGen',
+      title: 'PinmapGen',
+      reason:
+        'Turns Fusion Electronics schematics into firmware pin-maps — the schematic-to-code step behind a control board like this one.',
+    },
+  ]}
+/>

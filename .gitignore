@@ -8,3 +8,10 @@ build/
 # Misc
 .DS_Store
 npm-debug.log*
+
+# Quality-gate tooling output
+coverage/
+playwright-report/
+playwright/.cache/
+test-results/
+reports/quality/

@@ -36,6 +36,16 @@ body {
   --ifm-col-width: 25%;
 }
 
+/* Below the TOC breakpoint the sidebar is hidden — this override is more
+   specific than Infima's own mobile collapse, so restore full-width content
+   or the prose column stays stuck at 75% on phones/tablets. */
+@media (max-width: 996px) {
+  .main-wrapper > main .row > .col.col--8,
+  .main-wrapper > main .row > .col.col--2 {
+    --ifm-col-width: 100%;
+  }
+}
+
 .main-wrapper > main h1 {
   font-size: 40px;
   letter-spacing: -0.015em;
@@ -116,6 +126,22 @@ body {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--zc-cyan-700);
+}
+
+/* Maturity badge — used inline in case-study prose, in the ProjectAtAGlance
+   fact row, and on the roadmap/essays pages. Previously an unstyled class. */
+.status-badge {
+  display: inline-block;
+  font-family: var(--zc-font-mono);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--zc-cyan-700);
+  background: rgba(16, 184, 216, 0.1);
+  border: 1px solid rgba(16, 184, 216, 0.35);
+  border-radius: var(--zc-radius-pill, 999px);
+  padding: 2px 10px;
+  line-height: 1.5;
 }
 
 .placeholder-img {
@@ -206,6 +232,100 @@ body {
   white-space: nowrap;
 }
 
+/* ── Homepage hero: domain qualifier + top-of-page actions ─────────────────
+   The qualifier is a compact scannable line under the H2 role. The actions
+   are real links (résumé PDF, mailto, in-page anchor) — no new personal data,
+   comfortable 44px targets, wrap cleanly on narrow screens. */
+.hero-domains {
+  font-family: var(--zc-font-mono);
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: var(--zc-cyan-700);
+  margin: 6px 0 12px;
+}
+
+.hero-actions {
+  margin: 20px 0 8px;
+}
+
+/* Docusaurus wraps the markdown links in a <p> between the two <div> HTML
+   blocks; make that the flex row so the three actions wrap cleanly. */
+.hero-actions p {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 0;
+}
+
+.hero-actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 10px 20px;
+  border-radius: var(--zc-radius-md);
+  border: 1px solid var(--zc-color-border-strong);
+  background: #fff;
+  color: var(--zc-color-text);
+  font-weight: var(--zc-weight-semibold);
+  font-size: 15px;
+  line-height: 1.2;
+  text-decoration: none;
+  transition: background var(--zc-transition), border-color var(--zc-transition),
+    color var(--zc-transition);
+}
+
+.hero-actions a:hover {
+  border-color: var(--zc-cyan-500);
+  color: var(--zc-cyan-700);
+  text-decoration: none;
+}
+
+.hero-actions a:focus-visible {
+  outline: 3px solid var(--zc-cyan-500);
+  outline-offset: 2px;
+}
+
+/* First action ("View selected systems") is the primary CTA. */
+.hero-actions a:first-child {
+  background: var(--zc-cyan-500);
+  border-color: var(--zc-cyan-500);
+  color: #06222a;
+}
+
+.hero-actions a:first-child:hover {
+  background: var(--zc-cyan-400);
+  border-color: var(--zc-cyan-400);
+  color: #06222a;
+}
+
+/* ── Semantic category labels on project cards ────────────────────────────
+   Lightweight scanning aid only — static text, not a filter control. */
+.project-tag {
+  display: inline-block;
+  font-family: var(--zc-font-mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--zc-cyan-700);
+  background: var(--zc-color-rail);
+  border: 1px solid var(--zc-color-border);
+  border-radius: var(--zc-radius-pill);
+  padding: 3px 10px;
+  margin: 0 0 8px;
+}
+
+/* ── Concept cards must never read as deployed work ──────────────────────── */
+.project-card.concept-card {
+  border-top-color: var(--zc-color-border-strong);
+  background: var(--zc-color-rail);
+}
+
+.project-card.concept-card .project-tag {
+  color: var(--zc-color-text-muted);
+  background: #fff;
+}
+
 @media (max-width: 720px) {
   .project-grid {
     grid-template-columns: 1fr;
@@ -215,5 +335,14 @@ body {
   }
   .main-wrapper > main h1 {
     font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-actions p {
+    gap: 10px;
+  }
+  .hero-actions a {
+    flex: 1 1 100%;
   }
 }

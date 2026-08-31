@@ -89,12 +89,98 @@ check('SURFER documents the dual-Pi authority boundary', surferVisible.includes(
 check('SURFER documents VESC propulsion', surferVisible.includes('VESC'));
 check('SURFER e-stop preserves compute', surferVisible.includes('remain powered'));
 check('SURFER role attribution present', surferVisible.includes('My Role'));
-check('SURFER program vs role timeline explicit', surferVisible.includes('My role:') && surferVisible.includes('2024–2026'));
+check('SURFER program vs role timeline explicit', /\bmy role\b/i.test(surferVisible) && surferVisible.includes('2024–2026'));
 check('SURFER has no draft placeholders', !/TBD|TODO/.test(surferVisible));
 check('SURFER hero image referenced', surferHtml.includes('/assets/images/projects/surfer-fleet/surfer-on-water.webp'));
-const surferDiagramChunk = fs.readdirSync(path.join(build, 'assets', 'js')).filter((f) => f.endsWith('.js'))
-  .some((f) => fs.readFileSync(path.join(build, 'assets', 'js', f), 'utf8').includes('STUDENT[Student Raspberry Pi 4]'));
-check('SURFER diagram definition present in page chunk', surferDiagramChunk);
+
+// ── SURFER hiring-artifact guards ───────────────────────────────────────
+const surferText = surferVisible.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ');
+const sliceBetween = (a, b) => {
+  const i = surferText.indexOf(a);
+  const j = surferText.indexOf(b, i + 1);
+  return i !== -1 && j > i ? surferText.slice(i, j) : '';
+};
+
+// 1. "At a glance" carries all five framing points, qualifiers intact.
+const glance = sliceBetween('At a glance', 'Public evidence and disclosure boundary');
+check('SURFER At a glance present before the disclosure note', glance !== '');
+check('SURFER At a glance states problem + scale', glance.includes('Problem:') && glance.includes('70%') && glance.includes('20-vessel'));
+check('SURFER At a glance states Deployed status', glance.includes('Status: Deployed'));
+check('SURFER At a glance separates program vs role timeline',
+  glance.includes('Program vs. my role') && glance.includes('since 2020') && glance.includes('2024') && glance.includes('2026'));
+check('SURFER At a glance states the ownership boundary',
+  glance.includes('Ownership boundary:') && glance.includes('faculty developed the higher-level vessel and research software'));
+check('SURFER At a glance keeps the hull-cost outcome with qualifier',
+  glance.includes('Measured outcomes:') && glance.includes('~$2,500 to ~$400') && glance.includes('84%'));
+
+// 4. Dedicated public-evidence / disclosure boundary section — honest.
+const disc = sliceBetween('Public evidence and disclosure boundary', 'Overview');
+check('SURFER has a public-evidence disclosure boundary section', disc !== '');
+check('disclosure explains the sanitized/public scope', disc.includes('already public or cleared for public sharing'));
+check('disclosure names what is omitted', disc.includes('not mine to publish') && disc.includes('unpublished experiment data'));
+check('disclosure separates later employment', disc.includes('draws on nothing from my later employment'));
+check('disclosure invents no restriction it does not have', !/\b(classified|ITAR|export[- ]control(?:led)?|CUI|secret)\b/i.test(disc));
+
+// 5. Measured before/after table — supported by the existing narrative.
+check('SURFER carries a measured before/after table',
+  surferText.includes('measured before and after') && /<table/.test(surferHtml));
+check('before/after table keeps the approximate qualifiers',
+  surferText.includes('~13 days') && surferText.includes('~14 hours') && surferText.includes('as-printed in Grey Resin'));
+
+// 2. One improved architecture diagram — present once, six required points.
+const readProjectSource = (slug) => {
+  for (const ext of ['.mdx', '.md']) {
+    const fp = path.join(root, 'src', 'pages', 'projects', slug + ext);
+    if (fs.existsSync(fp)) return fs.readFileSync(fp, 'utf8');
+  }
+  throw new Error(`project source not found for ${slug}`);
+};
+const surferSrc = readProjectSource('surfer-fleet');
+const mermaidFences = (surferSrc.match(/```mermaid/g) || []).length;
+check('SURFER has exactly one architecture diagram (improved, not duplicated)', mermaidFences === 1, `found ${mermaidFences}`);
+check('SURFER diagram was upgraded past the old flat flowchart',
+  !surferSrc.includes('STUDENT[Student Raspberry Pi 4] <-->|Ethernet command library|'));
+const jsChunks = fs.readdirSync(path.join(build, 'assets', 'js'))
+  .filter((f) => f.endsWith('.js'))
+  .map((f) => fs.readFileSync(path.join(build, 'assets', 'js', f), 'utf8'));
+const diagramSrc = jsChunks.find((c) => c.includes('the only thing an e-stop removes')) || '';
+check('SURFER diagram definition present in page chunk', diagramSrc !== '');
+for (const concept of [
+  'Always-on domain',                          // power domains + observable-after-shutdown
+  'Propulsion power domain',                    // power domains
+  'validates every command, owns actuation',   // dual-Pi authority boundary
+  'request only, no direct actuator access',   // dual-Pi authority boundary
+  'CAN motion commands',                        // propulsion / control path
+  'enable + heartbeat',                         // safety / e-stop behaviour
+  'gated propulsion power',                     // safety cuts propulsion only
+  'shore link + e-stops',                       // operator / comms interface
+  'stay powered and observable through an e-stop', // what remains observable after shutdown
+]) {
+  check(`SURFER diagram communicates: ${concept}`, diagramSrc.includes(concept));
+}
+check('SURFER diagram carries Mermaid accessibility text (accTitle/accDescr)',
+  surferSrc.includes('accTitle:') && surferSrc.includes('accDescr:'));
+
+// 3. Caption explains the engineering insight, not the object.
+check('SURFER architecture caption explains the insight',
+  surferText.includes('Two design choices carry most of the safety argument'));
+check('SURFER hull caption explains the reliability insight',
+  surferText.includes('Every sealing interface is a leak path'));
+
+// 7. Figures: alt text, explicit dimensions, sane loading (attribute order-agnostic).
+const surferImgs = [...surferHtml.matchAll(/<img\b[^>]*>/g)]
+  .map((m) => m[0])
+  .filter((t) => t.includes('/assets/images/projects/surfer-fleet/'));
+check('SURFER figure set present', surferImgs.length >= 5, `found ${surferImgs.length}`);
+for (const img of surferImgs) {
+  check('SURFER figure has alt + width + height',
+    /\balt="[^"]{15,}"/.test(img) && /\bwidth="\d+"/.test(img) && /\bheight="\d+"/.test(img), img.slice(0, 100));
+}
+const heroImg = surferImgs.find((t) => t.includes('surfer-on-water.webp')) || '';
+const hatImg = surferImgs.find((t) => t.includes('can-hat.webp')) || '';
+check('SURFER hero loads eager', /loading="eager"/.test(heroImg), heroImg.slice(0, 90));
+check('SURFER board renders load lazy', /loading="lazy"/.test(hatImg), hatImg.slice(0, 90));
+
 // Inline media budget, same policy as SENTRY.
 const surferMediaRefs = [...new Set([...surferHtml.matchAll(/(?:src|poster)="(\/(?:assets|media)\/[^"]+\.(?:webp|png|jpg|jpeg|gif|webm|mp4))"/g)].map((m) => m[1]))];
 let surferMediaTotal = 0;
@@ -144,7 +230,7 @@ const srcPages = [];
 })(path.join(root, 'src', 'pages'));
 const rawWrapperHit = srcPages.find((f) => fs.readFileSync(f, 'utf8').includes('<div class="mermaid"'));
 check('no raw Mermaid wrappers in published source', !rawWrapperHit, rawWrapperHit ? path.relative(root, rawWrapperHit) : '');
-const fusionSrc = fs.readFileSync(path.join(root, 'src', 'pages', 'projects', 'fusion-system-blocks.md'), 'utf8');
+const fusionSrc = readProjectSource('fusion-system-blocks');
 check('Fusion System Blocks source uses a fenced mermaid block', fusionSrc.includes('```mermaid'));
 
 // Build: the Fusion page's visible HTML (scripts stripped) must not contain
@@ -330,7 +416,24 @@ function pngDims(fp) {
   const b = fs.readFileSync(fp);
   return {w: b.readUInt32BE(16), h: b.readUInt32BE(20)};
 }
+function jpgDims(fp) {
+  const b = fs.readFileSync(fp);
+  let o = 2;
+  while (o < b.length - 1) {
+    if (b[o] !== 0xff) { o++; continue; }
+    const marker = b[o + 1];
+    if (marker >= 0xc0 && marker <= 0xcf && ![0xc4, 0xc8, 0xcc].includes(marker)) {
+      return {h: b.readUInt16BE(o + 5), w: b.readUInt16BE(o + 7)};
+    }
+    o += 2 + b.readUInt16BE(o + 2);
+  }
+  return {w: 0, h: 0};
+}
+const imageDims = (fp) => (/\.jpe?g$/i.test(fp) ? jpgDims(fp) : pngDims(fp));
 const ogPages = [
+  ['about', 'og-about.png'],
+  ['projects', 'og-projects.png'],
+  ['projects/surfer-fleet', 'og-surfer.jpg'],
   ['projects/sentry-v3', 'og-sentry-v3.png'],
   ['projects/stlink-v3mods', 'og-spark.png'],
   ['projects/fusion-system-blocks', 'og-fusion-system-blocks.png'],
@@ -343,7 +446,7 @@ for (const [route, img] of ogPages) {
   const exists = fs.existsSync(fp);
   check(`OG image exists: ${img}`, exists);
   if (exists) {
-    const d = pngDims(fp);
+    const d = imageDims(fp);
     check(`OG image ${img} is 1200x630`, d.w === 1200 && d.h === 630, `${d.w}x${d.h}`);
   }
   const pageHtml = fs.readFileSync(path.join(build, route, 'index.html'), 'utf8');
@@ -370,6 +473,194 @@ check('homepage links About', indexHtml.includes('href="/about/"'));
 const notFound = fs.readFileSync(path.join(build, '404.html'), 'utf8');
 check('custom 404 content present', notFound.includes('wandered off during integration'));
 check('404 links to projects and hub', notFound.includes('href="/projects/"') && notFound.includes('https://zcohen-nerd.com/'));
+
+// ── Recruiter-scan pass: hero qualifier, top actions, orientation ────────
+const homeVisible = indexHtml.replace(/<script[\s\S]*?<\/script>/g, '');
+
+// Role retained + compact domain qualifier derived from existing facts.
+check('homepage retains the Electromechanical Systems Engineer role', indexHtml.includes('Electromechanical Systems Engineer'));
+check('homepage has a domain qualifier line', indexHtml.includes('class="hero-domains"'));
+const domainsText = (indexHtml.match(/class="hero-domains"[^>]*>([^<]*)</) || [])[1] || '';
+check('domain qualifier covers maritime + robotics + embedded + integration',
+  /maritime/i.test(domainsText) && /robotic/i.test(domainsText) && /embedded/i.test(domainsText) && /integration/i.test(domainsText),
+  `"${domainsText}"`);
+check('domain qualifier stays compact (<=90 chars, <=5 terms — no keyword stuffing)',
+  domainsText.length > 0 && domainsText.length <= 90 && domainsText.split('·').length <= 5,
+  `"${domainsText}" (${domainsText.length} chars, ${domainsText.split('·').length} terms)`);
+
+// Top-of-page actions: the three required links, correct targets, above the fold
+// (before Featured Systems), no phone/address/new personal data.
+const actionsIdx = indexHtml.indexOf('class="hero-actions"');
+const featuredIdx = indexHtml.indexOf('id="featured-systems"');
+check('hero actions block present', actionsIdx !== -1);
+check('hero actions sit above Featured Systems', actionsIdx !== -1 && featuredIdx > actionsIdx, `actions@${actionsIdx} featured@${featuredIdx}`);
+const actionsBlock = actionsIdx !== -1 ? indexHtml.slice(actionsIdx, indexHtml.indexOf('</div>', actionsIdx) + 6) : '';
+check('action "View selected systems" targets #featured-systems',
+  actionsBlock.includes('href="#featured-systems"') && actionsBlock.includes('View selected systems'));
+check('action "Résumé (PDF)" targets the résumé file',
+  actionsBlock.includes('href="/files/zac-cohen-resume.pdf"') && actionsBlock.includes('(PDF)'));
+check('action "Email Zac" is a mailto link',
+  actionsBlock.includes('href="mailto:zachary@zcohen-nerd.com"') && actionsBlock.includes('Email Zac'));
+check('hero actions expose no phone number', !/(\(\d{3}\)|\b\d{3}[.\-]\d{3}[.\-]\d{4})/.test(actionsBlock));
+check('hero actions expose no street address', !/\b\d{1,5}\s+[A-Z][a-z]+\s+(St|Street|Ave|Avenue|Rd|Road|Ln|Lane|Dr|Drive|Blvd|Ct|Court)\b/.test(actionsBlock));
+
+// One H1 + no duplicate ids — homepage.
+const homeH1 = (indexHtml.match(/<h1[\s>]/g) || []).length;
+check('homepage has exactly one H1', homeH1 === 1, `found ${homeH1}`);
+const homeIdList = [...indexHtml.matchAll(/ id="([^"]+)"/g)].map((m) => m[1]);
+check('homepage has no duplicate ids', homeIdList.length === new Set(homeIdList).size,
+  homeIdList.filter((v, i, a) => a.indexOf(v) !== i).join(', '));
+
+// Featured Systems order + status integrity (scoped to the section).
+const featBlock = featuredIdx !== -1 ? indexHtml.slice(featuredIdx) : '';
+const featOrder = ['surfer-fleet', 'sentry-v3', 'fusion-system-blocks', 'stlink-v3mods'].map((s) => featBlock.indexOf(`/projects/${s}/`));
+check('Featured Systems order is SURFER, SENTRY, FSB, SPARK',
+  featOrder.every((n, i) => n !== -1 && (i === 0 || n > featOrder[i - 1])), featOrder.join(', '));
+check('Featured Systems statuses are truthful',
+  /SURFER Autonomous Vessel Fleet[\s\S]{0,120}?Deployed/.test(featBlock) &&
+  /SENTRY V3[\s\S]{0,120}?Deployed/.test(featBlock) &&
+  /Fusion System Blocks[\s\S]{0,160}?Public Beta/.test(featBlock) &&
+  /SPARK Programming Board[\s\S]{0,120}?Prototype/.test(featBlock));
+
+// One-click reachability: every flagship case study is a direct link from the homepage.
+for (const slug of ['surfer-fleet', 'sentry-v3', 'fusion-system-blocks', 'stlink-v3mods']) {
+  check(`homepage links flagship case study /${slug}/`, featBlock.includes(`href="/projects/${slug}/"`));
+}
+
+// ── /projects/ orientation + taxonomy separation ───────────────────────
+const projHtml = fs.readFileSync(path.join(build, 'projects', 'index.html'), 'utf8');
+const projVisible = projHtml.replace(/<script[\s\S]*?<\/script>/g, '');
+const startIdx = projHtml.indexOf('Start with these systems');
+const flagshipIdx = projHtml.indexOf('Flagship Systems');
+const roadmapIdx = projHtml.indexOf('Roadmaps &');
+const additionalIdx = projHtml.indexOf('Additional Engineering Work');
+check('projects index has a "Start with these systems" orientation', startIdx !== -1);
+check('orientation sits above the taxonomy', startIdx !== -1 && flagshipIdx > startIdx);
+const orient = startIdx !== -1 && flagshipIdx > startIdx ? projHtml.slice(startIdx, flagshipIdx) : '';
+check('orientation hardware path is SURFER -> SENTRY -> SPARK in order',
+  ['surfer-fleet', 'sentry-v3', 'stlink-v3mods'].map((s) => orient.indexOf(`/projects/${s}/`)).every((n, i, a) => n !== -1 && (i === 0 || n > a[i - 1])));
+check('orientation software path is Fusion System Blocks', orient.includes('/projects/fusion-system-blocks/'));
+
+// Sections stay visibly distinct and ordered.
+check('projects index keeps Flagship / Roadmaps & Concepts / Additional Work, in order',
+  flagshipIdx !== -1 && roadmapIdx > flagshipIdx && additionalIdx > roadmapIdx,
+  `${flagshipIdx}/${roadmapIdx}/${additionalIdx}`);
+check('Roadmaps & Concepts intro states these are not deployed', projVisible.includes('not deployed systems'));
+
+// Flagship grid still leads with SURFER.
+const gridIdx = projHtml.indexOf('project-grid');
+const gridOrder = ['surfer-fleet', 'sentry-v3', 'fusion-system-blocks', 'stlink-v3mods'].map((s) => projHtml.indexOf(`/projects/${s}/`, gridIdx));
+check('Flagship grid lists SURFER first',
+  gridOrder[0] !== -1 && gridOrder.slice(1).every((n) => n === -1 || n > gridOrder[0]), gridOrder.join(', '));
+
+// Concept card must not read as deployed work.
+const v4Idx = projHtml.indexOf('SENTRY V4 Roadmap');
+const v4CardStart = v4Idx !== -1 ? projHtml.lastIndexOf('<div class="project-card', v4Idx) : -1;
+const v4CardEnd = v4Idx !== -1 ? projHtml.indexOf('</div>', projHtml.indexOf('View roadmap', v4Idx)) : -1;
+const v4Card = v4CardStart !== -1 && v4CardEnd > v4CardStart ? projHtml.slice(v4CardStart, v4CardEnd) : '';
+check('SENTRY V4 uses the concept-card treatment', v4Card.includes('concept-card'));
+check('SENTRY V4 card carries a Concept status', v4Card.includes('Concept'));
+check('SENTRY V4 card is never labelled Deployed', v4Card !== '' && !/\bDeployed\b/.test(v4Card));
+
+// Semantic category labels present; page is not a filter application.
+check('semantic category labels present on projects index', (projHtml.match(/class="project-tag"/g) || []).length >= 5);
+check('projects index is not a filter UI',
+  !/data-filter|aria-controls="[^"]*filter/i.test(projHtml) && !/<(select|input)\b[^>]*\bfilter/i.test(projHtml));
+
+// One H1 + no duplicate ids — projects index.
+const projH1 = (projHtml.match(/<h1[\s>]/g) || []).length;
+check('projects index has exactly one H1', projH1 === 1, `found ${projH1}`);
+const projIdList = [...projHtml.matchAll(/ id="([^"]+)"/g)].map((m) => m[1]);
+check('projects index has no duplicate ids', projIdList.length === new Set(projIdList).size,
+  projIdList.filter((v, i, a) => a.indexOf(v) !== i).join(', '));
+
+// ── Status vocabulary: no drift across visible surfaces ─────────────────
+// Approved visible status LABELS (checked only where a status label actually
+// renders — status-badge / project-status — never against prose, so
+// "live-water test" etc. can't trip it). "Published" covers the Connector
+// Guide (owner-confirmed additional state, shown as "Published (v1.0)");
+// "Published occasionally" is the essays page's cadence, a different axis.
+const APPROVED_STATUS = ['Deployed', 'Prototype', 'Public Beta', 'Concept', 'Published', 'Published occasionally'];
+const statusApproved = (tok) => APPROVED_STATUS.some((s) => tok === s || tok.startsWith(s + ' '));
+const CANONICAL_PAGE_STATUS = {
+  'surfer-fleet': 'Deployed',
+  'sentry-v3': 'Deployed',
+  'stlink-v3mods': 'Prototype',
+  'fusion-system-blocks': 'Public Beta',
+  'sentry-v4': 'Concept',
+};
+const stripScripts = (html) => html.replace(/<script[\s\S]*?<\/script>/g, '');
+// Collect every rendered status-label token on a page (badge pills + the
+// projects-index "<p class=project-status><strong>…</strong>" pattern).
+const statusTokensIn = (html) => [
+  ...stripScripts(html).matchAll(/class="[^"]*(?:status-badge|project-status)[^"]*"[^>]*>\s*(?:<strong>)?([^<]+)/g),
+].map((m) => m[1].trim()).filter(Boolean);
+
+for (const [slug, status] of Object.entries(CANONICAL_PAGE_STATUS)) {
+  const pgHtml = fs.readFileSync(path.join(build, 'projects', slug, 'index.html'), 'utf8');
+  const toks = statusTokensIn(pgHtml);
+  check(`${slug} page surfaces its canonical status "${status}"`,
+    toks.some((t) => t === status || t.startsWith(status)), `tokens: ${toks.join(' | ') || 'none'}`);
+  for (const t of toks) {
+    check(`${slug} page status label "${t}" is approved vocabulary`, statusApproved(t));
+  }
+}
+// Every rendered status label on /projects/ is approved vocabulary.
+for (const tok of statusTokensIn(projHtml)) {
+  check(`projects index status label "${tok}" is approved vocabulary`, statusApproved(tok));
+}
+// The project cards on /projects/ agree with each project's canonical status.
+// Anchor after the "Flagship Systems" heading so the orientation-section links
+// at the top of the page are not mistaken for a card.
+const gridAnchor = projHtml.indexOf('Flagship Systems');
+for (const [slug, status] of Object.entries(CANONICAL_PAGE_STATUS)) {
+  const at = projHtml.indexOf(`/projects/${slug}/`, gridAnchor);
+  const cardStart = at === -1 ? -1 : projHtml.lastIndexOf('class="project-card', at);
+  const psAt = cardStart === -1 ? -1 : projHtml.indexOf('class="project-status"', cardStart);
+  const card = psAt === -1 ? '' : projHtml.slice(psAt, psAt + 300);
+  check(`projects index card for ${slug} shows "${status}" (no drift)`,
+    card.includes(`<strong>${status}</strong>`), card.replace(/<[^>]+>/g, ' ').trim().slice(0, 90));
+}
+
+// ── Related work: every major page offers a contextual next path ─────────
+const RELATED_EXTERNAL_HOSTS = [
+  'github.com', 'zcohen-nerd.github.io', 'www.autodesk.com',
+  'zcohennerd.substack.com', 'doi.org', 'www.linkedin.com', 'www.st.com',
+];
+const MAJOR_PAGES = [
+  'projects/surfer-fleet', 'projects/sentry-v3', 'projects/stlink-v3mods',
+  'projects/fusion-system-blocks', 'projects/sentry-v4',
+  'teaching', 'documentation/scholarship', 'documentation/selected-essays',
+];
+for (const route of MAJOR_PAGES) {
+  const pg = fs.readFileSync(path.join(build, route, 'index.html'), 'utf8');
+  const rwAt = pg.search(/(aria-label="Related work"|id="related-work"|>Related work<)/i);
+  check(`${route}: has a Related work section`, rwAt !== -1);
+  if (rwAt === -1) continue;
+  // Bound the region to the end of the related-work list (</nav> for the
+  // component, </ul> for the markdown form) so footer links aren't counted.
+  const ends = [pg.indexOf('</nav>', rwAt), pg.indexOf('</ul>', rwAt)]
+    .filter((i) => i !== -1);
+  const rwEnd = ends.length ? Math.min(...ends) + 6 : rwAt + 1600;
+  const region = pg.slice(rwAt, rwEnd);
+  const links = [...region.matchAll(/<a\b[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/g)]
+    .map((m) => ({href: m[1], text: m[2].replace(/<[^>]+>/g, '').trim()}))
+    .filter((l) => !l.href.startsWith('#') && l.text.length > 0);
+  check(`${route}: Related work has 2–3 contextual links`, links.length >= 2 && links.length <= 3, `found ${links.length}`);
+  for (const {href} of links) {
+    if (/^https?:\/\//i.test(href)) {
+      const host = href.replace(/^https?:\/\//i, '').split('/')[0];
+      check(`${route}: related-work external link host allowed (${host})`, RELATED_EXTERNAL_HOSTS.includes(host), href);
+    } else {
+      const clean = href.replace(/#.*$/, '').replace(/\/$/, '');
+      const ok = clean === '' || fs.existsSync(path.join(build, clean, 'index.html')) || fs.existsSync(path.join(build, clean));
+      check(`${route}: related-work internal link resolves (${href})`, ok);
+    }
+  }
+  // No page links to itself in Related work (that is boilerplate, not a next path).
+  check(`${route}: Related work does not link back to itself`,
+    !links.some((l) => l.href.replace(/\/$/, '').endsWith(`/${route.split('/').pop()}`)));
+}
 
 if (failures.length) {
   console.error(`\n${failures.length} validation failure(s).`);

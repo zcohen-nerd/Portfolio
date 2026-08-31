@@ -13,6 +13,7 @@ This repository is just the source. The portfolio itself lives at:
 
 ## Start here
 
+- [**SURFER Autonomous Vessel Fleet**](https://portfolio.zcohen-nerd.com/projects/surfer-fleet/) — a deployed 20-vessel holonomic autonomous surface-vessel fleet; owned the vessel redesign, custom electronics, and safety architecture through first-water deployment
 - [**SENTRY Autonomous Turret**](https://portfolio.zcohen-nerd.com/projects/sentry-v3/) — deployed open-source mechatronics platform, used by 100+ students per year
 - [**SPARK Programming Board**](https://portfolio.zcohen-nerd.com/projects/stlink-v3mods/) — hardened breakout and target-interface board for embedded bring-up
 - [**Fusion System Blocks**](https://portfolio.zcohen-nerd.com/projects/fusion-system-blocks/) — system block diagrams inside Autodesk Fusion, in public beta
@@ -30,3 +31,9 @@ This repository is just the source. The portfolio itself lives at:
 ---
 
 Built with [Docusaurus](https://docusaurus.io/) and the shared [`@zcohen-nerd/brand`](https://github.com/zcohen-nerd/zcohen-nerd-brand) theme · Content licensed [CC BY-NC 4.0](LICENSE.md)
+
+## Quality gates
+
+Formatting, lint, link, accessibility, keyboard, responsive, and bundle-budget
+checks — and every local + CI command — are documented in
+[CONTRIBUTING.md](CONTRIBUTING.md).
