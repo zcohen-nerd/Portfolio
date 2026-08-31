@@ -353,11 +353,11 @@ body {
    hero-action button row (rendered as a <p> by Docusaurus) keeps its own
    button styling.
    ───────────────────────────────────────────────────────────────────────────── */
-.markdown p a,
-.markdown li a,
-.markdown td a {
+.main-wrapper main article p a,
+.main-wrapper main article li a,
+.main-wrapper main article td a {
   text-decoration: underline;
 }
-.markdown .hero-actions a {
+.main-wrapper main article .hero-actions a {
   text-decoration: none;
 }
