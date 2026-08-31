@@ -21,6 +21,7 @@ const config = {
   projectName: 'Portfolio',
 
   onBrokenLinks: 'throw',
+  onBrokenAnchors: 'throw',
   markdown: {
     // .md files are CommonMark (raw HTML passes through unchanged — the
     // ported Jekyll content uses class/style attributes); .mdx files are MDX.
@@ -88,7 +89,10 @@ const config = {
       ],
       connectLinks: [
         {label: 'GitHub', href: 'https://github.com/zcohen-nerd'},
-        {label: 'LinkedIn', href: 'https://www.linkedin.com/in/zachary-cohen-nerd/'},
+        {
+          label: 'LinkedIn',
+          href: 'https://www.linkedin.com/in/zachary-cohen-nerd/',
+        },
         {label: 'Email', href: 'mailto:zachary@zcohen-nerd.com'},
       ],
     },

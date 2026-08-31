@@ -30,3 +30,9 @@ This repository is just the source. The portfolio itself lives at:
 ---
 
 Built with [Docusaurus](https://docusaurus.io/) and the shared [`@zcohen-nerd/brand`](https://github.com/zcohen-nerd/zcohen-nerd-brand) theme · Content licensed [CC BY-NC 4.0](LICENSE.md)
+
+## Quality gates
+
+Formatting, lint, link, accessibility, keyboard, responsive, and bundle-budget
+checks — and every local + CI command — are documented in
+[CONTRIBUTING.md](CONTRIBUTING.md).

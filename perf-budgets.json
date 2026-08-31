@@ -1,0 +1,17 @@
+{
+  "_comment": "Budgets ~15% above the verified 2026-08 baseline; ratchet down after any bundle optimisation (see CONTRIBUTING.md). Per-route inline-media caps preserve the repo's prior 1200 KB image budget on the media-heavy case studies.",
+  "routes": [
+    "/",
+    "/projects/",
+    "/projects/surfer-fleet/",
+    "/projects/sentry-v3/",
+    "/projects/fusion-system-blocks/",
+    "/about/",
+    "/404.html"
+  ],
+  "initialJsGzipKB": 170,
+  "initialCssGzipKB": 20,
+  "allJsRawKB": 4700,
+  "criticalHeadAssets": 8,
+  "perRouteInlineMediaKB": {"default": 1200}
+}
