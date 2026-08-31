@@ -501,7 +501,7 @@ check('action "Résumé (PDF)" targets the résumé file',
   actionsBlock.includes('href="/files/zac-cohen-resume.pdf"') && actionsBlock.includes('(PDF)'));
 check('action "Email Zac" is a mailto link',
   actionsBlock.includes('href="mailto:zachary@zcohen-nerd.com"') && actionsBlock.includes('Email Zac'));
-check('hero actions expose no phone number', !/(\(\d{3}\)|\b\d{3}[.\-]\d{3}[.\-]\d{4})/.test(actionsBlock));
+check('hero actions expose no phone number', !/(\(\d{3}\)|\b\d{3}[.-]\d{3}[.-]\d{4})/.test(actionsBlock));
 check('hero actions expose no street address', !/\b\d{1,5}\s+[A-Z][a-z]+\s+(St|Street|Ave|Avenue|Rd|Road|Ln|Lane|Dr|Drive|Blvd|Ct|Court)\b/.test(actionsBlock));
 
 // One H1 + no duplicate ids — homepage.

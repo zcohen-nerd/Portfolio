@@ -36,7 +36,7 @@ export default function ProjectAtAGlance({
   children,
 }) {
   const facts = [
-    status && ['Status', <span className="status-badge">{status}</span>],
+    status && ['Status', <span key="s" className="status-badge">{status}</span>],
     timeline && ['Timeline', timeline],
     role && ['Role', role],
     scale && ['Scale', scale],
