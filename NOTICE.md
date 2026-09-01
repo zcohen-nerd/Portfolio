@@ -70,7 +70,7 @@ terms. Not relicensed here.
 |---|---|
 | `static/assets/images/projects/stlink-v3mods/Schematic.png`, `PCB.png`, `spark-board-perspective.webp` | **SPARK** · `github.com/zcohen-nerd/SPARK` · CERN-OHL-S-2.0 |
 | `static/assets/images/projects/fusion-system-blocks/system-diagram.webp` | **Fusion System Blocks** · `github.com/zcohen-nerd/Fusion_System_Blocks` · custom community license |
-| `static/assets/images/projects/SENTRY/*` (schematics, PCB renders, CAD cross-sections, turret renders, functional block diagram — 12 files) | **SENTRY** · `github.com/zcohen-nerd/SENTRY` · GPL-3.0. SENTRY originated at the U.S. Naval Academy and was released publicly as open source. |
+| `static/assets/images/projects/SENTRY/*` (schematics, PCB renders, CAD cross-sections, turret renders, functional block diagram — 11 files) | **SENTRY** · `github.com/zcohen-nerd/SENTRY` · GPL-3.0. SENTRY originated at the U.S. Naval Academy and was released publicly as open source. |
 | `static/media/sentry/sentry-reveal.mp4`, `sentry-reveal.webm`, `sentry-reveal-poster.webp` | **SENTRY** reveal clip · governed by the SENTRY project (GPL-3.0). |
 | `static/assets/images/projects/surfer-fleet/battery-monitor-board.webp`, `can-hat.webp`, `power-distribution-board.webp`, `safety-relay-board.webp`, `surfer-vessel-cad.webp` | **SURFER** custom hardware — the four circuit boards and the SLA hull/enclosure CAD the author designed. SURFER is a U.S. Naval Academy research platform; these are the author's own design outputs for the parts he owned, and only detail already cleared for public sharing (see the case study's disclosure boundary). Higher-level vessel/autonomy software and any non-public operational imagery are deliberately not included. |
 
