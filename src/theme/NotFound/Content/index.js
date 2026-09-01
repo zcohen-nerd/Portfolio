@@ -1,42 +1,55 @@
-import React from 'react';
+import Head from '@docusaurus/Head';
 
 /**
  * Custom 404 content (swizzled @theme/NotFound/Content).
  * Rendered inside the standard Layout, so the shared Navbar/Footer and
  * Ecosystem navigation remain available.
+ *
+ * GitHub Pages still serves this file with a real HTTP 404; the meta below
+ * only keeps the soft-404 body out of search indexes while letting crawlers
+ * follow the recovery links.
  */
 export default function NotFoundContent() {
   return (
-    <main
-      style={{
-        maxWidth: 640,
-        margin: '0 auto',
-        padding: '96px 24px 120px',
-        textAlign: 'center',
-      }}>
-      <h1 style={{fontSize: 40, marginBottom: 12}}>Page not found</h1>
-      <p style={{fontSize: 17, lineHeight: 1.6}}>
-        That page wandered off during integration. It may have been moved,
-        renamed, or never built in the first place.
-      </p>
-      <ul
+    <>
+      <Head>
+        <meta name="robots" content="noindex, follow" />
+      </Head>
+      <main
         style={{
-          listStyle: 'none',
-          padding: 0,
-          marginTop: 28,
-          fontSize: 16,
-          lineHeight: 2.2,
-        }}>
-        <li>
-          <a href="/projects/">Browse the project index →</a>
-        </li>
-        <li>
-          <a href="/">Return to the portfolio home →</a>
-        </li>
-        <li>
-          <a href="https://zcohen-nerd.com/">Head to the main zcohen-nerd hub →</a>
-        </li>
-      </ul>
-    </main>
+          maxWidth: 640,
+          margin: '0 auto',
+          padding: '96px 24px 120px',
+          textAlign: 'center',
+        }}
+      >
+        <h1 style={{fontSize: 40, marginBottom: 12}}>Page not found</h1>
+        <p style={{fontSize: 17, lineHeight: 1.6}}>
+          That page wandered off during integration. It may have been moved,
+          renamed, or never built in the first place.
+        </p>
+        <ul
+          style={{
+            listStyle: 'none',
+            padding: 0,
+            marginTop: 28,
+            fontSize: 16,
+            lineHeight: 2.2,
+          }}
+        >
+          <li>
+            <a href="/projects/">Browse the project index →</a>
+          </li>
+          <li>
+            <a href="/">Return to the portfolio home →</a>
+          </li>
+          <li>
+            <a href="https://zcohen-nerd.com/">
+              Head to the main zcohen-nerd hub →
+            </a>
+          </li>
+        </ul>
+      </main>
+    </>
   );
 }
