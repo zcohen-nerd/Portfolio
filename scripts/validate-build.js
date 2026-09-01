@@ -551,13 +551,25 @@ check(
 );
 check(
   'SPARK validation status is explicit',
-  sparkVisible.includes('no completed measurement records are published yet'),
+  sparkVisible.includes('no measurement records are published') &&
+    sparkVisible.includes('have not been executed'),
 );
 check(
-  'SPARK status reflects beta hardware in bring-up',
-  sparkVisible.includes('bring-up are underway') &&
-    !sparkVisible.includes('not recorded in the repository'),
+  'SPARK does not over-claim fabrication/assembly (matches the SPARK repo)',
+  sparkVisible.includes(
+    'No fabrication, assembly, or measurement records are published',
+  ) &&
+    !sparkVisible.includes('boards are now in hand') &&
+    !sparkVisible.includes('beta PCBs have been received') &&
+    !sparkVisible.includes('bring-up are underway') &&
+    !sparkVisible.includes('bring-up underway'),
 );
+check(
+  'SPARK does not claim Gerbers (V0.4 exports ODB++ only)',
+  !/\bGerbers?\b/.test(sparkVisible) ||
+    sparkVisible.includes('not currently exported'),
+);
+check('SPARK current status is Prototype', sparkVisible.includes('Prototype'));
 check(
   'SPARK uses precise resistance wording',
   sparkVisible.includes('22 Ω series resistance') &&

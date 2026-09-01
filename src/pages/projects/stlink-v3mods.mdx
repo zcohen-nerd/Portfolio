@@ -35,7 +35,7 @@ displayDate: May 2025–Present
 - Three independently switched target rails (1.8 V, 3.3 V, 5 V) — default OFF at startup
 - SWD, JTAG (10- and 20-pin), UART, SPI, I²C, CAN FD, and GPIO/SWO interfaces
 - 22 Ω series resistance and ESD (electrostatic-discharge) protection arrays on every external-facing signal line
-- Beta PCBs received; manual assembly and bring-up underway
+- Schematic, 4-layer PCB, ODB++ fabrication package, and BOM in the repository; bench-validation plan defined, not yet executed
 
 </ProjectAtAGlance>
 
@@ -88,7 +88,7 @@ The CAN interface uses a **TCAN1051 CAN FD transceiver** with 120 Ω bus termina
 
 ## Implementation & Manufacturing
 
-In the repository: the **schematic** and **PCB layout** sources, the design archive, an **ODB++ fabrication output tree**, the master **BOM**, and board renders. (Gerber archives are not published yet — the board is still in beta bring-up.) The layout uses heavy ground flooding with via stitching, 12-mil typical routing, and an ENIG finish with ink-plugged vias.
+In the repository: the **schematic** and **PCB layout** sources, the design archive, an **ODB++ fabrication output tree**, the master **BOM**, and CAD board renders. The fabrication output is **ODB++ only** — RS-274X Gerbers and Excellon drill files are not currently exported. The layout uses heavy ground flooding with via stitching, 12-mil typical routing, and an ENIG finish with ink-plugged vias.
 
 **Electronics schematic**
 
@@ -108,13 +108,13 @@ In the repository: the **schematic** and **PCB layout** sources, the design arch
   height={375}
 />
 
-Fabricated boards are now in hand: physical beta PCBs have been received, and manual beta assembly and bring-up are underway. Assembly notes, bring-up findings, and any rework will be documented here as they accumulate.
+**No fabrication, assembly, or measurement records are published in the repository.** The [SPARK repository](https://github.com/zcohen-nerd/SPARK#status) tracks maturity per stage: *Designed* and *Fabrication package produced* are done; *Fabricated*, *Assembled*, *Electrically verified*, and *Bench-validated* are not. Fabrication receipts, board photos, assembly notes, and measurement records will be added there — and reflected here — as they exist.
 
 ## Testing & Verification
 
-A [bench-validation plan](https://github.com/zcohen-nerd/SPARK/blob/main/validation/test_plan.md) is defined in the repository. With beta boards in hand and bring-up underway, execution against real hardware has started — **no completed measurement records are published yet**. Planned V1 hardware goals already identified from design review include a VTREF overvoltage-protection path and an optional split CAN termination network.
+A [bench-validation plan](https://github.com/zcohen-nerd/SPARK/blob/main/validation/test_plan.md) and a [first-article bring-up procedure](https://github.com/zcohen-nerd/SPARK/blob/main/validation/bring_up.md) are defined in the repository. **They have not been executed and no measurement records are published.** Planned V1 hardware goals already identified from design review include a VTREF overvoltage-protection path and an optional split CAN termination network.
 
-As bring-up progresses, this section will record what was validated and what needed rework:
+When bring-up happens, this section will record what was validated and what needed rework:
 
 - Power entry, eFuse behavior, and switched target-rail validation — pending
 - Voltage-domain and level-translation validation (LSF0108 / SN74AXC8T245 paths) — pending
@@ -123,11 +123,11 @@ As bring-up progresses, this section will record what was validated and what nee
 - Protection behavior (series resistance, ESD clamping) — pending
 - Discovered problems, rework, and V1 revision changes — documented as found
 
-A real measurement or a documented mistake carries more weight here than another render; failures and rework will be recorded, not hidden.
+A real measurement or a documented mistake will carry more weight here than another render; failures and rework will be recorded, not hidden.
 
 ## Current Status
 
-**Prototype — beta hardware in bring-up.** Schematic and layout are complete, fabricated beta PCBs are in hand, and manual assembly and bring-up are underway. The next milestone is executing the bench-validation plan against the real boards.
+**Prototype.** Schematic, 4-layer PCB layout, ODB++ fabrication package, and BOM are complete in the repository. Nothing has been fabricated, assembled, or electrically verified in the repository record. The next milestone is a first-article board and executing the bring-up procedure against it.
 
 ## Lessons Learned
 
