@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './styles.module.css';
 
 /**
@@ -28,7 +27,8 @@ export default function RelatedWork({items = [], title = 'Related work'}) {
               href={item.href}
               {...(isExternal(item.href)
                 ? {target: '_blank', rel: 'noopener noreferrer'}
-                : null)}>
+                : null)}
+            >
               {item.title}
             </a>
             {item.reason && (

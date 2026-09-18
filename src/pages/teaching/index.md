@@ -28,18 +28,18 @@ As both a practicing engineer and an educator, I intentionally integrate real in
 ## Teaching & Curriculum Projects
 
 <div class="project-grid">
-	<div class="project-card">
-		<img src="/img/teaching/literacy-for-kids-hero.jpg" alt="Literacy for Kids curriculum preview" class="project-image" width="800" height="533" loading="lazy">
-		<h3><a href="/teaching/instructional-design/">Computer Literacy for Kids Curriculum Project</a></h3>
-		<p>A free, open 18-week computer-literacy curriculum for ages 8–12 that builds durable mental models for files, the internet, algorithms, digital judgment, and creativity — with an optional CAD extension.</p>
-		<p><a href="/teaching/instructional-design/">Learn more →</a></p>
-	</div>
-	<div class="project-card">
-		<img src="/assets/images/Teaching/ent-260.webp" alt="ENT260 course preview" class="project-image" width="1280" height="853" loading="lazy">
-		<h3><a href="/teaching/ent260-solidworks/">ENT260 — Proposed SolidWorks Curriculum Redesign</a></h3>
-		<p>A proposed project-driven revision of a college CAD course, centered on real-world mechatronics, DFM/DFA, engineering documentation, and CSWA preparation.</p>
-		<p><a href="/teaching/ent260-solidworks/">Learn more →</a></p>
-	</div>
+ <div class="project-card">
+  <img src="/img/teaching/literacy-for-kids-hero.jpg" alt="Literacy for Kids curriculum preview" class="project-image" width="800" height="533" loading="lazy">
+  <h3><a href="/teaching/instructional-design/">Computer Literacy for Kids Curriculum Project</a></h3>
+  <p>A free, open 18-week computer-literacy curriculum for ages 8–12 that builds durable mental models for files, the internet, algorithms, digital judgment, and creativity — with an optional CAD extension.</p>
+  <p><a href="/teaching/instructional-design/">Learn more →</a></p>
+ </div>
+ <div class="project-card">
+  <img src="/assets/images/Teaching/ent-260.webp" alt="ENT260 course preview" class="project-image" width="1280" height="853" loading="lazy">
+  <h3><a href="/teaching/ent260-solidworks/">ENT260 — Proposed SolidWorks Curriculum Redesign</a></h3>
+  <p>A proposed project-driven revision of a college CAD course, centered on real-world mechatronics, DFM/DFA, engineering documentation, and CSWA preparation.</p>
+  <p><a href="/teaching/ent260-solidworks/">Learn more →</a></p>
+ </div>
 </div>
 
 ## Laboratory & Program Development

@@ -4,6 +4,7 @@ description: "Zac Cohen — electromechanical systems engineer specializing in s
 ---
 
 # Zac Cohen
+
 ## Electromechanical Systems Engineer
 
 <p class="hero-domains">Autonomous maritime systems · robotics · embedded hardware · field integration</p>

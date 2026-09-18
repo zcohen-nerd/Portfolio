@@ -12,10 +12,10 @@ Run `npm run <script>`:
 | Script                    | What it checks                                                                                                                                                                                                                                                         | CI job (`.github/workflows/quality.yml`)    |
 | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
 | `build`                   | Production build. Fails on broken **internal** links **and anchors** (`onBrokenLinks` / `onBrokenAnchors` / `onBrokenMarkdownLinks: 'throw'`).                                                                                                                         | `build`                                     |
-| `format:check`            | Prettier, **only on files changed vs the PR base** (`scripts/changed-files.mjs`).                                                                                                                                                                                      | `format-lint`                               |
+| `format:check`            | Prettier over all supported repository files (generated files and Markdown excluded).                                                                                                                                                                                      | `format-lint`                               |
 | `format`                  | Prettier **write** over the whole repo — the one-time baseline (see below).                                                                                                                                                                                            | —                                           |
 | `lint`                    | ESLint (flat config, JS/JSX). `jsx-a11y` runs here as a fast static a11y check.                                                                                                                                                                                        | `format-lint`                               |
-| `lint:md` / `lint:md:all` | markdownlint on changed Markdown / on everything.                                                                                                                                                                                                                      | `format-lint` / —                           |
+| `lint:md` / `lint:md:all` | markdownlint over all Markdown/MDX covered by the repository config.                                                                                                                                                                                                                      | `format-lint` / —                           |
 | `validate`                | `scripts/validate-build.js` — canonical domain, sitemap, robots, duplicate IDs, single `<h1>`, status-vocabulary drift, per-page OG dimensions, Related-work rules, inline-media budgets, and ~120 page-content guards. **Needs `npm run build` first.**               | `validators`                                |
 | `test:a11y`               | Playwright + `@axe-core/playwright` — WCAG 2.1 A/AA smoke on `/`, `/projects/`, the four flagship case studies, `/about/`, `/404.html`.                                                                                                                                | `a11y`                                      |
 | `test:responsive`         | Playwright — no horizontal overflow, landmarks inside the viewport, tap targets, full-page screenshots at 360/390/768/1024/1440/1920 px, on `/`, `/projects/`, and a flagship.                                                                                         | `responsive`                                |
@@ -26,8 +26,8 @@ Run `npm run <script>`:
 
 ## The one-time Prettier baseline
 
-`format:check` and the pre-commit hook only touch changed files. When the tree is
-clean, land the full sweep as its own commit:
+`format:check` checks the full repository; the pre-commit hook checks staged files.
+For a deliberate formatting sweep:
 
 ```bash
 npm run format
@@ -98,7 +98,29 @@ A PR that adds media without a matching `NOTICE.md` row should not merge.
   commented entry to `e2e/axe-exclusions.ts`.
 - `@docusaurus/plugin-client-redirects` is a dependency but not wired into the
   config — recommend dropping it in a separate change.
-- **Markdown backlog** — `lint:md:all` reports pre-existing `MD022/MD032/MD047`
-  in `static/assets/images/README.md`; the `lint:md` gate is changed-scoped.
 - Perf budgets sit ~15 % above the 2026-08 baseline; ratchet down after any
   optimisation.
+
+## Dependency maintenance
+
+Run `npm audit` after dependency changes. The September 2026 cleanup updates
+compatible dependency ranges and uses targeted overrides for dependencies whose
+parents still require affected versions:
+
+- `serialize-javascript` 7.1.1+: retains the CommonJS serializer used by the
+  webpack plugins; requires Node 20+, within this repository's Node 22+ baseline.
+- `markdownlint-cli2 > smol-toml` 1.8.0+: patched TOML parser.
+- `@docusaurus/theme-mermaid > mermaid` stays on 11.x; the upstream open-ended
+  range selects 12.x, which exceeds the existing total JavaScript budget.
+- `lodash-es` 4.18.1+: patched version for Mermaid’s transitive dependencies.
+- `sockjs > uuid` and `gaxios > uuid` 11.1.1+: both parents use the supported
+  CommonJS `v4()` API.
+
+Keep these overrides until upstream dependency ranges include patched releases.
+Validate production builds, lint, browser checks, and development-server startup
+when changing them. Do not use `npm audit fix --force` to bypass compatibility
+review.
+
+The dependency-audit gate now requires zero known vulnerabilities at every
+severity and fails on registry/report errors. The former exception allowlist
+has been removed.

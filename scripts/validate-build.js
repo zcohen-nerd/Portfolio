@@ -1035,7 +1035,6 @@ check(
 );
 
 // ── Recruiter-scan pass: hero qualifier, top actions, orientation ────────
-const homeVisible = indexHtml.replace(/<script[\s\S]*?<\/script>/g, '');
 
 // Role retained + compact domain qualifier derived from existing facts.
 check(

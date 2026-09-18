@@ -3,17 +3,19 @@
    ══════════════════════════════════════════════════ */
 
 /* ── Reset & Variables ─────────────────────────────── */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 :root {
-  --primary-dark: #0A1F44;
+  --primary-dark: #0a1f44;
   --primary-mid: #1a3a6b;
-  --primary-bright: #00B8D9;
-  --accent-yellow: #F5C542;
+  --primary-bright: #00b8d9;
+  --accent-yellow: #f5c542;
   --bg: #f8f9fb;
   --white: #ffffff;
   --gray-100: #f3f4f6;
@@ -23,9 +25,9 @@
   --gray-700: #374151;
   --gray-900: #111827;
   --radius: 8px;
-  --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
-  --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
-  --shadow-lg: 0 8px 24px rgba(0,0,0,0.12);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
   --max-width: 64rem;
   --transition: 0.2s ease;
 }
@@ -36,7 +38,13 @@ html {
 }
 
 body {
-  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-family:
+    'Inter',
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    Roboto,
+    sans-serif;
   line-height: 1.7;
   color: var(--gray-900);
   background: var(--bg);
@@ -44,7 +52,12 @@ body {
 }
 
 /* ── Typography ───────────────────────────────────── */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--primary-dark);
   font-weight: 600;
   line-height: 1.3;
@@ -52,16 +65,32 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.75rem;
 }
 
-h1 { font-size: 2.25rem; }
-h2 { font-size: 1.75rem; border-bottom: 2px solid var(--gray-200); padding-bottom: 0.4rem; }
-h3 { font-size: 1.35rem; }
-h4 { font-size: 1.1rem; }
+h1 {
+  font-size: 2.25rem;
+}
+h2 {
+  font-size: 1.75rem;
+  border-bottom: 2px solid var(--gray-200);
+  padding-bottom: 0.4rem;
+}
+h3 {
+  font-size: 1.35rem;
+}
+h4 {
+  font-size: 1.1rem;
+}
 
-p, ul, ol, dl, blockquote, table {
+p,
+ul,
+ol,
+dl,
+blockquote,
+table {
   margin-bottom: 1.25rem;
 }
 
-ul, ol {
+ul,
+ol {
   padding-left: 1.5rem;
 }
 
@@ -81,8 +110,12 @@ blockquote p:last-child {
   margin-bottom: 0;
 }
 
-strong { font-weight: 600; }
-em { font-style: italic; }
+strong {
+  font-weight: 600;
+}
+em {
+  font-style: italic;
+}
 
 code {
   background: var(--gray-100);
@@ -293,7 +326,9 @@ a:hover {
   border: 1px solid var(--gray-200);
   border-radius: var(--radius);
   padding: 1.5rem;
-  transition: transform var(--transition), box-shadow var(--transition);
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition);
   box-shadow: var(--shadow-sm);
 }
 
@@ -377,8 +412,8 @@ a:hover {
 }
 
 /* ── Headshot ─────────────────────────────────────── */
-img[alt*="Professional Headshot"],
-img[alt*="Headshot"] {
+img[alt*='Professional Headshot'],
+img[alt*='Headshot'] {
   width: 180px;
   height: 180px;
   object-fit: cover;
@@ -445,7 +480,8 @@ table {
   margin-bottom: 1.5rem;
 }
 
-th, td {
+th,
+td {
   padding: 0.75rem 1rem;
   text-align: left;
   border-bottom: 1px solid var(--gray-200);
@@ -468,16 +504,25 @@ img {
 }
 
 /* ── Inline page images (project/doc pages) ──────── */
-main img:not(.hero-logo):not(.hero-banner):not(.project-image):not([alt*="Headshot"]) {
+main
+  img:not(.hero-logo):not(.hero-banner):not(.project-image):not(
+    [alt*='Headshot']
+  ) {
   border-radius: var(--radius);
   margin-bottom: 1.5rem;
 }
 
 /* ── Responsive ───────────────────────────────────── */
 @media (max-width: 768px) {
-  h1 { font-size: 1.75rem; }
-  h2 { font-size: 1.4rem; }
-  h3 { font-size: 1.15rem; }
+  h1 {
+    font-size: 1.75rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  h3 {
+    font-size: 1.15rem;
+  }
 
   .header-inner {
     justify-content: center;
@@ -489,15 +534,19 @@ main img:not(.hero-logo):not(.hero-banner):not(.project-image):not([alt*="Headsh
     gap: 1rem;
   }
 
-  .hero-text h1 { font-size: 2rem; }
-  .hero-text h2 { font-size: 1rem; }
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+  .hero-text h2 {
+    font-size: 1rem;
+  }
 
   .project-grid {
     grid-template-columns: 1fr;
   }
 
-  img[alt*="Professional Headshot"],
-  img[alt*="Headshot"] {
+  img[alt*='Professional Headshot'],
+  img[alt*='Headshot'] {
     width: 140px;
     height: 140px;
   }
