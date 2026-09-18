@@ -64,4 +64,3 @@ The hardest parts of engineering are often invisible: decisions made under uncer
 **Publication Status:** <span class="status-badge">Published occasionally</span> | **Availability:** [Substack](https://zcohennerd.substack.com/)
 
 [← Back to Writing & Research](/documentation/) | [Next: Scholarship & Speaking →](/documentation/scholarship/)
-

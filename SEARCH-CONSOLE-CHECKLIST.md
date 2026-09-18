@@ -16,10 +16,12 @@ subdomain — check GSC before adding a duplicate.)
    `https://portfolio.zcohen-nerd.com/`.
 3. **HTML tag** method: uncomment the placeholder in `docusaurus.config.js`
    `headTags` and paste the token:
+
    ```js
    {tagName: 'meta', attributes: {name: 'google-site-verification', content: '<token>'}},
    {tagName: 'meta', attributes: {name: 'msvalidate.01', content: '<token>'}},
    ```
+
 4. `npm run build`, deploy, **Verify**. Repeat for BWT.
 
 ## 2. Submit the sitemap
@@ -51,7 +53,7 @@ Inspect + *Request indexing*:
 
 | date | queries file | pages file | indexed | rich-results status | notes |
 | --- | --- | --- | --- | --- | --- |
-| _fill in_ | | | | | first baseline |
+| *fill in* | | | | | first baseline |
 
 ## 5. Monthly review (~15 min)
 

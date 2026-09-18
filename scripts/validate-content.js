@@ -32,7 +32,9 @@ const REDUCED_FIELD_STATUS = new Set(['Concept']);
 const failures = [];
 function fail(file, problem, fix) {
   failures.push({file, problem, fix});
-  console.error(`FAIL  ${file}\n      problem: ${problem}\n      fix:     ${fix}\n`);
+  console.error(
+    `FAIL  ${file}\n      problem: ${problem}\n      fix:     ${fix}\n`,
+  );
 }
 function pass(msg) {
   console.log(`  ok  ${msg}`);
@@ -58,9 +60,16 @@ function jpgDims(fp) {
   const b = fs.readFileSync(fp);
   let o = 2;
   while (o < b.length - 1) {
-    if (b[o] !== 0xff) { o++; continue; }
+    if (b[o] !== 0xff) {
+      o++;
+      continue;
+    }
     const marker = b[o + 1];
-    if (marker >= 0xc0 && marker <= 0xcf && ![0xc4, 0xc8, 0xcc].includes(marker)) {
+    if (
+      marker >= 0xc0 &&
+      marker <= 0xcf &&
+      ![0xc4, 0xc8, 0xcc].includes(marker)
+    ) {
       return {h: b.readUInt16BE(o + 5), w: b.readUInt16BE(o + 7)};
     }
     o += 2 + b.readUInt16BE(o + 2);
@@ -75,7 +84,10 @@ function collectRoutes() {
   (function walk(dir, base) {
     for (const f of fs.readdirSync(dir)) {
       const fp = path.join(dir, f);
-      if (fs.statSync(fp).isDirectory()) { walk(fp, `${base}/${f}`); continue; }
+      if (fs.statSync(fp).isDirectory()) {
+        walk(fp, `${base}/${f}`);
+        continue;
+      }
       const m = f.match(/^(.+)\.mdx?$/);
       if (!m) continue;
       routes.add(m[1] === 'index' ? `${base}/` : `${base}/${m[1]}/`);
@@ -91,7 +103,11 @@ const projectFiles = fs
   .filter((f) => /\.mdx?$/.test(f) && !/^index\.mdx?$/.test(f));
 
 if (projectFiles.length === 0) {
-  fail('src/pages/projects/', 'no project pages found', 'this validator expects project case studies under src/pages/projects/');
+  fail(
+    'src/pages/projects/',
+    'no project pages found',
+    'this validator expects project case studies under src/pages/projects/',
+  );
 }
 
 for (const f of projectFiles) {
@@ -100,29 +116,50 @@ for (const f of projectFiles) {
 
   const parsed = parseFrontMatter(text);
   if (!parsed) {
-    fail(rel, 'no YAML front-matter block', "add a leading '---' … '---' block with at least: title, description, status");
+    fail(
+      rel,
+      'no YAML front-matter block',
+      "add a leading '---' … '---' block with at least: title, description, status",
+    );
     continue;
   }
   const {fm, body} = parsed;
 
   // required fields (all project pages)
   for (const key of ['title', 'description', 'status']) {
-    if (!fm[key]) fail(rel, `front matter is missing '${key}'`, `add a '${key}:' line to the front matter`);
+    if (!fm[key])
+      fail(
+        rel,
+        `front matter is missing '${key}'`,
+        `add a '${key}:' line to the front matter`,
+      );
   }
 
   // status vocabulary
   if (fm.status && !STATUS_VOCAB.includes(fm.status)) {
-    fail(rel, `status "${fm.status}" is not an allowed value`, `set 'status:' to one of: ${STATUS_VOCAB.join(', ')}`);
+    fail(
+      rel,
+      `status "${fm.status}" is not an allowed value`,
+      `set 'status:' to one of: ${STATUS_VOCAB.join(', ')}`,
+    );
   }
   const reduced = REDUCED_FIELD_STATUS.has(fm.status);
 
   // deployed-class pages must also declare a timeline + OG image
   if (!reduced && fm.status) {
     if (!fm.displayDate) {
-      fail(rel, `a "${fm.status}" page has no timeline`, "add 'displayDate: <e.g. 2023–2025>' to the front matter (Concept / roadmap pages are exempt)");
+      fail(
+        rel,
+        `a "${fm.status}" page has no timeline`,
+        "add 'displayDate: <e.g. 2023–2025>' to the front matter (Concept / roadmap pages are exempt)",
+      );
     }
     if (!fm.image) {
-      fail(rel, `a "${fm.status}" page has no OG image`, "add 'image: /img/og/og-<slug>.<png|jpg>' and generate it with scripts/generate-og-pages.ps1 (Concept pages are exempt)");
+      fail(
+        rel,
+        `a "${fm.status}" page has no OG image`,
+        "add 'image: /img/og/og-<slug>.<png|jpg>' and generate it with scripts/generate-og-pages.ps1 (Concept pages are exempt)",
+      );
     }
   }
 
@@ -130,34 +167,58 @@ for (const f of projectFiles) {
   if (fm.image) {
     const ogPath = path.join(staticDir, fm.image.replace(/^\//, ''));
     if (!fs.existsSync(ogPath)) {
-      fail(rel, `front-matter image '${fm.image}' does not exist`, `create static${fm.image} or correct the 'image:' path`);
+      fail(
+        rel,
+        `front-matter image '${fm.image}' does not exist`,
+        `create static${fm.image} or correct the 'image:' path`,
+      );
     } else {
       const d = imageDims(ogPath);
       if (d.w !== 1200 || d.h !== 630) {
-        fail(rel, `OG image '${fm.image}' is ${d.w}x${d.h}, must be 1200x630`, 'regenerate it (scripts/generate-og-pages.ps1) or replace with a 1200x630 image');
+        fail(
+          rel,
+          `OG image '${fm.image}' is ${d.w}x${d.h}, must be 1200x630`,
+          'regenerate it (scripts/generate-og-pages.ps1) or replace with a 1200x630 image',
+        );
       }
     }
   }
 
   // local image / asset references in the body must exist under static/
   const assetRefs = new Set();
-  for (const m of body.matchAll(/(?:src|href)=["'](\/(?:assets|img|media)\/[^"']+\.(?:webp|png|jpe?g|gif|svg|mp4|webm))["']/g)) {
+  for (const m of body.matchAll(
+    /(?:src|href)=["'](\/(?:assets|img|media)\/[^"']+\.(?:webp|png|jpe?g|gif|svg|mp4|webm))["']/g,
+  )) {
     assetRefs.add(m[1]);
   }
   // full-resolution links written as absolute site URLs
-  for (const m of body.matchAll(new RegExp(`["']${SITE_ORIGIN.replace(/[.]/g, '\\.')}(/(?:assets|img|media)/[^"']+)["']`, 'g'))) {
+  for (const m of body.matchAll(
+    new RegExp(
+      `["']${SITE_ORIGIN.replace(/[.]/g, '\\.')}(/(?:assets|img|media)/[^"']+)["']`,
+      'g',
+    ),
+  )) {
     assetRefs.add(m[1]);
   }
   for (const ref of assetRefs) {
     const fp = path.join(staticDir, decodeURIComponent(ref).replace(/^\//, ''));
     if (!fs.existsSync(fp)) {
-      fail(rel, `references a local asset that does not exist: ${ref}`, `add the file at static${ref} or fix the path`);
+      fail(
+        rel,
+        `references a local asset that does not exist: ${ref}`,
+        `add the file at static${ref} or fix the path`,
+      );
     }
   }
 
   // duplicate headings → duplicate anchor IDs
   const headings = [...body.matchAll(/^#{2,6}[ \t]+(.+?)[ \t]*$/gm)]
-    .map((m) => m[1].replace(/\s*\{#[^}]+\}\s*$/, '').trim().toLowerCase())
+    .map((m) =>
+      m[1]
+        .replace(/\s*\{#[^}]+\}\s*$/, '')
+        .trim()
+        .toLowerCase(),
+    )
     .filter(Boolean);
   const seen = new Set();
   const dups = new Set();
@@ -166,7 +227,11 @@ for (const f of projectFiles) {
     seen.add(h);
   }
   if (dups.size) {
-    fail(rel, `duplicate heading text would create duplicate anchor IDs: ${[...dups].join('; ')}`, 'make each heading unique, or give the repeats distinct explicit {#ids}');
+    fail(
+      rel,
+      `duplicate heading text would create duplicate anchor IDs: ${[...dups].join('; ')}`,
+      'make each heading unique, or give the repeats distinct explicit {#ids}',
+    );
   }
 
   // internal links resolve to a real route
@@ -176,11 +241,19 @@ for (const f of projectFiles) {
   ];
   for (const m of linkMatches) {
     const target = m[1];
-    if (/\.(webp|png|jpe?g|gif|svg|pdf|mp4|webm|txt|md)$/i.test(target)) continue; // asset link
+    if (/\.(webp|png|jpe?g|gif|svg|pdf|mp4|webm|txt|md)$/i.test(target))
+      continue; // asset link
     const withSlash = target.endsWith('/') ? target : `${target}/`;
     if (!ROUTES.has(withSlash) && !ROUTES.has(target)) {
-      const near = [...ROUTES].filter((r) => r.startsWith('/projects/')).sort().join(', ');
-      fail(rel, `internal link '${target}' does not resolve to a page`, `point it at an existing route (e.g. one of: ${near}) or a static file`);
+      const near = [...ROUTES]
+        .filter((r) => r.startsWith('/projects/'))
+        .sort()
+        .join(', ');
+      fail(
+        rel,
+        `internal link '${target}' does not resolve to a page`,
+        `point it at an existing route (e.g. one of: ${near}) or a static file`,
+      );
     }
   }
 
@@ -189,31 +262,60 @@ for (const f of projectFiles) {
   const rwBlock = body.match(/<RelatedWork\b[\s\S]*?\/>/);
   const rwMarkdown = /^##\s+Related work\s*$/m.test(body);
   if (!rwBlock && !rwMarkdown) {
-    fail(rel, 'no Related work section', "add a <RelatedWork items={[…]} /> block (or a '## Related work' list) with 2–3 contextual links");
+    fail(
+      rel,
+      'no Related work section',
+      "add a <RelatedWork items={[…]} /> block (or a '## Related work' list) with 2–3 contextual links",
+    );
   } else if (rwBlock) {
-    const items = [...rwBlock[0].matchAll(/\{\s*href:\s*['"]([^'"]+)['"][\s\S]*?title:\s*['"]([^'"]*)['"][\s\S]*?reason:\s*['"]?/g)]
-      .map((m) => ({href: m[1], title: m[2]}));
-    const rawHrefs = [...rwBlock[0].matchAll(/href:\s*['"]([^'"]+)['"]/g)].map((m) => m[1]);
+    const rawHrefs = [...rwBlock[0].matchAll(/href:\s*['"]([^'"]+)['"]/g)].map(
+      (m) => m[1],
+    );
     if (rawHrefs.length < 2 || rawHrefs.length > 3) {
-      fail(rel, `Related work has ${rawHrefs.length} link(s); needs 2–3`, 'trim or add entries so each page offers 2–3 contextual next paths');
+      fail(
+        rel,
+        `Related work has ${rawHrefs.length} link(s); needs 2–3`,
+        'trim or add entries so each page offers 2–3 contextual next paths',
+      );
     }
     if (!/reason:/.test(rwBlock[0])) {
-      fail(rel, 'Related work links have no reasons', "give every item a `reason:` that explains the relationship");
+      fail(
+        rel,
+        'Related work links have no reasons',
+        'give every item a `reason:` that explains the relationship',
+      );
     }
     const selfSlug = f.replace(/\.mdx?$/, '');
     for (const href of rawHrefs) {
       if (/^https?:\/\//i.test(href)) {
         if (!/^https:\/\/[a-z0-9.-]+\.[a-z]{2,}(\/|$)/i.test(href)) {
-          fail(rel, `Related work external link is malformed: ${href}`, 'use a full https:// URL');
+          fail(
+            rel,
+            `Related work external link is malformed: ${href}`,
+            'use a full https:// URL',
+          );
         }
       } else {
         const targetPath = href.replace(/#.*$/, '');
-        const withSlash = targetPath === '' || targetPath === '/' ? '/' : targetPath.endsWith('/') ? targetPath : `${targetPath}/`;
+        const withSlash =
+          targetPath === '' || targetPath === '/'
+            ? '/'
+            : targetPath.endsWith('/')
+              ? targetPath
+              : `${targetPath}/`;
         if (!ROUTES.has(withSlash) && !ROUTES.has(targetPath)) {
-          fail(rel, `Related work internal link does not resolve: ${href}`, 'point it at an existing route');
+          fail(
+            rel,
+            `Related work internal link does not resolve: ${href}`,
+            'point it at an existing route',
+          );
         }
         if (targetPath.replace(/\/$/, '').endsWith(`/${selfSlug}`)) {
-          fail(rel, `Related work links back to this same page (${href})`, 'related work is a next path, not a self-reference — remove it');
+          fail(
+            rel,
+            `Related work links back to this same page (${href})`,
+            'related work is a next path, not a self-reference — remove it',
+          );
         }
       }
     }
@@ -223,7 +325,9 @@ for (const f of projectFiles) {
 }
 
 if (failures.length) {
-  console.error(`\n${failures.length} content validation failure(s). Fix the files above.`);
+  console.error(
+    `\n${failures.length} content validation failure(s). Fix the files above.`,
+  );
   process.exit(1);
 }
 console.log('\nAll content validations passed.');

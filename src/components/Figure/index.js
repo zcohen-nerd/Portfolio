@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './styles.module.css';
 
 /**
@@ -54,7 +53,8 @@ export default function Figure({
           <a
             href={fullResolution.href}
             target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer"
+          >
             {`${
               fullResolution.label || 'Open the full-resolution version'
             } in a new tab →`}

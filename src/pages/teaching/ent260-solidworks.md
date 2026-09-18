@@ -197,4 +197,3 @@ The final capstone extends that approach into collaborative systems work. By the
 **Course Information:** ENT260 — Proposed Curriculum Redesign | **Credit Hours:** 3 | **Format:** Project-driven studio course | **Primary Platform:** SolidWorks
 
 [← Back to Teaching](/teaching/) | [Next: Instructional Design →](/teaching/instructional-design/)
-

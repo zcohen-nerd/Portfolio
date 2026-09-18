@@ -85,7 +85,9 @@ body {
   border-radius: var(--zc-radius-xl);
   padding: 24px;
   box-shadow: var(--zc-shadow-md);
-  transition: transform var(--zc-transition), box-shadow var(--zc-transition);
+  transition:
+    transform var(--zc-transition),
+    box-shadow var(--zc-transition);
 }
 
 .project-card:hover {
@@ -271,7 +273,9 @@ body {
   font-size: 15px;
   line-height: 1.2;
   text-decoration: none;
-  transition: background var(--zc-transition), border-color var(--zc-transition),
+  transition:
+    background var(--zc-transition),
+    border-color var(--zc-transition),
     color var(--zc-transition);
 }
 

@@ -140,4 +140,3 @@ It shows how I think about educational design when the real objective is long-te
 **Project Link:** [Literacy for Kids](https://www.literacy-for-kids.com/) | **Source:** [Literacy for Kids on GitHub](https://github.com/literacy-for-kids) | **License:** CC BY-NC-SA 4.0
 
 [← Previous: ENT260 SolidWorks](/teaching/ent260-solidworks/) | [Back to Teaching →](/teaching/)
-
