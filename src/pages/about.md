@@ -62,7 +62,7 @@ Everything shown here is independently developed work, educational material, or 
 
 **Maryland · 2006–Present**
 
-- Two decades of volunteer leadership — founding student to lead mentor, judge, and district event manager, with statewide advocacy contributing to ~$250K in annual Maryland robotics funding. The full story is on the [*FIRST* Robotics page](/frc/).
+- Two decades of volunteer leadership — founding student to lead mentor, judge, and district event manager, securing $250,000 in annual Maryland robotics funding through work with Former Delegate Kirill Reznik and student advocacy. The full story is on the [*FIRST* Robotics page](/frc/).
 
 ### Engineering Teacher & Program Lead — Various High Schools
 

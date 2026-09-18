@@ -7,7 +7,16 @@ description: "Complete chronological history of FIRST Robotics Competition invol
 
 This is the complete, detailed history. For the concise overview, see [FIRST Robotics](/frc/).
 
+## Where it started — Team 1712 Dawgma
+
+In 2006, I became a founding student on FRC Team 1712, Dawgma, at Lower Merion. Two teachers, Mr. Piotrowski and Mr. Kressly, encouraged me into the program. I was focused on technical theater and did not think I needed college. Mr. Kressly's invitation to help build a wooden crate became an opportunity to help build a robot and take responsibility on a team.
+
+I returned to mentor Dawgma, including full-time involvement during 2007–2008. That experience helped me see teaching as a way to combine making, mentoring, and engineering. When I asked Mr. Piotrowski where to study, he pointed me toward Millersville. I attended from 2008 to 2012, studying Technology and Engineering Education, and met my wife there.
+
+I trace my career and family back to that opportunity. *FIRST* changed the direction of my life, and that firsthand experience is why I continue to make room for it.
+
 ## *FIRST* Robotics Competition
+
 ## Event Manager & Leadership - *FIRST* Chesapeake
 
 My involvement with the *FIRST* Robotics Competition spans multiple roles including student competitor, mentor, judge, and event manager. Over time, my focus has shifted toward helping deliver competitions that serve hundreds of students and volunteers each season.
@@ -17,6 +26,12 @@ My involvement with the *FIRST* Robotics Competition spans multiple roles includ
 Since 2013, I have served as a volunteer leader within *FIRST* Chesapeake, helping coordinate and deliver district competitions for teams across the region.
 
 ---
+
+### Regional and District Planning Committees
+
+I served on the planning committee for the **2015 *FIRST* Chesapeake Regional Event**. At that event, I built a relationship with **Former Delegate Kirill Reznik** that became the starting point for my work to secure annual Maryland robotics funding.
+
+I also served on the ***FIRST* Chesapeake District Planning Committee**, participating in the change from the regional model to the district model.
 
 ### Event Manager — *FIRST* Chesapeake
 
@@ -296,7 +311,7 @@ Beyond the robotics field, the Power Hawks program also worked to expand access 
 
 During the 2015–2016 season, the team helped initiate legislation in Maryland to support after-school robotics programs statewide.
 
-Working directly with **Maryland Delegate Eric Reznik**, I served as the primary point of contact and coordinated the effort to introduce legislation that ultimately provided **$250,000 annually in funding for after-school robotics programs**.
+I secured **$250,000 annually in funding for after-school robotics programs** through my work with **Former Delegate Kirill Reznik**. Our relationship began at the **2015 *FIRST* Chesapeake Regional Event**, where I served on the planning committee. I carried that relationship into the legislative effort, serving as the primary point of contact and coordinating the work with Reznik and the Power Hawks students.
 
 The effort involved coordinating with students, preparing advocacy materials, and working with legislative staff to explain the educational impact of programs like *FIRST*.
 
@@ -403,6 +418,5 @@ Volunteering with *FIRST* allows me to help create those environments for thousa
 Whether mentoring a team, interviewing students as a judge, or running a competition as an event manager, the goal remains the same: ensuring students have the opportunity to grow into capable engineers, leaders, and contributors to their communities.
 
 Programs like *FIRST* demonstrate that engineering is not only about technology; it is about people working together to build something meaningful.
-
 
 [← Back to FIRST Robotics overview](/frc/)
