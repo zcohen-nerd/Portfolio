@@ -26,8 +26,14 @@ try {
   const audit = JSON.parse(raw);
   if (
     audit.error ||
-    !audit.vulnerabilities ||
-    !Number.isInteger(audit.metadata?.vulnerabilities?.total)
+    typeof audit.vulnerabilities !== 'object' ||
+    audit.vulnerabilities === null ||
+    Array.isArray(audit.vulnerabilities) ||
+    !['total', 'critical', 'high', 'moderate', 'low'].every(
+      (key) =>
+        Number.isInteger(audit.metadata?.vulnerabilities?.[key]) &&
+        audit.metadata.vulnerabilities[key] >= 0,
+    )
   ) {
     throw new Error('npm audit did not return a valid vulnerability report');
   }
