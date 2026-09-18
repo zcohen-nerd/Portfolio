@@ -6,7 +6,13 @@ description: "Two decades in FIRST Robotics — from founding student to lead me
 
 # *FIRST* Robotics Competition
 
-I've been part of the *FIRST* Robotics Competition for two decades — first as a founding student on a team, then as a mentor, lead mentor, judge, and event manager. What started as building a robot in high school became a throughline for how I approach engineering: complex systems succeed when the people, processes, and technology are designed together.
+*FIRST* is the reason I went to college. It set me on the path to becoming a teacher and an engineer, and to the university where I met my wife. I can trace the life I have today back to two high school teachers encouraging me to join the robotics team they were forming.
+
+At Lower Merion, Mr. Piotrowski and Mr. Kressly helped me find that path. I was the theater kid who didn't think he needed college. An invitation to help build a wooden crate became a place on FRC Team 1712, Dawgma, in its founding season in 2006. I found people who trusted me to build things, take responsibility, and contribute. That changed what I wanted for myself.
+
+I returned as a mentor, eventually studied Technology and Engineering Education at Millersville, and became a teacher myself. I also met my wife there. My career and my family both grew out of a path that started with that team. When I talk about the value of *FIRST*, I understand it firsthand.
+
+That's why *FIRST* will always be special to me. Two teachers opened a door that changed my life. I keep coming back as a mentor, judge, and event manager because I want other students to have that opportunity too.
 
 Today my focus is delivering competitions for *FIRST* Chesapeake — coordinating the referees, judges, inspectors, field crews, and volunteer staffs that make a three-day event with hundreds of students run on schedule. For the 2027 season I will serve as Event Manager of the Central Maryland District Event at South River High School and as Event Manager of the *FIRST* Chesapeake District Championship at Showplace Arena — the region's culminating event.
 
@@ -17,11 +23,13 @@ Today my focus is delivering competitions for *FIRST* Chesapeake — coordinatin
 ## Timeline
 
 <ul class="frc-timeline">
-  <li><span class="frc-timeline-year">2006</span> Founding student, FRC Team 1712</li>
+  <li><span class="frc-timeline-year">2006</span> Founding student, FRC Team 1712 Dawgma — the start of my path to college and teaching</li>
   <li><span class="frc-timeline-year">2007–present</span> Mentor for multiple <em>FIRST</em> teams</li>
   <li><span class="frc-timeline-year">2013–2017</span> Lead Mentor &amp; Teacher Advisor, Team 1111 Power Hawks</li>
   <li><span class="frc-timeline-year">2013–present</span> FRC and FTC Judge — district events through the <em>FIRST</em> World Championship</li>
-  <li><span class="frc-timeline-year">2015–2016</span> Maryland robotics funding legislation effort (~$250K annual state funding)</li>
+  <li><span class="frc-timeline-year">2015</span> Planning Committee, <em>FIRST</em> Chesapeake Regional Event; built the relationship with Former Delegate Kirill Reznik that led to Maryland robotics funding</li>
+  <li><span class="frc-timeline-year">District transition</span> <em>FIRST</em> Chesapeake District Planning Committee — participated in the change from the regional model to the district model</li>
+  <li><span class="frc-timeline-year">2015–2016</span> Secured $250,000 in annual Maryland robotics funding through work with Former Delegate Kirill Reznik and student advocacy</li>
   <li><span class="frc-timeline-year">2016</span> Hosted and event-managed a <em>FIRST</em> Chesapeake district event</li>
   <li><span class="frc-timeline-year">2017</span> Team 1111's first event win</li>
   <li><span class="frc-timeline-year">2016–2026</span> Event Manager for four <em>FIRST</em> Chesapeake district events; Assistant Event Manager, District Championship (2018)</li>
@@ -48,7 +56,11 @@ As a judge — primarily a Team Attributes Judge from district events up through
 
 ## Programs and advocacy
 
-During the 2015–2016 season the Power Hawks took the mission beyond the field. Working with Maryland Delegate Eric Reznik as the effort's primary point of contact, I coordinated a student-driven push to introduce state legislation supporting after-school robotics — which passed, providing **$250,000 annually** for programs across Maryland. Each year I also led students to Capitol Hill to advocate for STEM education directly with members of Congress.
+I secured **$250,000 a year in Maryland funding for after-school robotics** through my work with **Former Delegate Kirill Reznik**. That effort began with a relationship I built with him at the **2015 *FIRST* Chesapeake Regional Event**, where I served on the planning committee.
+
+During the 2015–2016 season, I turned that relationship into a legislative effort with the Power Hawks. As the primary point of contact, I worked directly with Reznik and coordinated students' advocacy for the legislation, which passed. For me, expanding access to robotics was personal: I knew what one invitation to join a team had done for my own life.
+
+I also served on the ***FIRST* Chesapeake District Planning Committee**, participating in the transition from the regional model to the district model. Each year I led students to Capitol Hill to advocate for STEM education directly with members of Congress.
 
 In 2016 the team hosted a *FIRST* Chesapeake district event at our school — and deliberately sat out the competition so students and mentors could staff and run it, seeing the operational side of the program firsthand.
 
