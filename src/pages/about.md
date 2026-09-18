@@ -10,6 +10,14 @@ I'm an electromechanical systems integrator who works the boundaries where mecha
 
 Today I do that work professionally on autonomous maritime systems, teach CAD and mechatronics as adjunct faculty, and volunteer in [*FIRST* Robotics Competition](/frc/) leadership. I'm a published co-author ([IEEE/RSJ IROS, ICUAS](/documentation/scholarship/)) — building the hardware and running the experimental testing behind the data.
 
+## Open work. Closed boundaries
+
+I believe in building and sharing in public when the work is mine to share. My personal projects, educational resources, and independent engineering tools are often developed openly because documentation and reuse make them more useful.
+
+Professional work has its own information boundaries. Proprietary, customer-sensitive, export-controlled, classified, NDA-covered, and otherwise restricted information stays separate from this site. I am comfortable with professional work remaining entirely closed indefinitely; open source is not an expectation I place on an employer's work.
+
+Everything shown here is independently developed work, educational material, or other technical information I am authorized to share publicly. Documentation should reach the right audience — sometimes the entire Internet, sometimes only the people authorized to work on the program. Knowing what should never leave the program is part of engineering judgment.
+
 ## Professional Experience
 
 ### Senior Electromechanical Systems Engineer — BlackSea Technologies
