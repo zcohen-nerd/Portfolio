@@ -8,6 +8,10 @@ image: /img/og/og-projects.png
 
 Project pages emphasize the problem, architecture, interfaces, implementation decisions, verification, and lessons that are most relevant to each system.
 
+> **Portfolio disclosure:** This site contains only work and technical information I am authorized to share publicly. Confidential, proprietary, customer-sensitive, export-controlled, classified, NDA-covered, and otherwise restricted information is intentionally excluded.
+
+Some professional engineering experience cannot be represented here in technical detail. Program and customer information stays within its authorized audience; these public case studies are a selected view of my work.
+
 ## Start with these systems {#start-here}
 
 New here? Two short paths through the work:

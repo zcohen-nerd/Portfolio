@@ -14,6 +14,8 @@ import styles from './styles.module.css';
  *
  * Props (all optional):
  *   status   — e.g. "Deployed", "Public Beta", "Prototype", "Concept"
+ *   context  — evidenced disclosure context, e.g. "Educational · Open Source";
+ *              describes the public material, not formal release approval.
  *   timeline — e.g. "2023–2025" or "Program 2020–Present · my role 2024–2026"
  *   role     — ownership / boundary, one line
  *   scale    — problem or deployment scale, one line
@@ -28,6 +30,7 @@ function isExternal(href) {
 
 export default function ProjectAtAGlance({
   status,
+  context,
   timeline,
   role,
   scale,
@@ -36,7 +39,13 @@ export default function ProjectAtAGlance({
   children,
 }) {
   const facts = [
-    status && ['Status', <span key="s" className="status-badge">{status}</span>],
+    status && [
+      'Status',
+      <span key="s" className="status-badge">
+        {status}
+      </span>,
+    ],
+    context && ['Context', context],
     timeline && ['Timeline', timeline],
     role && ['Role', role],
     scale && ['Scale', scale],
@@ -68,7 +77,8 @@ export default function ProjectAtAGlance({
                 href={l.href}
                 {...(isExternal(l.href)
                   ? {target: '_blank', rel: 'noopener noreferrer'}
-                  : null)}>
+                  : null)}
+              >
                 {l.label}
               </a>
             </React.Fragment>

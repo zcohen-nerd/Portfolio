@@ -10,6 +10,8 @@ description: "Zac Cohen — electromechanical systems engineer specializing in s
 
 Designing integrated hardware systems from architecture to deployment
 
+This portfolio brings together personal projects, educational resources, and publicly shareable engineering work. I build openly where appropriate; restricted professional work stays separate by design.
+
 <div class="hero-actions">
 
 [View selected systems](#featured-systems) [Résumé (PDF)](pathname:///files/zac-cohen-resume.pdf) [Email Zac](mailto:zachary@zcohen-nerd.com)
