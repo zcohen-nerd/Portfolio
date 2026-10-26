@@ -1,0 +1,27 @@
+{
+  "_comment": "Only exact advisory IDs and installed versions are accepted. All severities are checked; expired entries fail even when stale. See .github/DEPENDENCY-AUDIT.md.",
+  "advisories": [
+    {
+      "package": "http-cache-semantics",
+      "advisories": ["GHSA-ch52-4w7c-c8xp"],
+      "versions": ["4.2.0"],
+      "severity": "high",
+      "exposure": "build-only / CLI update checker",
+      "path": "@docusaurus/core@3.10.2 > update-notifier > latest-version > package-json > got > cacheable-request > http-cache-semantics@4.2.0",
+      "reason": "No patched release is available. This instance is used by the local Docusaurus CLI update checker, not a cross-user shared HTTP cache or the generated static site. The advisory requires reuse of another user's cached response. Do not extend this exception to an application HTTP cache.",
+      "upstream": "https://github.com/advisories/GHSA-ch52-4w7c-c8xp",
+      "review_by": "2026-11-30"
+    },
+    {
+      "package": "tinypool",
+      "advisories": ["GHSA-5gmw-xhrv-c9v3", "GHSA-85c8-ppgw-ccpr"],
+      "versions": ["1.1.1"],
+      "severity": "critical",
+      "exposure": "build-only / Docusaurus static-site generation workers",
+      "path": "@docusaurus/core@3.10.2 > tinypool@1.1.1",
+      "reason": "Docusaurus maintainers reviewed both advisories and determined they do not add an attack path to its build model: SSG workers already run trusted repository code with host privileges, and the run-options advisory does not affect its pool.run(task) call without a second argument. Tinypool is absent from deployed browser code. The patched 2.1.2 is outside core's declared ^1.0.2 range; retain the supported major rather than force an unverified worker-pool migration. Re-review on any version, advisory, dependency-path, or usage change.",
+      "upstream": "https://github.com/facebook/docusaurus/issues/12584",
+      "review_by": "2026-11-30"
+    }
+  ]
+}
