@@ -21,8 +21,9 @@ verify the consumers.
 
 ## Residual exceptions
 
-Only two root packages remain accepted: http-cache-semantics 4.2.0 in the local CLI
-update checker, and tinypool 1.1.1 in trusted Docusaurus build workers. These are
+Three root packages have scoped exceptions: http-cache-semantics 4.2.0 in the local CLI
+update checker, tinypool 1.1.1 in trusted Docusaurus build workers, and deepmerge
+4.3.1, declared but not imported by the installed SVGR optimizer. These are
 risk acceptances, not patched dependencies or a clean raw npm audit. The exception
 file records their exact advisories, dependency paths, exposure, upstream evidence,
 and a review deadline of November 30, 2026.
@@ -33,6 +34,26 @@ copies, and expired exceptions fail the gate. Expired stale entries also fail
 until removed. Re-review the documented path if a consumer or usage changes; the
 gate does not infer application reachability from package names or automatically
 approve future vulnerabilities on an excepted package.
+
+## November 10, 2026 PR review
+
+The Playwright update moves the test runner and browser packages to 1.65.0.
+Joi is refreshed within its supported 17.x range to 17.13.9. Markdownlint pins
+re2js to 2.8.6, so a consumer-scoped override selects the patched 2.8.7 release.
+
+Linkinator 6 uses the named, asynchronous `glob()` API. A Linkinator-scoped
+override selects glob 14.0.2 or later in that major, which also selects patched
+minimatch 11. This avoids replacing the entire link checker; verify its local
+file-pattern expansion as well as the normal site checks when updating the
+override. No override applies to the older minimatch 3 copies used by ESLint
+and the preview server, which are outside this advisory's affected range.
+
+The remaining new advisory, deepmerge GHSA-gcqx-w48m-w2h4, has no patched
+release. Its only installed consumer is `@svgr/plugin-svgo@8.1.0`; that
+consumer's distributed implementation does not import it. The exact 4.3.1
+exception is limited to this build dependency and expires November 30 with
+the existing exceptions. It does not authorize merging untrusted objects or
+additional consumers. Source: <https://github.com/advisories/GHSA-gcqx-w48m-w2h4>.
 
 ## Run locally
 
