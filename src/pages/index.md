@@ -1,15 +1,17 @@
 ---
-title: Electromechanical Systems Engineer
-description: "Zac Cohen — electromechanical systems engineer specializing in systems integration across hardware, firmware, and documentation."
+title: Senior Systems Engineer
+description: "Zac Cohen — Senior Systems Engineer at Johns Hopkins Applied Physics Laboratory, with a background in electromechanical integration, embedded hardware, and engineering education."
 ---
 
 # Zac Cohen
 
-## Electromechanical Systems Engineer
+## Senior Systems Engineer
 
 <p class="hero-domains">Autonomous maritime systems · robotics · embedded hardware · field integration</p>
 
 Designing integrated hardware systems from architecture to deployment
+
+I'm a Senior Systems Engineer at Johns Hopkins Applied Physics Laboratory (APL), with a hands-on background in electromechanical systems, embedded hardware, and engineering education.
 
 This portfolio brings together personal projects, educational resources, and publicly shareable engineering work. I build openly where appropriate; restricted professional work stays separate by design.
 

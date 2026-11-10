@@ -8,7 +8,7 @@
 const config = {
   title: 'Zac Cohen Portfolio',
   tagline:
-    'Electromechanical systems engineer — designing integrated hardware systems from architecture to deployment.',
+    'Senior systems engineer — designing integrated hardware systems from architecture to deployment.',
   favicon: 'img/zcohen-nerd-icon.png',
 
   url: 'https://portfolio.zcohen-nerd.com',
@@ -49,10 +49,10 @@ const config = {
         alternateName: 'Zachary Cohen',
         url: 'https://zcohen-nerd.com/',
         image: 'https://zcohen-nerd.com/img/zachary-cohen-headshot.jpg',
-        jobTitle: 'Electromechanical Systems Engineer',
+        jobTitle: 'Senior Systems Engineer',
         // Matches the About page: a one-line summary, no employer / location.
         description:
-          'Systems-minded electromechanical engineer, maker, and educator — builder of practical engineering tools, technical guides, and open educational resources.',
+          'Systems engineer, maker, and educator with a hands-on background in electromechanical integration — builder of practical engineering tools, technical guides, and open educational resources.',
         // Only topics that appear on the sites' own pages. No invented terms.
         knowsAbout: [
           'Electromechanical systems integration',
