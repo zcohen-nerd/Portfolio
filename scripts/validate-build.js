@@ -916,7 +916,7 @@ const homeTitle =
   (indexHtml.match(/<title[^>]*>([^<]+)<\/title>/) || [])[1] || '';
 check(
   'homepage title is deduplicated',
-  homeTitle.includes('Electromechanical Systems Engineer') &&
+  homeTitle.includes('Senior Systems Engineer') &&
     homeTitle.includes('Zac Cohen Portfolio') &&
     !/Zachary Cohen—Engineering Portfolio \| Zachary/.test(homeTitle),
   homeTitle,
@@ -991,7 +991,7 @@ const aboutHtml = fs.readFileSync(
 const aboutVisible = aboutHtml.replace(/<script[\s\S]*?<\/script>/g, '');
 check(
   'About names current employer',
-  aboutVisible.includes('BlackSea Technologies'),
+  aboutVisible.includes('Johns Hopkins Applied Physics Laboratory'),
 );
 check(
   'About carries USNA experience',
@@ -1038,8 +1038,8 @@ check(
 
 // Role retained + compact domain qualifier derived from existing facts.
 check(
-  'homepage retains the Electromechanical Systems Engineer role',
-  indexHtml.includes('Electromechanical Systems Engineer'),
+  'homepage names the Senior Systems Engineer role',
+  indexHtml.includes('Senior Systems Engineer'),
 );
 check(
   'homepage has a domain qualifier line',
