@@ -1,14 +1,14 @@
 ---
 title: About
-description: "Professional experience, education, and certifications of Zac Cohen — electromechanical systems engineer."
+description: "Professional experience, education, and certifications of Zac Cohen — Senior Systems Engineer at Johns Hopkins Applied Physics Laboratory."
 image: /img/og/og-about.png
 ---
 
 # About
 
-I'm an electromechanical systems integrator who works the boundaries where mechanical, electrical, controls, firmware, and manufacturing meet — de-risking system buildability and integration, and carrying field-deployable autonomous platforms from concept through live-water test. My work is hands-on across mechanical design, custom PCB development, and embedded controls.
+I'm a systems engineer with a hands-on background in electromechanical integration, mechanical design, custom PCB development, and embedded controls. My experience spans the boundaries where mechanical, electrical, controls, firmware, and manufacturing meet — de-risking system buildability and integration, and carrying field-deployable autonomous platforms from concept through live-water test.
 
-Today I do that work professionally on autonomous maritime systems, teach CAD and mechatronics as adjunct faculty, and volunteer in [*FIRST* Robotics Competition](/frc/) leadership. I'm a published co-author ([IEEE/RSJ IROS, ICUAS](/documentation/scholarship/)) — building the hardware and running the experimental testing behind the data.
+I'm now a Senior Systems Engineer at Johns Hopkins Applied Physics Laboratory (APL). I also teach CAD and mechatronics as adjunct faculty and volunteer in [*FIRST* Robotics Competition](/frc/) leadership. I'm a published co-author ([IEEE/RSJ IROS, ICUAS](/documentation/scholarship/)) — building the hardware and running the experimental testing behind the data.
 
 ## Open work. Closed boundaries
 
@@ -20,13 +20,17 @@ Everything shown here is independently developed work, educational material, or 
 
 ## Professional Experience
 
+### Senior Systems Engineer — Johns Hopkins Applied Physics Laboratory
+
+**Laurel, MD · November 2026–Present**
+
 ### Senior Electromechanical Systems Engineer — BlackSea Technologies
 
-**Baltimore, MD · 2025–Present**
+**Baltimore, MD · 2025–2026**
 
-- Cross-portfolio electromechanical systems integrator — reviewing designs across mechanical, electrical, controls, firmware, and manufacturing boundaries, and evaluating new projects at concept and mid-development for electromechanical feasibility.
-- Led all integration on an experimental autonomous hydrofoil under a 2-month sprint, delivering on schedule and passing sea trials; currently leading integration of a payload-release add-on for an autonomous surface vessel on a one-quarter timeline.
-- Make and defend cross-domain design decisions — release mechanisms, sealing architecture, connector selection, power distribution — under schedule and procurement constraints.
+- Served as cross-portfolio electromechanical systems integrator — reviewed designs across mechanical, electrical, controls, firmware, and manufacturing boundaries, and evaluated new projects at concept and mid-development for electromechanical feasibility.
+- Led all integration on an experimental autonomous hydrofoil under a 2-month sprint, delivering on schedule and passing sea trials; also worked on integration of a payload-release add-on for an autonomous surface vessel with a one-quarter target timeline.
+- Made and defended cross-domain design decisions — release mechanisms, sealing architecture, connector selection, power distribution — under schedule and procurement constraints.
 
 ### Industry Expert, Independent Consultant (Contract) — Tegus by AlphaSense
 
@@ -73,11 +77,11 @@ Everything shown here is independently developed work, educational material, or 
 
 ## Selected Professional Integration Work
 
-Sanitized summaries of current work — process and outcomes only, no customer or system specifics.
+Selected examples from my prior role at BlackSea Technologies — process and outcomes only, no customer or system specifics.
 
 **Autonomous hydrofoil integration.** Led all integration on an experimental autonomous hydrofoil under a 2-month sprint — coordinating mechanical, electrical, controls, and firmware interfaces — delivering on schedule and passing sea trials.
 
-**ASV payload-release integration.** Leading integration of a payload-release add-on for an autonomous surface vessel on a one-quarter timeline: requirements clarification, electromechanical boundaries, and testability worked together rather than sequentially.
+**ASV payload-release integration.** Worked on integration of a payload-release add-on for an autonomous surface vessel with a one-quarter target timeline. My scope included requirements clarification, electromechanical boundaries, and testability.
 
 **Design-risk review.** In a controls design review, identified an oversized power-distribution unit, GPIO margin shortfalls, and reliability-tier mismatches — driving corrections before fabrication instead of after.
 
